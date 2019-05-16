@@ -1,4 +1,14 @@
 Enum = {
+	AzeriteEssence = {
+		MainSlot = 0,
+		PassiveOneSlot = 1,
+		PassiveTwoSlot = 2,
+	},
+	AzeriteEssenceMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
+	},
 	AzeritePowerLevel = {
 		Base = 0,
 		Upgraded = 1,
@@ -57,6 +67,15 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 5,
 		NumValues = 6,
+	},
+	CaptureBarWidgetGlowAnimType = {
+		None = 0,
+		Pulse = 1,
+	},
+	CaptureBarWidgetGlowAnimTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
 	},
 	CharacterServiceInfoFlag = {
 		RestrictToRecommendedSpecs = 1,
@@ -167,6 +186,63 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 6,
 		NumValues = 7,
+	},
+	ClubFinderApplicationUpdateType = {
+		None = 0,
+		AcceptInvite = 1,
+		DeclineInvite = 2,
+		Cancel = 3,
+	},
+	ClubFinderApplicationUpdateTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	ClubFinderReportType = {
+		Any = 0,
+		InapropriateName = 1,
+		InapropriateComment = 2,
+	},
+	ClubFinderReportTypeMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
+	},
+	ClubFinderRequestType = {
+		None = 0,
+		Guild = 1,
+		Community = 2,
+		All = 3,
+	},
+	ClubFinderRequestTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	ClubFinderSettingFlags = {
+		None = 0,
+		Dungeons = 1,
+		Raids = 2,
+		Pvp = 3,
+		Rp = 4,
+		Social = 5,
+		Small = 6,
+		Medium = 7,
+		Large = 8,
+		Tank = 9,
+		Healer = 10,
+		Damage = 11,
+		EnableListing = 12,
+		MaxLevelOnly = 13,
+		AutoAccept = 14,
+		FactionHorde = 15,
+		FactionAlliance = 16,
+		FactionNeutral = 17,
+	},
+	ClubFinderSettingFlagsMeta = {
+		MinValue = 0,
+		MaxValue = 17,
+		NumValues = 18,
 	},
 	ClubInvitationCandidateStatus = {
 		Available = 0,
@@ -504,11 +580,12 @@ Enum = {
 		AzeriteItemLevelUpToast = 13,
 		AzeritePowers = 14,
 		AzeriteRewardGlow = 15,
+		HeartOfAzeroth = 16,
 	},
 	ModelSceneTypeMeta = {
 		MinValue = 0,
-		MaxValue = 15,
-		NumValues = 16,
+		MaxValue = 16,
+		NumValues = 17,
 	},
 	PartyRequestJoinRelation = {
 		None = 0,
@@ -526,9 +603,9 @@ Enum = {
 		ActivityWorldLink = 6,
 		ActivityModelRender = 11,
 		ActivityAnimate = 15,
-		ActivitySwap = 36,
-		ActivityUnit = 45,
-		ActivityEventnet = 53,
+		ActivitySwap = 37,
+		ActivityUnit = 46,
+		ActivityEventnet = 54,
 	},
 	PerfActivityMeta = {
 		MinValue = 0,
@@ -544,6 +621,34 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 2,
 		NumValues = 3,
+	},
+	PetJournalError = {
+		None = 0,
+		PetIsDead = 1,
+		JournalIsLocked = 2,
+		InvalidFaction = 3,
+		NoFavoritesToSummon = 4,
+		NoValidRandomSummon = 5,
+	},
+	PetJournalErrorMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
+	},
+	PlayerClubRequestStatus = {
+		None = 0,
+		Pending = 1,
+		AutoApproved = 2,
+		Declined = 3,
+		Approved = 4,
+		Joined = 5,
+		JoinedAnother = 6,
+		Canceled = 7,
+	},
+	PlayerClubRequestStatusMeta = {
+		MinValue = 0,
+		MaxValue = 7,
+		NumValues = 8,
 	},
 	PowerType = {
 		HealthCost = -2,
@@ -573,6 +678,16 @@ Enum = {
 		MinValue = -2,
 		MaxValue = 19,
 		NumValues = 22,
+	},
+	PvpMatchState = {
+		Inactive = 0,
+		Active = 1,
+		Complete = 2,
+	},
+	PvpMatchStateMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	PvpUnitClassification = {
 		FlagCarrierHorde = 0,
@@ -628,6 +743,15 @@ Enum = {
 		MaxValue = 1,
 		NumValues = 2,
 	},
+	SpellDisplayIconDisplayType = {
+		Buff = 0,
+		Debuff = 1,
+	},
+	SpellDisplayIconDisplayTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
 	SpellDisplayIconSizeType = {
 		Small = 0,
 		Medium = 1,
@@ -637,6 +761,17 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 2,
 		NumValues = 3,
+	},
+	StatusBarOverrideBarTextShownType = {
+		Never = 0,
+		Always = 1,
+		OnlyOnMouseover = 2,
+		OnlyNotOnMouseover = 3,
+	},
+	StatusBarOverrideBarTextShownTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
 	},
 	StatusBarValueTextType = {
 		Hidden = 0,
@@ -656,12 +791,13 @@ Enum = {
 		Item = 0,
 		Mount = 1,
 		Battlepet = 2,
-		Collection = 3,
+		Toy = 3,
+		Collection = 4,
 	},
 	StoreDeliveryTypeMeta = {
 		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
+		MaxValue = 4,
+		NumValues = 5,
 	},
 	StoreErrorMeta = {
 		MinValue = 0,
@@ -678,6 +814,40 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 3,
 		NumValues = 4,
+	},
+	TooltipSide = {
+		Left = 0,
+		Right = 1,
+		Top = 2,
+		Bottom = 3,
+	},
+	TooltipSideMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	TooltipTextureAnchor = {
+		LeftTop = 0,
+		LeftCenter = 1,
+		LeftBottom = 2,
+		RightTop = 3,
+		RightCenter = 4,
+		RightBottom = 5,
+		All = 6,
+	},
+	TooltipTextureAnchorMeta = {
+		MinValue = 0,
+		MaxValue = 6,
+		NumValues = 7,
+	},
+	TooltipTextureRelativeRegion = {
+		LeftLine = 0,
+		RightLine = 1,
+	},
+	TooltipTextureRelativeRegionMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
 	},
 	TransmogSource = {
 		None = 0,
@@ -720,6 +890,17 @@ Enum = {
 		MaxValue = 6,
 		NumValues = 7,
 	},
+	UIWidgetTextSizeType = {
+		Small = 0,
+		Medium = 1,
+		Large = 2,
+		Huge = 3,
+	},
+	UIWidgetTextSizeTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
 	UIWidgetVisualizationType = {
 		IconAndText = 0,
 		CaptureBar = 1,
@@ -733,14 +914,16 @@ Enum = {
 		HorizontalCurrencies = 9,
 		BulletTextList = 10,
 		ScenarioHeaderCurrenciesAndBackground = 11,
-		TextureWithState = 12,
+		TextureAndText = 12,
 		SpellDisplay = 13,
 		DoubleStateIconRow = 14,
+		TextureAndTextRow = 15,
+		ZoneControl = 16,
 	},
 	UIWidgetVisualizationTypeMeta = {
 		MinValue = 0,
-		MaxValue = 14,
-		NumValues = 15,
+		MaxValue = 16,
+		NumValues = 17,
 	},
 	ValidateNameResult = {
 		NameSuccess = 0,
@@ -830,6 +1013,15 @@ Enum = {
 		MaxValue = 22,
 		NumValues = 23,
 	},
+	WidgetAnimationType = {
+		None = 0,
+		Fade = 1,
+	},
+	WidgetAnimationTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
 	WidgetCurrencyClass = {
 		Currency = 0,
 		Item = 1,
@@ -870,6 +1062,46 @@ Enum = {
 		MaxValue = 3,
 		NumValues = 4,
 	},
+	ZoneControlActiveState = {
+		Inactive = 0,
+		Active = 1,
+	},
+	ZoneControlActiveStateMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
+	ZoneControlFillType = {
+		SingleFillClockwise = 0,
+		SingleFillCounterClockwise = 1,
+		DoubleFillClockwise = 2,
+		DoubleFillCounterClockwise = 3,
+	},
+	ZoneControlFillTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	ZoneControlMode = {
+		BothStatesAreGood = 0,
+		State1IsGood = 1,
+		State2IsGood = 2,
+		NeitherStateIsGood = 3,
+	},
+	ZoneControlModeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	ZoneControlState = {
+		State1 = 0,
+		State2 = 1,
+	},
+	ZoneControlStateMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
 }
 
 NUM_LE_ACTIONBAR_VISUAL_STATES = 2
@@ -887,7 +1119,7 @@ NUM_LE_EXPANSION_LEVELS = 7
 NUM_LE_FOLLOWER_ABILITY_CAST_RESULTS = 14
 NUM_LE_FOLLOWER_MISSION_COMPLETE_STATES = 4
 NUM_LE_FOLLOWER_TYPES = 23
-NUM_LE_FRAME_TUTORIALS = 67
+NUM_LE_FRAME_TUTORIALS = 68
 NUM_LE_GARRISON_TALENT_AVAILABILITYS = 8
 NUM_LE_GARRISON_TYPES = 10
 NUM_LE_GARR_FOLLOWER_QUALITYS = 7
@@ -899,7 +1131,7 @@ NUM_LE_ITEM_BIND_TYPES = 5
 NUM_LE_ITEM_CLASSS = 19
 NUM_LE_ITEM_FILTER_TYPES = 31
 NUM_LE_ITEM_GEMS = 12
-NUM_LE_ITEM_MISCELLANEOUSS = 6
+NUM_LE_ITEM_MISCELLANEOUSS = 7
 NUM_LE_ITEM_QUALITYS = 9
 NUM_LE_ITEM_RECIPES = 12
 NUM_LE_ITEM_WEAPONS = 21
@@ -1061,6 +1293,7 @@ LE_FRAME_TUTORIAL_INVENTORY_FIXUP_EXPANSION_LEGION = 42
 LE_FRAME_TUTORIAL_ISLANDS_QUEUE_BUTTON = 66
 LE_FRAME_TUTORIAL_ISLANDS_QUEUE_INFO_FRAME = 67
 LE_FRAME_TUTORIAL_LFG_LIST = 20
+LE_FRAME_TUTORIAL_MOUNT_EQUIPMENT_SLOT_FRAME = 68
 LE_FRAME_TUTORIAL_PET_JOURNAL = 7
 LE_FRAME_TUTORIAL_PROFESSIONS = 5
 LE_FRAME_TUTORIAL_PVP_TALENTS_FIRST_UNLOCK = 58
@@ -1205,6 +1438,7 @@ LE_ITEM_MISCELLANEOUS_COMPANION_PET = 2
 LE_ITEM_MISCELLANEOUS_HOLIDAY = 3
 LE_ITEM_MISCELLANEOUS_JUNK = 0
 LE_ITEM_MISCELLANEOUS_MOUNT = 5
+LE_ITEM_MISCELLANEOUS_MOUNT_EQUIPMENT = 6
 LE_ITEM_MISCELLANEOUS_OTHER = 4
 LE_ITEM_MISCELLANEOUS_REAGENT = 1
 LE_ITEM_QUALITY_ARTIFACT = 6
