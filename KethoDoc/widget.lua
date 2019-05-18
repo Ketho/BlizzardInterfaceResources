@@ -175,7 +175,7 @@ KethoDoc.WidgetClasses = {
 	},
 	ItemButton = { -- ItemButton \ Button
 		inherits = {"Button"},
-		object = getmetatable(CreateFrame("ItemButton")).__index, -- no extra methods
+		--object = getmetatable(CreateFrame("ItemButton")).__index, -- no extra methods
 		methods = function() return KD:RemoveTable(W.ItemButton.object, W.ItemButton.object) end,
 	},
 	-- UnitButton unavailable
@@ -313,12 +313,12 @@ KethoDoc.WidgetClasses = {
 	
 	FogOfWarFrame = { -- FogOfWarFrame \ Frame
 		inherits = {"Frame"},
-		object = getmetatable(CreateFrame("FogOfWarFrame")).__index,
+		--object = getmetatable(CreateFrame("FogOfWarFrame")).__index,
 		methods = function() return KD:RemoveTable(W.FogOfWarFrame.object, W.Frame.object) end,
 	},
 	MovieFrame = { -- MovieFrame \ Frame
 		inherits = {"Frame"},
-		object = getmetatable(CreateFrame("MovieFrame")).__index,
+		--object = getmetatable(CreateFrame("MovieFrame")).__index,
 		methods = function() return KD:RemoveTable(W.MovieFrame.object, W.Frame.object) end,
 	},
 	OffScreenFrame = { -- OffScreenFrame \ Frame
@@ -340,17 +340,17 @@ KethoDoc.WidgetClasses = {
 	},
 	ArchaeologyDigSiteFrame = { -- ArchaeologyDigSiteFrame \ POIFrame
 		inherits = {"POIFrame"},
-		object = getmetatable(CreateFrame("ArchaeologyDigSiteFrame")).__index,
+		--object = getmetatable(CreateFrame("ArchaeologyDigSiteFrame")).__index,
 		methods = function() return KD:RemoveTable(W.ArchaeologyDigSiteFrame.object, W.POIFrame.object()) end,
 	},
 	QuestPOIFrame = { -- QuestPOIFrame \ POIFrame
 		inherits = {"POIFrame"},
-		object = getmetatable(CreateFrame("QuestPOIFrame")).__index,
+		--object = getmetatable(CreateFrame("QuestPOIFrame")).__index,
 		methods = function() return KD:RemoveTable(W.QuestPOIFrame.object, W.POIFrame.object()) end,
 	},
 	ScenarioPOIFrame = { -- ScenarioPOIFrame \ POIFrame
 		inherits = {"POIFrame"},
-		object = getmetatable(CreateFrame("ScenarioPOIFrame")).__index,
+		--object = getmetatable(CreateFrame("ScenarioPOIFrame")).__index,
 		methods = function() return KD:RemoveTable(W.ScenarioPOIFrame.object, W.POIFrame.object()) end,
 	},
 }
@@ -421,21 +421,21 @@ KethoDoc.WidgetOrder = {
 	-- frame
 	"Frame",
 	"Browser",
-	"Button", "CheckButton", "ItemButton", --"UnitButton",
+	"Button", "CheckButton", -- "ItemButton", --"UnitButton",
 	"Checkout",
 	"ColorSelect",
 	"Cooldown",
 	"EditBox",
-	"FogOfWarFrame",
+	--"FogOfWarFrame",
 	"GameTooltip",
 	"MessageFrame",
 	"Minimap", -- unique
 	"Model", "PlayerModel",
 		"CinematicModel", "DressupModel", "TabardModel", --"ModelFFX", "UICamera",
 	"ModelScene",
-	"MovieFrame",
+	--"MovieFrame",
 	"OffScreenFrame",
-	"POIFrame", "ArchaeologyDigSiteFrame", "QuestPOIFrame", "ScenarioPOIFrame",
+	--"POIFrame", "ArchaeologyDigSiteFrame", "QuestPOIFrame", "ScenarioPOIFrame",
 	"ScrollFrame",
 	"ScrollingMessageFrame",
 	"SimpleHTML",
