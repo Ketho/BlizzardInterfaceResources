@@ -244,6 +244,7 @@ C_AzeriteEssence.GetMilestoneInfo
 C_AzeriteEssence.GetMilestoneSpell
 C_AzeriteEssence.GetMilestones
 C_AzeriteEssence.GetPendingActivationEssence
+C_AzeriteEssence.HasNeverActivatedAnyEssences
 C_AzeriteEssence.HasPendingActivationEssence
 C_AzeriteEssence.IsAtForge
 C_AzeriteEssence.SetPendingActivationEssence
@@ -1353,6 +1354,8 @@ C_ProductChoice.GetProducts
 C_ProductChoice.MakeSelection
 C_PrototypeDialog.EnsureRemoved
 C_PrototypeDialog.SelectOption
+C_PvP.CanDisplayDeaths
+C_PvP.CanDisplayHonorableKills
 C_PvP.CanToggleWarMode
 C_PvP.CanToggleWarModeInArea
 C_PvP.GetActiveBrawlInfo
@@ -1396,6 +1399,8 @@ C_PvP.IsArena
 C_PvP.IsBattleground
 C_PvP.IsBattlegroundEnlistmentBonusActive
 C_PvP.IsInBrawl
+C_PvP.IsMatchConsideredArena
+C_PvP.IsMatchFactional
 C_PvP.IsPVPMap
 C_PvP.IsRatedArena
 C_PvP.IsRatedBattleground
@@ -1873,6 +1878,7 @@ C_WowTokenPublic.UpdateListedAuctionableTokens
 C_WowTokenPublic.UpdateMarketPrice
 C_WowTokenPublic.UpdateTokenCount
 CalculateAuctionDeposit
+CalculateDistanceBetweenRegions
 CalculateStringEditDistance
 CallCompanion
 CameraOrSelectOrMoveStart

@@ -1071,6 +1071,17 @@ Enum = {
 		MaxValue = 1,
 		NumValues = 2,
 	},
+	ZoneControlDangerFlashType = {
+		ShowOnGoodStates = 0,
+		ShowOnBadStates = 1,
+		ShowOnBoth = 2,
+		ShowOnNeither = 3,
+	},
+	ZoneControlDangerFlashTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
 	ZoneControlFillType = {
 		SingleFillClockwise = 0,
 		SingleFillCounterClockwise = 1,
@@ -1081,6 +1092,15 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 3,
 		NumValues = 4,
+	},
+	ZoneControlLeadingEdgeType = {
+		NoLeadingEdge = 0,
+		UseLeadingEdge = 1,
+	},
+	ZoneControlLeadingEdgeTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
 	},
 	ZoneControlMode = {
 		BothStatesAreGood = 0,
