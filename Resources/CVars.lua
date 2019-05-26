@@ -1,4 +1,4 @@
-CVar = {
+local CVars = {
 	variable = {
 		-- variable = default, category, server, character, help
 		["ActionButtonUseKeyDown"] = {"1", 4, true, false, "Activate the action button on a keydown"},
@@ -539,7 +539,7 @@ CVar = {
 		["graphicsSunshafts"] = {"3", 5, false, false, ""},
 		["graphicsTextureFiltering"] = {"5", 5, false, false, ""},
 		["graphicsTextureResolution"] = {"5", 5, false, false, ""},
-		["graphicsViewDistance"] = {"7", 5, false, false, ""},
+		["graphicsViewDistance"] = {"7", 1, false, false, "UI value of the graphics setting"},
 		["groundEffectDensity"] = {"16", 5, false, false, ""},
 		["groundEffectDist"] = {"70", 5, false, false, ""},
 		["groundEffectFade"] = {"70", 1, false, false, "Ground effect fade"},
@@ -745,7 +745,7 @@ CVar = {
 		["playIntroMovie"] = {"5", 5, false, false, ""},
 		["POIShiftComplete"] = {"0.3", 0, false, false, ""},
 		["portal"] = {"", 6, false, false, "Name of Battle.net portal to use"},
-		["PraiseTheSun"] = {"0", 4, false, false, ""},
+		["PraiseTheSun"] = {"", 4, false, false, ""},
 		["predictedHealth"] = {"1", 4, true, false, "Whether or not to use predicted health values in the UI"},
 		["PreemptiveCastEnable"] = {"0", 5, false, false, "Enable preemptive triggering of cast visuals based on spell release timing"},
 		["preloadLoadingDistObject"] = {"512", 5, false, false, "Object preload distance when loading"},
@@ -1230,3 +1230,5 @@ CVar = {
 		["whois"] = {0, "Ask the server to do an account/real name lookup on a character name"},
 	},
 }
+
+return CVars

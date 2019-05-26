@@ -1,4 +1,4 @@
-Widget = {
+local WidgetAPI = {
 	ScriptObject = {
 		inherits = {},
 		methods = {
@@ -1242,3 +1242,5 @@ Widget = {
 		},
 	},
 }
+
+return WidgetAPI

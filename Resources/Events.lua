@@ -1,4 +1,4 @@
-Event = {
+local Events = {
 	C_AchievementInfo = {
 		"ACHIEVEMENT_EARNED",
 		"ACHIEVEMENT_PLAYER_NAME",
@@ -1387,3 +1387,5 @@ Event = {
 		"VEHICLE_ANGLE_UPDATE",
 	},
 }
+
+return Events
