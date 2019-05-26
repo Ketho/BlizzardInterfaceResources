@@ -1,4 +1,4 @@
-CVar = {
+local CVars = {
 	variable = {
 		-- variable = default, category, server, character, help
 		["ActionButtonUseKeyDown"] = {"1", 4, true, false, "Activate the action button on a keydown"},
@@ -1175,3 +1175,5 @@ CVar = {
 		["whois"] = {0, "Ask the server to do an account/real name lookup on a character name"},
 	},
 }
+
+return CVars

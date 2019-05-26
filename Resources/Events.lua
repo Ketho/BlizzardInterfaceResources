@@ -1,4 +1,4 @@
-Event = {
+local Events = {
 	C_ActionBar = {
 		"ACTIONBAR_HIDEGRID",
 		"ACTIONBAR_PAGE_CHANGED",
@@ -828,3 +828,5 @@ Event = {
 		"UPDATE_STEALTH",
 	},
 }
+
+return Events
