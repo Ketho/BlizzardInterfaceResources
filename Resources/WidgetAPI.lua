@@ -1,6 +1,10 @@
 local WidgetAPI = {
 	ScriptObject = {
 		inherits = {},
+		handlers = {
+			"OnLoad",
+			"OnUpdate",
+		},
 		methods = {
 			"GetScript",
 			"HasScript",
@@ -197,6 +201,13 @@ local WidgetAPI = {
 	},
 	AnimationGroup = {
 		inherits = {"UIObject", "ScriptObject"},
+		handlers = {
+			"OnFinished",
+			"OnLoop",
+			"OnPause",
+			"OnPlay",
+			"OnStop",
+		},
 		methods = {
 			"CreateAnimation",
 			"Finish",
@@ -220,6 +231,12 @@ local WidgetAPI = {
 	},
 	Animation = {
 		inherits = {"UIObject", "ScriptObject"},
+		handlers = {
+			"OnFinished",
+			"OnPause",
+			"OnPlay",
+			"OnStop",
+		},
 		methods = {
 			"GetDuration",
 			"GetElapsed",
@@ -339,6 +356,29 @@ local WidgetAPI = {
 	},
 	Frame = {
 		inherits = {"Region", "ScriptObject"},
+		handlers = {
+			"OnAttributeChanged",
+			"OnChar",
+			"OnDisable",
+			"OnDragStart",
+			"OnDragStop",
+			"OnEnable",
+			"OnEnter",
+			"OnEvent",
+			"OnHide",
+			"OnHyperlinkClick",
+			"OnHyperlinkEnter",
+			"OnHyperlinkLeave",
+			"OnKeyDown",
+			"OnKeyUp",
+			"OnLeave",
+			"OnMouseDown",
+			"OnMouseUp",
+			"OnMouseWheel",
+			"OnReceiveDrag",
+			"OnShow",
+			"OnSizeChanged",
+		},
 		methods = {
 			"CanChangeAttribute",
 			"CreateFontString",
@@ -430,6 +470,14 @@ local WidgetAPI = {
 	},
 	Browser = {
 		inherits = {"Frame"},
+		handlers = {
+			"OnButtonUpdate",
+			"OnEditFocusGained",
+			"OnEditFocusLost",
+			"OnError",
+			"OnEscapePressed",
+			"OnExternalLink",
+		},
 		methods = {
 			"ClearCache",
 			"ClearFocus",
@@ -449,6 +497,12 @@ local WidgetAPI = {
 	},
 	Button = {
 		inherits = {"Frame"},
+		handlers = {
+			"OnClick",
+			"OnDoubleClick",
+			"PostClick",
+			"PreClick",
+		},
 		methods = {
 			"Click",
 			"Disable",
@@ -509,6 +563,9 @@ local WidgetAPI = {
 	},
 	Checkout = {
 		inherits = {"Frame"},
+		handlers = {
+			"OnRequestNewSize",
+		},
 		methods = {
 			"CancelOpenCheckout",
 			"ClearFocus",
@@ -522,6 +579,9 @@ local WidgetAPI = {
 	},
 	ColorSelect = {
 		inherits = {"Frame"},
+		handlers = {
+			"OnColorSelect",
+		},
 		methods = {
 			"GetColorHSV",
 			"GetColorRGB",
@@ -539,6 +599,9 @@ local WidgetAPI = {
 	},
 	Cooldown = {
 		inherits = {"Frame"},
+		handlers = {
+			"OnCooldownDone",
+		},
 		methods = {
 			"Clear",
 			"GetCooldownDisplayDuration",
@@ -572,6 +635,20 @@ local WidgetAPI = {
 	},
 	EditBox = {
 		inherits = {"Frame", "FontInstance"},
+		handlers = {
+			"OnArrowPressed",
+			"OnCharComposition",
+			"OnCursorChanged",
+			"OnEditFocusGained",
+			"OnEditFocusLost",
+			"OnEnterPressed",
+			"OnEscapePressed",
+			"OnInputLanguageChanged",
+			"OnSpacePressed",
+			"OnTabPressed",
+			"OnTextChanged",
+			"OnTextSet",
+		},
 		methods = {
 			"AddHistoryLine",
 			"ClearFocus",
@@ -630,6 +707,9 @@ local WidgetAPI = {
 	},
 	FogOfWarFrame = {
 		inherits = {"Frame"},
+		handlers = {
+			"OnUiMapChanged",
+		},
 		methods = {
 			"GetFogOfWarBackgroundAtlas",
 			"GetFogOfWarBackgroundTexture",
@@ -647,6 +727,18 @@ local WidgetAPI = {
 	},
 	GameTooltip = {
 		inherits = {"Frame"},
+		handlers = {
+			"OnTooltipAddMoney",
+			"OnTooltipCleared",
+			"OnTooltipSetAchievement",
+			"OnTooltipSetDefaultAnchor",
+			"OnTooltipSetEquipmentSet",
+			"OnTooltipSetFramestack",
+			"OnTooltipSetItem",
+			"OnTooltipSetQuest",
+			"OnTooltipSetSpell",
+			"OnTooltipSetUnit",
+		},
 		methods = {
 			"AddDoubleLine",
 			"AddFontStrings",
@@ -814,6 +906,10 @@ local WidgetAPI = {
 	},
 	Model = {
 		inherits = {"Frame"},
+		handlers = {
+			"OnAnimFinished",
+			"OnModelLoaded",
+		},
 		methods = {
 			"AdvanceTime",
 			"ClearFog",
@@ -911,6 +1007,9 @@ local WidgetAPI = {
 	},
 	CinematicModel = {
 		inherits = {"PlayerModel"},
+		handlers = {
+			"OnPanFinished",
+		},
 		methods = {
 			"EquipItem",
 			"InitializeCamera",
@@ -931,6 +1030,9 @@ local WidgetAPI = {
 	},
 	DressupModel = {
 		inherits = {"PlayerModel"},
+		handlers = {
+			"OnDressModel",
+		},
 		methods = {
 			"Dress",
 			"GetAutoDress",
@@ -1010,6 +1112,11 @@ local WidgetAPI = {
 	},
 	MovieFrame = {
 		inherits = {"Frame"},
+		handlers = {
+			"OnMovieFinished",
+			"OnMovieHideSubtitle",
+			"OnMovieShowSubtitle",
+		},
 		methods = {
 			"EnableSubtitles",
 			"StartMovie",
@@ -1069,6 +1176,11 @@ local WidgetAPI = {
 	},
 	ScrollFrame = {
 		inherits = {"Frame"},
+		handlers = {
+			"OnHorizontalScroll",
+			"OnScrollRangeChanged",
+			"OnVerticalScroll",
+		},
 		methods = {
 			"GetHorizontalScroll",
 			"GetHorizontalScrollRange",
@@ -1171,6 +1283,10 @@ local WidgetAPI = {
 	},
 	Slider = {
 		inherits = {"Frame"},
+		handlers = {
+			"OnMinMaxChanged",
+			"OnValueChanged",
+		},
 		methods = {
 			"Disable",
 			"Enable",
@@ -1195,6 +1311,10 @@ local WidgetAPI = {
 	},
 	StatusBar = {
 		inherits = {"Frame"},
+		handlers = {
+			"OnMinMaxChanged",
+			"OnValueChanged",
+		},
 		methods = {
 			"GetFillStyle",
 			"GetMinMaxValues",
