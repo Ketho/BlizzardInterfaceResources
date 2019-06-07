@@ -1,4 +1,4 @@
-local FrameXmlFuncs = {
+local FrameXML = {
 	"ACHIEVEMENTUI_SELECTEDFILTER",
 	"APIDocumentation_LoadUI",
 	"AbbreviateLargeNumbers",
@@ -6730,4 +6730,4 @@ local FrameXmlFuncs = {
 	"tostringall",
 }
 
-return FrameXmlFuncs
+return FrameXML
