@@ -236,6 +236,7 @@ local GlobalAPI = {
 	"C_AzeriteItem.GetPowerLevel",
 	"C_AzeriteItem.HasActiveAzeriteItem",
 	"C_AzeriteItem.IsAzeriteItem",
+	"C_AzeriteItem.IsAzeriteItemAtMaxLevel",
 	"C_AzeriteItem.IsAzeriteItemByID",
 	"C_BlackMarket.Close",
 	"C_BlackMarket.GetHotItem",
