@@ -1,6 +1,6 @@
 
 globals = {
-	-- Lua aliases and variants
+	-- Lua API and aliases
 	"abs",
 	"acos",
 	"asin",
@@ -82,8 +82,9 @@ globals = {
 	"wipe",
 	"xpcall",
 
-	-- UIParent child frames
+	-- top-level frames
 	"ActionBarController",
+	"ActionStatus",
 	"AddFriendFrame",
 	"AddonList",
 	"AlertFrame",
@@ -286,6 +287,7 @@ globals = {
 	"TutorialFrameAlertButton9",
 	"TutorialFrameParent",
 	"UIErrorsFrame",
+	"UIParent",
 	"UIWidgetBelowMinimapContainerFrame",
 	"UIWidgetTopCenterContainerFrame",
 	"VerticalMultiBarsContainer",
@@ -293,6 +295,7 @@ globals = {
 	"VoiceActivityManager",
 	"VoiceChatChannelActivatedNotification",
 	"VoiceChatPromptActivateChannel",
+	"WorldFrame",
 	"WorldMapCompareTooltip1",
 	"WorldMapCompareTooltip2",
 	"WorldMapFrame",
