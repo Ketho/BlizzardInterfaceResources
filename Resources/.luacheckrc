@@ -1,6 +1,6 @@
 
 globals = {
-	-- Lua aliases and variants
+	-- Lua API and aliases
 	"abs",
 	"acos",
 	"asin",
@@ -81,10 +81,11 @@ globals = {
 	"unpack",
 	"wipe",
 	"xpcall",
-	
-	-- UIParent child frames
+
+	-- top-level frames
 	"AchievementFrame",
 	"ActionBarController",
+	"ActionStatus",
 	"AddFriendFrame",
 	"AddonList",
 	"AdventureMap_MissionPinTooltip",
@@ -413,6 +414,7 @@ globals = {
 	"TutorialFrame",
 	"TutorialFrameAlertButton",
 	"UIErrorsFrame",
+	"UIParent",
 	"UIWidgetBelowMinimapContainerFrame",
 	"UIWidgetTopCenterContainerFrame",
 	"VehicleSeatIndicator",
@@ -427,10 +429,11 @@ globals = {
 	"WardrobeOutfitEditFrame",
 	"WardrobeOutfitFrame",
 	"WarfrontsPartyPoseFrame",
+	"WorldFrame",
 	"WorldMapFrame",
 	"ZoneAbilityFrame",
 	"ZoneTextFrame",
-	
+
 	-- Wow API
 	"AbandonQuest",
 	"AbandonSkill",
