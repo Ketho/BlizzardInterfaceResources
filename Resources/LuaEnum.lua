@@ -728,11 +728,12 @@ Enum = {
 		Raid25 = 89,
 		Scenario = 98,
 		Account = 102,
+		CombatAlly = 266,
 	},
 	QuestTagMeta = {
 		MinValue = 0,
-		NumValues = 10,
-		MaxValue = 102,
+		NumValues = 11,
+		MaxValue = 266,
 	},
 	SelfResurrectOptionType = {
 		Spell = 0,
@@ -1007,11 +1008,13 @@ Enum = {
 		InvalidCommunityStream = 20,
 		PlayerSilenced = 21,
 		PlayerVoiceChatParentalDisabled = 22,
+		InvalidInputDevice = 23,
+		InvalidOutputDevice = 24,
 	},
 	VoiceChatStatusCodeMeta = {
 		MinValue = 0,
-		MaxValue = 22,
-		NumValues = 23,
+		MaxValue = 24,
+		NumValues = 25,
 	},
 	WidgetAnimationType = {
 		None = 0,
@@ -1134,7 +1137,6 @@ NUM_LE_BATTLE_PET_OWNERS = 3
 NUM_LE_CHARACTER_UNDELETE_RESULTS = 6
 NUM_LE_CHARACTER_UPGRADE_RESULTS = 13
 NUM_LE_CINEMATIC_PAN_TYPES = 6
-NUM_LE_CONVERT_RESULTS = 2
 NUM_LE_EXPANSION_LEVELS = 7
 NUM_LE_FOLLOWER_ABILITY_CAST_RESULTS = 14
 NUM_LE_FOLLOWER_MISSION_COMPLETE_STATES = 4
@@ -1239,8 +1241,6 @@ LE_CHARACTER_UPGRADE_RESULT_TRIAL_THROTTLE_DAY = 4
 LE_CHARACTER_UPGRADE_RESULT_TRIAL_THROTTLE_HOUR = 3
 LE_CHARACTER_UPGRADE_RESULT_TRIAL_THROTTLE_WEEK = 5
 LE_CHARACTER_UPGRADE_RESULT_UPGRADE_PENDING = 10
-LE_CONVERT_RESULT_ERROR_OTHER = 2
-LE_CONVERT_RESULT_SUCCESS = 1
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 LE_EXPANSION_9_0 = 8
