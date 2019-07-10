@@ -101,7 +101,6 @@ local Frames = {
 	"ContainerFrame9",
 	"CraftFrame",
 	"CreateChannelPopup",
-	"DeathRecapFrame",
 	"DeveloperConsole",
 	"DressUpFrame",
 	"DropDownList1",
