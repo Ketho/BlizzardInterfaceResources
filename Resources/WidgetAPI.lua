@@ -823,6 +823,7 @@ local WidgetAPI = {
 			"SetQuestLogItem",
 			"SetQuestLogRewardSpell",
 			"SetQuestLogSpecialItem",
+			"SetQuestPartyProgress",
 			"SetQuestRewardSpell",
 			"SetRecipeRankInfo",
 			"SetRecipeReagentItem",
