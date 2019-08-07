@@ -947,7 +947,7 @@ local WidgetAPI = {
 			"UnequipItems",
 		},
 	},
-	DressupModel = {
+	DressUpModel = {
 		inherits = {"PlayerModel"},
 		handlers = {
 			"OnDressModel",
