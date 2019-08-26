@@ -4,7 +4,6 @@ ignore = {
 	"113/LE_.*", --  Lua Enum
 	"113/NUM_LE_.*",
 }
--- 8.2.5 (31337)
 globals = {
 	-- WoW Lua API and aliases
 	"abs",
