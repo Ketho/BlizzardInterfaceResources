@@ -19,10 +19,15 @@ Enum = {
 		MaxValue = 2,
 		NumValues = 3,
 	},
+	BattlepayCardTypeMeta = {
+		MinValue = 0,
+		MaxValue = 7,
+		NumValues = 8,
+	},
 	BattlepayDisplayFlagMeta = {
 		MinValue = 1,
-		NumValues = 8,
-		MaxValue = 128,
+		NumValues = 9,
+		MaxValue = 256,
 	},
 	BattlepayGroupDisplayTypeMeta = {
 		MinValue = 0,
@@ -415,15 +420,17 @@ Enum = {
 		MaxValue = 3,
 		NumValues = 4,
 	},
-	ClubFinderReportType = {
-		Any = 0,
-		InapropriateName = 1,
-		InapropriateComment = 2,
+	ClubFinderPostingReportType = {
+		PostersName = 0,
+		ClubName = 1,
+		PostingDescription = 2,
+		ApplicantsName = 3,
+		JoinNote = 4,
 	},
-	ClubFinderReportTypeMeta = {
+	ClubFinderPostingReportTypeMeta = {
 		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
+		MaxValue = 4,
+		NumValues = 5,
 	},
 	ClubFinderRequestType = {
 		None = 0,
@@ -877,6 +884,11 @@ Enum = {
 		MaxValue = 19,
 		NumValues = 22,
 	},
+	PurchaseEligibilityMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
+	},
 	PvpMatchState = {
 		Inactive = 0,
 		Active = 1,
@@ -915,6 +927,17 @@ Enum = {
 		MaxValue = 2,
 		NumValues = 3,
 	},
+	QuestSessionCommand = {
+		None = 0,
+		Start = 1,
+		Stop = 2,
+		SessionActiveNoCommand = 3,
+	},
+	QuestSessionCommandMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
 	QuestSessionResult = {
 		Ok = 0,
 		NotInParty = 1,
@@ -941,12 +964,14 @@ Enum = {
 		Busy = 22,
 		JoinRejected = 23,
 		Logout = 24,
-		Unknown = 25,
+		Empty = 25,
+		QuestNotCompleted = 26,
+		Unknown = 27,
 	},
 	QuestSessionResultMeta = {
 		MinValue = 0,
-		MaxValue = 25,
-		NumValues = 26,
+		MaxValue = 27,
+		NumValues = 28,
 	},
 	QuestTag = {
 		Group = 1,
@@ -976,6 +1001,16 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 3,
 		NumValues = 4,
+	},
+	RafRecruitActivityState = {
+		Incomplete = 0,
+		Complete = 1,
+		RewardClaimed = 2,
+	},
+	RafRecruitActivityStateMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	RafRecruitSubStatus = {
 		Trial = 0,
@@ -1060,12 +1095,16 @@ Enum = {
 		Mount = 1,
 		Battlepet = 2,
 		Toy = 3,
-		Collection = 4,
+		Appearance = 4,
+		AppearanceSet = 5,
+		GameTime = 6,
+		Title = 7,
+		Invalid = 8,
 	},
 	StoreDeliveryTypeMeta = {
 		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
+		MaxValue = 8,
+		NumValues = 9,
 	},
 	StoreErrorMeta = {
 		MinValue = 0,
@@ -1420,7 +1459,7 @@ NUM_LE_EXPANSION_LEVELS = 7
 NUM_LE_FOLLOWER_ABILITY_CAST_RESULTS = 14
 NUM_LE_FOLLOWER_MISSION_COMPLETE_STATES = 4
 NUM_LE_FOLLOWER_TYPES = 23
-NUM_LE_FRAME_TUTORIALS = 69
+NUM_LE_FRAME_TUTORIALS = 71
 NUM_LE_GARRISON_TALENT_AVAILABILITYS = 8
 NUM_LE_GARRISON_TYPES = 10
 NUM_LE_GARR_FOLLOWER_QUALITYS = 7
@@ -1595,9 +1634,11 @@ LE_FRAME_TUTORIAL_LFG_LIST = 20
 LE_FRAME_TUTORIAL_MOUNT_EQUIPMENT_SLOT_FRAME = 68
 LE_FRAME_TUTORIAL_PET_JOURNAL = 7
 LE_FRAME_TUTORIAL_PROFESSIONS = 5
+LE_FRAME_TUTORIAL_PVP_SPECIAL_EVENT = 71
 LE_FRAME_TUTORIAL_PVP_TALENTS_FIRST_UNLOCK = 58
 LE_FRAME_TUTORIAL_PVP_WARMODE_UNLOCK = 59
 LE_FRAME_TUTORIAL_QUEST_SESSION = 69
+LE_FRAME_TUTORIAL_RAF_INTRO = 70
 LE_FRAME_TUTORIAL_REAGENT_BANK_UNLOCK = 17
 LE_FRAME_TUTORIAL_RELIC_FORGE_LEARN_TRAIT = 50
 LE_FRAME_TUTORIAL_RELIC_FORGE_PREVIEW_RELIC = 52

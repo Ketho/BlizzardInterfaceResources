@@ -747,6 +747,7 @@ local WidgetAPI = {
 			"OnTooltipSetUnit",
 		},
 		methods = {
+			"AddAtlas",
 			"AddDoubleLine",
 			"AddFontStrings",
 			"AddLine",
@@ -918,6 +919,7 @@ local WidgetAPI = {
 		inherits = {"Frame"},
 		handlers = {
 			"OnAnimFinished",
+			"OnAnimStarted",
 			"OnModelLoaded",
 		},
 		methods = {
@@ -1105,6 +1107,7 @@ local WidgetAPI = {
 			"SetCameraOrientationByAxisVectors",
 			"SetCameraOrientationByYawPitchRoll",
 			"SetCameraPosition",
+			"SetDesaturation",
 			"SetDrawLayer",
 			"SetFogColor",
 			"SetFogFar",
