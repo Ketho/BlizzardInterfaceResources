@@ -4,6 +4,7 @@ ignore = {
 	"113/LE_.*", --  Lua Enum
 	"113/NUM_LE_.*",
 }
+-- best is to just make your own list of globals manually instead
 globals = {
 	-- WoW Lua API and aliases
 	"abs",

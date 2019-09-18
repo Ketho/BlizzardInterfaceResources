@@ -133,6 +133,7 @@ local WidgetAPI = {
 			"GetWrappedWidth",
 			"IsTruncated",
 			"SetAlphaGradient",
+			"SetFixedColor",
 			"SetFormattedText",
 			"SetMaxLines",
 			"SetNonSpaceWrap",

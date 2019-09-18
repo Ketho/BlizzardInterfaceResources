@@ -26,8 +26,8 @@ Enum = {
 	},
 	BattlepayDisplayFlagMeta = {
 		MinValue = 1,
-		NumValues = 9,
-		MaxValue = 256,
+		NumValues = 11,
+		MaxValue = 1024,
 	},
 	BattlepayGroupDisplayTypeMeta = {
 		MinValue = 0,
@@ -419,6 +419,15 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 3,
 		NumValues = 4,
+	},
+	ClubFinderDisableReason = {
+		Muted = 0,
+		Silenced = 1,
+	},
+	ClubFinderDisableReasonMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
 	},
 	ClubFinderPostingReportType = {
 		PostersName = 0,
@@ -966,12 +975,15 @@ Enum = {
 		Logout = 24,
 		Empty = 25,
 		QuestNotCompleted = 26,
-		Unknown = 27,
+		Resync = 27,
+		Restricted = 28,
+		InPetBattle = 29,
+		Unknown = 30,
 	},
 	QuestSessionResultMeta = {
 		MinValue = 0,
-		MaxValue = 27,
-		NumValues = 28,
+		MaxValue = 30,
+		NumValues = 31,
 	},
 	QuestTag = {
 		Group = 1,
@@ -1025,11 +1037,11 @@ Enum = {
 	RafRewardType = {
 		Pet = 0,
 		Mount = 1,
-		Item = 2,
-		Appearance = 3,
-		Title = 4,
-		GameTime = 5,
-		AppearanceSet = 6,
+		Appearance = 2,
+		Title = 3,
+		GameTime = 4,
+		AppearanceSet = 5,
+		Illusion = 6,
 		Invalid = 7,
 	},
 	RafRewardTypeMeta = {
@@ -1089,22 +1101,6 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 6,
 		NumValues = 7,
-	},
-	StoreDeliveryType = {
-		Item = 0,
-		Mount = 1,
-		Battlepet = 2,
-		Toy = 3,
-		Appearance = 4,
-		AppearanceSet = 5,
-		GameTime = 6,
-		Title = 7,
-		Invalid = 8,
-	},
-	StoreDeliveryTypeMeta = {
-		MinValue = 0,
-		MaxValue = 8,
-		NumValues = 9,
 	},
 	StoreErrorMeta = {
 		MinValue = 0,
@@ -1262,11 +1258,12 @@ Enum = {
 		NameRussianConsecutiveSilentCharacters = 14,
 		NameRussianSilentCharacterAtBeginningOrEnd = 15,
 		NameDeclensionDoesntMatchBaseName = 16,
+		NameSpacesDisallowed = 17,
 	},
 	ValidateNameResultMeta = {
 		MinValue = 0,
-		MaxValue = 16,
-		NumValues = 17,
+		MaxValue = 17,
+		NumValues = 18,
 	},
 	VasErrorMeta = {
 		MinValue = 4,
@@ -1372,6 +1369,23 @@ Enum = {
 		MaxValue = 1,
 		NumValues = 2,
 	},
+	WoWEntitlementType = {
+		Item = 0,
+		Mount = 1,
+		Battlepet = 2,
+		Toy = 3,
+		Appearance = 4,
+		AppearanceSet = 5,
+		GameTime = 6,
+		Title = 7,
+		Illusion = 8,
+		Invalid = 9,
+	},
+	WoWEntitlementTypeMeta = {
+		MinValue = 0,
+		MaxValue = 9,
+		NumValues = 10,
+	},
 	ZoneAbilityType = {
 		Garrison = 0,
 		OrderHall = 1,
@@ -1459,7 +1473,8 @@ NUM_LE_EXPANSION_LEVELS = 7
 NUM_LE_FOLLOWER_ABILITY_CAST_RESULTS = 14
 NUM_LE_FOLLOWER_MISSION_COMPLETE_STATES = 4
 NUM_LE_FOLLOWER_TYPES = 23
-NUM_LE_FRAME_TUTORIALS = 71
+NUM_LE_FRAME_TUTORIALS = 75
+NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 1
 NUM_LE_GARRISON_TALENT_AVAILABILITYS = 8
 NUM_LE_GARRISON_TYPES = 10
 NUM_LE_GARR_FOLLOWER_QUALITYS = 7
@@ -1594,6 +1609,7 @@ LE_FOLLOWER_TYPE_GARRISON_6_0 = 1
 LE_FOLLOWER_TYPE_GARRISON_7_0 = 4
 LE_FOLLOWER_TYPE_GARRISON_8_0 = 22
 LE_FOLLOWER_TYPE_SHIPYARD_6_2 = 2
+LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
 LE_FRAME_TUTORIAL_ARTIFACT_APPEARANCE_TAB = 30
 LE_FRAME_TUTORIAL_ARTIFACT_KNOWLEDGE = 41
 LE_FRAME_TUTORIAL_ARTIFACT_KNOWLEDGE_LEVEL_LIMIT = 27
@@ -1611,6 +1627,11 @@ LE_FRAME_TUTORIAL_BOUNTY_INTRO = 32
 LE_FRAME_TUTORIAL_BRAWL = 49
 LE_FRAME_TUTORIAL_CHAT_CHANNELS = 65
 LE_FRAME_TUTORIAL_CLEAN_UP_BAGS = 15
+LE_FRAME_TUTORIAL_CLUB_FINDER_LINKING = 74
+LE_FRAME_TUTORIAL_CLUB_FINDER_NEW_APPLICANTS_GUILD_LEADER = 73
+LE_FRAME_TUTORIAL_CLUB_FINDER_NEW_COMMUNITY_LEADER = 72
+LE_FRAME_TUTORIAL_CLUB_FINDER_NEW_FEATURE = 70
+LE_FRAME_TUTORIAL_CLUB_FINDER_NEW_GUILD_LEADER = 71
 LE_FRAME_TUTORIAL_CORE_ABILITITES = 6
 LE_FRAME_TUTORIAL_FRIENDS_LIST_QUICK_JOIN = 45
 LE_FRAME_TUTORIAL_GAME_TIME_AUCTION_HOUSE = 25
@@ -1634,11 +1655,10 @@ LE_FRAME_TUTORIAL_LFG_LIST = 20
 LE_FRAME_TUTORIAL_MOUNT_EQUIPMENT_SLOT_FRAME = 68
 LE_FRAME_TUTORIAL_PET_JOURNAL = 7
 LE_FRAME_TUTORIAL_PROFESSIONS = 5
-LE_FRAME_TUTORIAL_PVP_SPECIAL_EVENT = 71
+LE_FRAME_TUTORIAL_PVP_SPECIAL_EVENT = 75
 LE_FRAME_TUTORIAL_PVP_TALENTS_FIRST_UNLOCK = 58
 LE_FRAME_TUTORIAL_PVP_WARMODE_UNLOCK = 59
 LE_FRAME_TUTORIAL_QUEST_SESSION = 69
-LE_FRAME_TUTORIAL_RAF_INTRO = 70
 LE_FRAME_TUTORIAL_REAGENT_BANK_UNLOCK = 17
 LE_FRAME_TUTORIAL_RELIC_FORGE_LEARN_TRAIT = 50
 LE_FRAME_TUTORIAL_RELIC_FORGE_PREVIEW_RELIC = 52
