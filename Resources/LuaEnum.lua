@@ -19,10 +19,15 @@ Enum = {
 		MaxValue = 2,
 		NumValues = 3,
 	},
+	BattlepayCardTypeMeta = {
+		MinValue = 0,
+		MaxValue = 7,
+		NumValues = 8,
+	},
 	BattlepayDisplayFlagMeta = {
 		MinValue = 1,
-		NumValues = 8,
-		MaxValue = 128,
+		NumValues = 11,
+		MaxValue = 1024,
 	},
 	BattlepayGroupDisplayTypeMeta = {
 		MinValue = 0,
@@ -40,8 +45,8 @@ Enum = {
 		MaxValue = 16,
 	},
 	BattlepaySpecialProductsMeta = {
-		MinValue = 0,
 		NumValues = 1,
+		MinValue = 12,
 		MaxValue = 12,
 	},
 	BrawlType = {
@@ -51,6 +56,112 @@ Enum = {
 		Lfg = 3,
 	},
 	BrawlTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	CalendarCommandType = {
+		CalendarCommandCreate = 0,
+		CalendarCommandInvite = 1,
+		CalendarCommandRsvp = 2,
+		CalendarCommandRemoveInvite = 3,
+		CalendarCommandRemoveEvent = 4,
+		CalendarCommandStatus = 5,
+		CalendarCommandModeratorStatus = 6,
+		CalendarCommandGetCalendar = 7,
+		CalendarCommandGetEvent = 8,
+		CalendarCommandUpdateEvent = 9,
+		CalendarCommandComplain = 10,
+		CalendarCommandNotes = 11,
+	},
+	CalendarCommandTypeMeta = {
+		MinValue = 0,
+		MaxValue = 11,
+		NumValues = 12,
+	},
+	CalendarErrorType = {
+		CalendarErrorSuccess = 0,
+		CalendarErrorCommunityEventsExceeded = 1,
+		CalendarErrorEventsExceeded = 2,
+		CalendarErrorSelfInvitesExceeded = 3,
+		CalendarErrorOtherInvitesExceeded = 4,
+		CalendarErrorNoPermission = 5,
+		CalendarErrorEventInvalid = 6,
+		CalendarErrorNotInvited = 7,
+		CalendarErrorUnknownError = 8,
+		CalendarErrorNotInGuild = 9,
+		CalendarErrorNotInCommunity = 10,
+		CalendarErrorTargetAlreadyInvited = 11,
+		CalendarErrorNameNotFound = 12,
+		CalendarErrorWrongFaction = 13,
+		CalendarErrorIgnored = 14,
+		CalendarErrorInvitesExceeded = 15,
+		CalendarErrorInvalidMaxSize = 16,
+		CalendarErrorInvalidDate = 17,
+		CalendarErrorInvalidTime = 18,
+		CalendarErrorNoInvites = 19,
+		CalendarErrorNeedsTitle = 20,
+		CalendarErrorEventPassed = 21,
+		CalendarErrorEventLocked = 22,
+		CalendarErrorDeleteCreatorFailed = 23,
+		CalendarErrorDataAlreadySet = 24,
+		CalendarErrorCalendarDisabled = 25,
+		CalendarErrorRestrictedAccount = 26,
+		CalendarErrorArenaEventsExceeded = 27,
+		CalendarErrorRestrictedLevel = 28,
+		CalendarErrorSquelched = 29,
+		CalendarErrorNoInvite = 30,
+		CalendarErrorComplaintDisabled = 31,
+		CalendarErrorComplaintSelf = 32,
+		CalendarErrorComplaintSameGuild = 33,
+		CalendarErrorComplaintGm = 34,
+		CalendarErrorComplaintLimit = 35,
+		CalendarErrorComplaintNotFound = 36,
+		CalendarErrorEventWrongServer = 37,
+		CalendarErrorNoCommunityInvites = 38,
+		CalendarErrorInvalidSignup = 39,
+		CalendarErrorNoModerator = 40,
+		CalendarErrorModeratorRestricted = 41,
+		CalendarErrorInvalidNotes = 42,
+		CalendarErrorInvalidTitle = 43,
+		CalendarErrorInvalidDescription = 44,
+		CalendarErrorInvalidClub = 45,
+		CalendarErrorCreatorNotFound = 46,
+	},
+	CalendarErrorTypeMeta = {
+		MinValue = 0,
+		MaxValue = 46,
+		NumValues = 47,
+	},
+	CalendarEventBits = {
+		CalendarEventBitPlayer = 1,
+		CalendarEventBitGuildDeprecated = 2,
+		CalendarEventBitSystem = 4,
+		CalendarEventBitHoliday = 8,
+		CalendarEventBitLocked = 16,
+		CalendarEventBitAutoApprove = 32,
+		CalendarEventBitCommunityAnnouncement = 64,
+		CalendarEventBitRaidLockout = 128,
+		CalendarEventBitArenaDeprecated = 256,
+		CalendarEventBitRaidResetDeprecated = 512,
+		CalendarEventBitCommunitySignup = 1024,
+		CalendarEventBitGuildSignup = 2048,
+		CommunityWide = 3136,
+		PlayerCreated = 3395,
+		CantComplain = 3788,
+	},
+	CalendarEventBitsMeta = {
+		MinValue = 1,
+		NumValues = 15,
+		MaxValue = 3788,
+	},
+	CalendarEventRepeatOptions = {
+		CalendarRepeatNever = 0,
+		CalendarRepeatWeekly = 1,
+		CalendarRepeatBiweekly = 2,
+		CalendarRepeatMonthly = 3,
+	},
+	CalendarEventRepeatOptionsMeta = {
 		MinValue = 0,
 		MaxValue = 3,
 		NumValues = 4,
@@ -67,6 +178,117 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 5,
 		NumValues = 6,
+	},
+	CalendarFilterFlags = {
+		WeeklyHoliday = 1,
+		Darkmoon = 2,
+		Battleground = 4,
+		RaidLockout = 8,
+		RaidReset = 16,
+	},
+	CalendarFilterFlagsMeta = {
+		MinValue = 1,
+		NumValues = 5,
+		MaxValue = 16,
+	},
+	CalendarGetEventType = {
+		Get = 0,
+		Add = 1,
+		Copy = 2,
+		DefaultCalendarGetEventType = 3,
+	},
+	CalendarGetEventTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	CalendarInviteBits = {
+		CalendarInviteBitPendingInvite = 1,
+		CalendarInviteBitModerator = 2,
+		CalendarInviteBitCreator = 4,
+		CalendarInviteBitSignup = 8,
+	},
+	CalendarInviteBitsMeta = {
+		MinValue = 1,
+		NumValues = 4,
+		MaxValue = 8,
+	},
+	CalendarInviteSortType = {
+		CalendarInviteSortName = 0,
+		CalendarInviteSortLevel = 1,
+		CalendarInviteSortClass = 2,
+		CalendarInviteSortStatus = 3,
+		CalendarInviteSortParty = 4,
+		CalendarInviteSortNotes = 5,
+	},
+	CalendarInviteSortTypeMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
+	},
+	CalendarInviteType = {
+		Normal = 0,
+		Signup = 1,
+	},
+	CalendarInviteTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
+	CalendarModeratorStatus = {
+		CalendarModeratorNone = 0,
+		CalendarModeratorModerator = 1,
+		CalendarModeratorCreator = 2,
+	},
+	CalendarModeratorStatusMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
+	},
+	CalendarStatus = {
+		Invited = 0,
+		Available = 1,
+		Declined = 2,
+		Confirmed = 3,
+		Out = 4,
+		Standby = 5,
+		Signedup = 6,
+		NotSignedup = 7,
+		Tentative = 8,
+	},
+	CalendarStatusMeta = {
+		MinValue = 0,
+		MaxValue = 8,
+		NumValues = 9,
+	},
+	CalendarType = {
+		Player = 0,
+		Community = 1,
+		RaidLockout = 2,
+		RaidResetDeprecated = 3,
+		Holiday = 4,
+		HolidayWeekly = 5,
+		HolidayDarkmoon = 6,
+		HolidayBattleground = 7,
+	},
+	CalendarTypeMeta = {
+		MinValue = 0,
+		MaxValue = 7,
+		NumValues = 8,
+	},
+	CalendarWebActionType = {
+		Accept = 0,
+		Decline = 1,
+		Remove = 2,
+		ReportSpam = 3,
+		Signup = 4,
+		Tentative = 5,
+		TentativeSignup = 6,
+	},
+	CalendarWebActionTypeMeta = {
+		MinValue = 0,
+		MaxValue = 6,
+		NumValues = 7,
 	},
 	CaptureBarWidgetGlowAnimType = {
 		None = 0,
@@ -198,15 +420,26 @@ Enum = {
 		MaxValue = 3,
 		NumValues = 4,
 	},
-	ClubFinderReportType = {
-		Any = 0,
-		InapropriateName = 1,
-		InapropriateComment = 2,
+	ClubFinderDisableReason = {
+		Muted = 0,
+		Silenced = 1,
 	},
-	ClubFinderReportTypeMeta = {
+	ClubFinderDisableReasonMeta = {
 		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
+		MaxValue = 1,
+		NumValues = 2,
+	},
+	ClubFinderPostingReportType = {
+		PostersName = 0,
+		ClubName = 1,
+		PostingDescription = 2,
+		ApplicantsName = 3,
+		JoinNote = 4,
+	},
+	ClubFinderPostingReportTypeMeta = {
+		MinValue = 0,
+		MaxValue = 4,
+		NumValues = 5,
 	},
 	ClubFinderRequestType = {
 		None = 0,
@@ -238,11 +471,14 @@ Enum = {
 		FactionHorde = 15,
 		FactionAlliance = 16,
 		FactionNeutral = 17,
+		SortRelevance = 18,
+		SortMemberCount = 19,
+		SortNewest = 20,
 	},
 	ClubFinderSettingFlagsMeta = {
 		MinValue = 0,
-		MaxValue = 17,
-		NumValues = 18,
+		MaxValue = 20,
+		NumValues = 21,
 	},
 	ClubInvitationCandidateStatus = {
 		Available = 0,
@@ -294,7 +530,7 @@ Enum = {
 		Member = 4,
 	},
 	ClubRoleIdentifierMeta = {
-		MinValue = 0,
+		MinValue = 1,
 		NumValues = 4,
 		MaxValue = 4,
 	},
@@ -340,21 +576,22 @@ Enum = {
 		NumValues = 2,
 	},
 	ConsoleCategory = {
-		CategoryDebug = 0,
-		CategoryGraphics = 1,
-		CategoryConsole = 2,
-		CategoryCombat = 3,
-		CategoryGame = 4,
-		CategoryDefault = 5,
-		CategoryNet = 6,
-		CategorySound = 7,
-		CategoryGm = 8,
-		CategoryNone = 9,
+		Debug = 0,
+		Graphics = 1,
+		Console = 2,
+		Combat = 3,
+		Game = 4,
+		Default = 5,
+		Net = 6,
+		Sound = 7,
+		Gm = 8,
+		Reveal = 9,
+		None = 10,
 	},
 	ConsoleCategoryMeta = {
 		MinValue = 0,
-		MaxValue = 9,
-		NumValues = 10,
+		MaxValue = 10,
+		NumValues = 11,
 	},
 	ConsoleColorType = {
 		DefaultColor = 0,
@@ -599,29 +836,6 @@ Enum = {
 		MaxValue = 4,
 		NumValues = 5,
 	},
-	PerfActivity = {
-		ActivityWorldLink = 6,
-		ActivityModelRender = 11,
-		ActivityAnimate = 15,
-		ActivitySwap = 37,
-		ActivityUnit = 46,
-		ActivityEventnet = 54,
-	},
-	PerfActivityMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
-	PerfCounter = {
-		PerfCountUnits = 3,
-		PerfCountPrimitiveCount = 17,
-		PerfCountBatchCount = 22,
-	},
-	PerfCounterMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
 	PetJournalError = {
 		None = 0,
 		PetIsDead = 1,
@@ -679,6 +893,11 @@ Enum = {
 		MaxValue = 19,
 		NumValues = 22,
 	},
+	PurchaseEligibilityMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
+	},
 	PvpMatchState = {
 		Inactive = 0,
 		Active = 1,
@@ -717,6 +936,56 @@ Enum = {
 		MaxValue = 2,
 		NumValues = 3,
 	},
+	QuestSessionCommand = {
+		None = 0,
+		Start = 1,
+		Stop = 2,
+		SessionActiveNoCommand = 3,
+	},
+	QuestSessionCommandMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	QuestSessionResult = {
+		Ok = 0,
+		NotInParty = 1,
+		InvalidOwner = 2,
+		AlreadyActive = 3,
+		NotActive = 4,
+		InRaid = 5,
+		OwnerRefused = 6,
+		Timeout = 7,
+		Disabled = 8,
+		Started = 9,
+		Stopped = 10,
+		Joined = 11,
+		Left = 12,
+		OwnerLeft = 13,
+		ReadyCheckFailed = 14,
+		PartyDestroyed = 15,
+		MemberTimeout = 16,
+		AlreadyMember = 17,
+		NotOwner = 18,
+		AlreadyOwner = 19,
+		AlreadyJoined = 20,
+		NotMember = 21,
+		Busy = 22,
+		JoinRejected = 23,
+		Logout = 24,
+		Empty = 25,
+		QuestNotCompleted = 26,
+		Resync = 27,
+		Restricted = 28,
+		InPetBattle = 29,
+		InvalidPublicParty = 30,
+		Unknown = 31,
+	},
+	QuestSessionResultMeta = {
+		MinValue = 0,
+		MaxValue = 31,
+		NumValues = 32,
+	},
 	QuestTag = {
 		Group = 1,
 		Pvp = 41,
@@ -731,9 +1000,55 @@ Enum = {
 		CombatAlly = 266,
 	},
 	QuestTagMeta = {
-		MinValue = 0,
+		MinValue = 1,
 		NumValues = 11,
 		MaxValue = 266,
+	},
+	RafLinkType = {
+		None = 0,
+		Recruit = 1,
+		Friend = 2,
+		Both = 3,
+	},
+	RafLinkTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	RafRecruitActivityState = {
+		Incomplete = 0,
+		Complete = 1,
+		RewardClaimed = 2,
+	},
+	RafRecruitActivityStateMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
+	},
+	RafRecruitSubStatus = {
+		Trial = 0,
+		Active = 1,
+		Inactive = 2,
+	},
+	RafRecruitSubStatusMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
+	},
+	RafRewardType = {
+		Pet = 0,
+		Mount = 1,
+		Appearance = 2,
+		Title = 3,
+		GameTime = 4,
+		AppearanceSet = 5,
+		Illusion = 6,
+		Invalid = 7,
+	},
+	RafRewardTypeMeta = {
+		MinValue = 0,
+		MaxValue = 7,
+		NumValues = 8,
 	},
 	SelfResurrectOptionType = {
 		Spell = 0,
@@ -788,18 +1103,6 @@ Enum = {
 		MaxValue = 6,
 		NumValues = 7,
 	},
-	StoreDeliveryType = {
-		Item = 0,
-		Mount = 1,
-		Battlepet = 2,
-		Toy = 3,
-		Collection = 4,
-	},
-	StoreDeliveryTypeMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
-	},
 	StoreErrorMeta = {
 		MinValue = 0,
 		MaxValue = 11,
@@ -849,6 +1152,17 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 1,
 		NumValues = 2,
+	},
+	TrackedSpellCategory = {
+		Offensive = 0,
+		Defensive = 1,
+		Debuff = 2,
+		Count = 3,
+	},
+	TrackedSpellCategoryMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
 	},
 	TransmogSource = {
 		None = 0,
@@ -920,11 +1234,12 @@ Enum = {
 		DoubleStateIconRow = 14,
 		TextureAndTextRow = 15,
 		ZoneControl = 16,
+		CaptureZone = 17,
 	},
 	UIWidgetVisualizationTypeMeta = {
 		MinValue = 0,
-		MaxValue = 16,
-		NumValues = 17,
+		MaxValue = 17,
+		NumValues = 18,
 	},
 	ValidateNameResult = {
 		NameSuccess = 0,
@@ -944,14 +1259,15 @@ Enum = {
 		NameRussianConsecutiveSilentCharacters = 14,
 		NameRussianSilentCharacterAtBeginningOrEnd = 15,
 		NameDeclensionDoesntMatchBaseName = 16,
+		NameSpacesDisallowed = 17,
 	},
 	ValidateNameResultMeta = {
 		MinValue = 0,
-		MaxValue = 16,
-		NumValues = 17,
+		MaxValue = 17,
+		NumValues = 18,
 	},
 	VasErrorMeta = {
-		MinValue = 0,
+		MinValue = 4,
 		NumValues = 39,
 		MaxValue = 20086,
 	},
@@ -1054,6 +1370,23 @@ Enum = {
 		MaxValue = 1,
 		NumValues = 2,
 	},
+	WoWEntitlementType = {
+		Item = 0,
+		Mount = 1,
+		Battlepet = 2,
+		Toy = 3,
+		Appearance = 4,
+		AppearanceSet = 5,
+		GameTime = 6,
+		Title = 7,
+		Illusion = 8,
+		Invalid = 9,
+	},
+	WoWEntitlementTypeMeta = {
+		MinValue = 0,
+		MaxValue = 9,
+		NumValues = 10,
+	},
 	ZoneAbilityType = {
 		Garrison = 0,
 		OrderHall = 1,
@@ -1141,7 +1474,8 @@ NUM_LE_EXPANSION_LEVELS = 7
 NUM_LE_FOLLOWER_ABILITY_CAST_RESULTS = 14
 NUM_LE_FOLLOWER_MISSION_COMPLETE_STATES = 4
 NUM_LE_FOLLOWER_TYPES = 23
-NUM_LE_FRAME_TUTORIALS = 68
+NUM_LE_FRAME_TUTORIALS = 74
+NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 2
 NUM_LE_GARRISON_TALENT_AVAILABILITYS = 8
 NUM_LE_GARRISON_TYPES = 10
 NUM_LE_GARR_FOLLOWER_QUALITYS = 7
@@ -1276,6 +1610,8 @@ LE_FOLLOWER_TYPE_GARRISON_6_0 = 1
 LE_FOLLOWER_TYPE_GARRISON_7_0 = 4
 LE_FOLLOWER_TYPE_GARRISON_8_0 = 22
 LE_FOLLOWER_TYPE_SHIPYARD_6_2 = 2
+LE_FRAME_TUTORIAL_ACCCOUNT_CLUB_FINDER_NEW_FEATURE = 2
+LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
 LE_FRAME_TUTORIAL_ARTIFACT_APPEARANCE_TAB = 30
 LE_FRAME_TUTORIAL_ARTIFACT_KNOWLEDGE = 41
 LE_FRAME_TUTORIAL_ARTIFACT_KNOWLEDGE_LEVEL_LIMIT = 27
@@ -1293,6 +1629,10 @@ LE_FRAME_TUTORIAL_BOUNTY_INTRO = 32
 LE_FRAME_TUTORIAL_BRAWL = 49
 LE_FRAME_TUTORIAL_CHAT_CHANNELS = 65
 LE_FRAME_TUTORIAL_CLEAN_UP_BAGS = 15
+LE_FRAME_TUTORIAL_CLUB_FINDER_LINKING = 73
+LE_FRAME_TUTORIAL_CLUB_FINDER_NEW_APPLICANTS_GUILD_LEADER = 72
+LE_FRAME_TUTORIAL_CLUB_FINDER_NEW_COMMUNITY_LEADER = 71
+LE_FRAME_TUTORIAL_CLUB_FINDER_NEW_GUILD_LEADER = 70
 LE_FRAME_TUTORIAL_CORE_ABILITITES = 6
 LE_FRAME_TUTORIAL_FRIENDS_LIST_QUICK_JOIN = 45
 LE_FRAME_TUTORIAL_GAME_TIME_AUCTION_HOUSE = 25
@@ -1316,8 +1656,10 @@ LE_FRAME_TUTORIAL_LFG_LIST = 20
 LE_FRAME_TUTORIAL_MOUNT_EQUIPMENT_SLOT_FRAME = 68
 LE_FRAME_TUTORIAL_PET_JOURNAL = 7
 LE_FRAME_TUTORIAL_PROFESSIONS = 5
+LE_FRAME_TUTORIAL_PVP_SPECIAL_EVENT = 74
 LE_FRAME_TUTORIAL_PVP_TALENTS_FIRST_UNLOCK = 58
 LE_FRAME_TUTORIAL_PVP_WARMODE_UNLOCK = 59
+LE_FRAME_TUTORIAL_QUEST_SESSION = 69
 LE_FRAME_TUTORIAL_REAGENT_BANK_UNLOCK = 17
 LE_FRAME_TUTORIAL_RELIC_FORGE_LEARN_TRAIT = 50
 LE_FRAME_TUTORIAL_RELIC_FORGE_PREVIEW_RELIC = 52
