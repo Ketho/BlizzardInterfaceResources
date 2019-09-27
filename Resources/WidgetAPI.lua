@@ -1304,10 +1304,8 @@ local WidgetAPI = {
 		inherits = {"Object"},
 		handlers = {
 			"OnAnimFinished",
-			"OnLoad",
 			"OnModelLoaded",
 			"OnModelLoading",
-			"OnUpdate",
 		},
 		methods = {
 			"AttachToMount",
