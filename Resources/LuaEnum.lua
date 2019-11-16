@@ -420,6 +420,22 @@ Enum = {
 		MaxValue = 3,
 		NumValues = 4,
 	},
+	ClubFinderClubPostingStatusFlags = {
+		None = 0,
+		NeedsCacheUpdate = 1,
+		ForceDescriptionChange = 2,
+		ForceNameChange = 3,
+		UnderReview = 4,
+		Banned = 5,
+		FakePost = 6,
+		PendingDelete = 7,
+		PostDelisted = 8,
+	},
+	ClubFinderClubPostingStatusFlagsMeta = {
+		MinValue = 0,
+		MaxValue = 8,
+		NumValues = 9,
+	},
 	ClubFinderDisableReason = {
 		Muted = 0,
 		Silenced = 1,
@@ -1535,10 +1551,10 @@ LE_EXPANSION_WRATH_OF_THE_LICH_KING = 2
 LE_EXPANSION_CATACLYSM = 3
 LE_EXPANSION_MISTS_OF_PANDARIA = 4
 LE_EXPANSION_WARLORDS_OF_DRAENOR = 5
-LE_EXPANSION_LEVEL_PREVIOUS = 6
 LE_EXPANSION_LEGION = 6
-LE_EXPANSION_LEVEL_CURRENT = 7
+LE_EXPANSION_LEVEL_PREVIOUS = 6
 LE_EXPANSION_BATTLE_FOR_AZEROTH = 7
+LE_EXPANSION_LEVEL_CURRENT = 7
 LE_EXPANSION_9_0 = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10

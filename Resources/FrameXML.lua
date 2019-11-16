@@ -6237,6 +6237,7 @@ local FrameXML = {
 	"ToggleChatMessageGroup",
 	"ToggleCollectionsJournal",
 	"ToggleCommunitiesFrame",
+	"ToggleCommunityFinder",
 	"ToggleDropDownMenu",
 	"ToggleEncounterJournal",
 	"ToggleFrame",
