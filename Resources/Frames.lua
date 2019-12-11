@@ -142,6 +142,8 @@ local Frames = {
 	"ItemRefTooltip",
 	"ItemTextFrame",
 	"KeyBindingFrame",
+	"KioskFrame",
+	"KioskSessionFinishedDialog",
 	"LootFrame",
 	"LootHistoryDropDown",
 	"LootHistoryFrame",
