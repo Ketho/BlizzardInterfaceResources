@@ -2143,6 +2143,7 @@ local GlobalAPI = {
 	"ConfirmLootSlot",
 	"ConfirmNoRefundOnUse",
 	"ConfirmOnUse",
+	"ConfirmPostAuction",
 	"ConfirmReadyCheck",
 	"ConfirmTalentWipe",
 	"ConsoleAddMessage",
@@ -4406,4 +4407,4 @@ local LuaAPI = {
 	"xpcall",
 }
 
-return GlobalAPI, LuaAPI
+return {GlobalAPI, LuaAPI}

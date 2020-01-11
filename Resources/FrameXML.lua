@@ -1742,6 +1742,7 @@ local FrameXML = {
 	"CompactUnitFrame_Util_IsPriorityDebuff",
 	"CompactUnitFrame_Util_ShouldDisplayDebuff",
 	"ComputePetBonus",
+	"ConfirmAuctionPosting",
 	"ConfirmOrLeaveBattlefield",
 	"ConfirmOrLeaveLFGParty",
 	"ConfirmSummon",

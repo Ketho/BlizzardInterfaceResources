@@ -1,8 +1,5 @@
 -- atlas = width, height, leftTexCoord, rightTexCoord, topTexCoord, bottomTexCoord, tilesHorizontally, tilesVertically
 local AtlasInfo = {
-	["3070199"] = { -- 3070199
-		["shop-card-full-blizzconvirtualticket"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
 	["interface/adventuremap/adventuremap"] = { -- 1251991
 		["AdventureMapLabel-Large"] = {455, 63, 0.345703125, 0.7900390625, 0.3037109375, 0.365234375, false, false},
 		["AdventureMapLabel-Small"] = {181, 39, 0.7919921875, 0.96875, 0.3037109375, 0.341796875, false, false},
@@ -5513,6 +5510,9 @@ local AtlasInfo = {
 	},
 	["interface/store/shopcard15thanniversary"] = { -- 3032792
 		["shop-card-full-15thAnniversary"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopcardblizzcon2019virtualticket"] = { -- 3070199
+		["shop-card-full-blizzconvirtualticket"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
 	},
 	["interface/store/shopfeatured"] = { -- 2923780
 		["store-card-splash1-nobanner"] = {576, 471, 0.0009765625, 0.5634765625, 0.001953125, 0.921875, false, false},
