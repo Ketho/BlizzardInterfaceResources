@@ -5915,6 +5915,7 @@ local FrameXML = {
 	"SplashFrameStartButton_OnClick",
 	"SplashFrame_Close",
 	"SplashFrame_Display",
+	"SplashFrame_GetShowTag",
 	"SplashFrame_OnEvent",
 	"SplashFrame_OnHide",
 	"SplashFrame_OnLoad",
