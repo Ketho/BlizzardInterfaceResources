@@ -263,6 +263,7 @@ local GlobalAPI = {
 	"C_AuctionHouse.HasSearchResults",
 	"C_AuctionHouse.IsFavoriteItem",
 	"C_AuctionHouse.IsSellItemValid",
+	"C_AuctionHouse.IsThrottledMessageSystemReady",
 	"C_AuctionHouse.MakeItemKey",
 	"C_AuctionHouse.PlaceBid",
 	"C_AuctionHouse.PostCommodity",
