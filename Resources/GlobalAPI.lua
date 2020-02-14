@@ -1593,6 +1593,7 @@ local GlobalAPI = {
 	"C_QuestLog.IsQuestReplayedRecently",
 	"C_QuestLog.IsQuestTrivial",
 	"C_QuestLog.IsThreatQuest",
+	"C_QuestLog.QuestCanHaveWarModeBonus",
 	"C_QuestLog.QuestHasQuestSessionBonus",
 	"C_QuestLog.QuestHasWarModeBonus",
 	"C_QuestLog.RequestLoadQuestByID",
