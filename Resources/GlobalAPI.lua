@@ -2331,7 +2331,6 @@ local LuaAPI = {
 	"string.match",
 	"string.rep",
 	"string.reverse",
-	"string.rtgsub",
 	"string.split",
 	"string.sub",
 	"string.trim",
