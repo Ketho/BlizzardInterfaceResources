@@ -49,6 +49,7 @@ local Frames = {
 	"ChatFrame1EditBox",
 	"ChatFrame2",
 	"ChatFrame2EditBox",
+	"ChatFrame2Tab",
 	"ChatFrame3",
 	"ChatFrame3EditBox",
 	"ChatFrame3Tab",
@@ -305,7 +306,7 @@ local Frames = {
 	"ZoneTextFrame",
 }
 
-local LodFrames = {
+local LoadOnDemand = {
 	"AchievementFrame",
 	"AchievementFrameAchievementsObjectives",
 	"AchievementFrameAchievementsObjectivesOffScreen",
@@ -434,4 +435,4 @@ local LodFrames = {
 	"WarfrontsPartyPoseFrame",
 }
 
-return {Frames, LodFrames}
+return {Frames, LoadOnDemand}

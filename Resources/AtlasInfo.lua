@@ -1,3 +1,4 @@
+-- see also https://wow.gamepedia.com/API_C_Texture.GetAtlasInfo
 -- atlas = width, height, leftTexCoord, rightTexCoord, topTexCoord, bottomTexCoord, tilesHorizontally, tilesVertically
 local AtlasInfo = {
 	["interface/adventuremap/adventuremap"] = { -- 1251991

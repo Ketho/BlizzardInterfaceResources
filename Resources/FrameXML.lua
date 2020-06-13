@@ -4587,7 +4587,7 @@ local FrameXML = {
 	"tostringall",
 }
 
-local LodFrameXML = {
+local LoadOnDemand = {
 	"ACHIEVEMENTUI_SELECTEDFILTER",
 	"AcheivementFullSearchResultsButton_OnClick",
 	"AchievementButton_Collapse",
@@ -6789,4 +6789,4 @@ local LodFrameXML = {
 	"subclassOf",
 }
 
-return {FrameXML, LodFrameXML}
+return {FrameXML, LoadOnDemand}
