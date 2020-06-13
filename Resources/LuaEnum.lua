@@ -19,11 +19,6 @@ Enum = {
 		NumValues = 5,
 		MaxValue = 16,
 	},
-	BattlepaySpecialProductsMeta = {
-		MinValue = 0,
-		NumValues = 1,
-		MaxValue = 12,
-	},
 	BrawlType = {
 		None = 0,
 		Battleground = 1,
@@ -666,7 +661,7 @@ Enum = {
 	},
 	VasErrorMeta = {
 		MinValue = 0,
-		NumValues = 32,
+		NumValues = 33,
 		MaxValue = 20087,
 	},
 	VasPurchaseProgress = {
