@@ -2555,6 +2555,7 @@ local GlobalAPI = {
 	"GetArchaeologyRaceInfo",
 	"GetArchaeologyRaceInfoByID",
 	"GetAreaSpiritHealerTime",
+	"GetAreaText",
 	"GetArenaOpponentSpec",
 	"GetArtifactInfoByRace",
 	"GetArtifactProgress",

@@ -641,6 +641,7 @@ local CVars = {
 		["mouseInvertPitch"] = {"0", true, false, ""},
 		["mouseInvertYaw"] = {"0", true, false, ""},
 		["mouseSpeed"] = {"1.0", false, false, ""},
+		["MouseUseLazyRepositioning"] = {"1", false, false, "During camera control, only reposition mouse cursor when nearing edge of window, rather than every input event"},
 		["MoveHistoryEventLog"] = {"0", false, false, ""},
 		["movieSubtitle"] = {"0", false, false, "Show movie subtitles"},
 		["MSAAAlphaTest"] = {"1", false, false, "Enable MSAA for alpha-tested geometry"},
