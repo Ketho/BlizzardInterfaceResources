@@ -4,6 +4,6 @@ Global resources extracted from World of Warcraft for development purposes.
 * Dumped from the [KethoDoc](https://github.com/Ketho/KethoDoc) addon
 * [GlobalStrings](https://wow.tools/dbc/?dbc=globalstrings) are parsed with [WoWtoolsParser](https://github.com/Ketho/WoWtoolsParser)
 ```lua
-GetBuildInfo() => "9.0.1", "36230", "Oct 13 2020", 90001
+GetBuildInfo() => "9.0.2", "36665", "Nov 17 2020", 90002
 ```
 ![](https://raw.githubusercontent.com/Ketho/BlizzardInterfaceResources/live/Resources/WidgetHierarchy.png)

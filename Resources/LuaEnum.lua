@@ -1,4 +1,15 @@
 Enum = {
+	AddSoulbindConduitReason = {
+		None = 0,
+		Cheat = 1,
+		SpellEffect = 2,
+		Upgrade = 3,
+	},
+	AddSoulbindConduitReasonMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
 	AnimaDiversionNodeState = {
 		Unavailable = 0,
 		Available = 1,
@@ -868,11 +879,12 @@ Enum = {
 	CovenantAbilityType = {
 		Class = 0,
 		Signature = 1,
+		Soulbind = 2,
 	},
 	CovenantAbilityTypeMeta = {
 		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	CovenantType = {
 		None = 0,
@@ -885,6 +897,150 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 4,
 		NumValues = 5,
+	},
+	CurrencyDestroyReason = {
+		Cheat = 0,
+		Spell = 1,
+		VersionUpdate = 2,
+		QuestTurnin = 3,
+		Vendor = 4,
+		Trade = 5,
+		Capped = 6,
+		Garrison = 7,
+		DroppedToCorpse = 8,
+		BonusRoll = 9,
+		FactionConversion = 10,
+		Last = 11,
+	},
+	CurrencyDestroyReasonMeta = {
+		MinValue = 0,
+		MaxValue = 11,
+		NumValues = 12,
+	},
+	CurrencyFlags = {
+		DeprecatedCurrencyFlag = 0x80000000,
+		CurrencyTradable = 0x1,
+		CurrencyAppearsInLootWindow = 0x2,
+		CurrencyComputedWeeklyMaximum = 0x4,
+		Currency_100_Scaler = 0x8,
+		CurrencyNoLowLevelDrop = 0x10,
+		CurrencyIgnoreMaxQtyOnLoad = 0x20,
+		CurrencyLogOnWorldChange = 0x40,
+		CurrencyTrackQuantity = 0x80,
+		CurrencyResetTrackedQuantity = 0x100,
+		CurrencyUpdateVersionIgnoreMax = 0x200,
+		CurrencySuppressChatMessageOnVersionChange = 0x400,
+		CurrencySingleDropInLoot = 0x800,
+		CurrencyHasWeeklyCatchup = 0x1000,
+		CurrencyDoNotCompressChat = 0x2000,
+		CurrencyDoNotLogAcquisitionToBi = 0x4000,
+		CurrencyNoRaidDrop = 0x8000,
+		CurrencyNotPersistent = 0x10000,
+		CurrencyDeprecated = 0x20000,
+		CurrencyDynamicMaximum = 0x40000,
+		CurrencySuppressChatMessages = 0x80000,
+		CurrencyDoNotToast = 0x100000,
+		CurrencyDestroyExtraOnLoot = 0x200000,
+		CurrencyDontShowTotalInTooltip = 0x400000,
+		CurrencyDontCoalesceInLootWindow = 0x800000,
+		CurrencyAccountWide = 0x1000000,
+		CurrencyAllowOverflowMailer = 0x2000000,
+		CurrencyHideAsReward = 0x4000000,
+		CurrencyHasWarmodeBonus = 0x8000000,
+		CurrencyIsAllianceOnly = 0x10000000,
+		CurrencyIsHordeOnly = 0x20000000,
+		CurrencyLimitWarmodeBonusOncePerTooltip = 0x40000000,
+	},
+	CurrencyFlagsB = {
+		CurrencyBUseTotalEarnedForMaxQty = 1,
+		CurrencyBShowQuestXpGainInTooltip = 2,
+	},
+	CurrencyFlagsBMeta = {
+		MinValue = 1,
+		NumValues = 2,
+		MaxValue = 2,
+	},
+	CurrencyFlagsMeta = {
+		MinValue = -2147483648,
+		NumValues = 32,
+		MaxValue = 1073741824,
+	},
+	CurrencyGainFlags = {
+		BonusAward = 1,
+		DroppedFromDeath = 2,
+		FromAccountServer = 4,
+	},
+	CurrencyGainFlagsMeta = {
+		MinValue = 1,
+		NumValues = 3,
+		MaxValue = 4,
+	},
+	CurrencySource = {
+		ConvertOldItem = 0,
+		ConvertOldPvPCurrency = 1,
+		ItemRefund = 2,
+		QuestReward = 3,
+		Cheat = 4,
+		Vendor = 5,
+		PvPKillCredit = 6,
+		PvPMetaCredit = 7,
+		PvPScriptedAward = 8,
+		Loot = 9,
+		UpdatingVersion = 10,
+		LfgReward = 11,
+		Trade = 12,
+		Spell = 13,
+		ItemDeletion = 14,
+		RatedBattleground = 15,
+		RandomBattleground = 16,
+		Arena = 17,
+		ExceededMaxQty = 18,
+		PvPCompletionBonus = 19,
+		Script = 20,
+		GuildBankWithdrawal = 21,
+		Pushloot = 22,
+		GarrisonBuilding = 23,
+		PvPDrop = 24,
+		GarrisonFollowerActivation = 25,
+		GarrisonBuildingRefund = 26,
+		GarrisonMissionReward = 27,
+		GarrisonResourceOverTime = 28,
+		QuestRewardIgnoreCaps = 29,
+		GarrisonTalent = 30,
+		GarrisonWorldQuestBonus = 31,
+		PvPHonorReward = 32,
+		BonusRoll = 33,
+		AzeriteRespec = 34,
+		WorldQuestReward = 35,
+		WorldQuestRewardIgnoreCaps = 36,
+		FactionConversion = 37,
+		DailyQuestReward = 38,
+		DailyQuestWarModeReward = 39,
+		WeeklyQuestReward = 40,
+		WeeklyQuestWarModeReward = 41,
+		AccountCopy = 42,
+		WeeklyRewardChest = 43,
+		GarrisonTalentTreeReset = 44,
+		DailyReset = 45,
+		AddConduitToCollection = 46,
+		Barbershop = 47,
+		Last = 48,
+	},
+	CurrencySourceMeta = {
+		MinValue = 0,
+		MaxValue = 48,
+		NumValues = 49,
+	},
+	CurrencyTokenCategoryFlags = {
+		FlagSortLast = 1,
+		FlagPlayerItemAssignment = 2,
+		Hidden = 4,
+		Virtual = 8,
+	},
+	CurrencyTokenCategoryFlagsMeta = {
+		MinValue = 1,
+		NumValues = 4,
+		MaxValue = 8,
 	},
 	CustomBindingType = {
 		VoicePushToTalk = 0,
@@ -1039,6 +1195,36 @@ Enum = {
 		MaxValue = 12,
 		NumValues = 14,
 	},
+	GarrAutoCombatSpellTutorialFlag = {
+		None = 0,
+		Single = 1,
+		Column = 2,
+		Row = 3,
+		All = 4,
+	},
+	GarrAutoCombatSpellTutorialFlagMeta = {
+		MinValue = 0,
+		MaxValue = 4,
+		NumValues = 5,
+	},
+	GarrAutoCombatTutorial = {
+		SelectMission = 1,
+		PlaceCompanion = 2,
+		HealCompanion = 4,
+		LevelHeal = 8,
+		BeneficialEffect = 16,
+		AttackSingle = 32,
+		AttackColumn = 64,
+		AttackRow = 128,
+		AttackAll = 256,
+		TroopTutorial = 512,
+		EnvironmentalEffect = 1024,
+	},
+	GarrAutoCombatTutorialMeta = {
+		MinValue = 1,
+		NumValues = 11,
+		MaxValue = 1024,
+	},
 	GarrAutoCombatantRole = {
 		None = 0,
 		Melee = 1,
@@ -1131,8 +1317,8 @@ Enum = {
 		Generic = 0,
 		Bastion = 1,
 		Revendreth = 2,
-		Maldraxxus = 3,
-		Ardenweald = 4,
+		Ardenweald = 3,
+		Maldraxxus = 4,
 	},
 	GarrTalentFeatureSubtypeMeta = {
 		MinValue = 0,
@@ -1417,11 +1603,16 @@ Enum = {
 		Coldheart = 4,
 		Mortregar = 5,
 		UpperReaches = 6,
+		ArkobanHall = 7,
+		TormentChamberJaina = 8,
+		TormentChamberThrall = 9,
+		TormentChamberAnduin = 10,
+		AdamantVaults = 11,
 	},
 	JailersTowerTypeMeta = {
 		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
+		MaxValue = 11,
+		NumValues = 12,
 	},
 	ManipulatorEventType = {
 		Start = 0,
@@ -1574,6 +1765,27 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 7,
 		NumValues = 8,
+	},
+	PlayerCurrencyFlags = {
+		Incremented = 1,
+		Loading = 2,
+	},
+	PlayerCurrencyFlagsDbFlags = {
+		IgnoreMaxQtyOnload = 1,
+		Reuse1 = 2,
+		InBackpack = 4,
+		UnusedInUI = 8,
+		Reuse2 = 16,
+	},
+	PlayerCurrencyFlagsDbFlagsMeta = {
+		MinValue = 1,
+		NumValues = 5,
+		MaxValue = 16,
+	},
+	PlayerCurrencyFlagsMeta = {
+		MinValue = 1,
+		NumValues = 2,
+		MaxValue = 2,
 	},
 	PlayerMentorshipApplicationResult = {
 		Success = 0,
@@ -1841,6 +2053,11 @@ Enum = {
 		MaxValue = 4,
 		NumValues = 5,
 	},
+	RuneforgePowerFilter = {
+		All = 0,
+		Available = 1,
+		Unavailable = 2,
+	},
 	RuneforgePowerState = {
 		Available = 0,
 		Unavailable = 1,
@@ -1902,6 +2119,15 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 6,
 		NumValues = 7,
+	},
+	SoulbindConduitTransactionType = {
+		Install = 0,
+		Uninstall = 1,
+	},
+	SoulbindConduitTransactionTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
 	},
 	SoulbindConduitType = {
 		Finesse = 0,
@@ -2669,7 +2895,7 @@ LE_EXPANSION_LEVEL_CURRENT = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 88
+NUM_LE_FRAME_TUTORIALS = 99
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -2758,6 +2984,17 @@ LE_FRAME_TUTORIAL_ANIMA_DIVERSION_ACTIVATE_LOCATION = 85
 LE_FRAME_TUTORIAL_ANIMA_DIVERSION_REINFORCE_LOCATION = 86
 LE_FRAME_TUTORIAL_9_0_GRRISON_LANDING_PAGE_BUTTON_CALLINGS = 87
 LE_FRAME_TUTORIAL_9_0_GRRISON_LANDING_PAGE_CALLINGS = 88
+LE_FRAME_TUTORIAL_9_0_JAILERS_TOWER_BUFFS = 89
+LE_FRAME_TUTORIAL_EMBER_COURT_MAP = 90
+LE_FRAME_TUTORIAL_EYE_OF_JAILER = 91
+LE_FRAME_TUTORIAL_SOULBIND_PATH_SELECT = 92
+LE_FRAME_TUTORIAL_SOULBIND_CONDUIT_INSTALL = 93
+LE_FRAME_TUTORIAL_SOULBIND_CONDUIT_LEARN = 94
+LE_FRAME_TUTORIAL_FIRST_RUNEFORGE_LEGENDARY_POWER = 95
+LE_FRAME_TUTORIAL_COVENANT_RENOWN_REWARDS = 96
+LE_FRAME_TUTORIAL_COVENANT_RENOWN_PROGRESS = 97
+LE_FRAME_TUTORIAL_COVENANT_RESERVOIR_DEPOSIT = 98
+LE_FRAME_TUTORIAL_COVENANT_RESERVOIR_FEATURES = 99
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
