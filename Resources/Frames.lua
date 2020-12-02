@@ -423,7 +423,6 @@ local LoadOnDemand = {
 	"MacroFrame",
 	"MacroPopupFrame",
 	"MovePadFrame",
-	"NPE_PointerFrame_1",
 	"NPE_TutorialDragAnimationFrame",
 	"NPE_TutorialDragOriginFrame",
 	"NPE_TutorialDragTargetFrame",
