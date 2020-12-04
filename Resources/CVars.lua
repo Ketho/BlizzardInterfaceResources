@@ -1,6 +1,6 @@
 local CVars = {
 	var = {
-		-- var = default, server, character, help
+		-- var = default, account, character, help
 		["ActionButtonUseKeyDown"] = {"1", true, false, "Activate the action button on a keydown"},
 		["actionedAdventureJournalEntries"] = {"", true, false, "Which adventure journal entries flagged with ADVENTURE_JOURNAL_HIDE_AFTER_ACTION the user acted upon"},
 		["activeCUFProfile"] = {"", false, true, "The last active CUF Profile."},
