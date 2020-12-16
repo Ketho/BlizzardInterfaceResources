@@ -1938,6 +1938,7 @@ local GlobalAPI = {
 	"C_Scenario.IsInScenario",
 	"C_Scenario.ShouldShowCriteria",
 	"C_Scenario.TreatScenarioAsDungeon",
+	"C_ScenarioInfo.GetJailersTowerTypeString",
 	"C_ScrappingMachineUI.CloseScrappingMachine",
 	"C_ScrappingMachineUI.DropPendingScrapItemFromCursor",
 	"C_ScrappingMachineUI.GetCurrentPendingScrapItemLocationByIndex",
