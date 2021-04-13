@@ -123,10 +123,15 @@ Enum = {
 		MaxValue = 2,
 		NumValues = 3,
 	},
+	BattlepayBannerTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
 	BattlepayCardTypeMeta = {
 		MinValue = 0,
-		MaxValue = 7,
-		NumValues = 8,
+		MaxValue = 8,
+		NumValues = 9,
 	},
 	BattlepayDisplayFlagMeta = {
 		MinValue = 1,
@@ -886,6 +891,17 @@ Enum = {
 		MaxValue = 2,
 		NumValues = 3,
 	},
+	CovenantSkill = {
+		Kyrian = 2730,
+		Venthyr = 2731,
+		NightFae = 2732,
+		Necrolord = 2733,
+	},
+	CovenantSkillMeta = {
+		NumValues = 4,
+		MinValue = 2730,
+		MaxValue = 2733,
+	},
 	CovenantType = {
 		None = 0,
 		Kyrian = 1,
@@ -1024,12 +1040,14 @@ Enum = {
 		DailyReset = 45,
 		AddConduitToCollection = 46,
 		Barbershop = 47,
-		Last = 48,
+		ConvertItemsToCurrencyValue = 48,
+		PvPTeamContribution = 49,
+		Last = 50,
 	},
 	CurrencySourceMeta = {
 		MinValue = 0,
-		MaxValue = 48,
-		NumValues = 49,
+		MaxValue = 50,
+		NumValues = 51,
 	},
 	CurrencyTokenCategoryFlags = {
 		FlagSortLast = 1,
@@ -1939,11 +1957,12 @@ Enum = {
 		InvalidPublicParty = 30,
 		Unknown = 31,
 		InCombat = 32,
+		MemberInCombat = 33,
 	},
 	QuestSessionResultMeta = {
 		MinValue = 0,
-		MaxValue = 32,
-		NumValues = 33,
+		MaxValue = 33,
+		NumValues = 34,
 	},
 	QuestTag = {
 		Group = 1,
@@ -2105,6 +2124,14 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 1,
 		NumValues = 2,
+	},
+	SoulbindConduitFlags = {
+		VisibleToGetallsoulbindconduitScript = 1,
+	},
+	SoulbindConduitFlagsMeta = {
+		NumValues = 1,
+		MinValue = 1,
+		MaxValue = 1,
 	},
 	SoulbindConduitInstallResult = {
 		Success = 0,
@@ -2438,11 +2465,12 @@ Enum = {
 		FlightMapShowZoomOut = 0x2000,
 		FlightMapAutoZoom = 0x4000,
 		ForceOnNavbar = 0x8000,
+		AlwaysAllowUserWaypoints = 0x10000,
 	},
 	UIMapFlagMeta = {
 		MinValue = 1,
-		NumValues = 16,
-		MaxValue = 32768,
+		NumValues = 17,
+		MaxValue = 65536,
 	},
 	UIMapSystem = {
 		World = 0,

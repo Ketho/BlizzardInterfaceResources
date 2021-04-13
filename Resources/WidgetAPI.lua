@@ -781,6 +781,7 @@ local WidgetAPI = {
 			"ResetSecondaryCompareItem",
 			"SetAchievementByID",
 			"SetAction",
+			"SetAllowShowWithNoLines",
 			"SetAnchorType",
 			"SetArtifactItem",
 			"SetArtifactPowerByID",
