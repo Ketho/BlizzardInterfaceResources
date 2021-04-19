@@ -311,8 +311,8 @@ Enum = {
 		MaxValue = 16,
 	},
 	CalendarGetEventType = {
-		Get = 0,
 		DefaultCalendarGetEventType = 0,
+		Get = 0,
 		Add = 1,
 		Copy = 2,
 	},
@@ -462,9 +462,9 @@ Enum = {
 		RestrictToRecommendedSpecs = 1,
 	},
 	CharacterServiceInfoFlagMeta = {
-		NumValues = 1,
-		MinValue = 1,
 		MaxValue = 1,
+		MinValue = 1,
+		NumValues = 1,
 	},
 	ChatChannelRuleset = {
 		None = 0,
@@ -492,9 +492,9 @@ Enum = {
 		UndressModel = 1,
 	},
 	ChrCustomizationCategoryFlagMeta = {
-		NumValues = 1,
-		MinValue = 1,
 		MaxValue = 1,
+		MinValue = 1,
+		NumValues = 1,
 	},
 	ChrCustomizationOptionType = {
 		SelectionPopout = 0,
@@ -745,8 +745,8 @@ Enum = {
 	},
 	ClubRoleIdentifierMeta = {
 		MinValue = 1,
-		NumValues = 4,
 		MaxValue = 4,
+		NumValues = 4,
 	},
 	ClubStreamNotificationFilter = {
 		None = 0,
@@ -973,8 +973,8 @@ Enum = {
 	},
 	CurrencyFlagsBMeta = {
 		MinValue = 1,
-		NumValues = 2,
 		MaxValue = 2,
+		NumValues = 2,
 	},
 	CurrencyFlagsMeta = {
 		MinValue = -2147483648,
@@ -1070,21 +1070,21 @@ Enum = {
 	},
 	Damageclass = {
 		Physical = 0x0,
-		MaskPhysical = 0x1,
-		Holy = 0x1,
 		AllPhysical = 0x1,
+		Holy = 0x1,
+		MaskPhysical = 0x1,
+		Fire = 0x2,
 		FirstResist = 0x2,
 		MaskHoly = 0x2,
-		Fire = 0x2,
 		MaskHolystrike = 0x3,
 		Nature = 0x3,
 		Frost = 0x4,
 		MaskFire = 0x4,
-		Shadow = 0x5,
 		MaskFlamestrike = 0x5,
+		Shadow = 0x5,
 		Arcane = 0x6,
-		MaskHolyfire = 0x6,
 		LastResist = 0x6,
+		MaskHolyfire = 0x6,
 		MaskNature = 0x8,
 		MaskStormstrike = 0x9,
 		MaskHolystorm = 0xA,
@@ -1134,8 +1134,8 @@ Enum = {
 	},
 	EnvironmentalDamageFlagsMeta = {
 		MinValue = 1,
-		NumValues = 2,
 		MaxValue = 2,
+		NumValues = 2,
 	},
 	Environmentaldamagetype = {
 		Fatigue = 0,
@@ -1264,8 +1264,8 @@ Enum = {
 	},
 	GarrAutoEventFlagsMeta = {
 		MinValue = 0,
-		NumValues = 4,
 		MaxValue = 4,
+		NumValues = 4,
 	},
 	GarrAutoMissionEventType = {
 		MeleeDamage = 0,
@@ -1317,8 +1317,8 @@ Enum = {
 	},
 	GarrFollowerQualityMeta = {
 		MinValue = 1,
-		NumValues = 6,
 		MaxValue = 6,
+		NumValues = 6,
 	},
 	GarrTalentCostType = {
 		Initial = 0,
@@ -1473,8 +1473,8 @@ Enum = {
 	},
 	HolidayCalendarFlagsMeta = {
 		MinValue = 1,
-		NumValues = 2,
 		MaxValue = 2,
+		NumValues = 2,
 	},
 	HolidayFlags = {
 		IsRegionwide = 1,
@@ -1672,9 +1672,9 @@ Enum = {
 		AlignLightToOrbitDelta = 1,
 	},
 	ModelSceneSettingMeta = {
-		NumValues = 1,
-		MinValue = 1,
 		MaxValue = 1,
+		MinValue = 1,
+		NumValues = 1,
 	},
 	ModelSceneType = {
 		MountJournal = 0,
@@ -1802,8 +1802,8 @@ Enum = {
 	},
 	PlayerCurrencyFlagsMeta = {
 		MinValue = 1,
-		NumValues = 2,
 		MaxValue = 2,
+		NumValues = 2,
 	},
 	PlayerMentorshipApplicationResult = {
 		Success = 0,
@@ -2129,9 +2129,9 @@ Enum = {
 		VisibleToGetallsoulbindconduitScript = 1,
 	},
 	SoulbindConduitFlagsMeta = {
-		NumValues = 1,
-		MinValue = 1,
 		MaxValue = 1,
+		MinValue = 1,
+		NumValues = 1,
 	},
 	SoulbindConduitInstallResult = {
 		Success = 0,
@@ -2501,9 +2501,9 @@ Enum = {
 		UniversalWidget = 1,
 	},
 	UIWidgetFlagMeta = {
-		NumValues = 1,
-		MinValue = 1,
 		MaxValue = 1,
+		MinValue = 1,
+		NumValues = 1,
 	},
 	UIWidgetFontType = {
 		Normal = 0,
@@ -2918,8 +2918,8 @@ LE_EXPANSION_WARLORDS_OF_DRAENOR = 5
 LE_EXPANSION_LEGION = 6
 LE_EXPANSION_BATTLE_FOR_AZEROTH = 7
 LE_EXPANSION_LEVEL_PREVIOUS = 7
-LE_EXPANSION_SHADOWLANDS = 8
 LE_EXPANSION_LEVEL_CURRENT = 8
+LE_EXPANSION_SHADOWLANDS = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 
@@ -3252,10 +3252,6 @@ LE_TICKET_STATUS_RESPONSE = 4
 NUM_LE_TOKEN_CHOICES = 2
 LE_TOKEN_CHOICE_SUBSCRIPTION = 1
 LE_TOKEN_CHOICE_BALANCE = 2
-
-NUM_LE_TOKEN_REDEEM_TYPES = 2
-LE_TOKEN_REDEEM_TYPE_GAME_TIME = 1
-LE_TOKEN_REDEEM_TYPE_BALANCE = 2
 
 NUM_LE_TOKEN_RESULTS = 10
 LE_TOKEN_RESULT_SUCCESS = 1
