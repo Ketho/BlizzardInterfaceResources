@@ -12,7 +12,7 @@ local WidgetAPI = {
 			"SetScript",
 		},
 	},
-	Object = {
+	UIObject = {
 		inherits = {},
 		methods = {
 			"GetName",
@@ -20,8 +20,8 @@ local WidgetAPI = {
 			"IsObjectType",
 		},
 	},
-	UIObject = {
-		inherits = {"Object"},
+	ParentedObject = {
+		inherits = {"UIObject"},
 		methods = {
 			"GetDebugName",
 			"GetParent",
@@ -30,7 +30,7 @@ local WidgetAPI = {
 		},
 	},
 	Region = {
-		inherits = {"UIObject"},
+		inherits = {"ParentedObject"},
 		methods = {
 			"CanChangeProtectedState",
 			"ClearAllPoints",
@@ -84,7 +84,7 @@ local WidgetAPI = {
 		},
 	},
 	FontInstance = {
-		inherits = {"Object"},
+		inherits = {"UIObject"},
 		methods = {
 			"GetFont",
 			"GetFontObject",
@@ -199,7 +199,7 @@ local WidgetAPI = {
 		},
 	},
 	AnimationGroup = {
-		inherits = {"UIObject", "ScriptObject"},
+		inherits = {"ParentedObject", "ScriptObject"},
 		handlers = {
 			"OnFinished",
 			"OnLoop",
@@ -229,7 +229,7 @@ local WidgetAPI = {
 		},
 	},
 	Animation = {
-		inherits = {"UIObject", "ScriptObject"},
+		inherits = {"ParentedObject", "ScriptObject"},
 		handlers = {
 			"OnFinished",
 			"OnPause",
@@ -328,7 +328,7 @@ local WidgetAPI = {
 		},
 	},
 	ControlPoint = {
-		inherits = {"UIObject"},
+		inherits = {"ParentedObject"},
 		methods = {
 			"GetOffset",
 			"GetOrder",
@@ -1028,6 +1028,19 @@ local WidgetAPI = {
 			"TakeActor",
 		},
 	},
+	MovieFrame = {
+		inherits = {"Frame"},
+		handlers = {
+			"OnMovieFinished",
+			"OnMovieHideSubtitle",
+			"OnMovieShowSubtitle",
+		},
+		methods = {
+			"EnableSubtitles",
+			"StartMovie",
+			"StopMovie",
+		},
+	},
 	OffScreenFrame = {
 		inherits = {"Frame"},
 		methods = {
@@ -1058,11 +1071,6 @@ local WidgetAPI = {
 			"SetVerticalScroll",
 			"UpdateScrollChildRect",
 		},
-	},
-	ScrollingMessageFrame = {
-		inherits = {"Frame", "FontInstance"},
-		mixin = "ScrollingMessageFrameMixin",
-		intrinsic = true,
 	},
 	SimpleHTML = {
 		inherits = {"Frame", "FontInstance"},
@@ -1153,7 +1161,7 @@ local WidgetAPI = {
 		},
 	},
 	ModelSceneActor = {
-		inherits = {"UIObject"},
+		inherits = {"ParentedObject"},
 		handlers = {
 			"OnAnimFinished",
 			"OnModelLoaded",

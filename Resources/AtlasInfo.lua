@@ -444,6 +444,9 @@ local AtlasInfo = {
 		["PetList-ButtonHighlight"] = {209, 46, 0.00390625, 0.8203125, 0.19140625, 0.37109375, false, false},
 		["PetList-ButtonSelect"] = {209, 46, 0.00390625, 0.8203125, 0.37890625, 0.55859375, false, false},
 	},
+	["interface/buttons/uipaidcharactercustomizationbuttons"] = { -- 4031998
+		["ui-paidcharactercustomization-button-activatecharacter"] = {64, 64, 0.0078125, 0.5078125, 0.0078125, 0.5078125, false, false},
+	},
 	["interface/calendar/calendar"] = { -- 986189
 		["Calendar_Quest"] = {91, 91, 0.0078125, 0.71875, 0.0078125, 0.71875, false, false},
 	},
@@ -2942,6 +2945,27 @@ local AtlasInfo = {
 		["glueannouncementpopup-background"] = {800, 533, 0.0009765625, 0.7822265625, 0.0009765625, 0.521484375, false, false},
 		["glueannouncementpopup-icon-info"] = {21, 21, 0.8486328125, 0.869140625, 0.0009765625, 0.021484375, false, false},
 		["glueannouncementpopup-inset"] = {361, 86, 0.0009765625, 0.353515625, 0.5234375, 0.607421875, false, false},
+	},
+	["interface/glues/characterselect/glueannouncementpopupclassic"] = { -- 4005167
+		["classic-announcementpopup-bcinfographic-zhcn"] = {477, 258, 0.521484375, 0.75439453125, 0.0009765625, 0.2529296875, false, false},
+		["classic-announcementpopup-bcinfographic-zhtw"] = {477, 258, 0.75537109375, 0.98828125, 0.0009765625, 0.2529296875, false, false},
+		["classic-announcementpopup-bcinfographic"] = {477, 258, 0.28759765625, 0.5205078125, 0.0009765625, 0.2529296875, false, false},
+		["classic-announcementpopup-frame"] = {586, 819, 0.00048828125, 0.28662109375, 0.0009765625, 0.80078125, false, false},
+		["classic-announcementpopup-line"] = {411, 2, 0.28759765625, 0.48828125, 0.2548828125, 0.2568359375, false, false},
+		["classic-burningcrusade-infoicon-zhcn"] = {177, 178, 0.087890625, 0.17431640625, 0.802734375, 0.9765625, false, false},
+		["classic-burningcrusade-infoicon-zhtw"] = {177, 178, 0.17529296875, 0.26171875, 0.802734375, 0.9765625, false, false},
+		["classic-burningcrusade-infoicon"] = {177, 178, 0.00048828125, 0.0869140625, 0.802734375, 0.9765625, false, false},
+	},
+	["interface/glues/characterselect/glueclassicburningcrusadetransitionchoice"] = { -- 4025516
+		["classic-burningcrusadetransition-choice-frame-classic"] = {1316, 757, 0.00048828125, 0.64306640625, 0.00048828125, 0.3701171875, false, false},
+		["classic-burningcrusadetransition-choice-line-bc"] = {411, 2, 0.64404296875, 0.8447265625, 0.19873046875, 0.19970703125, false, false},
+		["classic-burningcrusadetransition-choice-line-classic"] = {411, 2, 0.64404296875, 0.8447265625, 0.20068359375, 0.20166015625, false, false},
+		["classic-burningcrusadetransition-choice-logo-bc-zhcn"] = {588, 404, 0.00048828125, 0.28759765625, 0.37109375, 0.568359375, false, false},
+		["classic-burningcrusadetransition-choice-logo-bc-zhtw"] = {588, 404, 0.00048828125, 0.28759765625, 0.5693359375, 0.7666015625, false, false},
+		["classic-burningcrusadetransition-choice-logo-bc"] = {588, 404, 0.64404296875, 0.93115234375, 0.00048828125, 0.19775390625, false, false},
+		["classic-burningcrusadetransition-choice-logo-classic-zhcn"] = {588, 404, 0.28857421875, 0.57568359375, 0.37109375, 0.568359375, false, false},
+		["classic-burningcrusadetransition-choice-logo-classic-zhtw"] = {588, 404, 0.57666015625, 0.86376953125, 0.37109375, 0.568359375, false, false},
+		["classic-burningcrusadetransition-choice-logo-classic"] = {588, 404, 0.00048828125, 0.28759765625, 0.767578125, 0.96484375, false, false},
 	},
 	["interface/glues/common/cinematicbuttonsatlas"] = { -- 1030215
 		["StreamCinematic-LK-Down"] = {176, 78, 0.4267578125, 0.5986328125, 0.00390625, 0.30859375, false, false},

@@ -40,7 +40,6 @@ local Frames = {
 	"ChatFrame1EditBox",
 	"ChatFrame2",
 	"ChatFrame2EditBox",
-	"ChatFrame2Tab",
 	"ChatFrame3",
 	"ChatFrame3EditBox",
 	"ChatFrame3Tab",

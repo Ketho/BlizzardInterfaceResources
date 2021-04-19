@@ -1020,6 +1020,7 @@ local GlobalAPI = {
 	"GetDeathRecapLink",
 	"GetDefaultGraphicsQuality",
 	"GetDefaultLanguage",
+	"GetDefaultScale",
 	"GetDefaultVideoOption",
 	"GetDefaultVideoOptions",
 	"GetDefaultVideoQualityOption",
