@@ -839,12 +839,13 @@ Enum = {
 	ConsoleCommandType = {
 		Cvar = 0,
 		Command = 1,
-		Script = 2,
+		Macro = 2,
+		Script = 3,
 	},
 	ConsoleCommandTypeMeta = {
 		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
+		MaxValue = 3,
+		NumValues = 4,
 	},
 	ContributionAppearanceFlags = {
 		TooltipUseTimeRemaining = 0,
@@ -934,7 +935,6 @@ Enum = {
 		NumValues = 12,
 	},
 	CurrencyFlags = {
-		DeprecatedCurrencyFlag = 0x80000000,
 		CurrencyTradable = 0x1,
 		CurrencyAppearsInLootWindow = 0x2,
 		CurrencyComputedWeeklyMaximum = 0x4,
@@ -966,6 +966,7 @@ Enum = {
 		CurrencyIsAllianceOnly = 0x10000000,
 		CurrencyIsHordeOnly = 0x20000000,
 		CurrencyLimitWarmodeBonusOncePerTooltip = 0x40000000,
+		DeprecatedCurrencyFlag = 0x80000000,
 	},
 	CurrencyFlagsB = {
 		CurrencyBUseTotalEarnedForMaxQty = 1,
@@ -977,9 +978,9 @@ Enum = {
 		NumValues = 2,
 	},
 	CurrencyFlagsMeta = {
-		MinValue = -2147483648,
+		MaxValue = -2147483648,
+		MinValue = 1,
 		NumValues = 32,
-		MaxValue = 1073741824,
 	},
 	CurrencyGainFlags = {
 		BonusAward = 1,
@@ -1069,6 +1070,7 @@ Enum = {
 		NumValues = 1,
 	},
 	Damageclass = {
+		MaskNone = 0x0,
 		Physical = 0x0,
 		AllPhysical = 0x1,
 		Holy = 0x1,
@@ -1085,6 +1087,7 @@ Enum = {
 		Arcane = 0x6,
 		LastResist = 0x6,
 		MaskHolyfire = 0x6,
+		NumClasses = 0x7,
 		MaskNature = 0x8,
 		MaskStormstrike = 0x9,
 		MaskHolystorm = 0xA,
@@ -1116,7 +1119,7 @@ Enum = {
 	},
 	DamageclassMeta = {
 		MinValue = 0,
-		NumValues = 44,
+		NumValues = 46,
 		MaxValue = 127,
 	},
 	DamageclassType = {
@@ -1149,6 +1152,47 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 5,
 		NumValues = 6,
+	},
+	EventToastDisplayType = {
+		NormalSingleLine = 0,
+		NormalBlockText = 1,
+		NormalTitleAndSubTitle = 2,
+		NormalTextWithIcon = 3,
+		LargeTextWithIcon = 4,
+		NormalTextWithIconAndRarity = 5,
+		Scenario = 6,
+		ChallengeMode = 7,
+	},
+	EventToastDisplayTypeMeta = {
+		MinValue = 0,
+		MaxValue = 7,
+		NumValues = 8,
+	},
+	EventToastEventType = {
+		LevelUp = 0,
+		LevelUpSpell = 1,
+		LevelUpDungeon = 2,
+		LevelUpRaid = 3,
+		LevelUpPvP = 4,
+		PetBattleNewAbility = 5,
+		PetBattleFinalRound = 6,
+		PetBattleCapture = 7,
+		BattlePetLevelChanged = 8,
+		BattlePetLevelUpAbility = 9,
+		QuestBossEmote = 10,
+		MythicPlusWeeklyRecord = 11,
+		QuestTurnedIn = 12,
+		WorldStateChange = 13,
+		Scenario = 14,
+		LevelUpOther = 15,
+		PlayerAuraAdded = 16,
+		PlayerAuraRemoved = 17,
+		SpellScript = 18,
+	},
+	EventToastEventTypeMeta = {
+		MinValue = 0,
+		MaxValue = 18,
+		NumValues = 19,
 	},
 	FlightPathFaction = {
 		Neutral = 0,
@@ -1308,6 +1352,7 @@ Enum = {
 		NumValues = 4,
 	},
 	GarrFollowerQuality = {
+		None = 0,
 		Common = 1,
 		Uncommon = 2,
 		Rare = 3,
@@ -1316,9 +1361,9 @@ Enum = {
 		Title = 6,
 	},
 	GarrFollowerQualityMeta = {
-		MinValue = 1,
+		MinValue = 0,
 		MaxValue = 6,
-		NumValues = 6,
+		NumValues = 7,
 	},
 	GarrTalentCostType = {
 		Initial = 0,
@@ -1509,6 +1554,17 @@ Enum = {
 		MaxValue = 2,
 		NumValues = 3,
 	},
+	InputContext = {
+		None = 0,
+		Keyboard = 1,
+		Mouse = 2,
+		GamePad = 3,
+	},
+	InputContextMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
 	InventoryType = {
 		IndexNonEquipType = 0,
 		IndexHeadType = 1,
@@ -1545,6 +1601,51 @@ Enum = {
 		MaxValue = 28,
 		NumValues = 29,
 	},
+	ItemArmorSubclass = {
+		Generic = 0,
+		Cloth = 1,
+		Leather = 2,
+		Mail = 3,
+		Plate = 4,
+		Cosmetic = 5,
+		Shield = 6,
+		Libram = 7,
+		Idol = 8,
+		Totem = 9,
+		Sigil = 10,
+		Relic = 11,
+	},
+	ItemArmorSubclassMeta = {
+		MinValue = 0,
+		MaxValue = 11,
+		NumValues = 12,
+	},
+	ItemClass = {
+		Consumable = 0,
+		Container = 1,
+		Weapon = 2,
+		Gem = 3,
+		Armor = 4,
+		Reagent = 5,
+		Projectile = 6,
+		Tradegoods = 7,
+		ItemEnhancement = 8,
+		Recipe = 9,
+		CurrencyTokenObsolete = 10,
+		Quiver = 11,
+		Questitem = 12,
+		Key = 13,
+		PermanentObsolete = 14,
+		Miscellaneous = 15,
+		Glyph = 16,
+		Battlepet = 17,
+		WoWToken = 18,
+	},
+	ItemClassMeta = {
+		MinValue = 0,
+		MaxValue = 18,
+		NumValues = 19,
+	},
 	ItemCommodityStatus = {
 		Unknown = 0,
 		Item = 1,
@@ -1555,6 +1656,40 @@ Enum = {
 		MaxValue = 2,
 		NumValues = 3,
 	},
+	ItemConsumableSubclass = {
+		Generic = 0,
+		Potion = 1,
+		Elixir = 2,
+		Scroll = 3,
+		Fooddrink = 4,
+		Itemenhancement = 5,
+		Bandage = 6,
+		Other = 7,
+	},
+	ItemConsumableSubclassMeta = {
+		MinValue = 0,
+		MaxValue = 7,
+		NumValues = 8,
+	},
+	ItemGemSubclass = {
+		Intellect = 0,
+		Agility = 1,
+		Strength = 2,
+		Stamina = 3,
+		Spirit = 4,
+		Criticalstrike = 5,
+		Mastery = 6,
+		Haste = 7,
+		Versatility = 8,
+		Other = 9,
+		Multiplestats = 10,
+		Artifactrelic = 11,
+	},
+	ItemGemSubclassMeta = {
+		MinValue = 0,
+		MaxValue = 11,
+		NumValues = 12,
+	},
 	ItemInteractionFrameType = {
 		CleanseCorruption = 0,
 	},
@@ -1562,6 +1697,20 @@ Enum = {
 		MaxValue = 0,
 		MinValue = 0,
 		NumValues = 1,
+	},
+	ItemMiscellaneousSubclass = {
+		Junk = 0,
+		Reagent = 1,
+		CompanionPet = 2,
+		Holiday = 3,
+		Other = 4,
+		Mount = 5,
+		MountEquipment = 6,
+	},
+	ItemMiscellaneousSubclassMeta = {
+		MinValue = 0,
+		MaxValue = 6,
+		NumValues = 7,
 	},
 	ItemQuality = {
 		Poor = 0,
@@ -1578,6 +1727,35 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 8,
 		NumValues = 9,
+	},
+	ItemReagentSubclass = {
+		Reagent = 0,
+		Keystone = 1,
+		ContextToken = 2,
+	},
+	ItemReagentSubclassMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
+	},
+	ItemRecipeSubclass = {
+		Book = 0,
+		Leatherworking = 1,
+		Tailoring = 2,
+		Engineering = 3,
+		Blacksmithing = 4,
+		Cooking = 5,
+		Alchemy = 6,
+		FirstAid = 7,
+		Enchanting = 8,
+		Fishing = 9,
+		Jewelcrafting = 10,
+		Inscription = 11,
+	},
+	ItemRecipeSubclassMeta = {
+		MinValue = 0,
+		MaxValue = 11,
+		NumValues = 12,
 	},
 	ItemSlotFilterType = {
 		Head = 0,
@@ -1613,6 +1791,34 @@ Enum = {
 		MaxValue = 3,
 		NumValues = 4,
 	},
+	ItemWeaponSubclass = {
+		Axe1H = 0,
+		Axe2H = 1,
+		Bows = 2,
+		Guns = 3,
+		Mace1H = 4,
+		Mace2H = 5,
+		Polearm = 6,
+		Sword1H = 7,
+		Sword2H = 8,
+		Warglaive = 9,
+		Staff = 10,
+		Bearclaw = 11,
+		Catclaw = 12,
+		Unarmed = 13,
+		Generic = 14,
+		Dagger = 15,
+		Thrown = 16,
+		Obsolete3 = 17,
+		Crossbow = 18,
+		Wand = 19,
+		Fishingpole = 20,
+	},
+	ItemWeaponSubclassMeta = {
+		MinValue = 0,
+		MaxValue = 20,
+		NumValues = 21,
+	},
 	JailersTowerType = {
 		TwistingCorridors = 0,
 		SkoldusHalls = 1,
@@ -1626,11 +1832,12 @@ Enum = {
 		TormentChamberThrall = 9,
 		TormentChamberAnduin = 10,
 		AdamantVaults = 11,
+		ForgottenCatacombs = 12,
 	},
 	JailersTowerTypeMeta = {
 		MinValue = 0,
-		MaxValue = 11,
-		NumValues = 12,
+		MaxValue = 12,
+		NumValues = 13,
 	},
 	ManipulatorEventType = {
 		Start = 0,
@@ -2074,8 +2281,9 @@ Enum = {
 	},
 	RuneforgePowerFilter = {
 		All = 0,
-		Available = 1,
-		Unavailable = 2,
+		Relevant = 1,
+		Available = 2,
+		Unavailable = 3,
 	},
 	RuneforgePowerState = {
 		Available = 0,
@@ -2095,6 +2303,14 @@ Enum = {
 		MaxValue = 5,
 		NumValues = 6,
 	},
+	ScriptedAnimationFlags = {
+		UseTargetAsSource = 1,
+	},
+	ScriptedAnimationFlagsMeta = {
+		MaxValue = 1,
+		MinValue = 1,
+		NumValues = 1,
+	},
 	ScriptedAnimationTrajectory = {
 		AtSource = 0,
 		AtTarget = 1,
@@ -2108,13 +2324,6 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 6,
 		NumValues = 7,
-	},
-	ScriptedAnimationTransformation = {
-		Alpha = 1,
-	},
-	ScriptedAnimationTransformationTiming = {
-		BeginWithEffect = 1,
-		FinishWithEffect = 2,
 	},
 	SelfResurrectOptionType = {
 		Spell = 0,
@@ -2350,49 +2559,90 @@ Enum = {
 		NumValues = 4,
 	},
 	TransmogCollectionType = {
-		Head = 0,
-		Shoulder = 1,
-		Back = 2,
-		Chest = 3,
-		Shirt = 4,
-		Tabard = 5,
-		Wrist = 6,
-		Hands = 7,
-		Waist = 8,
-		Legs = 9,
-		Feet = 10,
-		Wand = 11,
-		OneHAxe = 12,
-		OneHSword = 13,
-		OneHMace = 14,
-		Dagger = 15,
-		Fist = 16,
-		Shield = 17,
-		Holdable = 18,
-		TwoHAxe = 19,
-		TwoHSword = 20,
-		TwoHMace = 21,
-		Staff = 22,
-		Polearm = 23,
-		Bow = 24,
-		Gun = 25,
-		Crossbow = 26,
-		Warglaives = 27,
-		Paired = 28,
+		None = 0,
+		Head = 1,
+		Shoulder = 2,
+		Back = 3,
+		Chest = 4,
+		Shirt = 5,
+		Tabard = 6,
+		Wrist = 7,
+		Hands = 8,
+		Waist = 9,
+		Legs = 10,
+		Feet = 11,
+		Wand = 12,
+		OneHAxe = 13,
+		OneHSword = 14,
+		OneHMace = 15,
+		Dagger = 16,
+		Fist = 17,
+		Shield = 18,
+		Holdable = 19,
+		TwoHAxe = 20,
+		TwoHSword = 21,
+		TwoHMace = 22,
+		Staff = 23,
+		Polearm = 24,
+		Bow = 25,
+		Gun = 26,
+		Crossbow = 27,
+		Warglaives = 28,
+		Paired = 29,
 	},
 	TransmogCollectionTypeMeta = {
 		MinValue = 0,
-		MaxValue = 28,
-		NumValues = 29,
+		MaxValue = 29,
+		NumValues = 30,
+	},
+	TransmogIllisionFlags = {
+		HideUntilCollected = 1,
+		PlayerConditionGrantsOnLogin = 2,
+	},
+	TransmogIllisionFlagsMeta = {
+		MinValue = 1,
+		MaxValue = 2,
+		NumValues = 2,
 	},
 	TransmogModification = {
-		None = 0,
-		RightShoulder = 1,
+		Main = 0,
+		Secondary = 1,
 	},
 	TransmogModificationMeta = {
 		MinValue = 0,
 		MaxValue = 1,
 		NumValues = 2,
+	},
+	TransmogPendingType = {
+		Apply = 0,
+		Revert = 1,
+		ToggleOn = 2,
+		ToggleOff = 3,
+	},
+	TransmogPendingTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	TransmogSlot = {
+		Head = 0,
+		Shoulder = 1,
+		Back = 2,
+		Chest = 3,
+		Body = 4,
+		Tabard = 5,
+		Wrist = 6,
+		Hand = 7,
+		Waist = 8,
+		Legs = 9,
+		Feet = 10,
+		Mainhand = 11,
+		Offhand = 12,
+	},
+	TransmogSlotMeta = {
+		MinValue = 0,
+		MaxValue = 12,
+		NumValues = 13,
 	},
 	TransmogSource = {
 		None = 0,
@@ -2429,24 +2679,40 @@ Enum = {
 		Merchant = 5,
 		ActionBar = 6,
 		Macro = 7,
-		AmmoObsolete = 8,
-		Pet = 9,
-		GuildBank = 10,
-		GuildBankMoney = 11,
-		EquipmentSet = 12,
-		Currency = 13,
-		Flyout = 14,
-		VoidItem = 15,
-		BattlePet = 16,
-		Mount = 17,
-		Toy = 18,
-		CommunitiesStream = 19,
-		ConduitCollectionItem = 20,
+		AmmoObsolete = 9,
+		Pet = 10,
+		GuildBank = 11,
+		GuildBankMoney = 12,
+		EquipmentSet = 13,
+		Currency = 14,
+		Flyout = 15,
+		VoidItem = 16,
+		BattlePet = 17,
+		Mount = 18,
+		Toy = 19,
+		CommunitiesStream = 20,
+		ConduitCollectionItem = 21,
 	},
 	UICursorTypeMeta = {
 		MinValue = 0,
-		MaxValue = 20,
+		MaxValue = 21,
 		NumValues = 21,
+	},
+	UIFrameDataSource = {
+		WorldState = 0,
+	},
+	UIFrameDataSourceMeta = {
+		MaxValue = 0,
+		MinValue = 0,
+		NumValues = 1,
+	},
+	UIFrameType = {
+		JailersTowerBuffs = 0,
+	},
+	UIFrameTypeMeta = {
+		MaxValue = 0,
+		MinValue = 0,
+		NumValues = 1,
 	},
 	UIMapFlag = {
 		NoHighlight = 0x1,
@@ -2625,7 +2891,7 @@ Enum = {
 	},
 	VasErrorMeta = {
 		MinValue = 4,
-		NumValues = 40,
+		NumValues = 45,
 		MaxValue = 20088,
 	},
 	VasPurchaseProgress = {
@@ -2699,6 +2965,41 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 24,
 		NumValues = 25,
+	},
+	VoiceTtsDestination = {
+		RemoteTransmission = 0,
+		LocalPlayback = 1,
+		RemoteTransmissionWithLocalPlayback = 2,
+		QueuedRemoteTransmission = 3,
+		QueuedLocalPlayback = 4,
+		QueuedRemoteTransmissionWithLocalPlayback = 5,
+		ScreenReader = 6,
+	},
+	VoiceTtsDestinationMeta = {
+		MinValue = 0,
+		MaxValue = 6,
+		NumValues = 7,
+	},
+	VoiceTtsStatusCode = {
+		Success = 0,
+		InvalidEngineType = 1,
+		EngineAllocationFailed = 2,
+		NotSupported = 3,
+		MaxCharactersExceeded = 4,
+		UtteranceBelowMinimumDuration = 5,
+		InputTextEnqueued = 6,
+		SdkNotInitialized = 7,
+		DestinationQueueFull = 8,
+		EnqueueNotNecessary = 9,
+		UtteranceNotFound = 10,
+		ManagerNotFound = 11,
+		InvalidArgument = 12,
+		InternalError = 13,
+	},
+	VoiceTtsStatusCodeMeta = {
+		MinValue = 0,
+		MaxValue = 13,
+		NumValues = 14,
 	},
 	WeeklyRewardChestThresholdType = {
 		None = 0,
@@ -2923,7 +3224,7 @@ LE_EXPANSION_SHADOWLANDS = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 99
+NUM_LE_FRAME_TUTORIALS = 102
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -3023,6 +3324,9 @@ LE_FRAME_TUTORIAL_COVENANT_RENOWN_REWARDS = 96
 LE_FRAME_TUTORIAL_COVENANT_RENOWN_PROGRESS = 97
 LE_FRAME_TUTORIAL_COVENANT_RESERVOIR_DEPOSIT = 98
 LE_FRAME_TUTORIAL_COVENANT_RESERVOIR_FEATURES = 99
+LE_FRAME_TUTORIAL_TEXT_TO_SPEECH = 100
+LE_FRAME_TUTORIAL_SPEECH_TO_TEXT = 101
+LE_FRAME_TUTORIAL_SOULBIND_ENHANCED_CONDUIT = 102
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
@@ -3034,103 +3338,12 @@ LE_INVITE_CONFIRMATION_REQUEST = 1
 LE_INVITE_CONFIRMATION_SUGGEST = 2
 LE_INVITE_CONFIRMATION_QUEUE_WARNING = 3
 
-NUM_LE_ITEM_ARMORS = 12
-LE_ITEM_ARMOR_GENERIC = 0
-LE_ITEM_ARMOR_CLOTH = 1
-LE_ITEM_ARMOR_LEATHER = 2
-LE_ITEM_ARMOR_MAIL = 3
-LE_ITEM_ARMOR_PLATE = 4
-LE_ITEM_ARMOR_COSMETIC = 5
-LE_ITEM_ARMOR_SHIELD = 6
-LE_ITEM_ARMOR_LIBRAM = 7
-LE_ITEM_ARMOR_IDOL = 8
-LE_ITEM_ARMOR_TOTEM = 9
-LE_ITEM_ARMOR_SIGIL = 10
-LE_ITEM_ARMOR_RELIC = 11
-
 NUM_LE_ITEM_BIND_TYPES = 5
 LE_ITEM_BIND_NONE = 0
 LE_ITEM_BIND_ON_ACQUIRE = 1
 LE_ITEM_BIND_ON_EQUIP = 2
 LE_ITEM_BIND_ON_USE = 3
 LE_ITEM_BIND_QUEST = 4
-
-NUM_LE_ITEM_CLASSS = 19
-LE_ITEM_CLASS_CONSUMABLE = 0
-LE_ITEM_CLASS_CONTAINER = 1
-LE_ITEM_CLASS_WEAPON = 2
-LE_ITEM_CLASS_GEM = 3
-LE_ITEM_CLASS_ARMOR = 4
-LE_ITEM_CLASS_REAGENT = 5
-LE_ITEM_CLASS_PROJECTILE = 6
-LE_ITEM_CLASS_TRADEGOODS = 7
-LE_ITEM_CLASS_ITEM_ENHANCEMENT = 8
-LE_ITEM_CLASS_RECIPE = 9
-LE_ITEM_CLASS_QUIVER = 11
-LE_ITEM_CLASS_QUESTITEM = 12
-LE_ITEM_CLASS_KEY = 13
-LE_ITEM_CLASS_MISCELLANEOUS = 15
-LE_ITEM_CLASS_GLYPH = 16
-LE_ITEM_CLASS_BATTLEPET = 17
-LE_ITEM_CLASS_WOW_TOKEN = 18
-
-NUM_LE_ITEM_GEMS = 12
-LE_ITEM_GEM_INTELLECT = 0
-LE_ITEM_GEM_AGILITY = 1
-LE_ITEM_GEM_STRENGTH = 2
-LE_ITEM_GEM_STAMINA = 3
-LE_ITEM_GEM_SPIRIT = 4
-LE_ITEM_GEM_CRITICALSTRIKE = 5
-LE_ITEM_GEM_MASTERY = 6
-LE_ITEM_GEM_HASTE = 7
-LE_ITEM_GEM_VERSATILITY = 8
-LE_ITEM_GEM_MULTIPLESTATS = 10
-LE_ITEM_GEM_ARTIFACTRELIC = 11
-
-NUM_LE_ITEM_MISCELLANEOUSS = 7
-LE_ITEM_MISCELLANEOUS_JUNK = 0
-LE_ITEM_MISCELLANEOUS_REAGENT = 1
-LE_ITEM_MISCELLANEOUS_COMPANION_PET = 2
-LE_ITEM_MISCELLANEOUS_HOLIDAY = 3
-LE_ITEM_MISCELLANEOUS_OTHER = 4
-LE_ITEM_MISCELLANEOUS_MOUNT = 5
-LE_ITEM_MISCELLANEOUS_MOUNT_EQUIPMENT = 6
-
-NUM_LE_ITEM_RECIPES = 12
-LE_ITEM_RECIPE_BOOK = 0
-LE_ITEM_RECIPE_LEATHERWORKING = 1
-LE_ITEM_RECIPE_TAILORING = 2
-LE_ITEM_RECIPE_ENGINEERING = 3
-LE_ITEM_RECIPE_BLACKSMITHING = 4
-LE_ITEM_RECIPE_COOKING = 5
-LE_ITEM_RECIPE_ALCHEMY = 6
-LE_ITEM_RECIPE_FIRST_AID = 7
-LE_ITEM_RECIPE_ENCHANTING = 8
-LE_ITEM_RECIPE_FISHING = 9
-LE_ITEM_RECIPE_JEWELCRAFTING = 10
-LE_ITEM_RECIPE_INSCRIPTION = 11
-
-NUM_LE_ITEM_WEAPONS = 21
-LE_ITEM_WEAPON_AXE1H = 0
-LE_ITEM_WEAPON_AXE2H = 1
-LE_ITEM_WEAPON_BOWS = 2
-LE_ITEM_WEAPON_GUNS = 3
-LE_ITEM_WEAPON_MACE1H = 4
-LE_ITEM_WEAPON_MACE2H = 5
-LE_ITEM_WEAPON_POLEARM = 6
-LE_ITEM_WEAPON_SWORD1H = 7
-LE_ITEM_WEAPON_SWORD2H = 8
-LE_ITEM_WEAPON_WARGLAIVE = 9
-LE_ITEM_WEAPON_STAFF = 10
-LE_ITEM_WEAPON_BEARCLAW = 11
-LE_ITEM_WEAPON_CATCLAW = 12
-LE_ITEM_WEAPON_UNARMED = 13
-LE_ITEM_WEAPON_GENERIC = 14
-LE_ITEM_WEAPON_DAGGER = 15
-LE_ITEM_WEAPON_THROWN = 16
-LE_ITEM_WEAPON_CROSSBOW = 18
-LE_ITEM_WEAPON_WAND = 19
-LE_ITEM_WEAPON_FISHINGPOLE = 20
 
 NUM_LE_LFG_CATEGORYS = 7
 LE_LFG_CATEGORY_LFD = 1
