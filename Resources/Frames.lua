@@ -130,6 +130,7 @@ local Frames = {
 	"FriendsFriendsFrame",
 	"GameMenuFrame",
 	"GameNoHeaderTooltip",
+	"GameSmallHeaderTooltip",
 	"GameTooltip",
 	"GarrisonFollowerAbilityTooltip",
 	"GarrisonFollowerAbilityWithoutCountersTooltip",
