@@ -47,9 +47,9 @@ Enum = {
 		RestrictToRecommendedSpecs = 1,
 	},
 	CharacterServiceInfoFlagMeta = {
-		NumValues = 1,
-		MinValue = 1,
 		MaxValue = 1,
+		MinValue = 1,
+		NumValues = 1,
 	},
 	ChatChannelType = {
 		None = 0,
@@ -204,8 +204,8 @@ Enum = {
 	},
 	ClubRoleIdentifierMeta = {
 		MinValue = 0,
-		NumValues = 4,
 		MaxValue = 4,
+		NumValues = 4,
 	},
 	ClubStreamNotificationFilter = {
 		None = 0,
@@ -443,9 +443,9 @@ Enum = {
 		AlignLightToOrbitDelta = 1,
 	},
 	ModelSceneSettingMeta = {
-		NumValues = 1,
-		MinValue = 1,
 		MaxValue = 1,
+		MinValue = 1,
+		NumValues = 1,
 	},
 	ModelSceneType = {
 		MountJournal = 0,
@@ -985,12 +985,14 @@ LE_INVENTORY_TYPE_QUIVER_TYPE = 27
 LE_INVENTORY_TYPE_RELIC_TYPE = 28
 
 NUM_LE_INVITE_REQUEST_TYPES = 3
-LE_INVITE_CONFIRMATION_RELATION_NONE = 0
-LE_INVITE_CONFIRMATION_RELATION_FRIEND = 1
 LE_INVITE_CONFIRMATION_REQUEST = 1
-LE_INVITE_CONFIRMATION_RELATION_GUILD = 2
 LE_INVITE_CONFIRMATION_SUGGEST = 2
 LE_INVITE_CONFIRMATION_QUEUE_WARNING = 3
+
+NUM_LE_INVITE_CONFIRMATION_RELATIONS = 3
+LE_INVITE_CONFIRMATION_RELATION_NONE = 0
+LE_INVITE_CONFIRMATION_RELATION_FRIEND = 1
+LE_INVITE_CONFIRMATION_RELATION_GUILD = 2
 
 NUM_LE_ITEM_ARMORS = 12
 LE_ITEM_ARMOR_GENERIC = 0
