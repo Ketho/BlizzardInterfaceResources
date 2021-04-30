@@ -3148,6 +3148,16 @@ Enum = {
 		MaxValue = 3,
 		NumValues = 4,
 	},
+	TransmogCameraVariation = {
+		None = 0,
+		CloakBackpack = 1,
+		RightShoulder = 1,
+	},
+	TransmogCameraVariationMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 3,
+	},
 	TransmogCollectionType = {
 		None = 0,
 		Head = 1,
@@ -3213,6 +3223,16 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 3,
 		NumValues = 4,
+	},
+	TransmogSearchType = {
+		Items = 1,
+		BaseSets = 2,
+		UsableSets = 3,
+	},
+	TransmogSearchTypeMeta = {
+		MinValue = 1,
+		MaxValue = 3,
+		NumValues = 3,
 	},
 	TransmogSlot = {
 		Head = 0,
@@ -3382,6 +3402,16 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 4,
 		NumValues = 5,
+	},
+	UIWidgetModelSceneLayer = {
+		None = 0,
+		Front = 1,
+		Back = 2,
+	},
+	UIWidgetModelSceneLayerMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	UIWidgetScale = {
 		OneHundred = 0,
@@ -3802,7 +3832,7 @@ LE_EXPANSION_SHADOWLANDS = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 102
+NUM_LE_FRAME_TUTORIALS = 103
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -3905,6 +3935,7 @@ LE_FRAME_TUTORIAL_COVENANT_RESERVOIR_FEATURES = 99
 LE_FRAME_TUTORIAL_TEXT_TO_SPEECH = 100
 LE_FRAME_TUTORIAL_SPEECH_TO_TEXT = 101
 LE_FRAME_TUTORIAL_SOULBIND_ENHANCED_CONDUIT = 102
+LE_FRAME_TUTORIAL_TORGHAST_REROLL = 103
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
@@ -4051,11 +4082,6 @@ LE_TRACKER_SORTING_MANUAL = 1
 LE_TRACKER_SORTING_PROXIMITY = 2
 LE_TRACKER_SORTING_DIFFICULTY_LOW = 3
 LE_TRACKER_SORTING_DIFFICULTY_HIGH = 4
-
-NUM_LE_TRANSMOG_SEARCH_TYPES = 3
-LE_TRANSMOG_SEARCH_TYPE_ITEMS = 1
-LE_TRANSMOG_SEARCH_TYPE_BASE_SETS = 2
-LE_TRANSMOG_SEARCH_TYPE_USABLE_SETS = 3
 
 NUM_LE_TRANSMOG_SET_FILTERS = 4
 LE_TRANSMOG_SET_FILTER_COLLECTED = 1
