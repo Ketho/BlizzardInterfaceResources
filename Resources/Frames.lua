@@ -292,6 +292,7 @@ local Frames = {
 	"TutorialFrameAlertButton",
 	"TutorialFrameAlertButtonBadge",
 	"UIErrorsFrame",
+	"UIFrameManager",
 	"UIParent",
 	"UIWidgetBelowMinimapContainerFrame",
 	"UIWidgetManager",

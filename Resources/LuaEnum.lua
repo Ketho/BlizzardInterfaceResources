@@ -3308,14 +3308,6 @@ Enum = {
 		MaxValue = 21,
 		NumValues = 21,
 	},
-	UIFrameDataSource = {
-		WorldState = 0,
-	},
-	UIFrameDataSourceMeta = {
-		MaxValue = 0,
-		MinValue = 0,
-		NumValues = 1,
-	},
 	UIFrameType = {
 		JailersTowerBuffs = 0,
 	},

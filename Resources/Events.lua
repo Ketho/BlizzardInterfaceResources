@@ -513,8 +513,7 @@ local Events = {
 		"FOG_OF_WAR_UPDATED",
 	},
 	C_FrameManager = {
-		"FRAME_MANAGER_HIDE_FRAME",
-		"FRAME_MANAGER_SHOW_FRAME",
+		"FRAME_MANAGER_UPDATE_FRAME",
 	},
 	C_FriendList = {
 		"BATTLETAG_INVITE_SHOW",
@@ -1142,6 +1141,9 @@ local Events = {
 	},
 	C_ScriptWarnings = {
 		"LUA_WARNING",
+	},
+	C_ScriptedAnimations = {
+		"SCRIPTED_ANIMATIONS_UPDATE",
 	},
 	C_SecureTransfer = {
 		"SECURE_TRANSFER_CANCEL",
