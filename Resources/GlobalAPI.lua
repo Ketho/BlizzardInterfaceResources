@@ -504,6 +504,7 @@ local GlobalAPI = {
 	"C_ChallengeMode.GetOverallDungeonScore",
 	"C_ChallengeMode.GetPowerLevelDamageHealthMod",
 	"C_ChallengeMode.GetSlottedKeystoneInfo",
+	"C_ChallengeMode.GetSpecificDungeonScoreRarityColor",
 	"C_ChallengeMode.HasSlottedKeystone",
 	"C_ChallengeMode.IsChallengeModeActive",
 	"C_ChallengeMode.RemoveKeystone",

@@ -3280,6 +3280,20 @@ Enum = {
 		MaxValue = 1,
 		NumValues = 2,
 	},
+	TransmogUseErrorType = {
+		None = 0,
+		PlayerCondition = 1,
+		Skill = 2,
+		Ability = 3,
+		Faction = 4,
+		Holiday = 5,
+		ArtifactSpec = 6,
+	},
+	TransmogUseErrorTypeMeta = {
+		MinValue = 0,
+		MaxValue = 6,
+		NumValues = 7,
+	},
 	UICursorType = {
 		Default = 0,
 		Item = 1,
@@ -3503,8 +3517,8 @@ Enum = {
 	},
 	VasErrorMeta = {
 		MinValue = 4,
-		NumValues = 45,
-		MaxValue = 20088,
+		NumValues = 46,
+		MaxValue = 20090,
 	},
 	VasPurchaseProgress = {
 		Invalid = 0,
@@ -3824,7 +3838,7 @@ LE_EXPANSION_SHADOWLANDS = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 103
+NUM_LE_FRAME_TUTORIALS = 105
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -3928,6 +3942,8 @@ LE_FRAME_TUTORIAL_TEXT_TO_SPEECH = 100
 LE_FRAME_TUTORIAL_SPEECH_TO_TEXT = 101
 LE_FRAME_TUTORIAL_SOULBIND_ENHANCED_CONDUIT = 102
 LE_FRAME_TUTORIAL_TORGHAST_REROLL = 103
+LE_FRAME_TUTORIAL_TORGHAST_EARN_TOWER_KNOWLEDGE = 104
+LE_FRAME_TUTORIAL_TORGHAST_SPEND_TOWER_KNOWLEDGE = 105
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1

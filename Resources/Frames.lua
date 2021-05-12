@@ -281,7 +281,7 @@ local Frames = {
 	"TargetFrame",
 	"TaxiFrame",
 	"TemporaryEnchantFrame",
-	"TextToSpeechButton",
+	"TextToSpeechButtonFrame",
 	"TextToSpeechFrame",
 	"TicketStatusFrame",
 	"TimeAlertFrame",

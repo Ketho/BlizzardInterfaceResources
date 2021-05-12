@@ -229,6 +229,7 @@ local WidgetAPI = {
 			"IsSetToFinalAlpha",
 			"Pause",
 			"Play",
+			"RemoveAnimations",
 			"Restart",
 			"SetLooping",
 			"SetPlaying",
