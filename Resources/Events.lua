@@ -915,7 +915,6 @@ local Events = {
 	},
 	C_MythicPlus = {
 		"MYTHIC_PLUS_CURRENT_AFFIX_UPDATE",
-		"MYTHIC_PLUS_NEW_SEASON_RECORD",
 		"MYTHIC_PLUS_NEW_WEEKLY_RECORD",
 	},
 	C_NamePlateManager = {

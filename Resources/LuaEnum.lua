@@ -2155,6 +2155,16 @@ Enum = {
 		MaxValue = 12,
 		NumValues = 13,
 	},
+	LinkedCurrencyFlags = {
+		IgnoreAdd = 1,
+		IgnoreSubtract = 2,
+		SuppressChatLog = 4,
+	},
+	LinkedCurrencyFlagsMeta = {
+		MinValue = 1,
+		NumValues = 3,
+		MaxValue = 4,
+	},
 	ManipulatorEventType = {
 		Start = 0,
 		Move = 1,
@@ -3452,6 +3462,22 @@ Enum = {
 		MaxValue = 3,
 		NumValues = 4,
 	},
+	UIWidgetTooltipLocation = {
+		Default = 0,
+		BottomLeft = 1,
+		Left = 2,
+		TopLeft = 3,
+		Top = 4,
+		TopRight = 5,
+		Right = 6,
+		BottomRight = 7,
+		Bottom = 8,
+	},
+	UIWidgetTooltipLocationMeta = {
+		MinValue = 0,
+		MaxValue = 8,
+		NumValues = 9,
+	},
 	UIWidgetVisualizationType = {
 		IconAndText = 0,
 		CaptureBar = 1,
@@ -3474,11 +3500,12 @@ Enum = {
 		TextureWithAnimation = 18,
 		DiscreteProgressSteps = 19,
 		ScenarioHeaderTimer = 20,
+		TextColumnRow = 21,
 	},
 	UIWidgetVisualizationTypeMeta = {
 		MinValue = 0,
-		MaxValue = 20,
-		NumValues = 21,
+		MaxValue = 21,
+		NumValues = 22,
 	},
 	Unitsex = {
 		Male = 0,
@@ -3662,12 +3689,14 @@ Enum = {
 		Disabled = 0,
 		Enabled = 1,
 		Red = 2,
-		Highlight = 3,
+		White = 3,
+		Green = 4,
+		Gold = 5,
 	},
 	WidgetEnabledStateMeta = {
 		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
+		MaxValue = 5,
+		NumValues = 6,
 	},
 	WidgetShownState = {
 		Hidden = 0,
@@ -3677,6 +3706,16 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 1,
 		NumValues = 2,
+	},
+	WidgetTextHorizontalAlignmentType = {
+		Left = 0,
+		Center = 1,
+		Right = 2,
+	},
+	WidgetTextHorizontalAlignmentTypeMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	WoWEntitlementType = {
 		Item = 0,
@@ -3838,7 +3877,7 @@ LE_EXPANSION_SHADOWLANDS = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 105
+NUM_LE_FRAME_TUTORIALS = 107
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -3944,6 +3983,8 @@ LE_FRAME_TUTORIAL_SOULBIND_ENHANCED_CONDUIT = 102
 LE_FRAME_TUTORIAL_TORGHAST_REROLL = 103
 LE_FRAME_TUTORIAL_TORGHAST_EARN_TOWER_KNOWLEDGE = 104
 LE_FRAME_TUTORIAL_TORGHAST_SPEND_TOWER_KNOWLEDGE = 105
+LE_FRAME_TUTORIAL_TORGHAST_DOMINANCE_BAR = 106
+LE_FRAME_TUTORIAL_TORGHAST_DOMINANCE_BAR_CUTOFF = 107
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
