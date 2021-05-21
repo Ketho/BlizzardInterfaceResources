@@ -1,8 +1,80 @@
 Enum = {
+	AuctionHouseCommoditySortOrder = {
+		UnitPrice = 0,
+		Quantity = 1,
+	},
+	AuctionHouseCommoditySortOrderMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
+	AuctionHouseFilter = {
+		UncollectedOnly = 0,
+		UsableOnly = 1,
+		UpgradesOnly = 2,
+		ExactMatch = 3,
+		PoorQuality = 4,
+		CommonQuality = 5,
+		UncommonQuality = 6,
+		RareQuality = 7,
+		EpicQuality = 8,
+		LegendaryQuality = 9,
+		ArtifactQuality = 10,
+		LegendaryCraftedItemOnly = 11,
+	},
+	AuctionHouseFilterMeta = {
+		MinValue = 0,
+		MaxValue = 11,
+		NumValues = 12,
+	},
+	AuctionHouseItemSortOrder = {
+		Bid = 0,
+		Buyout = 1,
+	},
+	AuctionHouseItemSortOrderMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
+	AuctionHouseSortOrder = {
+		Price = 0,
+		Name = 1,
+		Level = 2,
+		Bid = 3,
+		Buyout = 4,
+		TimeRemaining = 5,
+	},
+	AuctionHouseSortOrderMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
+	},
+	AuctionHouseTimeLeftBand = {
+		Short = 0,
+		Medium = 1,
+		Long = 2,
+		VeryLong = 3,
+	},
+	AuctionHouseTimeLeftBandMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	BattlepayBannerType = {
+		None = 0,
+		Discount = 1,
+		Featured = 2,
+		New = 3,
+	},
+	BattlepayBannerTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
 	BattlepayDisplayFlagMeta = {
 		MinValue = 1,
-		NumValues = 5,
-		MaxValue = 16,
+		NumValues = 11,
+		MaxValue = 1024,
 	},
 	BattlepayGroupDisplayTypeMeta = {
 		MinValue = 0,
@@ -16,8 +88,8 @@ Enum = {
 	},
 	BattlepayProductGroupFlagMeta = {
 		MinValue = 1,
-		NumValues = 5,
-		MaxValue = 16,
+		NumValues = 4,
+		MaxValue = 8,
 	},
 	BrawlType = {
 		None = 0,
@@ -30,10 +102,120 @@ Enum = {
 		MaxValue = 3,
 		NumValues = 4,
 	},
+	CalendarCommandType = {
+		CalendarCommandCreate = 0,
+		CalendarCommandInvite = 1,
+		CalendarCommandRsvp = 2,
+		CalendarCommandRemoveInvite = 3,
+		CalendarCommandRemoveEvent = 4,
+		CalendarCommandStatus = 5,
+		CalendarCommandModeratorStatus = 6,
+		CalendarCommandGetCalendar = 7,
+		CalendarCommandGetEvent = 8,
+		CalendarCommandUpdateEvent = 9,
+		CalendarCommandComplain = 10,
+		CalendarCommandNotes = 11,
+	},
+	CalendarCommandTypeMeta = {
+		MinValue = 0,
+		MaxValue = 11,
+		NumValues = 12,
+	},
+	CalendarErrorType = {
+		CalendarErrorSuccess = 0,
+		CalendarErrorCommunityEventsExceeded = 1,
+		CalendarErrorEventsExceeded = 2,
+		CalendarErrorSelfInvitesExceeded = 3,
+		CalendarErrorOtherInvitesExceeded = 4,
+		CalendarErrorNoPermission = 5,
+		CalendarErrorEventInvalid = 6,
+		CalendarErrorNotInvited = 7,
+		CalendarErrorUnknownError = 8,
+		CalendarErrorNotInGuild = 9,
+		CalendarErrorNotInCommunity = 10,
+		CalendarErrorTargetAlreadyInvited = 11,
+		CalendarErrorNameNotFound = 12,
+		CalendarErrorWrongFaction = 13,
+		CalendarErrorIgnored = 14,
+		CalendarErrorInvitesExceeded = 15,
+		CalendarErrorInvalidMaxSize = 16,
+		CalendarErrorInvalidDate = 17,
+		CalendarErrorInvalidTime = 18,
+		CalendarErrorNoInvites = 19,
+		CalendarErrorNeedsTitle = 20,
+		CalendarErrorEventPassed = 21,
+		CalendarErrorEventLocked = 22,
+		CalendarErrorDeleteCreatorFailed = 23,
+		CalendarErrorDataAlreadySet = 24,
+		CalendarErrorCalendarDisabled = 25,
+		CalendarErrorRestrictedAccount = 26,
+		CalendarErrorArenaEventsExceeded = 27,
+		CalendarErrorRestrictedLevel = 28,
+		CalendarErrorSquelched = 29,
+		CalendarErrorNoInvite = 30,
+		CalendarErrorComplaintDisabled = 31,
+		CalendarErrorComplaintSelf = 32,
+		CalendarErrorComplaintSameGuild = 33,
+		CalendarErrorComplaintGm = 34,
+		CalendarErrorComplaintLimit = 35,
+		CalendarErrorComplaintNotFound = 36,
+		CalendarErrorEventWrongServer = 37,
+		CalendarErrorNoCommunityInvites = 38,
+		CalendarErrorInvalidSignup = 39,
+		CalendarErrorNoModerator = 40,
+		CalendarErrorModeratorRestricted = 41,
+		CalendarErrorInvalidNotes = 42,
+		CalendarErrorInvalidTitle = 43,
+		CalendarErrorInvalidDescription = 44,
+		CalendarErrorInvalidClub = 45,
+		CalendarErrorCreatorNotFound = 46,
+		CalendarErrorEventThrottled = 47,
+		CalendarErrorInviteThrottled = 48,
+		CalendarErrorInternal = 49,
+		CalendarErrorComplaintAdded = 50,
+	},
+	CalendarErrorTypeMeta = {
+		MinValue = 0,
+		MaxValue = 50,
+		NumValues = 51,
+	},
+	CalendarEventBits = {
+		CalendarEventBitPlayer = 0x1,
+		CalendarEventBitGuildDeprecated = 0x2,
+		CalendarEventBitSystem = 0x4,
+		CalendarEventBitHoliday = 0x8,
+		CalendarEventBitLocked = 0x10,
+		CalendarEventBitAutoApprove = 0x20,
+		CalendarEventBitCommunityAnnouncement = 0x40,
+		CalendarEventBitRaidLockout = 0x80,
+		CalendarEventBitArenaDeprecated = 0x100,
+		CalendarEventBitRaidResetDeprecated = 0x200,
+		CalendarEventBitCommunitySignup = 0x400,
+		CalendarEventBitGuildSignup = 0x800,
+		CommunityWide = 0xC40,
+		PlayerCreated = 0xD43,
+		CantComplain = 0xECC,
+	},
+	CalendarEventBitsMeta = {
+		MinValue = 1,
+		NumValues = 15,
+		MaxValue = 3788,
+	},
+	CalendarEventRepeatOptions = {
+		CalendarRepeatNever = 0,
+		CalendarRepeatWeekly = 1,
+		CalendarRepeatBiweekly = 2,
+		CalendarRepeatMonthly = 3,
+	},
+	CalendarEventRepeatOptionsMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
 	CalendarEventType = {
 		Raid = 0,
 		Dungeon = 1,
-		Pvp = 2,
+		PvP = 2,
 		Meeting = 3,
 		Other = 4,
 		HeroicDeprecated = 5,
@@ -43,6 +225,127 @@ Enum = {
 		MaxValue = 5,
 		NumValues = 6,
 	},
+	CalendarFilterFlags = {
+		WeeklyHoliday = 1,
+		Darkmoon = 2,
+		Battleground = 4,
+		RaidLockout = 8,
+		RaidReset = 16,
+	},
+	CalendarFilterFlagsMeta = {
+		MinValue = 1,
+		NumValues = 5,
+		MaxValue = 16,
+	},
+	CalendarGetEventType = {
+		DefaultCalendarGetEventType = 0,
+		Get = 0,
+		Add = 1,
+		Copy = 2,
+	},
+	CalendarGetEventTypeMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 4,
+	},
+	CalendarHolidayFilterType = {
+		Weekly = 0,
+		Darkmoon = 1,
+		Battleground = 2,
+	},
+	CalendarHolidayFilterTypeMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
+	},
+	CalendarInviteBits = {
+		CalendarInviteBitPendingInvite = 1,
+		CalendarInviteBitModerator = 2,
+		CalendarInviteBitCreator = 4,
+		CalendarInviteBitSignup = 8,
+	},
+	CalendarInviteBitsMeta = {
+		MinValue = 1,
+		NumValues = 4,
+		MaxValue = 8,
+	},
+	CalendarInviteSortType = {
+		CalendarInviteSortName = 0,
+		CalendarInviteSortLevel = 1,
+		CalendarInviteSortClass = 2,
+		CalendarInviteSortStatus = 3,
+		CalendarInviteSortParty = 4,
+		CalendarInviteSortNotes = 5,
+	},
+	CalendarInviteSortTypeMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
+	},
+	CalendarInviteType = {
+		Normal = 0,
+		Signup = 1,
+	},
+	CalendarInviteTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
+	CalendarModeratorStatus = {
+		CalendarModeratorNone = 0,
+		CalendarModeratorModerator = 1,
+		CalendarModeratorCreator = 2,
+	},
+	CalendarModeratorStatusMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
+	},
+	CalendarStatus = {
+		Invited = 0,
+		Available = 1,
+		Declined = 2,
+		Confirmed = 3,
+		Out = 4,
+		Standby = 5,
+		Signedup = 6,
+		NotSignedup = 7,
+		Tentative = 8,
+	},
+	CalendarStatusMeta = {
+		MinValue = 0,
+		MaxValue = 8,
+		NumValues = 9,
+	},
+	CalendarType = {
+		Player = 0,
+		Community = 1,
+		RaidLockout = 2,
+		RaidResetDeprecated = 3,
+		Holiday = 4,
+		HolidayWeekly = 5,
+		HolidayDarkmoon = 6,
+		HolidayBattleground = 7,
+	},
+	CalendarTypeMeta = {
+		MinValue = 0,
+		MaxValue = 7,
+		NumValues = 8,
+	},
+	CalendarWebActionType = {
+		Accept = 0,
+		Decline = 1,
+		Remove = 2,
+		ReportSpam = 3,
+		Signup = 4,
+		Tentative = 5,
+		TentativeSignup = 6,
+	},
+	CalendarWebActionTypeMeta = {
+		MinValue = 0,
+		MaxValue = 6,
+		NumValues = 7,
+	},
 	CharacterServiceInfoFlag = {
 		RestrictToRecommendedSpecs = 1,
 	},
@@ -51,12 +354,45 @@ Enum = {
 		MinValue = 1,
 		NumValues = 1,
 	},
+	ChatChannelRuleset = {
+		None = 0,
+		Mentor = 1,
+		Disabled = 2,
+	},
+	ChatChannelRulesetMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
+	},
 	ChatChannelType = {
 		None = 0,
 		Custom = 1,
-		Private_Party = 2,
-		Public_Party = 3,
+		PrivateParty = 2,
+		PublicParty = 3,
 		Communities = 4,
+	},
+	ChatChannelTypeMeta = {
+		MinValue = 0,
+		MaxValue = 4,
+		NumValues = 5,
+	},
+	ChrCustomizationCategoryFlag = {
+		UndressModel = 1,
+	},
+	ChrCustomizationCategoryFlagMeta = {
+		MaxValue = 1,
+		MinValue = 1,
+		NumValues = 1,
+	},
+	ChrCustomizationOptionType = {
+		SelectionPopout = 0,
+		Checkbox = 1,
+		Slider = 2,
+	},
+	ChrCustomizationOptionTypeMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	ClubActionType = {
 		ErrorClubActionSubscribe = 0,
@@ -203,7 +539,7 @@ Enum = {
 		Member = 4,
 	},
 	ClubRoleIdentifierMeta = {
-		MinValue = 0,
+		MinValue = 1,
 		MaxValue = 4,
 		NumValues = 4,
 	},
@@ -219,21 +555,25 @@ Enum = {
 	},
 	ClubStreamType = {
 		General = 0,
-		Other = 1,
+		Guild = 1,
+		Officer = 2,
+		Other = 3,
 	},
 	ClubStreamTypeMeta = {
 		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
+		MaxValue = 3,
+		NumValues = 4,
 	},
 	ClubType = {
 		BattleNet = 0,
-		Other = 1,
+		Character = 1,
+		Guild = 2,
+		Other = 3,
 	},
 	ClubTypeMeta = {
 		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
+		MaxValue = 3,
+		NumValues = 4,
 	},
 	CommunicationMode = {
 		PushToTalk = 0,
@@ -245,21 +585,22 @@ Enum = {
 		NumValues = 2,
 	},
 	ConsoleCategory = {
-		CategoryDebug = 0,
-		CategoryGraphics = 1,
-		CategoryConsole = 2,
-		CategoryCombat = 3,
-		CategoryGame = 4,
-		CategoryDefault = 5,
-		CategoryNet = 6,
-		CategorySound = 7,
-		CategoryGm = 8,
-		CategoryNone = 9,
+		Debug = 0,
+		Graphics = 1,
+		Console = 2,
+		Combat = 3,
+		Game = 4,
+		Default = 5,
+		Net = 6,
+		Sound = 7,
+		Gm = 8,
+		Reveal = 9,
+		None = 10,
 	},
 	ConsoleCategoryMeta = {
 		MinValue = 0,
-		MaxValue = 9,
-		NumValues = 10,
+		MaxValue = 10,
+		NumValues = 11,
 	},
 	ConsoleColorType = {
 		DefaultColor = 0,
@@ -283,12 +624,13 @@ Enum = {
 	ConsoleCommandType = {
 		Cvar = 0,
 		Command = 1,
-		Script = 2,
+		Macro = 2,
+		Script = 3,
 	},
 	ConsoleCommandTypeMeta = {
 		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
+		MaxValue = 3,
+		NumValues = 4,
 	},
 	ContributionAppearanceFlags = {
 		TooltipUseTimeRemaining = 0,
@@ -325,6 +667,163 @@ Enum = {
 		MaxValue = 4,
 		NumValues = 5,
 	},
+	CovenantSkill = {
+		Kyrian = 2730,
+		Venthyr = 2731,
+		NightFae = 2732,
+		Necrolord = 2733,
+	},
+	CovenantSkillMeta = {
+		NumValues = 4,
+		MinValue = 2730,
+		MaxValue = 2733,
+	},
+	CovenantType = {
+		None = 0,
+		Kyrian = 1,
+		Venthyr = 2,
+		NightFae = 3,
+		Necrolord = 4,
+	},
+	CovenantTypeMeta = {
+		MinValue = 0,
+		MaxValue = 4,
+		NumValues = 5,
+	},
+	CurrencyDestroyReason = {
+		Cheat = 0,
+		Spell = 1,
+		VersionUpdate = 2,
+		QuestTurnin = 3,
+		Vendor = 4,
+		Trade = 5,
+		Capped = 6,
+		Garrison = 7,
+		DroppedToCorpse = 8,
+		BonusRoll = 9,
+		Last = 10,
+	},
+	CurrencyDestroyReasonMeta = {
+		MinValue = 0,
+		MaxValue = 10,
+		NumValues = 11,
+	},
+	CurrencyFlags = {
+		DeprecatedCurrencyFlag = 0x80000000,
+		CurrencyTradable = 0x1,
+		CurrencyAppearsInLootWindow = 0x2,
+		CurrencyComputedWeeklyMaximum = 0x4,
+		Currency_100_Scaler = 0x8,
+		CurrencyNoLowLevelDrop = 0x10,
+		CurrencyIgnoreMaxQtyOnLoad = 0x20,
+		CurrencyLogOnWorldChange = 0x40,
+		CurrencyTrackQuantity = 0x80,
+		CurrencyResetTrackedQuantity = 0x100,
+		CurrencyUpdateVersionIgnoreMax = 0x200,
+		CurrencySuppressChatMessageOnVersionChange = 0x400,
+		CurrencySingleDropInLoot = 0x800,
+		CurrencyHasWeeklyCatchup = 0x1000,
+		CurrencyDoNotCompressChat = 0x2000,
+		CurrencyDoNotLogAcquisitionToBi = 0x4000,
+		CurrencyNoRaidDrop = 0x8000,
+		CurrencyNotPersistent = 0x10000,
+		CurrencyDeprecated = 0x20000,
+		CurrencyDynamicMaximum = 0x40000,
+		CurrencySuppressChatMessages = 0x80000,
+		CurrencyDoNotToast = 0x100000,
+		CurrencyDestroyExtraOnLoot = 0x200000,
+		CurrencyDontShowTotalInTooltip = 0x400000,
+		CurrencyDontCoalesceInLootWindow = 0x800000,
+		CurrencyAccountWide = 0x1000000,
+		CurrencyAllowOverflowMailer = 0x2000000,
+		CurrencyHideAsReward = 0x4000000,
+		CurrencyHasWarmodeBonus = 0x8000000,
+		CurrencyIsAllianceOnly = 0x10000000,
+		CurrencyIsHordeOnly = 0x20000000,
+		CurrencyLimitWarmodeBonusOncePerTooltip = 0x40000000,
+	},
+	CurrencyFlagsB = {
+		CurrencyBUseTotalEarnedForMaxQty = 1,
+		CurrencyBShowQuestXpGainInTooltip = 2,
+	},
+	CurrencyFlagsBMeta = {
+		MinValue = 1,
+		MaxValue = 2,
+		NumValues = 2,
+	},
+	CurrencyFlagsMeta = {
+		MinValue = -2147483648,
+		NumValues = 32,
+		MaxValue = 1073741824,
+	},
+	CurrencyGainFlags = {
+		BonusAward = 1,
+		DroppedFromDeath = 2,
+		FromAccountServer = 4,
+	},
+	CurrencyGainFlagsMeta = {
+		MinValue = 1,
+		NumValues = 3,
+		MaxValue = 4,
+	},
+	CurrencySource = {
+		ConvertOldItem = 0,
+		ConvertOldPvPCurrency = 1,
+		ItemRefund = 2,
+		QuestReward = 3,
+		Cheat = 4,
+		Vendor = 5,
+		PvPKillCredit = 6,
+		PvPMetaCredit = 7,
+		PvPScriptedAward = 8,
+		Loot = 9,
+		UpdatingVersion = 10,
+		LfgReward = 11,
+		Trade = 12,
+		Spell = 13,
+		ItemDeletion = 14,
+		RatedBattleground = 15,
+		RandomBattleground = 16,
+		Arena = 17,
+		ExceededMaxQty = 18,
+		PvPCompletionBonus = 19,
+		Script = 20,
+		GuildBankWithdrawal = 21,
+		Pushloot = 22,
+		GarrisonBuilding = 23,
+		PvPDrop = 24,
+		GarrisonFollowerActivation = 25,
+		GarrisonBuildingRefund = 26,
+		GarrisonMissionReward = 27,
+		GarrisonResourceOverTime = 28,
+		QuestRewardIgnoreCaps = 29,
+		GarrisonTalent = 30,
+		GarrisonWorldQuestBonus = 31,
+		PvPHonorReward = 32,
+		BonusRoll = 33,
+		AzeriteRespec = 34,
+		WorldQuestReward = 35,
+		WorldQuestRewardIgnoreCaps = 36,
+		AccountCopy = 37,
+		ArenaPoints = 38,
+		Last = 39,
+	},
+	CurrencySourceMeta = {
+		MinValue = 0,
+		MaxValue = 39,
+		NumValues = 40,
+	},
+	CurrencyTokenCategoryFlags = {
+		FlagSortLast = 1,
+		FlagPlayerItemAssignment = 2,
+		Hidden = 4,
+		Virtual = 8,
+	},
+	CurrencyTokenCategoryFlagsMeta = {
+		MinValue = 1,
+		NumValues = 4,
+		MaxValue = 8,
+	},
 	CustomBindingType = {
 		VoicePushToTalk = 0,
 	},
@@ -332,6 +831,90 @@ Enum = {
 		MaxValue = 0,
 		MinValue = 0,
 		NumValues = 1,
+	},
+	Damageclass = {
+		MaskNone = 0x0,
+		Physical = 0x0,
+		AllPhysical = 0x1,
+		Holy = 0x1,
+		MaskPhysical = 0x1,
+		Fire = 0x2,
+		FirstResist = 0x2,
+		MaskHoly = 0x2,
+		MaskHolystrike = 0x3,
+		Nature = 0x3,
+		Frost = 0x4,
+		MaskFire = 0x4,
+		MaskFlamestrike = 0x5,
+		Shadow = 0x5,
+		Arcane = 0x6,
+		LastResist = 0x6,
+		MaskHolyfire = 0x6,
+		NumClasses = 0x7,
+		MaskNature = 0x8,
+		MaskStormstrike = 0x9,
+		MaskHolystorm = 0xA,
+		MaskFirestorm = 0xC,
+		MaskFrost = 0x10,
+		MaskFroststrike = 0x11,
+		MaskHolyfrost = 0x12,
+		MaskFrostfire = 0x14,
+		MaskFroststorm = 0x18,
+		MaskElemental = 0x1C,
+		MaskShadow = 0x20,
+		MaskShadowstrike = 0x21,
+		MaskTwilight = 0x22,
+		MaskShadowflame = 0x24,
+		MaskShadowstorm = 0x28,
+		MaskShadowfrost = 0x30,
+		MaskChromatic = 0x3E,
+		MaskArcane = 0x40,
+		MaskSpellstrike = 0x41,
+		MaskDivine = 0x42,
+		MaskSpellfire = 0x44,
+		MaskSpellstorm = 0x48,
+		MaskSpellfrost = 0x50,
+		MaskSpellshadow = 0x60,
+		MaskChaos = 0x7C,
+		AllMagical = 0x7E,
+		MaskMagical = 0x7E,
+		All = 0x7F,
+	},
+	DamageclassMeta = {
+		MinValue = 0,
+		NumValues = 46,
+		MaxValue = 127,
+	},
+	DamageclassType = {
+		Physical = 0,
+		Magical = 1,
+	},
+	DamageclassTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
+	EnvironmentalDamageFlags = {
+		OneTime = 1,
+		DmgIsPct = 2,
+	},
+	EnvironmentalDamageFlagsMeta = {
+		MinValue = 1,
+		MaxValue = 2,
+		NumValues = 2,
+	},
+	Environmentaldamagetype = {
+		Fatigue = 0,
+		Drowning = 1,
+		Falling = 2,
+		Lava = 3,
+		Slime = 4,
+		Fire = 5,
+	},
+	EnvironmentaldamagetypeMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
 	},
 	FlightPathFaction = {
 		Neutral = 0,
@@ -353,6 +936,305 @@ Enum = {
 		MaxValue = 2,
 		NumValues = 3,
 	},
+	FollowerAbilityCastResult = {
+		Success = 0,
+		Failure = 1,
+		NoPendingCast = 2,
+		InvalidTarget = 3,
+		InvalidFollowerSpell = 4,
+		RerollNotAllowed = 5,
+		SingleMissionDuration = 6,
+		MustTargetFollower = 7,
+		MustTargetTrait = 8,
+		InvalidFollowerType = 9,
+		MustBeUnique = 10,
+		CannotTargetLimitedUseFollower = 11,
+		MustTargetLimitedUseFollower = 12,
+		AlreadyAtMaxDurability = 13,
+		CannotTargetNonAutoMissionFollower = 14,
+	},
+	FollowerAbilityCastResultMeta = {
+		MinValue = 0,
+		MaxValue = 14,
+		NumValues = 15,
+	},
+	GarrAutoBoardIndex = {
+		None = -1,
+		AllyLeftBack = 0,
+		AllyRightBack = 1,
+		AllyLeftFront = 2,
+		AllyCenterFront = 3,
+		AllyRightFront = 4,
+		EnemyLeftFront = 5,
+		EnemyCenterLeftFront = 6,
+		EnemyCenterRightFront = 7,
+		EnemyRightFront = 8,
+		EnemyLeftBack = 9,
+		EnemyCenterLeftBack = 10,
+		EnemyCenterRightBack = 11,
+		EnemyRightBack = 12,
+	},
+	GarrAutoBoardIndexMeta = {
+		MinValue = -1,
+		MaxValue = 12,
+		NumValues = 14,
+	},
+	GarrAutoCombatSpellTutorialFlag = {
+		None = 0,
+		Single = 1,
+		Column = 2,
+		Row = 3,
+		All = 4,
+	},
+	GarrAutoCombatSpellTutorialFlagMeta = {
+		MinValue = 0,
+		MaxValue = 4,
+		NumValues = 5,
+	},
+	GarrAutoCombatTutorial = {
+		SelectMission = 1,
+		PlaceCompanion = 2,
+		HealCompanion = 4,
+		LevelHeal = 8,
+		BeneficialEffect = 16,
+		AttackSingle = 32,
+		AttackColumn = 64,
+		AttackRow = 128,
+		AttackAll = 256,
+		TroopTutorial = 512,
+		EnvironmentalEffect = 1024,
+	},
+	GarrAutoCombatTutorialMeta = {
+		MinValue = 1,
+		NumValues = 11,
+		MaxValue = 1024,
+	},
+	GarrAutoCombatantRole = {
+		None = 0,
+		Melee = 1,
+		RangedPhysical = 2,
+		RangedMagic = 3,
+		HealSupport = 4,
+		Tank = 5,
+	},
+	GarrAutoCombatantRoleMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
+	},
+	GarrAutoEventFlags = {
+		None = 0,
+		AutoAttack = 1,
+		Passive = 2,
+		Environment = 4,
+	},
+	GarrAutoEventFlagsMeta = {
+		MinValue = 0,
+		MaxValue = 4,
+		NumValues = 4,
+	},
+	GarrAutoMissionEventType = {
+		MeleeDamage = 0,
+		RangeDamage = 1,
+		SpellMeleeDamage = 2,
+		SpellRangeDamage = 3,
+		Heal = 4,
+		PeriodicDamage = 5,
+		PeriodicHeal = 6,
+		ApplyAura = 7,
+		RemoveAura = 8,
+		Died = 9,
+	},
+	GarrAutoMissionEventTypeMeta = {
+		MinValue = 0,
+		MaxValue = 9,
+		NumValues = 10,
+	},
+	GarrAutoPreviewTargetType = {
+		None = 0,
+		Damage = 1,
+		Heal = 2,
+		Buff = 4,
+		Debuff = 8,
+	},
+	GarrAutoPreviewTargetTypeMeta = {
+		MinValue = 0,
+		NumValues = 5,
+		MaxValue = 8,
+	},
+	GarrFollowerMissionCompleteState = {
+		Alive = 0,
+		KilledByMissionFailure = 1,
+		SavedByPreventDeath = 2,
+		OutOfDurability = 3,
+	},
+	GarrFollowerMissionCompleteStateMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	GarrFollowerQuality = {
+		None = 0,
+		Common = 1,
+		Uncommon = 2,
+		Rare = 3,
+		Epic = 4,
+		Legendary = 5,
+		Title = 6,
+	},
+	GarrFollowerQualityMeta = {
+		MinValue = 0,
+		MaxValue = 6,
+		NumValues = 7,
+	},
+	GarrTalentCostType = {
+		Initial = 0,
+		Respec = 1,
+		MakePermanent = 2,
+		TreeReset = 3,
+	},
+	GarrTalentCostTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	GarrTalentFeatureSubtype = {
+		Generic = 0,
+		Bastion = 1,
+		Revendreth = 2,
+		Ardenweald = 3,
+		Maldraxxus = 4,
+	},
+	GarrTalentFeatureSubtypeMeta = {
+		MinValue = 0,
+		MaxValue = 4,
+		NumValues = 5,
+	},
+	GarrTalentFeatureType = {
+		Generic = 0,
+		AnimaDiversion = 1,
+		TravelPortals = 2,
+		Adventures = 3,
+		ReservoirUpgrades = 4,
+		SanctumUnique = 5,
+		SoulBinds = 6,
+		AnimaDiversionMap = 7,
+	},
+	GarrTalentFeatureTypeMeta = {
+		MinValue = 0,
+		MaxValue = 7,
+		NumValues = 8,
+	},
+	GarrTalentResearchCostSource = {
+		Talent = 0,
+		Tree = 1,
+	},
+	GarrTalentResearchCostSourceMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
+	GarrTalentSocketType = {
+		None = 0,
+		Spell = 1,
+		Conduit = 2,
+	},
+	GarrTalentSocketTypeMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
+	},
+	GarrTalentTreeType = {
+		Tiers = 0,
+		Classic = 1,
+	},
+	GarrTalentTreeTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
+	GarrTalentType = {
+		Standard = 0,
+		Minor = 1,
+		Major = 2,
+		Socket = 3,
+	},
+	GarrTalentTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	GarrTalentUI = {
+		Generic = 0,
+		CovenantSanctum = 1,
+		SoulBinds = 2,
+		AnimaDiversionMap = 3,
+	},
+	GarrTalentUIMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	GarrisonFollowerType = {
+		FollowerType_6_0 = 1,
+		FollowerType_6_2 = 2,
+		FollowerType_7_0 = 4,
+		FollowerType_8_0 = 22,
+		FollowerType_9_0 = 123,
+	},
+	GarrisonFollowerTypeMeta = {
+		MinValue = 1,
+		NumValues = 5,
+		MaxValue = 123,
+	},
+	GarrisonTalentAvailability = {
+		Available = 0,
+		Unavailable = 1,
+		UnavailableAnotherIsResearching = 2,
+		UnavailableNotEnoughResources = 3,
+		UnavailableNotEnoughGold = 4,
+		UnavailableTierUnavailable = 5,
+		UnavailablePlayerCondition = 6,
+		UnavailableAlreadyHave = 7,
+		UnavailableRequiresPrerequisiteTalent = 8,
+	},
+	GarrisonTalentAvailabilityMeta = {
+		MinValue = 0,
+		MaxValue = 8,
+		NumValues = 9,
+	},
+	GarrisonType = {
+		Type_6_0 = 2,
+		Type_7_0 = 3,
+		Type_8_0 = 9,
+		Type_9_0 = 111,
+	},
+	GarrisonTypeMeta = {
+		MinValue = 2,
+		NumValues = 4,
+		MaxValue = 111,
+	},
+	HolidayCalendarFlags = {
+		Alliance = 1,
+		Horde = 2,
+	},
+	HolidayCalendarFlagsMeta = {
+		MinValue = 1,
+		MaxValue = 2,
+		NumValues = 2,
+	},
+	HolidayFlags = {
+		IsRegionwide = 1,
+		DontShowInCalendar = 2,
+		DontDisplayEnd = 4,
+		DontDisplayBanner = 8,
+		NotAvailableClientSide = 16,
+	},
+	HolidayFlagsMeta = {
+		MinValue = 1,
+		NumValues = 5,
+		MaxValue = 16,
+	},
 	IconAndTextWidgetState = {
 		Hidden = 0,
 		Shown = 1,
@@ -360,6 +1242,17 @@ Enum = {
 		ShownWithDynamicIconNotFlashing = 3,
 	},
 	IconAndTextWidgetStateMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	InputContext = {
+		None = 0,
+		Keyboard = 1,
+		Mouse = 2,
+		GamePad = 3,
+	},
+	InputContextMeta = {
 		MinValue = 0,
 		MaxValue = 3,
 		NumValues = 4,
@@ -404,7 +1297,7 @@ Enum = {
 		Poor = 0,
 		Standard = 1,
 		Good = 2,
-		Superior = 3,
+		Rare = 3,
 		Epic = 4,
 		Legendary = 5,
 		Artifact = 6,
@@ -458,8 +1351,8 @@ Enum = {
 		ArtifactTier2SlamEffect = 7,
 		CommentatorVictoryFanfare = 8,
 		ArtifactRelicTalentEffect = 9,
-		PvpWarModeOrb = 10,
-		PvpWarModeFire = 11,
+		PvPWarModeOrb = 10,
+		PvPWarModeFire = 11,
 		PartyPose = 12,
 		AzeriteItemLevelUpToast = 13,
 		AzeritePowers = 14,
@@ -470,28 +1363,26 @@ Enum = {
 		MaxValue = 15,
 		NumValues = 16,
 	},
-	PerfActivity = {
-		ActivityWorldLink = 6,
-		ActivityModelRender = 11,
-		ActivityAnimate = 15,
-		ActivitySwap = 36,
-		ActivityUnit = 45,
-		ActivityEventnet = 53,
+	PlayerCurrencyFlags = {
+		Incremented = 1,
+		Loading = 2,
 	},
-	PerfActivityMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
+	PlayerCurrencyFlagsDbFlags = {
+		IgnoreMaxQtyOnload = 1,
+		Reuse1 = 2,
+		InBackpack = 4,
+		UnusedInUI = 8,
+		Reuse2 = 16,
 	},
-	PerfCounter = {
-		PerfCountUnits = 3,
-		PerfCountPrimitiveCount = 17,
-		PerfCountBatchCount = 22,
+	PlayerCurrencyFlagsDbFlagsMeta = {
+		MinValue = 1,
+		NumValues = 5,
+		MaxValue = 16,
 	},
-	PerfCounterMeta = {
-		MinValue = 0,
+	PlayerCurrencyFlagsMeta = {
+		MinValue = 1,
 		MaxValue = 2,
-		NumValues = 3,
+		NumValues = 2,
 	},
 	PowerType = {
 		HealthCost = -2,
@@ -522,6 +1413,11 @@ Enum = {
 		MaxValue = 19,
 		NumValues = 22,
 	},
+	PurchaseEligibilityMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
+	},
 	QuestLineFloorLocation = {
 		Above = 0,
 		Below = 1,
@@ -532,9 +1428,61 @@ Enum = {
 		MaxValue = 2,
 		NumValues = 3,
 	},
+	QuestSessionCommand = {
+		None = 0,
+		Start = 1,
+		Stop = 2,
+		SessionActiveNoCommand = 3,
+	},
+	QuestSessionCommandMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	QuestSessionResult = {
+		Ok = 0,
+		NotInParty = 1,
+		InvalidOwner = 2,
+		AlreadyActive = 3,
+		NotActive = 4,
+		InRaid = 5,
+		OwnerRefused = 6,
+		Timeout = 7,
+		Disabled = 8,
+		Started = 9,
+		Stopped = 10,
+		Joined = 11,
+		Left = 12,
+		OwnerLeft = 13,
+		ReadyCheckFailed = 14,
+		PartyDestroyed = 15,
+		MemberTimeout = 16,
+		AlreadyMember = 17,
+		NotOwner = 18,
+		AlreadyOwner = 19,
+		AlreadyJoined = 20,
+		NotMember = 21,
+		Busy = 22,
+		JoinRejected = 23,
+		Logout = 24,
+		Empty = 25,
+		QuestNotCompleted = 26,
+		Resync = 27,
+		Restricted = 28,
+		InPetBattle = 29,
+		InvalidPublicParty = 30,
+		Unknown = 31,
+		InCombat = 32,
+		MemberInCombat = 33,
+	},
+	QuestSessionResultMeta = {
+		MinValue = 0,
+		MaxValue = 33,
+		NumValues = 34,
+	},
 	QuestTag = {
 		Group = 1,
-		Pvp = 41,
+		PvP = 41,
 		Raid = 62,
 		Dungeon = 81,
 		Legendary = 83,
@@ -545,9 +1493,79 @@ Enum = {
 		Account = 102,
 	},
 	QuestTagMeta = {
-		MinValue = 0,
+		MinValue = 1,
 		NumValues = 10,
 		MaxValue = 102,
+	},
+	QuestTagType = {
+		Tag = 0,
+		Profession = 1,
+		Normal = 2,
+		PvP = 3,
+		PetBattle = 4,
+		Bounty = 5,
+		Dungeon = 6,
+		Invasion = 7,
+		Raid = 8,
+		Contribution = 9,
+		RatedReward = 10,
+		InvasionWrapper = 11,
+		FactionAssault = 12,
+		Islands = 13,
+		Threat = 14,
+		CovenantCalling = 15,
+	},
+	QuestTagTypeMeta = {
+		MinValue = 0,
+		MaxValue = 15,
+		NumValues = 16,
+	},
+	RelativeContentDifficulty = {
+		Trivial = 0,
+		Easy = 1,
+		Fair = 2,
+		Difficult = 3,
+		Impossible = 4,
+	},
+	RelativeContentDifficultyMeta = {
+		MinValue = 0,
+		MaxValue = 4,
+		NumValues = 5,
+	},
+	ScriptedAnimationBehavior = {
+		None = 0,
+		TargetShake = 1,
+		TargetKnockBack = 2,
+		SourceRecoil = 3,
+		SourceCollideWithTarget = 4,
+		UIParentShake = 5,
+	},
+	ScriptedAnimationBehaviorMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
+	},
+	ScriptedAnimationFlags = {
+		UseTargetAsSource = 1,
+	},
+	ScriptedAnimationFlagsMeta = {
+		MaxValue = 1,
+		MinValue = 1,
+		NumValues = 1,
+	},
+	ScriptedAnimationTrajectory = {
+		AtSource = 0,
+		AtTarget = 1,
+		Straight = 2,
+		CurveLeft = 3,
+		CurveRight = 4,
+		CurveRandom = 5,
+		HalfwayBetween = 6,
+	},
+	ScriptedAnimationTrajectoryMeta = {
+		MinValue = 0,
+		MaxValue = 6,
+		NumValues = 7,
 	},
 	SelfResurrectOptionType = {
 		Spell = 0,
@@ -571,25 +1589,138 @@ Enum = {
 	},
 	StoreErrorMeta = {
 		MinValue = 0,
-		MaxValue = 11,
-		NumValues = 12,
+		MaxValue = 12,
+		NumValues = 13,
 	},
-	TransmogSource = {
-		None = 0,
-		JournalEncounter = 1,
-		Quest = 2,
-		Vendor = 3,
-		WorldDrop = 4,
-		HiddenUntilCollected = 5,
-		CantCollect = 6,
-		Achievement = 7,
-		Profession = 8,
-		NotValidForTransmog = 9,
+	TooltipSide = {
+		Left = 0,
+		Right = 1,
+		Top = 2,
+		Bottom = 3,
 	},
-	TransmogSourceMeta = {
+	TooltipSideMeta = {
 		MinValue = 0,
-		MaxValue = 9,
-		NumValues = 10,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	TooltipTextureAnchor = {
+		LeftTop = 0,
+		LeftCenter = 1,
+		LeftBottom = 2,
+		RightTop = 3,
+		RightCenter = 4,
+		RightBottom = 5,
+		All = 6,
+	},
+	TooltipTextureAnchorMeta = {
+		MinValue = 0,
+		MaxValue = 6,
+		NumValues = 7,
+	},
+	TooltipTextureRelativeRegion = {
+		LeftLine = 0,
+		RightLine = 1,
+	},
+	TooltipTextureRelativeRegionMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
+	TrackedSpellCategory = {
+		Offensive = 0,
+		Defensive = 1,
+		Debuff = 2,
+		Count = 3,
+	},
+	TrackedSpellCategoryMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	TransmogCollectionType = {
+		None = 0,
+		Head = 1,
+		Shoulder = 2,
+		Back = 3,
+		Chest = 4,
+		Shirt = 5,
+		Tabard = 6,
+		Wrist = 7,
+		Hands = 8,
+		Waist = 9,
+		Legs = 10,
+		Feet = 11,
+		Wand = 12,
+		OneHAxe = 13,
+		OneHSword = 14,
+		OneHMace = 15,
+		Dagger = 16,
+		Fist = 17,
+		Shield = 18,
+		Holdable = 19,
+		TwoHAxe = 20,
+		TwoHSword = 21,
+		TwoHMace = 22,
+		Staff = 23,
+		Polearm = 24,
+		Bow = 25,
+		Gun = 26,
+		Crossbow = 27,
+		Warglaives = 28,
+		Paired = 29,
+	},
+	TransmogCollectionTypeMeta = {
+		MinValue = 0,
+		MaxValue = 29,
+		NumValues = 30,
+	},
+	UICursorType = {
+		Default = 0,
+		Item = 1,
+		Money = 2,
+		Spell = 3,
+		PetAction = 4,
+		Merchant = 5,
+		ActionBar = 6,
+		Macro = 7,
+		Ammo = 8,
+		Pet = 10,
+		GuildBank = 11,
+		GuildBankMoney = 12,
+		EquipmentSet = 13,
+		Currency = 14,
+		Flyout = 15,
+		VoidItem = 16,
+		BattlePet = 17,
+		Mount = 18,
+		Toy = 19,
+		CommunitiesStream = 20,
+		ConduitCollectionItem = 21,
+	},
+	UICursorTypeMeta = {
+		MinValue = 0,
+		MaxValue = 21,
+		NumValues = 21,
+	},
+	UIMapFlag = {
+		NoHighlight = 0x1,
+		ShowOverlays = 0x2,
+		ShowTaxiNodes = 0x4,
+		GarrisonMap = 0x8,
+		FallbackToParentMap = 0x10,
+		NoHighlightTexture = 0x20,
+		ShowTaskObjectives = 0x40,
+		NoWorldPositions = 0x80,
+		HideArchaeologyDigs = 0x100,
+		Deprecated = 0x200,
+		HideIcons = 0x400,
+		HideVignettes = 0x800,
+		ForceAllOverlayExplored = 0x1000,
+	},
+	UIMapFlagMeta = {
+		MinValue = 1,
+		NumValues = 13,
+		MaxValue = 4096,
 	},
 	UIMapSystem = {
 		World = 0,
@@ -615,6 +1746,40 @@ Enum = {
 		MaxValue = 6,
 		NumValues = 7,
 	},
+	UIWidgetLayoutDirection = {
+		Default = 0,
+		Vertical = 1,
+		Horizontal = 2,
+		Overlap = 3,
+		HorizontalForceNewRow = 4,
+	},
+	UIWidgetLayoutDirectionMeta = {
+		MinValue = 0,
+		MaxValue = 4,
+		NumValues = 5,
+	},
+	UIWidgetScale = {
+		OneHundred = 0,
+		Ninty = 1,
+		Eighty = 2,
+		Seventy = 3,
+		Sixty = 4,
+		Fifty = 5,
+	},
+	UIWidgetScaleMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
+	},
+	UIWidgetSetLayoutDirection = {
+		Vertical = 0,
+		Horizontal = 1,
+	},
+	UIWidgetSetLayoutDirectionMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
 	UIWidgetVisualizationType = {
 		IconAndText = 0,
 		CaptureBar = 1,
@@ -634,6 +1799,16 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 12,
 		NumValues = 13,
+	},
+	Unitsex = {
+		Male = 0,
+		Female = 1,
+		None = 2,
+	},
+	UnitsexMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	ValidateNameResult = {
 		NameSuccess = 0,
@@ -660,9 +1835,9 @@ Enum = {
 		NumValues = 17,
 	},
 	VasErrorMeta = {
-		MinValue = 0,
-		NumValues = 34,
-		MaxValue = 20087,
+		MinValue = 4,
+		NumValues = 46,
+		MaxValue = 20090,
 	},
 	VasPurchaseProgress = {
 		Invalid = 0,
@@ -681,12 +1856,12 @@ Enum = {
 	},
 	VasServiceTypeMeta = {
 		MinValue = 0,
-		MaxValue = 6,
 		NumValues = 7,
+		MaxValue = 10,
 	},
 	VignetteType = {
 		Normal = 0,
-		PvpBounty = 1,
+		PvPBounty = 1,
 	},
 	VignetteTypeMeta = {
 		MinValue = 0,
@@ -717,11 +1892,13 @@ Enum = {
 		InvalidCommunityStream = 20,
 		PlayerSilenced = 21,
 		PlayerVoiceChatParentalDisabled = 22,
+		InvalidInputDevice = 23,
+		InvalidOutputDevice = 24,
 	},
 	VoiceChatStatusCodeMeta = {
 		MinValue = 0,
-		MaxValue = 22,
-		NumValues = 23,
+		MaxValue = 24,
+		NumValues = 25,
 	},
 	WidgetEnabledState = {
 		Disabled = 0,
@@ -743,16 +1920,22 @@ Enum = {
 		MaxValue = 1,
 		NumValues = 2,
 	},
-	ZoneAbilityType = {
-		Garrison = 0,
-		OrderHall = 1,
-		Argus = 2,
-		WarEffort = 3,
+	WoWEntitlementType = {
+		Item = 0,
+		Mount = 1,
+		Battlepet = 2,
+		Toy = 3,
+		Appearance = 4,
+		AppearanceSet = 5,
+		GameTime = 6,
+		Title = 7,
+		Illusion = 8,
+		Invalid = 9,
 	},
-	ZoneAbilityTypeMeta = {
+	WoWEntitlementTypeMeta = {
 		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
+		MaxValue = 9,
+		NumValues = 10,
 	},
 }
 
@@ -830,8 +2013,10 @@ LE_DEMON_HUNTER_CREATION_DISABLED_REASON_HAVE_DH = 1
 LE_DEMON_HUNTER_CREATION_DISABLED_REASON_NEED_LEVEL_70 = 2
 LE_DEMON_HUNTER_INVALID_CLASS_FOR_BOOST = 3
 
-NUM_LE_EXPANSION_LEVELS = 1
+NUM_LE_EXPANSION_LEVELS = 2
 LE_EXPANSION_CLASSIC = 0
+LE_EXPANSION_BURNING_CRUSADE = 1
+LE_EXPANSION_LEVEL_CURRENT = 1
 
 NUM_LE_FOLLOWER_ABILITY_CAST_RESULTS = 14
 LE_FOLLOWER_ABILITY_CAST_RESULT_SUCCESS = 1
@@ -855,13 +2040,7 @@ LE_FOLLOWER_MISSION_COMPLETE_STATE_DEAD = 2
 LE_FOLLOWER_MISSION_COMPLETE_STATE_SAVED = 3
 LE_FOLLOWER_MISSION_COMPLETE_STATE_OUT_OF_DURABILITY = 4
 
-NUM_LE_FOLLOWER_TYPES = 23
-LE_FOLLOWER_TYPE_GARRISON_6_0 = 1
-LE_FOLLOWER_TYPE_SHIPYARD_6_2 = 2
-LE_FOLLOWER_TYPE_GARRISON_7_0 = 4
-LE_FOLLOWER_TYPE_GARRISON_8_0 = 22
-
-NUM_LE_FRAME_TUTORIALS = 66
+NUM_LE_FRAME_TUTORIALS = 55
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -870,88 +2049,53 @@ LE_FRAME_TUTORIAL_PROFESSIONS = 5
 LE_FRAME_TUTORIAL_CORE_ABILITITES = 6
 LE_FRAME_TUTORIAL_PET_JOURNAL = 7
 LE_FRAME_TUTORIAL_WHAT_HAS_CHANGED = 8
-LE_FRAME_TUTORIAL_GARRISON_BUILDING = 9
-LE_FRAME_TUTORIAL_GARRISON_MISSION_LIST = 10
-LE_FRAME_TUTORIAL_GARRISON_MISSION_PAGE = 11
-LE_FRAME_TUTORIAL_GARRISON_LANDING = 12
-LE_FRAME_TUTORIAL_GARRISON_ZONE_ABILITY = 13
-LE_FRAME_TUTORIAL_WORLD_MAP_FRAME = 14
-LE_FRAME_TUTORIAL_CLEAN_UP_BAGS = 15
-LE_FRAME_TUTORIAL_BAG_SETTINGS = 16
-LE_FRAME_TUTORIAL_TOYBOX_FAVORITE = 17
-LE_FRAME_TUTORIAL_TOYBOX_MOUSEWHEEL_PAGING = 18
-LE_FRAME_TUTORIAL_LFG_LIST = 19
-LE_FRAME_TUTORIAL_TOYBOX = 20
-LE_FRAME_TUTORIAL_HEIRLOOM_JOURNAL = 21
-LE_FRAME_TUTORIAL_HEIRLOOM_JOURNAL_TAB = 22
-LE_FRAME_TUTORIAL_HEIRLOOM_JOURNAL_LEVEL = 23
-LE_FRAME_TUTORIAL_GAME_TIME_AUCTION_HOUSE = 24
-LE_FRAME_TUTORIAL_BOOSTED_SPELL_BOOK = 25
-LE_FRAME_TUTORIAL_ARTIFACT_KNOWLEDGE_LEVEL_LIMIT = 26
-LE_FRAME_TUTORIAL_WRAPPED_COLLECTION_ITEMS = 27
-LE_FRAME_TUTORIAL_VIEWABLE_ARTIFACT = 28
-LE_FRAME_TUTORIAL_ARTIFACT_APPEARANCE_TAB = 29
-LE_FRAME_TUTORIAL_ARTIFACT_RELIC_MATCH = 30
-LE_FRAME_TUTORIAL_BOUNTY_INTRO = 31
-LE_FRAME_TUTORIAL_BOUNTY_FINISHED = 32
-LE_FRAME_TUTORIAL_IGNORE_QUEST = 33
-LE_FRAME_TUTORIAL_TRANSMOG_JOURNAL_TAB = 34
-LE_FRAME_TUTORIAL_TRANSMOG_MODEL_CLICK = 35
-LE_FRAME_TUTORIAL_TRANSMOG_SPECS_BUTTON = 36
-LE_FRAME_TUTORIAL_TRANSMOG_OUTFIT_DROPDOWN = 37
-LE_FRAME_TUTORIAL_HONOR_TALENT_FIRST_TALENT = 38
-LE_FRAME_TUTORIAL_HONOR_TALENT_HONOR_LEVELS = 39
-LE_FRAME_TUTORIAL_ARTIFACT_KNOWLEDGE = 40
-LE_FRAME_TUTORIAL_INVENTORY_FIXUP_EXPANSION_LEGION = 41
-LE_FRAME_TUTORIAL_INVENTORY_FIXUP_CHECK_EXPANSION_LEGION = 42
-LE_FRAME_TUTORIAL_BONUS_ROLL_ENCOUNTER_JOURNAL_LINK = 43
-LE_FRAME_TUTORIAL_FRIENDS_LIST_QUICK_JOIN = 44
-LE_FRAME_TUTORIAL_REPUTATION_EXALTED_PLUS = 45
-LE_FRAME_TUTORIAL_TRANSMOG_SETS_TAB = 46
-LE_FRAME_TUTORIAL_TRANSMOG_SETS_VENDOR_TAB = 47
-LE_FRAME_TUTORIAL_BRAWL = 48
-LE_FRAME_TUTORIAL_RELIC_FORGE_LEARN_TRAIT = 49
-LE_FRAME_TUTORIAL_RELIC_FORGE_SOCKETED_RELIC = 50
-LE_FRAME_TUTORIAL_RELIC_FORGE_PREVIEW_RELIC = 51
-LE_FRAME_TUTORIAL_BAG_SLOTS_AUTHENTICATOR = 52
-LE_FRAME_TUTORIAL_TRIAL_BANKED_XP = 53
-LE_FRAME_TUTORIAL_TRADESKILL_UNLEARNED_TAB = 54
-LE_FRAME_TUTORIAL_TRADESKILL_RANK_STAR = 55
-LE_FRAME_TUTORIAL_AZERITE_RESPEC = 56
-LE_FRAME_TUTORIAL_PVP_TALENTS_FIRST_UNLOCK = 57
-LE_FRAME_TUTORIAL_PVP_WARMODE_UNLOCK = 58
-LE_FRAME_TUTORIAL_WARFRONT_RESOURCES = 59
-LE_FRAME_TUTORIAL_WARFRONT_CONSTRUCTION = 60
-LE_FRAME_TUTORIAL_AZERITE_ITEM_IN_BAG = 61
-LE_FRAME_TUTORIAL_AZERITE_ITEM_IN_SLOT = 62
-LE_FRAME_TUTORIAL_AZERITE_FIRST_POWER_LOCKED_IN = 63
-LE_FRAME_TUTORIAL_CHAT_CHANNELS = 64
-LE_FRAME_TUTORIAL_ISLANDS_QUEUE_BUTTON = 65
-LE_FRAME_TUTORIAL_ISLANDS_QUEUE_INFO_FRAME = 66
-
-NUM_LE_GARRISON_TALENT_AVAILABILITYS = 8
-LE_GARRISON_TALENT_AVAILABILITY_AVAILABLE = 1
-LE_GARRISON_TALENT_AVAILABILITY_UNAVAILABLE = 2
-LE_GARRISON_TALENT_AVAILABILITY_UNAVAILABLE_ANOTHER_IS_RESEARCHING = 3
-LE_GARRISON_TALENT_AVAILABILITY_UNAVAILABLE_NOT_ENOUGH_RESOURCES = 4
-LE_GARRISON_TALENT_AVAILABILITY_UNAVAILABLE_NOT_ENOUGH_GOLD = 5
-LE_GARRISON_TALENT_AVAILABILITY_UNAVAILABLE_TIER_UNAVAILABLE = 6
-LE_GARRISON_TALENT_AVAILABILITY_UNAVAILABLE_PLAYER_CONDITION = 7
-LE_GARRISON_TALENT_AVAILABILITY_UNAVAILABLE_ALREADY_HAVE = 8
-
-NUM_LE_GARRISON_TYPES = 10
-LE_GARRISON_TYPE_6_0 = 2
-LE_GARRISON_TYPE_7_0 = 3
-LE_GARRISON_TYPE_8_0 = 9
-
-NUM_LE_GARR_FOLLOWER_QUALITYS = 7
-LE_GARR_FOLLOWER_QUALITY_NONE = 0
-LE_GARR_FOLLOWER_QUALITY_COMMON = 1
-LE_GARR_FOLLOWER_QUALITY_UNCOMMON = 2
-LE_GARR_FOLLOWER_QUALITY_RARE = 3
-LE_GARR_FOLLOWER_QUALITY_EPIC = 4
-LE_GARR_FOLLOWER_QUALITY_LEGENDARY = 5
-LE_GARR_FOLLOWER_QUALITY_TITLE = 6
+LE_FRAME_TUTORIAL_WORLD_MAP_FRAME = 9
+LE_FRAME_TUTORIAL_CLEAN_UP_BAGS = 10
+LE_FRAME_TUTORIAL_BAG_SETTINGS = 11
+LE_FRAME_TUTORIAL_TOYBOX_FAVORITE = 12
+LE_FRAME_TUTORIAL_TOYBOX_MOUSEWHEEL_PAGING = 13
+LE_FRAME_TUTORIAL_LFG_LIST = 14
+LE_FRAME_TUTORIAL_TOYBOX = 15
+LE_FRAME_TUTORIAL_HEIRLOOM_JOURNAL = 16
+LE_FRAME_TUTORIAL_HEIRLOOM_JOURNAL_TAB = 17
+LE_FRAME_TUTORIAL_HEIRLOOM_JOURNAL_LEVEL = 18
+LE_FRAME_TUTORIAL_GAME_TIME_AUCTION_HOUSE = 19
+LE_FRAME_TUTORIAL_BOOSTED_SPELL_BOOK = 20
+LE_FRAME_TUTORIAL_ARTIFACT_KNOWLEDGE_LEVEL_LIMIT = 21
+LE_FRAME_TUTORIAL_WRAPPED_COLLECTION_ITEMS = 22
+LE_FRAME_TUTORIAL_VIEWABLE_ARTIFACT = 23
+LE_FRAME_TUTORIAL_ARTIFACT_APPEARANCE_TAB = 24
+LE_FRAME_TUTORIAL_ARTIFACT_RELIC_MATCH = 25
+LE_FRAME_TUTORIAL_BOUNTY_INTRO = 26
+LE_FRAME_TUTORIAL_BOUNTY_FINISHED = 27
+LE_FRAME_TUTORIAL_IGNORE_QUEST = 28
+LE_FRAME_TUTORIAL_HONOR_TALENT_FIRST_TALENT = 29
+LE_FRAME_TUTORIAL_HONOR_TALENT_HONOR_LEVELS = 30
+LE_FRAME_TUTORIAL_ARTIFACT_KNOWLEDGE = 31
+LE_FRAME_TUTORIAL_INVENTORY_FIXUP_EXPANSION_LEGION = 32
+LE_FRAME_TUTORIAL_INVENTORY_FIXUP_CHECK_EXPANSION_LEGION = 33
+LE_FRAME_TUTORIAL_BONUS_ROLL_ENCOUNTER_JOURNAL_LINK = 34
+LE_FRAME_TUTORIAL_FRIENDS_LIST_QUICK_JOIN = 35
+LE_FRAME_TUTORIAL_REPUTATION_EXALTED_PLUS = 36
+LE_FRAME_TUTORIAL_BRAWL = 37
+LE_FRAME_TUTORIAL_RELIC_FORGE_LEARN_TRAIT = 38
+LE_FRAME_TUTORIAL_RELIC_FORGE_SOCKETED_RELIC = 39
+LE_FRAME_TUTORIAL_RELIC_FORGE_PREVIEW_RELIC = 40
+LE_FRAME_TUTORIAL_BAG_SLOTS_AUTHENTICATOR = 41
+LE_FRAME_TUTORIAL_TRIAL_BANKED_XP = 42
+LE_FRAME_TUTORIAL_TRADESKILL_UNLEARNED_TAB = 43
+LE_FRAME_TUTORIAL_TRADESKILL_RANK_STAR = 44
+LE_FRAME_TUTORIAL_AZERITE_RESPEC = 45
+LE_FRAME_TUTORIAL_PVP_TALENTS_FIRST_UNLOCK = 46
+LE_FRAME_TUTORIAL_PVP_WARMODE_UNLOCK = 47
+LE_FRAME_TUTORIAL_WARFRONT_RESOURCES = 48
+LE_FRAME_TUTORIAL_WARFRONT_CONSTRUCTION = 49
+LE_FRAME_TUTORIAL_AZERITE_ITEM_IN_BAG = 50
+LE_FRAME_TUTORIAL_AZERITE_ITEM_IN_SLOT = 51
+LE_FRAME_TUTORIAL_AZERITE_FIRST_POWER_LOCKED_IN = 52
+LE_FRAME_TUTORIAL_CHAT_CHANNELS = 53
+LE_FRAME_TUTORIAL_ISLANDS_QUEUE_BUTTON = 54
+LE_FRAME_TUTORIAL_ISLANDS_QUEUE_INFO_FRAME = 55
 
 NUM_LE_INVENTORY_TYPES = 29
 LE_INVENTORY_TYPE_NON_EQUIP_TYPE = 0
@@ -1229,6 +2373,10 @@ LE_REALM_RELATION_SAME = 1
 LE_REALM_RELATION_COALESCED = 2
 LE_REALM_RELATION_VIRTUAL = 3
 
+NUM_LE_RELEASE_TYPES = 2
+LE_RELEASE_TYPE_ORIGINAL = 0
+LE_RELEASE_TYPE_MODERN = 1
+
 NUM_LE_SCENARIO_TYPES = 7
 LE_SCENARIO_TYPE_DEFAULT = 0
 LE_SCENARIO_TYPE_CHALLENGE_MODE = 1
@@ -1284,52 +2432,6 @@ LE_TRACKER_SORTING_MANUAL = 1
 LE_TRACKER_SORTING_PROXIMITY = 2
 LE_TRACKER_SORTING_DIFFICULTY_LOW = 3
 LE_TRACKER_SORTING_DIFFICULTY_HIGH = 4
-
-NUM_LE_TRANSMOG_COLLECTION_TYPES = 29
-LE_TRANSMOG_COLLECTION_TYPE_HEAD = 1
-LE_TRANSMOG_COLLECTION_TYPE_SHOULDER = 2
-LE_TRANSMOG_COLLECTION_TYPE_BACK = 3
-LE_TRANSMOG_COLLECTION_TYPE_CHEST = 4
-LE_TRANSMOG_COLLECTION_TYPE_SHIRT = 5
-LE_TRANSMOG_COLLECTION_TYPE_TABARD = 6
-LE_TRANSMOG_COLLECTION_TYPE_WRIST = 7
-LE_TRANSMOG_COLLECTION_TYPE_HANDS = 8
-LE_TRANSMOG_COLLECTION_TYPE_WAIST = 9
-LE_TRANSMOG_COLLECTION_TYPE_LEGS = 10
-LE_TRANSMOG_COLLECTION_TYPE_FEET = 11
-LE_TRANSMOG_COLLECTION_TYPE_WAND = 12
-LE_TRANSMOG_COLLECTION_TYPE_1H_AXE = 13
-LE_TRANSMOG_COLLECTION_TYPE_1H_SWORD = 14
-LE_TRANSMOG_COLLECTION_TYPE_1H_MACE = 15
-LE_TRANSMOG_COLLECTION_TYPE_DAGGER = 16
-LE_TRANSMOG_COLLECTION_TYPE_FIST = 17
-LE_TRANSMOG_COLLECTION_TYPE_SHIELD = 18
-LE_TRANSMOG_COLLECTION_TYPE_HOLDABLE = 19
-LE_TRANSMOG_COLLECTION_TYPE_2H_AXE = 20
-LE_TRANSMOG_COLLECTION_TYPE_2H_SWORD = 21
-LE_TRANSMOG_COLLECTION_TYPE_2H_MACE = 22
-LE_TRANSMOG_COLLECTION_TYPE_STAFF = 23
-LE_TRANSMOG_COLLECTION_TYPE_POLEARM = 24
-LE_TRANSMOG_COLLECTION_TYPE_BOW = 25
-LE_TRANSMOG_COLLECTION_TYPE_GUN = 26
-LE_TRANSMOG_COLLECTION_TYPE_CROSSBOW = 27
-LE_TRANSMOG_COLLECTION_TYPE_WARGLAIVES = 28
-LE_TRANSMOG_COLLECTION_TYPE_PAIRED = 29
-
-NUM_LE_TRANSMOG_SEARCH_TYPES = 3
-LE_TRANSMOG_SEARCH_TYPE_ITEMS = 1
-LE_TRANSMOG_SEARCH_TYPE_BASE_SETS = 2
-LE_TRANSMOG_SEARCH_TYPE_USABLE_SETS = 3
-
-NUM_LE_TRANSMOG_SET_FILTERS = 4
-LE_TRANSMOG_SET_FILTER_COLLECTED = 1
-LE_TRANSMOG_SET_FILTER_UNCOLLECTED = 2
-LE_TRANSMOG_SET_FILTER_PVE = 3
-LE_TRANSMOG_SET_FILTER_PVP = 4
-
-NUM_LE_TRANSMOG_TYPES = 2
-LE_TRANSMOG_TYPE_APPEARANCE = 0
-LE_TRANSMOG_TYPE_ILLUSION = 1
 
 NUM_LE_TWITTER_RESULTS = 3
 LE_TWITTER_RESULT_SUCCESS = 1
