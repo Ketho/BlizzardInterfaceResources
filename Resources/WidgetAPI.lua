@@ -32,6 +32,7 @@ local WidgetAPI = {
 	Region = {
 		inherits = {"ParentedObject"},
 		methods = {
+			"AdjustPointsOffset",
 			"CanChangeProtectedState",
 			"ClearAllPoints",
 			"CreateAnimationGroup",

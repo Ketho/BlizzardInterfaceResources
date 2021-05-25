@@ -661,8 +661,8 @@ Enum = {
 	},
 	VasErrorMeta = {
 		MinValue = 0,
-		NumValues = 34,
-		MaxValue = 20087,
+		NumValues = 35,
+		MaxValue = 20090,
 	},
 	VasPurchaseProgress = {
 		Invalid = 0,
