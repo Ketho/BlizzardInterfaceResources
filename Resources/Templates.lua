@@ -2214,7 +2214,7 @@ local Templates = {
 	["TooltipTextLeftTemplate"] = {type = "FontString", inherits = "GameTooltipText"},
 	["TooltipTextRightTemplate"] = {type = "FontString", inherits = "GameTooltipText"},
 	["TooltipTextureTemplate"] = {type = "Texture"},
-	["TorghastGemsAnimationTemplate"] = {type = "Frame"},
+	["TorghastGemsAnimationTemplate"] = {type = "Frame", mixin = "TorghastGemsAnimationMixin"},
 	["TorghastLevelPickerOptionButtonTemplate"] = {type = "CheckButton", mixin = "TorghastLevelPickerOptionButtonMixin", inherits = "CustomGossipOptionButtonBaseTemplate"},
 	["TorghastLevelPickerRewardBannerTemplate"] = {type = "Frame"},
 	["TorghastLevelPickerRewardCircleTemplate"] = {type = "Button", mixin = "TorghastLevelPickerRewardCircleMixin"},

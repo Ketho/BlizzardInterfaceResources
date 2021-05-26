@@ -1088,6 +1088,7 @@ local Mixins = {
 	"TexturePoolMixin",
 	"ThreatObjectivePinMixin",
 	"ThreeSliceButtonMixin",
+	"TorghastGemsAnimationMixin",
 	"TorghastLevelPickerFrameMixin",
 	"TorghastLevelPickerOpenPortalButtonMixin",
 	"TorghastLevelPickerOptionButtonMixin",
