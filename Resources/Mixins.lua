@@ -1084,6 +1084,7 @@ local Mixins = {
 	"TemplatedListElementMixin",
 	"TemplatedListMixin",
 	"TextToSpeechButtonMixin",
+	"TextToSpeechCommandsMixin",
 	"TextureLoadingGroupMixin",
 	"TexturePoolMixin",
 	"ThreatObjectivePinMixin",

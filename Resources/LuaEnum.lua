@@ -2149,11 +2149,12 @@ Enum = {
 		TormentChamberAnduin = 10,
 		AdamantVaults = 11,
 		ForgottenCatacombs = 12,
+		Ossuary = 13,
 	},
 	JailersTowerTypeMeta = {
 		MinValue = 0,
-		MaxValue = 12,
-		NumValues = 13,
+		MaxValue = 13,
+		NumValues = 14,
 	},
 	LinkedCurrencyFlags = {
 		IgnoreAdd = 1,
@@ -2265,6 +2266,17 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 4,
 		NumValues = 5,
+	},
+	PermanentChatChannelType = {
+		None = 0,
+		Zone = 1,
+		Communities = 2,
+		Custom = 3,
+	},
+	PermanentChatChannelTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
 	},
 	PetBattleState = {
 		Created = 0,
@@ -3877,7 +3889,7 @@ LE_EXPANSION_SHADOWLANDS = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 107
+NUM_LE_FRAME_TUTORIALS = 108
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -3985,6 +3997,7 @@ LE_FRAME_TUTORIAL_TORGHAST_EARN_TOWER_KNOWLEDGE = 104
 LE_FRAME_TUTORIAL_TORGHAST_SPEND_TOWER_KNOWLEDGE = 105
 LE_FRAME_TUTORIAL_TORGHAST_DOMINANCE_BAR = 106
 LE_FRAME_TUTORIAL_TORGHAST_DOMINANCE_BAR_CUTOFF = 107
+LE_FRAME_TUTORIAL_UPGRADEABLE_ITEM_IN_SLOT = 108
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
