@@ -1161,6 +1161,7 @@ local GlobalAPI = {
 	"GetContainerItemID",
 	"GetContainerItemInfo",
 	"GetContainerItemLink",
+	"GetContainerItemPurchaseCurrency",
 	"GetContainerItemPurchaseInfo",
 	"GetContainerItemPurchaseItem",
 	"GetContainerNumFreeSlots",
