@@ -1134,6 +1134,7 @@ local Mixins = {
 	"UIWidgetBaseTextureAndTextTemplateMixin",
 	"UIWidgetBelowMinimapContainerMixin",
 	"UIWidgetContainerMixin",
+	"UIWidgetHorizontalWidgetContainerMixin",
 	"UIWidgetManagerMixin",
 	"UIWidgetPowerBarContainerMixin",
 	"UIWidgetTemplateBulletTextListLineMixin",

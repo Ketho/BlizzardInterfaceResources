@@ -7257,8 +7257,8 @@ local AtlasInfo = {
 		["HordeScenario-TrackerHeader"] = {243, 77, 0.48046875, 0.955078125, 0.560546875, 0.7109375, false, false},
 	},
 	["interface/scenarios/scenariojailerstower"] = { -- 3487405
-		["jailerstower-scenario-TitleBG"] = {467, 141, 0.001953125, 0.9140625, 0.00390625, 0.5546875, false, false},
-		["jailerstower-scenario-TrackerHeader"] = {243, 77, 0.001953125, 0.4765625, 0.5625, 0.86328125, false, false},
+		["jailerstower-scenario-titlebg"] = {472, 141, 0.001953125, 0.923828125, 0.00390625, 0.5546875, false, false},
+		["jailerstower-scenario-trackerheader"] = {243, 77, 0.001953125, 0.4765625, 0.5625, 0.86328125, false, false},
 	},
 	["interface/scenarios/scenariokyrian"] = { -- 3752255
 		["kyrian-scenario-TitleBG"] = {467, 141, 0.001953125, 0.9140625, 0.00390625, 0.5546875, false, false},
