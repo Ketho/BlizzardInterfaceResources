@@ -12337,6 +12337,7 @@ PVP_RATING = "Rating:";
 PVP_RATING_CHANGE = "%s Rating";
 PVP_RATING_CURRENT = "Current Rating: %s";
 PVP_RATING_GAINED = "Rating Gained: %s";
+PVP_RATING_GROUP_FINDER = "%s: %d(%s)";
 PVP_RATING_HEADER = "Rating";
 PVP_RATING_NEW = "New Rating: %s";
 PVP_RATING_PREVIOUS = "Previous Rating: %s";

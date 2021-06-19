@@ -2418,6 +2418,7 @@ local Templates = {
 	["UIWidgetTemplateIconTextAndCurrencies"] = {type = "Frame", mixin = "UIWidgetTemplateIconTextAndCurrenciesMixin", inherits = "UIWidgetBaseTemplate"},
 	["UIWidgetTemplateScenarioHeaderCurrenciesAndBackground"] = {type = "Frame", mixin = "UIWidgetTemplateScenarioHeaderCurrenciesAndBackgroundMixin", inherits = "UIWidgetBaseScenarioHeaderTemplate"},
 	["UIWidgetTemplateScenarioHeaderTimer"] = {type = "Frame", mixin = "UIWidgetTemplateScenarioHeaderTimerMixin", inherits = "UIWidgetBaseScenarioHeaderTemplate"},
+	["UIWidgetTemplateSpacer"] = {type = "Frame", mixin = "UIWidgetTemplateSpacerMixin", inherits = "UIWidgetBaseTemplate"},
 	["UIWidgetTemplateSpellDisplay"] = {type = "Frame", mixin = "UIWidgetTemplateSpellDisplayMixin", inherits = "UIWidgetBaseTemplate"},
 	["UIWidgetTemplateStackedResourceTracker"] = {type = "Frame", mixin = "UIWidgetTemplateStackedResourceTrackerMixin", inherits = "UIWidgetBaseTemplate"},
 	["UIWidgetTemplateStatusBar"] = {type = "Frame", mixin = "UIWidgetTemplateStatusBarMixin", inherits = "UIWidgetBaseTemplate"},

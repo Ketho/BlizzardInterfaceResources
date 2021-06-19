@@ -1151,6 +1151,7 @@ local Mixins = {
 	"UIWidgetTemplateIconTextAndCurrenciesMixin",
 	"UIWidgetTemplateScenarioHeaderCurrenciesAndBackgroundMixin",
 	"UIWidgetTemplateScenarioHeaderTimerMixin",
+	"UIWidgetTemplateSpacerMixin",
 	"UIWidgetTemplateSpellDisplayMixin",
 	"UIWidgetTemplateStackedResourceTrackerMixin",
 	"UIWidgetTemplateStatusBarMixin",

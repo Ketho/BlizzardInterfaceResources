@@ -3513,11 +3513,12 @@ Enum = {
 		DiscreteProgressSteps = 19,
 		ScenarioHeaderTimer = 20,
 		TextColumnRow = 21,
+		Spacer = 22,
 	},
 	UIWidgetVisualizationTypeMeta = {
 		MinValue = 0,
-		MaxValue = 21,
-		NumValues = 22,
+		MaxValue = 22,
+		NumValues = 23,
 	},
 	Unitsex = {
 		Male = 0,
