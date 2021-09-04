@@ -1,34 +1,9 @@
 Enum = {
-	BattlepayDisplayFlagMeta = {
-		MinValue = 1,
-		NumValues = 5,
-		MaxValue = 16,
-	},
-	BattlepayGroupDisplayTypeMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
-	BattlepayProductDecoratorMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
-	BattlepayProductGroupFlagMeta = {
-		MinValue = 1,
-		NumValues = 5,
-		MaxValue = 16,
-	},
 	BrawlType = {
 		None = 0,
 		Battleground = 1,
 		Arena = 2,
 		Lfg = 3,
-	},
-	BrawlTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	CalendarEventType = {
 		Raid = 0,
@@ -38,18 +13,8 @@ Enum = {
 		Other = 4,
 		HeroicDeprecated = 5,
 	},
-	CalendarEventTypeMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	CharacterServiceInfoFlag = {
 		RestrictToRecommendedSpecs = 1,
-	},
-	CharacterServiceInfoFlagMeta = {
-		MaxValue = 1,
-		MinValue = 1,
-		NumValues = 1,
 	},
 	ChatChannelType = {
 		None = 0,
@@ -86,11 +51,6 @@ Enum = {
 		ErrorClubActionCreateMessage = 24,
 		ErrorClubActionEditMessage = 25,
 		ErrorClubActionDestroyMessage = 26,
-	},
-	ClubActionTypeMeta = {
-		MinValue = 0,
-		MaxValue = 26,
-		NumValues = 27,
 	},
 	ClubErrorType = {
 		ErrorCommunitiesNone = 0,
@@ -134,11 +94,6 @@ Enum = {
 		ErrorClubTicketNoSuchTicket = 38,
 		ErrorClubTicketHasConsumedAllowedRedeemCount = 39,
 	},
-	ClubErrorTypeMeta = {
-		MinValue = 0,
-		MaxValue = 39,
-		NumValues = 40,
-	},
 	ClubFieldType = {
 		ClubName = 0,
 		ClubShortName = 1,
@@ -148,20 +103,10 @@ Enum = {
 		ClubStreamSubject = 5,
 		NumTypes = 6,
 	},
-	ClubFieldTypeMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
-	},
 	ClubInvitationCandidateStatus = {
 		Available = 0,
 		InvitePending = 1,
 		AlreadyMember = 2,
-	},
-	ClubInvitationCandidateStatusMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	ClubMemberPresence = {
 		Unknown = 0,
@@ -171,30 +116,15 @@ Enum = {
 		Away = 4,
 		Busy = 5,
 	},
-	ClubMemberPresenceMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	ClubRemovedReason = {
 		None = 0,
 		Banned = 1,
 		Removed = 2,
 		ClubDestroyed = 3,
 	},
-	ClubRemovedReasonMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	ClubRestrictionReason = {
 		None = 0,
 		Unavailable = 1,
-	},
-	ClubRestrictionReasonMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	ClubRoleIdentifier = {
 		Owner = 1,
@@ -202,47 +132,22 @@ Enum = {
 		Moderator = 3,
 		Member = 4,
 	},
-	ClubRoleIdentifierMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 4,
-	},
 	ClubStreamNotificationFilter = {
 		None = 0,
 		Mention = 1,
 		All = 2,
 	},
-	ClubStreamNotificationFilterMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
 	ClubStreamType = {
 		General = 0,
 		Other = 1,
-	},
-	ClubStreamTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	ClubType = {
 		BattleNet = 0,
 		Other = 1,
 	},
-	ClubTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
-	},
 	CommunicationMode = {
 		PushToTalk = 0,
 		OpenMic = 1,
-	},
-	CommunicationModeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	ConsoleCategory = {
 		CategoryDebug = 0,
@@ -255,11 +160,6 @@ Enum = {
 		CategorySound = 7,
 		CategoryGm = 8,
 		CategoryNone = 9,
-	},
-	ConsoleCategoryMeta = {
-		MinValue = 0,
-		MaxValue = 9,
-		NumValues = 10,
 	},
 	ConsoleColorType = {
 		DefaultColor = 0,
@@ -275,28 +175,13 @@ Enum = {
 		PrivateColor = 10,
 		DefaultGreen = 11,
 	},
-	ConsoleColorTypeMeta = {
-		MinValue = 0,
-		MaxValue = 11,
-		NumValues = 12,
-	},
 	ConsoleCommandType = {
 		Cvar = 0,
 		Command = 1,
 		Script = 2,
 	},
-	ConsoleCommandTypeMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
 	ContributionAppearanceFlags = {
 		TooltipUseTimeRemaining = 0,
-	},
-	ContributionAppearanceFlagsMeta = {
-		MaxValue = 0,
-		MinValue = 0,
-		NumValues = 1,
 	},
 	ContributionResult = {
 		Success = 0,
@@ -308,11 +193,6 @@ Enum = {
 		UnableToCompleteTurnIn = 6,
 		InternalError = 7,
 	},
-	ContributionResultMeta = {
-		MinValue = 0,
-		MaxValue = 7,
-		NumValues = 8,
-	},
 	ContributionState = {
 		None = 0,
 		Building = 1,
@@ -320,49 +200,24 @@ Enum = {
 		UnderAttack = 3,
 		Destroyed = 4,
 	},
-	ContributionStateMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
-	},
 	CustomBindingType = {
 		VoicePushToTalk = 0,
-	},
-	CustomBindingTypeMeta = {
-		MaxValue = 0,
-		MinValue = 0,
-		NumValues = 1,
 	},
 	FlightPathFaction = {
 		Neutral = 0,
 		Horde = 1,
 		Alliance = 2,
 	},
-	FlightPathFactionMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
 	FlightPathState = {
 		Current = 0,
 		Reachable = 1,
 		Unreachable = 2,
-	},
-	FlightPathStateMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	IconAndTextWidgetState = {
 		Hidden = 0,
 		Shown = 1,
 		ShownWithDynamicIconFlashing = 2,
 		ShownWithDynamicIconNotFlashing = 3,
-	},
-	IconAndTextWidgetStateMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	InventoryType = {
 		IndexNonEquipType = 0,
@@ -395,11 +250,6 @@ Enum = {
 		IndexQuiverType = 27,
 		IndexRelicType = 28,
 	},
-	InventoryTypeMeta = {
-		MinValue = 0,
-		MaxValue = 28,
-		NumValues = 29,
-	},
 	ItemQuality = {
 		Poor = 0,
 		Standard = 1,
@@ -411,21 +261,11 @@ Enum = {
 		Heirloom = 7,
 		WoWToken = 8,
 	},
-	ItemQualityMeta = {
-		MinValue = 0,
-		MaxValue = 8,
-		NumValues = 9,
-	},
 	ManipulatorEventType = {
 		Start = 0,
 		Move = 1,
 		Complete = 2,
 		Delete = 3,
-	},
-	ManipulatorEventTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	MapCanvasPosition = {
 		None = 0,
@@ -434,18 +274,8 @@ Enum = {
 		TopLeft = 3,
 		TopRight = 4,
 	},
-	MapCanvasPositionMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
-	},
 	ModelSceneSetting = {
 		AlignLightToOrbitDelta = 1,
-	},
-	ModelSceneSettingMeta = {
-		MaxValue = 1,
-		MinValue = 1,
-		NumValues = 1,
 	},
 	ModelSceneType = {
 		MountJournal = 0,
@@ -465,11 +295,6 @@ Enum = {
 		AzeritePowers = 14,
 		AzeriteRewardGlow = 15,
 	},
-	ModelSceneTypeMeta = {
-		MinValue = 0,
-		MaxValue = 15,
-		NumValues = 16,
-	},
 	PerfActivity = {
 		ActivityWorldLink = 6,
 		ActivityModelRender = 11,
@@ -478,20 +303,10 @@ Enum = {
 		ActivityUnit = 45,
 		ActivityEventnet = 53,
 	},
-	PerfActivityMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	PerfCounter = {
 		PerfCountUnits = 3,
 		PerfCountPrimitiveCount = 17,
 		PerfCountBatchCount = 22,
-	},
-	PerfCounterMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	PowerType = {
 		HealthCost = -2,
@@ -517,20 +332,10 @@ Enum = {
 		Pain = 18,
 		NumPowerTypes = 19,
 	},
-	PowerTypeMeta = {
-		MinValue = -2,
-		MaxValue = 19,
-		NumValues = 22,
-	},
 	QuestLineFloorLocation = {
 		Above = 0,
 		Below = 1,
 		Same = 2,
-	},
-	QuestLineFloorLocationMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	QuestTag = {
 		Group = 1,
@@ -544,35 +349,15 @@ Enum = {
 		Scenario = 98,
 		Account = 102,
 	},
-	QuestTagMeta = {
-		MinValue = 0,
-		NumValues = 10,
-		MaxValue = 102,
-	},
 	SelfResurrectOptionType = {
 		Spell = 0,
 		Item = 1,
-	},
-	SelfResurrectOptionTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	StoreDeliveryType = {
 		Item = 0,
 		Mount = 1,
 		Battlepet = 2,
 		Collection = 3,
-	},
-	StoreDeliveryTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
-	StoreErrorMeta = {
-		MinValue = 0,
-		MaxValue = 11,
-		NumValues = 12,
 	},
 	TransmogSource = {
 		None = 0,
@@ -586,20 +371,10 @@ Enum = {
 		Profession = 8,
 		NotValidForTransmog = 9,
 	},
-	TransmogSourceMeta = {
-		MinValue = 0,
-		MaxValue = 9,
-		NumValues = 10,
-	},
 	UIMapSystem = {
 		World = 0,
 		Taxi = 1,
 		Adventure = 2,
-	},
-	UIMapSystemMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	UIMapType = {
 		Cosmic = 0,
@@ -609,11 +384,6 @@ Enum = {
 		Dungeon = 4,
 		Micro = 5,
 		Orphan = 6,
-	},
-	UIMapTypeMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
 	},
 	UIWidgetVisualizationType = {
 		IconAndText = 0,
@@ -629,11 +399,6 @@ Enum = {
 		BulletTextList = 10,
 		ScenarioHeaderCurrenciesAndBackground = 11,
 		TextureWithState = 12,
-	},
-	UIWidgetVisualizationTypeMeta = {
-		MinValue = 0,
-		MaxValue = 12,
-		NumValues = 13,
 	},
 	ValidateNameResult = {
 		NameSuccess = 0,
@@ -654,16 +419,6 @@ Enum = {
 		NameRussianSilentCharacterAtBeginningOrEnd = 15,
 		NameDeclensionDoesntMatchBaseName = 16,
 	},
-	ValidateNameResultMeta = {
-		MinValue = 0,
-		MaxValue = 16,
-		NumValues = 17,
-	},
-	VasErrorMeta = {
-		MinValue = 0,
-		NumValues = 35,
-		MaxValue = 20090,
-	},
 	VasPurchaseProgress = {
 		Invalid = 0,
 		PrePurchase = 1,
@@ -674,24 +429,9 @@ Enum = {
 		ProcessingFactionChange = 6,
 		Complete = 7,
 	},
-	VasPurchaseProgressMeta = {
-		MinValue = 0,
-		MaxValue = 7,
-		NumValues = 8,
-	},
-	VasServiceTypeMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
-	},
 	VignetteType = {
 		Normal = 0,
 		PvpBounty = 1,
-	},
-	VignetteTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	VoiceChatStatusCode = {
 		Success = 0,
@@ -718,41 +458,21 @@ Enum = {
 		PlayerSilenced = 21,
 		PlayerVoiceChatParentalDisabled = 22,
 	},
-	VoiceChatStatusCodeMeta = {
-		MinValue = 0,
-		MaxValue = 22,
-		NumValues = 23,
-	},
 	WidgetEnabledState = {
 		Disabled = 0,
 		Enabled = 1,
 		Red = 2,
 		Highlight = 3,
 	},
-	WidgetEnabledStateMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	WidgetShownState = {
 		Hidden = 0,
 		Shown = 1,
-	},
-	WidgetShownStateMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	ZoneAbilityType = {
 		Garrison = 0,
 		OrderHall = 1,
 		Argus = 2,
 		WarEffort = 3,
-	},
-	ZoneAbilityTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 }
 
