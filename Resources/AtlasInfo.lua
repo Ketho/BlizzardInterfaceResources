@@ -847,6 +847,18 @@ local AtlasInfo = {
 		["_GeneralFrame-InsetFrame-Bottom"] = {32, 8, 0.0, 0.5, 0.34375, 0.59375, true, false},
 		["_GeneralFrame-InsetFrame-Top"] = {32, 8, 0.0, 0.5, 0.65625, 0.90625, true, false},
 	},
+	["interface/framegeneral/uiframediamondmetal"] = { -- 2350153
+		["ui-frame-diamondmetal-cornerbottomleft"] = {32, 32, 0.015625, 0.515625, 0.26953125, 0.39453125, false, false},
+		["ui-frame-diamondmetal-cornerbottomright"] = {32, 32, 0.015625, 0.515625, 0.40234375, 0.52734375, false, false},
+		["ui-frame-diamondmetal-cornertopleft"] = {32, 32, 0.015625, 0.515625, 0.53515625, 0.66015625, false, false},
+		["ui-frame-diamondmetal-cornertopright"] = {32, 32, 0.015625, 0.515625, 0.66796875, 0.79296875, false, false},
+		["_ui-frame-diamondmetal-edgebottom"] = {32, 32, 0.0, 0.5, 0.00390625, 0.12890625, true, false},
+		["_ui-frame-diamondmetal-edgetop"] = {32, 32, 0.0, 0.5, 0.13671875, 0.26171875, true, false},
+	},
+	["interface/framegeneral/uiframediamondmetalvertical"] = { -- 2350167
+		["!ui-frame-diamondmetal-edgeleft"] = {32, 32, 0.0078125, 0.2578125, 0.0, 1.0, false, true},
+		["!ui-frame-diamondmetal-edgeright"] = {32, 32, 0.2734375, 0.5234375, 0.0, 1.0, false, true},
+	},
 	["interface/friendsframe/friendslist"] = { -- 1524890
 		["friendslist-categorybutton-arrow-down"] = {16, 11, 0.578125, 0.609375, 0.03125, 0.375, false, false},
 		["friendslist-categorybutton-arrow-right"] = {11, 16, 0.578125, 0.599609375, 0.4375, 0.9375, false, false},
@@ -4405,6 +4417,20 @@ local AtlasInfo = {
 	["interface/tooltips/achievementcompare"] = { -- 962479
 		["achievementcompare-GreenCheckmark"] = {9, 11, 0.03125, 0.3125, 0.0625, 0.75, false, false},
 		["achievementcompare-YellowCheckmark"] = {9, 11, 0.375, 0.65625, 0.0625, 0.75, false, false},
+	},
+	["interface/tooltips/chatbubble"] = { -- 3891059
+		["chatbubble-nineslice-center"] = {32, 32, 0.5234375, 0.7734375, 0.26953125, 0.39453125, false, false},
+		["chatbubble-nineslice-cornerbottomleft"] = {32, 32, 0.0078125, 0.2578125, 0.52734375, 0.65234375, false, false},
+		["chatbubble-nineslice-cornerbottomright"] = {32, 32, 0.0078125, 0.2578125, 0.66015625, 0.78515625, false, false},
+		["chatbubble-nineslice-cornertopleft"] = {32, 32, 0.0078125, 0.2578125, 0.79296875, 0.91796875, false, false},
+		["chatbubble-nineslice-cornertopright"] = {32, 32, 0.2734375, 0.5234375, 0.52734375, 0.65234375, false, false},
+		["chatbubble-tail"] = {64, 64, 0.0078125, 0.5078125, 0.26953125, 0.51953125, false, false},
+		["_chatbubble-nineslice-edgebottom"] = {32, 32, 0.0, 0.25, 0.00390625, 0.12890625, true, false},
+		["_chatbubble-nineslice-edgetop"] = {32, 32, 0.0, 0.25, 0.13671875, 0.26171875, true, false},
+	},
+	["interface/tooltips/chatbubblevertical"] = { -- 3891062
+		["!chatbubble-nineslice-edgeleft"] = {32, 32, 0.0078125, 0.2578125, 0.0, 1.0, false, true},
+		["!chatbubble-nineslice-edgeright"] = {32, 32, 0.2734375, 0.5234375, 0.0, 1.0, false, true},
 	},
 	["interface/tradeskillframe/capacitanceuiblacksmithing"] = { -- 973339
 		["Capacitance-Blacksmithing-BG"] = {321, 370, 0.001953125, 0.62890625, 0.001953125, 0.724609375, false, false},
