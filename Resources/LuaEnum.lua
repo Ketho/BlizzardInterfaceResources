@@ -5,11 +5,6 @@ Enum = {
 		SpellEffect = 2,
 		Upgrade = 3,
 	},
-	AddSoulbindConduitReasonMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	AnimaDiversionNodeState = {
 		Unavailable = 0,
 		Available = 1,
@@ -17,19 +12,9 @@ Enum = {
 		SelectedPermanent = 3,
 		Cooldown = 4,
 	},
-	AnimaDiversionNodeStateMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
-	},
 	AuctionHouseCommoditySortOrder = {
 		UnitPrice = 0,
 		Quantity = 1,
-	},
-	AuctionHouseCommoditySortOrderMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	AuctionHouseFilter = {
 		UncollectedOnly = 0,
@@ -50,24 +35,9 @@ Enum = {
 		Equipment = 1,
 		Rarity = 2,
 	},
-	AuctionHouseFilterCategoryMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
-	AuctionHouseFilterMeta = {
-		MinValue = 0,
-		MaxValue = 11,
-		NumValues = 12,
-	},
 	AuctionHouseItemSortOrder = {
 		Bid = 0,
 		Buyout = 1,
-	},
-	AuctionHouseItemSortOrderMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	AuctionHouseSortOrder = {
 		Price = 0,
@@ -77,30 +47,15 @@ Enum = {
 		Buyout = 4,
 		TimeRemaining = 5,
 	},
-	AuctionHouseSortOrderMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	AuctionHouseTimeLeftBand = {
 		Short = 0,
 		Medium = 1,
 		Long = 2,
 		VeryLong = 3,
 	},
-	AuctionHouseTimeLeftBandMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	AuctionStatus = {
 		Active = 0,
 		Sold = 1,
-	},
-	AuctionStatusMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	AzeriteEssence = {
 		MainSlot = 0,
@@ -108,20 +63,10 @@ Enum = {
 		PassiveTwoSlot = 2,
 		PassiveThreeSlot = 3,
 	},
-	AzeriteEssenceMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	AzeritePowerLevel = {
 		Base = 0,
 		Upgraded = 1,
 		Downgraded = 2,
-	},
-	AzeritePowerLevelMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	BattlePetAbilityFlag = {
 		DisplayAsHostileDebuff = 0x1,
@@ -131,20 +76,10 @@ Enum = {
 		ShowCast = 0x10,
 		StartOnCooldown = 0x20,
 	},
-	BattlePetAbilityFlagMeta = {
-		MinValue = 1,
-		NumValues = 6,
-		MaxValue = 32,
-	},
 	BattlePetAbilitySlot = {
 		A = 0,
 		B = 1,
 		C = 2,
-	},
-	BattlePetAbilitySlotMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	BattlePetAbilityTargets = {
 		EnemyFrontPet = 0,
@@ -161,11 +96,6 @@ Enum = {
 		Specific = 11,
 		ProcTarget = 12,
 	},
-	BattlePetAbilityTargetsMeta = {
-		MinValue = 0,
-		MaxValue = 12,
-		NumValues = 13,
-	},
 	BattlePetAbilityTurnFlag = {
 		CanProcFromProc = 0x1,
 		TriggerBySelf = 0x2,
@@ -174,28 +104,13 @@ Enum = {
 		TriggerByWeather = 0x10,
 		TriggerByAuraCaster = 0x20,
 	},
-	BattlePetAbilityTurnFlagMeta = {
-		MinValue = 1,
-		NumValues = 6,
-		MaxValue = 32,
-	},
 	BattlePetAbilityTurnType = {
 		Normal = 0,
 		TriggeredEffect = 1,
 	},
-	BattlePetAbilityTurnTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
-	},
 	BattlePetAbilityType = {
 		Ability = 0,
 		Aura = 1,
-	},
-	BattlePetAbilityTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	BattlePetAction = {
 		None = 0,
@@ -203,11 +118,6 @@ Enum = {
 		SwitchPet = 2,
 		Trap = 3,
 		Skip = 4,
-	},
-	BattlePetActionMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
 	},
 	BattlePetBreedQuality = {
 		Poor = 0,
@@ -217,28 +127,13 @@ Enum = {
 		Epic = 4,
 		Legendary = 5,
 	},
-	BattlePetBreedQualityMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	BattlePetEffectFlags = {
 		EnableAbilityPicker = 1,
 		LuaNeedsAllPets = 2,
 	},
-	BattlePetEffectFlagsMeta = {
-		MinValue = 1,
-		MaxValue = 2,
-		NumValues = 2,
-	},
 	BattlePetEffectParamType = {
 		Int = 0,
 		Ability = 1,
-	},
-	BattlePetEffectParamTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	BattlePetEvent = {
 		OnAuraApplied = 0,
@@ -255,11 +150,6 @@ Enum = {
 		OnSwapOut = 11,
 		PostAuraTicks = 12,
 	},
-	BattlePetEventMeta = {
-		MinValue = 0,
-		MaxValue = 12,
-		NumValues = 13,
-	},
 	BattlePetNpcEmote = {
 		BattleUnused = 0,
 		BattleStart = 1,
@@ -270,29 +160,14 @@ Enum = {
 		PetDie = 6,
 		PetAbility = 7,
 	},
-	BattlePetNpcEmoteMeta = {
-		MinValue = 0,
-		MaxValue = 7,
-		NumValues = 8,
-	},
 	BattlePetNpcTeamFlag = {
 		MatchPlayerHighPetLevel = 1,
 		NoPlayerXp = 2,
-	},
-	BattlePetNpcTeamFlagMeta = {
-		MinValue = 1,
-		MaxValue = 2,
-		NumValues = 2,
 	},
 	BattlePetOwner = {
 		Weather = 0,
 		Ally = 1,
 		Enemy = 2,
-	},
-	BattlePetOwnerMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	BattlePetSources = {
 		Drop = 0,
@@ -306,11 +181,6 @@ Enum = {
 		Tcg = 8,
 		PetStore = 9,
 		Discovery = 10,
-	},
-	BattlePetSourcesMeta = {
-		MinValue = 0,
-		MaxValue = 10,
-		NumValues = 11,
 	},
 	BattlePetSpeciesFlags = {
 		NoRename = 0x1,
@@ -330,11 +200,6 @@ Enum = {
 		HideUntilLearned = 0x4000,
 		MatchPlayerHighPetLevel = 0x8000,
 	},
-	BattlePetSpeciesFlagsMeta = {
-		MinValue = 1,
-		NumValues = 16,
-		MaxValue = 32768,
-	},
 	BattlePetStateFlag = {
 		None = 0x0,
 		SwapOutLock = 0x1,
@@ -350,11 +215,6 @@ Enum = {
 		SwapInLock = 0x400,
 		ServerOnly = 0x800,
 	},
-	BattlePetStateFlagMeta = {
-		MinValue = 0,
-		NumValues = 13,
-		MaxValue = 2048,
-	},
 	BattlePetTypes = {
 		Humanoid = 0,
 		Dragonkin = 1,
@@ -367,20 +227,10 @@ Enum = {
 		Aquatic = 8,
 		Mechanical = 9,
 	},
-	BattlePetTypesMeta = {
-		MinValue = 0,
-		MaxValue = 9,
-		NumValues = 10,
-	},
 	BattlePetVisualFlag = {
 		Test1 = 1,
 		Test2 = 2,
 		Test3 = 4,
-	},
-	BattlePetVisualFlagMeta = {
-		MinValue = 1,
-		NumValues = 3,
-		MaxValue = 4,
 	},
 	BattlePetVisualRange = {
 		Melee = 0,
@@ -389,41 +239,6 @@ Enum = {
 		PointBlank = 3,
 		BehindMelee = 4,
 		BehindRanged = 5,
-	},
-	BattlePetVisualRangeMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
-	BattlepayBannerTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
-	BattlepayCardTypeMeta = {
-		MinValue = 0,
-		MaxValue = 8,
-		NumValues = 9,
-	},
-	BattlepayDisplayFlagMeta = {
-		MinValue = 1,
-		NumValues = 11,
-		MaxValue = 1024,
-	},
-	BattlepayGroupDisplayTypeMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
-	BattlepayProductDecoratorMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
-	BattlepayProductGroupFlagMeta = {
-		MinValue = 1,
-		NumValues = 5,
-		MaxValue = 16,
 	},
 	BattlepetDbFlags = {
 		None = 0x0,
@@ -438,11 +253,6 @@ Enum = {
 		FanfareNeeded = 0x80,
 		DisplayOverridden = 0x100,
 	},
-	BattlepetDbFlagsMeta = {
-		MinValue = 0,
-		NumValues = 11,
-		MaxValue = 256,
-	},
 	BattlepetDeletedReason = {
 		Unknown = 0,
 		PlayerReleased = 1,
@@ -451,11 +261,6 @@ Enum = {
 		CageError = 4,
 		DelJournal = 5,
 	},
-	BattlepetDeletedReasonMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	BattlepetSlotLockCheat = {
 		Cheat_2_Locked = -3,
 		Cheat_1_Locked = -2,
@@ -463,32 +268,17 @@ Enum = {
 		CheatOff = 0,
 		UnlockAll = 1,
 	},
-	BattlepetSlotLockCheatMeta = {
-		MinValue = -3,
-		MaxValue = 1,
-		NumValues = 5,
-	},
 	BrawlType = {
 		None = 0,
 		Battleground = 1,
 		Arena = 2,
 		Lfg = 3,
 	},
-	BrawlTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	CachedRewardType = {
 		None = 0,
 		Item = 1,
 		Currency = 2,
 		Quest = 3,
-	},
-	CachedRewardTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	CalendarCommandType = {
 		CalendarCommandCreate = 0,
@@ -503,11 +293,6 @@ Enum = {
 		CalendarCommandUpdateEvent = 9,
 		CalendarCommandComplain = 10,
 		CalendarCommandNotes = 11,
-	},
-	CalendarCommandTypeMeta = {
-		MinValue = 0,
-		MaxValue = 11,
-		NumValues = 12,
 	},
 	CalendarErrorType = {
 		CalendarErrorSuccess = 0,
@@ -562,11 +347,6 @@ Enum = {
 		CalendarErrorInternal = 49,
 		CalendarErrorComplaintAdded = 50,
 	},
-	CalendarErrorTypeMeta = {
-		MinValue = 0,
-		MaxValue = 50,
-		NumValues = 51,
-	},
 	CalendarEventBits = {
 		CalendarEventBitPlayer = 0x1,
 		CalendarEventBitGuildDeprecated = 0x2,
@@ -584,21 +364,11 @@ Enum = {
 		PlayerCreated = 0xD43,
 		CantComplain = 0xECC,
 	},
-	CalendarEventBitsMeta = {
-		MinValue = 1,
-		NumValues = 15,
-		MaxValue = 3788,
-	},
 	CalendarEventRepeatOptions = {
 		CalendarRepeatNever = 0,
 		CalendarRepeatWeekly = 1,
 		CalendarRepeatBiweekly = 2,
 		CalendarRepeatMonthly = 3,
-	},
-	CalendarEventRepeatOptionsMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	CalendarEventType = {
 		Raid = 0,
@@ -608,11 +378,6 @@ Enum = {
 		Other = 4,
 		HeroicDeprecated = 5,
 	},
-	CalendarEventTypeMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	CalendarFilterFlags = {
 		WeeklyHoliday = 1,
 		Darkmoon = 2,
@@ -620,42 +385,22 @@ Enum = {
 		RaidLockout = 8,
 		RaidReset = 16,
 	},
-	CalendarFilterFlagsMeta = {
-		MinValue = 1,
-		NumValues = 5,
-		MaxValue = 16,
-	},
 	CalendarGetEventType = {
 		DefaultCalendarGetEventType = 0,
 		Get = 0,
 		Add = 1,
 		Copy = 2,
 	},
-	CalendarGetEventTypeMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 4,
-	},
 	CalendarHolidayFilterType = {
 		Weekly = 0,
 		Darkmoon = 1,
 		Battleground = 2,
-	},
-	CalendarHolidayFilterTypeMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	CalendarInviteBits = {
 		CalendarInviteBitPendingInvite = 1,
 		CalendarInviteBitModerator = 2,
 		CalendarInviteBitCreator = 4,
 		CalendarInviteBitSignup = 8,
-	},
-	CalendarInviteBitsMeta = {
-		MinValue = 1,
-		NumValues = 4,
-		MaxValue = 8,
 	},
 	CalendarInviteSortType = {
 		CalendarInviteSortName = 0,
@@ -665,29 +410,14 @@ Enum = {
 		CalendarInviteSortParty = 4,
 		CalendarInviteSortNotes = 5,
 	},
-	CalendarInviteSortTypeMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	CalendarInviteType = {
 		Normal = 0,
 		Signup = 1,
-	},
-	CalendarInviteTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	CalendarModeratorStatus = {
 		CalendarModeratorNone = 0,
 		CalendarModeratorModerator = 1,
 		CalendarModeratorCreator = 2,
-	},
-	CalendarModeratorStatusMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	CalendarStatus = {
 		Invited = 0,
@@ -700,11 +430,6 @@ Enum = {
 		NotSignedup = 7,
 		Tentative = 8,
 	},
-	CalendarStatusMeta = {
-		MinValue = 0,
-		MaxValue = 8,
-		NumValues = 9,
-	},
 	CalendarType = {
 		Player = 0,
 		Community = 1,
@@ -715,11 +440,6 @@ Enum = {
 		HolidayDarkmoon = 6,
 		HolidayBattleground = 7,
 	},
-	CalendarTypeMeta = {
-		MinValue = 0,
-		MaxValue = 7,
-		NumValues = 8,
-	},
 	CalendarWebActionType = {
 		Accept = 0,
 		Decline = 1,
@@ -729,20 +449,10 @@ Enum = {
 		Tentative = 5,
 		TentativeSignup = 6,
 	},
-	CalendarWebActionTypeMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
-	},
 	CallingStates = {
 		QuestOffer = 0,
 		QuestActive = 1,
 		QuestCompleted = 2,
-	},
-	CallingStatesMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	CampaignState = {
 		Invalid = 0,
@@ -750,46 +460,21 @@ Enum = {
 		InProgress = 2,
 		Stalled = 3,
 	},
-	CampaignStateMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	CaptureBarWidgetFillDirectionType = {
 		RightToLeft = 0,
 		LeftToRight = 1,
-	},
-	CaptureBarWidgetFillDirectionTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	CaptureBarWidgetGlowAnimType = {
 		None = 0,
 		Pulse = 1,
 	},
-	CaptureBarWidgetGlowAnimTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
-	},
 	CharacterServiceInfoFlag = {
 		RestrictToRecommendedSpecs = 1,
-	},
-	CharacterServiceInfoFlagMeta = {
-		MaxValue = 1,
-		MinValue = 1,
-		NumValues = 1,
 	},
 	ChatChannelRuleset = {
 		None = 0,
 		Mentor = 1,
 		Disabled = 2,
-	},
-	ChatChannelRulesetMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	ChatChannelType = {
 		None = 0,
@@ -798,28 +483,13 @@ Enum = {
 		Public_Party = 3,
 		Communities = 4,
 	},
-	ChatChannelTypeMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
-	},
 	ChrCustomizationCategoryFlag = {
 		UndressModel = 1,
-	},
-	ChrCustomizationCategoryFlagMeta = {
-		MaxValue = 1,
-		MinValue = 1,
-		NumValues = 1,
 	},
 	ChrCustomizationOptionType = {
 		SelectionPopout = 0,
 		Checkbox = 1,
 		Slider = 2,
-	},
-	ChrCustomizationOptionTypeMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	ClubActionType = {
 		ErrorClubActionSubscribe = 0,
@@ -849,11 +519,6 @@ Enum = {
 		ErrorClubActionCreateMessage = 24,
 		ErrorClubActionEditMessage = 25,
 		ErrorClubActionDestroyMessage = 26,
-	},
-	ClubActionTypeMeta = {
-		MinValue = 0,
-		MaxValue = 26,
-		NumValues = 27,
 	},
 	ClubErrorType = {
 		ErrorCommunitiesNone = 0,
@@ -897,11 +562,6 @@ Enum = {
 		ErrorClubTicketNoSuchTicket = 38,
 		ErrorClubTicketHasConsumedAllowedRedeemCount = 39,
 	},
-	ClubErrorTypeMeta = {
-		MinValue = 0,
-		MaxValue = 39,
-		NumValues = 40,
-	},
 	ClubFieldType = {
 		ClubName = 0,
 		ClubShortName = 1,
@@ -911,21 +571,11 @@ Enum = {
 		ClubStreamSubject = 5,
 		NumTypes = 6,
 	},
-	ClubFieldTypeMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
-	},
 	ClubFinderApplicationUpdateType = {
 		None = 0,
 		AcceptInvite = 1,
 		DeclineInvite = 2,
 		Cancel = 3,
-	},
-	ClubFinderApplicationUpdateTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	ClubFinderClubPostingStatusFlags = {
 		None = 0,
@@ -938,20 +588,10 @@ Enum = {
 		PendingDelete = 7,
 		PostDelisted = 8,
 	},
-	ClubFinderClubPostingStatusFlagsMeta = {
-		MinValue = 0,
-		MaxValue = 8,
-		NumValues = 9,
-	},
 	ClubFinderDisableReason = {
 		Muted = 0,
 		Silenced = 1,
 		VeteranTrial = 2,
-	},
-	ClubFinderDisableReasonMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	ClubFinderPostingReportType = {
 		PostersName = 0,
@@ -960,21 +600,11 @@ Enum = {
 		ApplicantsName = 3,
 		JoinNote = 4,
 	},
-	ClubFinderPostingReportTypeMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
-	},
 	ClubFinderRequestType = {
 		None = 0,
 		Guild = 1,
 		Community = 2,
 		All = 3,
-	},
-	ClubFinderRequestTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	ClubFinderSettingFlags = {
 		None = 0,
@@ -1004,20 +634,10 @@ Enum = {
 		LanguageReserved4 = 24,
 		LanguageReserved5 = 25,
 	},
-	ClubFinderSettingFlagsMeta = {
-		MinValue = 0,
-		MaxValue = 25,
-		NumValues = 26,
-	},
 	ClubInvitationCandidateStatus = {
 		Available = 0,
 		InvitePending = 1,
 		AlreadyMember = 2,
-	},
-	ClubInvitationCandidateStatusMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	ClubMemberPresence = {
 		Unknown = 0,
@@ -1027,30 +647,15 @@ Enum = {
 		Away = 4,
 		Busy = 5,
 	},
-	ClubMemberPresenceMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	ClubRemovedReason = {
 		None = 0,
 		Banned = 1,
 		Removed = 2,
 		ClubDestroyed = 3,
 	},
-	ClubRemovedReasonMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	ClubRestrictionReason = {
 		None = 0,
 		Unavailable = 1,
-	},
-	ClubRestrictionReasonMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	ClubRoleIdentifier = {
 		Owner = 1,
@@ -1058,20 +663,10 @@ Enum = {
 		Moderator = 3,
 		Member = 4,
 	},
-	ClubRoleIdentifierMeta = {
-		MinValue = 1,
-		MaxValue = 4,
-		NumValues = 4,
-	},
 	ClubStreamNotificationFilter = {
 		None = 0,
 		Mention = 1,
 		All = 2,
-	},
-	ClubStreamNotificationFilterMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	ClubStreamType = {
 		General = 0,
@@ -1079,40 +674,20 @@ Enum = {
 		Officer = 2,
 		Other = 3,
 	},
-	ClubStreamTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	ClubType = {
 		BattleNet = 0,
 		Character = 1,
 		Guild = 2,
 		Other = 3,
 	},
-	ClubTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	CommunicationMode = {
 		PushToTalk = 0,
 		OpenMic = 1,
-	},
-	CommunicationModeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	ConquestProgressBarDisplayType = {
 		FirstChest = 0,
 		AdditionalChest = 1,
 		Seasonal = 2,
-	},
-	ConquestProgressBarDisplayTypeMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	ConsoleCategory = {
 		Debug = 0,
@@ -1126,11 +701,6 @@ Enum = {
 		Gm = 8,
 		Reveal = 9,
 		None = 10,
-	},
-	ConsoleCategoryMeta = {
-		MinValue = 0,
-		MaxValue = 10,
-		NumValues = 11,
 	},
 	ConsoleColorType = {
 		DefaultColor = 0,
@@ -1146,29 +716,14 @@ Enum = {
 		PrivateColor = 10,
 		DefaultGreen = 11,
 	},
-	ConsoleColorTypeMeta = {
-		MinValue = 0,
-		MaxValue = 11,
-		NumValues = 12,
-	},
 	ConsoleCommandType = {
 		Cvar = 0,
 		Command = 1,
 		Macro = 2,
 		Script = 3,
 	},
-	ConsoleCommandTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	ContributionAppearanceFlags = {
 		TooltipUseTimeRemaining = 0,
-	},
-	ContributionAppearanceFlagsMeta = {
-		MaxValue = 0,
-		MinValue = 0,
-		NumValues = 1,
 	},
 	ContributionResult = {
 		Success = 0,
@@ -1180,11 +735,6 @@ Enum = {
 		UnableToCompleteTurnIn = 6,
 		InternalError = 7,
 	},
-	ContributionResultMeta = {
-		MinValue = 0,
-		MaxValue = 7,
-		NumValues = 8,
-	},
 	ContributionState = {
 		None = 0,
 		Building = 1,
@@ -1192,20 +742,10 @@ Enum = {
 		UnderAttack = 3,
 		Destroyed = 4,
 	},
-	ContributionStateMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
-	},
 	CovenantAbilityType = {
 		Class = 0,
 		Signature = 1,
 		Soulbind = 2,
-	},
-	CovenantAbilityTypeMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	CovenantSkill = {
 		Kyrian = 2730,
@@ -1213,22 +753,12 @@ Enum = {
 		NightFae = 2732,
 		Necrolord = 2733,
 	},
-	CovenantSkillMeta = {
-		NumValues = 4,
-		MinValue = 2730,
-		MaxValue = 2733,
-	},
 	CovenantType = {
 		None = 0,
 		Kyrian = 1,
 		Venthyr = 2,
 		NightFae = 3,
 		Necrolord = 4,
-	},
-	CovenantTypeMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
 	},
 	CurrencyDestroyReason = {
 		Cheat = 0,
@@ -1243,11 +773,6 @@ Enum = {
 		BonusRoll = 9,
 		FactionConversion = 10,
 		Last = 11,
-	},
-	CurrencyDestroyReasonMeta = {
-		MinValue = 0,
-		MaxValue = 11,
-		NumValues = 12,
 	},
 	CurrencyFlags = {
 		CurrencyTradable = 0x1,
@@ -1287,25 +812,10 @@ Enum = {
 		CurrencyBUseTotalEarnedForMaxQty = 1,
 		CurrencyBShowQuestXpGainInTooltip = 2,
 	},
-	CurrencyFlagsBMeta = {
-		MinValue = 1,
-		MaxValue = 2,
-		NumValues = 2,
-	},
-	CurrencyFlagsMeta = {
-		MaxValue = -2147483648,
-		MinValue = 1,
-		NumValues = 32,
-	},
 	CurrencyGainFlags = {
 		BonusAward = 1,
 		DroppedFromDeath = 2,
 		FromAccountServer = 4,
-	},
-	CurrencyGainFlagsMeta = {
-		MinValue = 1,
-		NumValues = 3,
-		MaxValue = 4,
 	},
 	CurrencySource = {
 		ConvertOldItem = 0,
@@ -1360,29 +870,14 @@ Enum = {
 		PvPTeamContribution = 49,
 		Last = 50,
 	},
-	CurrencySourceMeta = {
-		MinValue = 0,
-		MaxValue = 50,
-		NumValues = 51,
-	},
 	CurrencyTokenCategoryFlags = {
 		FlagSortLast = 1,
 		FlagPlayerItemAssignment = 2,
 		Hidden = 4,
 		Virtual = 8,
 	},
-	CurrencyTokenCategoryFlagsMeta = {
-		MinValue = 1,
-		NumValues = 4,
-		MaxValue = 8,
-	},
 	CustomBindingType = {
 		VoicePushToTalk = 0,
-	},
-	CustomBindingTypeMeta = {
-		MaxValue = 0,
-		MinValue = 0,
-		NumValues = 1,
 	},
 	Damageclass = {
 		MaskNone = 0x0,
@@ -1432,28 +927,13 @@ Enum = {
 		MaskMagical = 0x7E,
 		All = 0x7F,
 	},
-	DamageclassMeta = {
-		MinValue = 0,
-		NumValues = 46,
-		MaxValue = 127,
-	},
 	DamageclassType = {
 		Physical = 0,
 		Magical = 1,
 	},
-	DamageclassTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
-	},
 	EnvironmentalDamageFlags = {
 		OneTime = 1,
 		DmgIsPct = 2,
-	},
-	EnvironmentalDamageFlagsMeta = {
-		MinValue = 1,
-		MaxValue = 2,
-		NumValues = 2,
 	},
 	Environmentaldamagetype = {
 		Fatigue = 0,
@@ -1462,11 +942,6 @@ Enum = {
 		Lava = 3,
 		Slime = 4,
 		Fire = 5,
-	},
-	EnvironmentaldamagetypeMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
 	},
 	EventToastDisplayType = {
 		NormalSingleLine = 0,
@@ -1478,11 +953,6 @@ Enum = {
 		Scenario = 6,
 		ChallengeMode = 7,
 		ScenarioClickExpand = 8,
-	},
-	EventToastDisplayTypeMeta = {
-		MinValue = 0,
-		MaxValue = 8,
-		NumValues = 9,
 	},
 	EventToastEventType = {
 		LevelUp = 0,
@@ -1505,30 +975,15 @@ Enum = {
 		PlayerAuraRemoved = 17,
 		SpellScript = 18,
 	},
-	EventToastEventTypeMeta = {
-		MinValue = 0,
-		MaxValue = 18,
-		NumValues = 19,
-	},
 	FlightPathFaction = {
 		Neutral = 0,
 		Horde = 1,
 		Alliance = 2,
 	},
-	FlightPathFactionMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
 	FlightPathState = {
 		Current = 0,
 		Reachable = 1,
 		Unreachable = 2,
-	},
-	FlightPathStateMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	FollowerAbilityCastResult = {
 		Success = 0,
@@ -1547,11 +1002,6 @@ Enum = {
 		AlreadyAtMaxDurability = 13,
 		CannotTargetNonAutoMissionFollower = 14,
 	},
-	FollowerAbilityCastResultMeta = {
-		MinValue = 0,
-		MaxValue = 14,
-		NumValues = 15,
-	},
 	GarrAutoBoardIndex = {
 		None = -1,
 		AllyLeftBack = 0,
@@ -1568,22 +1018,12 @@ Enum = {
 		EnemyCenterRightBack = 11,
 		EnemyRightBack = 12,
 	},
-	GarrAutoBoardIndexMeta = {
-		MinValue = -1,
-		MaxValue = 12,
-		NumValues = 14,
-	},
 	GarrAutoCombatSpellTutorialFlag = {
 		None = 0,
 		Single = 1,
 		Column = 2,
 		Row = 3,
 		All = 4,
-	},
-	GarrAutoCombatSpellTutorialFlagMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
 	},
 	GarrAutoCombatTutorial = {
 		SelectMission = 1,
@@ -1598,11 +1038,6 @@ Enum = {
 		TroopTutorial = 512,
 		EnvironmentalEffect = 1024,
 	},
-	GarrAutoCombatTutorialMeta = {
-		MinValue = 1,
-		NumValues = 11,
-		MaxValue = 1024,
-	},
 	GarrAutoCombatantRole = {
 		None = 0,
 		Melee = 1,
@@ -1611,21 +1046,11 @@ Enum = {
 		HealSupport = 4,
 		Tank = 5,
 	},
-	GarrAutoCombatantRoleMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	GarrAutoEventFlags = {
 		None = 0,
 		AutoAttack = 1,
 		Passive = 2,
 		Environment = 4,
-	},
-	GarrAutoEventFlagsMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 4,
 	},
 	GarrAutoMissionEventType = {
 		MeleeDamage = 0,
@@ -1639,11 +1064,6 @@ Enum = {
 		RemoveAura = 8,
 		Died = 9,
 	},
-	GarrAutoMissionEventTypeMeta = {
-		MinValue = 0,
-		MaxValue = 9,
-		NumValues = 10,
-	},
 	GarrAutoPreviewTargetType = {
 		None = 0,
 		Damage = 1,
@@ -1651,21 +1071,11 @@ Enum = {
 		Buff = 4,
 		Debuff = 8,
 	},
-	GarrAutoPreviewTargetTypeMeta = {
-		MinValue = 0,
-		NumValues = 5,
-		MaxValue = 8,
-	},
 	GarrFollowerMissionCompleteState = {
 		Alive = 0,
 		KilledByMissionFailure = 1,
 		SavedByPreventDeath = 2,
 		OutOfDurability = 3,
-	},
-	GarrFollowerMissionCompleteStateMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	GarrFollowerQuality = {
 		None = 0,
@@ -1676,21 +1086,11 @@ Enum = {
 		Legendary = 5,
 		Title = 6,
 	},
-	GarrFollowerQualityMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
-	},
 	GarrTalentCostType = {
 		Initial = 0,
 		Respec = 1,
 		MakePermanent = 2,
 		TreeReset = 3,
-	},
-	GarrTalentCostTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	GarrTalentFeatureSubtype = {
 		Generic = 0,
@@ -1698,11 +1098,6 @@ Enum = {
 		Revendreth = 2,
 		Ardenweald = 3,
 		Maldraxxus = 4,
-	},
-	GarrTalentFeatureSubtypeMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
 	},
 	GarrTalentFeatureType = {
 		Generic = 0,
@@ -1714,38 +1109,18 @@ Enum = {
 		SoulBinds = 6,
 		AnimaDiversionMap = 7,
 	},
-	GarrTalentFeatureTypeMeta = {
-		MinValue = 0,
-		MaxValue = 7,
-		NumValues = 8,
-	},
 	GarrTalentResearchCostSource = {
 		Talent = 0,
 		Tree = 1,
-	},
-	GarrTalentResearchCostSourceMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	GarrTalentSocketType = {
 		None = 0,
 		Spell = 1,
 		Conduit = 2,
 	},
-	GarrTalentSocketTypeMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
 	GarrTalentTreeType = {
 		Tiers = 0,
 		Classic = 1,
-	},
-	GarrTalentTreeTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	GarrTalentType = {
 		Standard = 0,
@@ -1753,21 +1128,11 @@ Enum = {
 		Major = 2,
 		Socket = 3,
 	},
-	GarrTalentTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	GarrTalentUI = {
 		Generic = 0,
 		CovenantSanctum = 1,
 		SoulBinds = 2,
 		AnimaDiversionMap = 3,
-	},
-	GarrTalentUIMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	GarrisonFollowerType = {
 		FollowerType_6_0 = 1,
@@ -1775,11 +1140,6 @@ Enum = {
 		FollowerType_7_0 = 4,
 		FollowerType_8_0 = 22,
 		FollowerType_9_0 = 123,
-	},
-	GarrisonFollowerTypeMeta = {
-		MinValue = 1,
-		NumValues = 5,
-		MaxValue = 123,
 	},
 	GarrisonTalentAvailability = {
 		Available = 0,
@@ -1792,30 +1152,15 @@ Enum = {
 		UnavailableAlreadyHave = 7,
 		UnavailableRequiresPrerequisiteTalent = 8,
 	},
-	GarrisonTalentAvailabilityMeta = {
-		MinValue = 0,
-		MaxValue = 8,
-		NumValues = 9,
-	},
 	GarrisonType = {
 		Type_6_0 = 2,
 		Type_7_0 = 3,
 		Type_8_0 = 9,
 		Type_9_0 = 111,
 	},
-	GarrisonTypeMeta = {
-		MinValue = 2,
-		NumValues = 4,
-		MaxValue = 111,
-	},
 	GossipOptionRewardType = {
 		Item = 0,
 		Currency = 1,
-	},
-	GossipOptionRewardTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	GossipOptionStatus = {
 		Available = 0,
@@ -1823,19 +1168,9 @@ Enum = {
 		Locked = 2,
 		AlreadyComplete = 3,
 	},
-	GossipOptionStatusMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	HolidayCalendarFlags = {
 		Alliance = 1,
 		Horde = 2,
-	},
-	HolidayCalendarFlagsMeta = {
-		MinValue = 1,
-		MaxValue = 2,
-		NumValues = 2,
 	},
 	HolidayFlags = {
 		IsRegionwide = 1,
@@ -1844,42 +1179,22 @@ Enum = {
 		DontDisplayBanner = 8,
 		NotAvailableClientSide = 16,
 	},
-	HolidayFlagsMeta = {
-		MinValue = 1,
-		NumValues = 5,
-		MaxValue = 16,
-	},
 	IconAndTextWidgetState = {
 		Hidden = 0,
 		Shown = 1,
 		ShownWithDynamicIconFlashing = 2,
 		ShownWithDynamicIconNotFlashing = 3,
 	},
-	IconAndTextWidgetStateMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	IconState = {
 		Hidden = 0,
 		ShowState1 = 1,
 		ShowState2 = 2,
-	},
-	IconStateMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	InputContext = {
 		None = 0,
 		Keyboard = 1,
 		Mouse = 2,
 		GamePad = 3,
-	},
-	InputContextMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	InventoryType = {
 		IndexNonEquipType = 0,
@@ -1912,11 +1227,6 @@ Enum = {
 		IndexQuiverType = 27,
 		IndexRelicType = 28,
 	},
-	InventoryTypeMeta = {
-		MinValue = 0,
-		MaxValue = 28,
-		NumValues = 29,
-	},
 	ItemArmorSubclass = {
 		Generic = 0,
 		Cloth = 1,
@@ -1930,11 +1240,6 @@ Enum = {
 		Totem = 9,
 		Sigil = 10,
 		Relic = 11,
-	},
-	ItemArmorSubclassMeta = {
-		MinValue = 0,
-		MaxValue = 11,
-		NumValues = 12,
 	},
 	ItemClass = {
 		Consumable = 0,
@@ -1957,20 +1262,10 @@ Enum = {
 		Battlepet = 17,
 		WoWToken = 18,
 	},
-	ItemClassMeta = {
-		MinValue = 0,
-		MaxValue = 18,
-		NumValues = 19,
-	},
 	ItemCommodityStatus = {
 		Unknown = 0,
 		Item = 1,
 		Commodity = 2,
-	},
-	ItemCommodityStatusMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	ItemConsumableSubclass = {
 		Generic = 0,
@@ -1981,11 +1276,6 @@ Enum = {
 		Itemenhancement = 5,
 		Bandage = 6,
 		Other = 7,
-	},
-	ItemConsumableSubclassMeta = {
-		MinValue = 0,
-		MaxValue = 7,
-		NumValues = 8,
 	},
 	ItemGemSubclass = {
 		Intellect = 0,
@@ -2001,18 +1291,8 @@ Enum = {
 		Multiplestats = 10,
 		Artifactrelic = 11,
 	},
-	ItemGemSubclassMeta = {
-		MinValue = 0,
-		MaxValue = 11,
-		NumValues = 12,
-	},
 	ItemInteractionFrameType = {
 		CleanseCorruption = 0,
-	},
-	ItemInteractionFrameTypeMeta = {
-		MaxValue = 0,
-		MinValue = 0,
-		NumValues = 1,
 	},
 	ItemMiscellaneousSubclass = {
 		Junk = 0,
@@ -2022,11 +1302,6 @@ Enum = {
 		Other = 4,
 		Mount = 5,
 		MountEquipment = 6,
-	},
-	ItemMiscellaneousSubclassMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
 	},
 	ItemQuality = {
 		Poor = 0,
@@ -2039,20 +1314,10 @@ Enum = {
 		Heirloom = 7,
 		WoWToken = 8,
 	},
-	ItemQualityMeta = {
-		MinValue = 0,
-		MaxValue = 8,
-		NumValues = 9,
-	},
 	ItemReagentSubclass = {
 		Reagent = 0,
 		Keystone = 1,
 		ContextToken = 2,
-	},
-	ItemReagentSubclassMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	ItemRecipeSubclass = {
 		Book = 0,
@@ -2067,11 +1332,6 @@ Enum = {
 		Fishing = 9,
 		Jewelcrafting = 10,
 		Inscription = 11,
-	},
-	ItemRecipeSubclassMeta = {
-		MinValue = 0,
-		MaxValue = 11,
-		NumValues = 12,
 	},
 	ItemSlotFilterType = {
 		Head = 0,
@@ -2091,21 +1351,11 @@ Enum = {
 		Other = 14,
 		NoFilter = 15,
 	},
-	ItemSlotFilterTypeMeta = {
-		MinValue = 0,
-		MaxValue = 15,
-		NumValues = 16,
-	},
 	ItemTryOnReason = {
 		Success = 0,
 		WrongRace = 1,
 		NotEquippable = 2,
 		DataPending = 3,
-	},
-	ItemTryOnReasonMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	ItemWeaponSubclass = {
 		Axe1H = 0,
@@ -2130,11 +1380,6 @@ Enum = {
 		Wand = 19,
 		Fishingpole = 20,
 	},
-	ItemWeaponSubclassMeta = {
-		MinValue = 0,
-		MaxValue = 20,
-		NumValues = 21,
-	},
 	JailersTowerType = {
 		TwistingCorridors = 0,
 		SkoldusHalls = 1,
@@ -2151,20 +1396,10 @@ Enum = {
 		ForgottenCatacombs = 12,
 		Ossuary = 13,
 	},
-	JailersTowerTypeMeta = {
-		MinValue = 0,
-		MaxValue = 13,
-		NumValues = 14,
-	},
 	LinkedCurrencyFlags = {
 		IgnoreAdd = 1,
 		IgnoreSubtract = 2,
 		SuppressChatLog = 4,
-	},
-	LinkedCurrencyFlagsMeta = {
-		MinValue = 1,
-		NumValues = 3,
-		MaxValue = 4,
 	},
 	ManipulatorEventType = {
 		Start = 0,
@@ -2172,22 +1407,12 @@ Enum = {
 		Complete = 2,
 		Delete = 3,
 	},
-	ManipulatorEventTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	MapCanvasPosition = {
 		None = 0,
 		BottomLeft = 1,
 		BottomRight = 2,
 		TopLeft = 3,
 		TopRight = 4,
-	},
-	MapCanvasPositionMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
 	},
 	MapOverlayDisplayLocation = {
 		Default = 0,
@@ -2197,18 +1422,8 @@ Enum = {
 		TopRight = 4,
 		Hidden = 5,
 	},
-	MapOverlayDisplayLocationMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	ModelSceneSetting = {
 		AlignLightToOrbitDelta = 1,
-	},
-	ModelSceneSettingMeta = {
-		MaxValue = 1,
-		MinValue = 1,
-		NumValues = 1,
 	},
 	ModelSceneType = {
 		MountJournal = 0,
@@ -2232,28 +1447,13 @@ Enum = {
 		Soulbinds = 18,
 		JailersTowerAnimaGlow = 19,
 	},
-	ModelSceneTypeMeta = {
-		MinValue = 0,
-		MaxValue = 19,
-		NumValues = 20,
-	},
 	NavigationState = {
 		Invalid = 0,
 		Occluded = 1,
 		InRange = 2,
 	},
-	NavigationStateMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
 	OptionalReagentItemFlag = {
 		TooltipShowsAsStatModifications = 0,
-	},
-	OptionalReagentItemFlagMeta = {
-		MaxValue = 0,
-		MinValue = 0,
-		NumValues = 1,
 	},
 	PartyRequestJoinRelation = {
 		None = 0,
@@ -2262,21 +1462,11 @@ Enum = {
 		Club = 3,
 		NumPartyRequestJoinRelations = 4,
 	},
-	PartyRequestJoinRelationMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
-	},
 	PermanentChatChannelType = {
 		None = 0,
 		Zone = 1,
 		Communities = 2,
 		Custom = 3,
-	},
-	PermanentChatChannelTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	PetBattleState = {
 		Created = 0,
@@ -2287,11 +1477,6 @@ Enum = {
 		FinalRound = 5,
 		Finished = 6,
 	},
-	PetBattleStateMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
-	},
 	PetJournalError = {
 		None = 0,
 		PetIsDead = 1,
@@ -2300,11 +1485,6 @@ Enum = {
 		NoFavoritesToSummon = 4,
 		NoValidRandomSummon = 5,
 		InvalidCovenant = 6,
-	},
-	PetJournalErrorMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
 	},
 	PetbattleAuraStateFlags = {
 		None = 0,
@@ -2315,19 +1495,9 @@ Enum = {
 		JustApplied = 16,
 		RemoveEventHandled = 32,
 	},
-	PetbattleAuraStateFlagsMeta = {
-		MinValue = 0,
-		NumValues = 7,
-		MaxValue = 32,
-	},
 	PetbattleCheatFlags = {
 		None = 0,
 		AutoPlay = 1,
-	},
-	PetbattleCheatFlagsMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	PetbattleEffectFlags = {
 		None = 0,
@@ -2345,11 +1515,6 @@ Enum = {
 		Weak = 2048,
 		SuccessChain = 4096,
 		AuraReapply = 8192,
-	},
-	PetbattleEffectFlagsMeta = {
-		MinValue = 0,
-		NumValues = 15,
-		MaxValue = 8192,
 	},
 	PetbattleEffectType = {
 		SetHealth = 0,
@@ -2371,30 +1536,15 @@ Enum = {
 		OverrideAbility = 16,
 		WorldStateUpdate = 17,
 	},
-	PetbattleEffectTypeMeta = {
-		MinValue = 0,
-		MaxValue = 17,
-		NumValues = 18,
-	},
 	PetbattleEnviros = {
 		Pad0 = 0,
 		Pad1 = 1,
 		Weather = 2,
 	},
-	PetbattleEnvirosMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
 	PetbattleInputMoveMsgDebugFlag = {
 		None = 0,
 		DontValidate = 1,
 		EnemyCast = 2,
-	},
-	PetbattleInputMoveMsgDebugFlagMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	PetbattleMoveType = {
 		Quit = 0,
@@ -2403,11 +1553,6 @@ Enum = {
 		Trap = 3,
 		FinalRoundOk = 4,
 		Pass = 5,
-	},
-	PetbattleMoveTypeMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
 	},
 	PetbattlePboid = {
 		P0Pet_0 = 0,
@@ -2420,22 +1565,12 @@ Enum = {
 		EnvPad_1 = 7,
 		EnvWeather = 8,
 	},
-	PetbattlePboidMeta = {
-		MinValue = 0,
-		MaxValue = 8,
-		NumValues = 9,
-	},
 	PetbattlePetStatus = {
 		FlagNone = 0,
 		FlagTrapped = 1,
 		Stunned = 2,
 		SwapOutLocked = 4,
 		SwapInLocked = 8,
-	},
-	PetbattlePetStatusMeta = {
-		MinValue = 0,
-		NumValues = 5,
-		MaxValue = 8,
 	},
 	PetbattlePlayer = {
 		Player_0 = 0,
@@ -2447,16 +1582,6 @@ Enum = {
 		AbilityLocked = 2,
 		SwapLocked = 4,
 		WaitingForPet = 8,
-	},
-	PetbattlePlayerInputFlagsMeta = {
-		MinValue = 0,
-		NumValues = 5,
-		MaxValue = 8,
-	},
-	PetbattlePlayerMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	PetbattleResult = {
 		FailUnknown = 0,
@@ -2484,11 +1609,6 @@ Enum = {
 		FailDisconnect = 22,
 		Success = 23,
 	},
-	PetbattleResultMeta = {
-		MinValue = 0,
-		MaxValue = 23,
-		NumValues = 24,
-	},
 	PetbattleSlot = {
 		Slot_0 = 0,
 		Slot_1 = 1,
@@ -2498,16 +1618,6 @@ Enum = {
 		Ability_0 = 0,
 		Ability_1 = 1,
 		Ability_2 = 2,
-	},
-	PetbattleSlotAbilityMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
-	PetbattleSlotMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	PetbattleSlotResult = {
 		Success = 0,
@@ -2520,11 +1630,6 @@ Enum = {
 		Dead = 7,
 		NoPet = 8,
 	},
-	PetbattleSlotResultMeta = {
-		MinValue = 0,
-		MaxValue = 8,
-		NumValues = 9,
-	},
 	PetbattleState = {
 		Created = 0,
 		WaitingPreBattle = 1,
@@ -2533,11 +1638,6 @@ Enum = {
 		CreatedFailed = 4,
 		FinalRound = 5,
 		Finished = 6,
-	},
-	PetbattleStateMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
 	},
 	PetbattleTrapstatus = {
 		Invalid = 0,
@@ -2550,21 +1650,11 @@ Enum = {
 		CantTrapTrainerBattle = 7,
 		CantTrapTwice = 8,
 	},
-	PetbattleTrapstatusMeta = {
-		MinValue = 0,
-		MaxValue = 8,
-		NumValues = 9,
-	},
 	PetbattleType = {
 		PvE = 0,
 		PvP = 1,
 		Lfpb = 2,
 		Npc = 3,
-	},
-	PetbattleTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	PhaseReason = {
 		Phasing = 0,
@@ -2572,21 +1662,11 @@ Enum = {
 		WarMode = 2,
 		ChromieTime = 3,
 	},
-	PhaseReasonMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	PlayerChoiceRarity = {
 		Common = 0,
 		Uncommon = 1,
 		Rare = 2,
 		Epic = 3,
-	},
-	PlayerChoiceRarityMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	PlayerClubRequestStatus = {
 		None = 0,
@@ -2597,11 +1677,6 @@ Enum = {
 		Joined = 5,
 		JoinedAnother = 6,
 		Canceled = 7,
-	},
-	PlayerClubRequestStatusMeta = {
-		MinValue = 0,
-		MaxValue = 7,
-		NumValues = 8,
 	},
 	PlayerCurrencyFlags = {
 		Incremented = 1,
@@ -2614,35 +1689,15 @@ Enum = {
 		UnusedInUI = 8,
 		Reuse2 = 16,
 	},
-	PlayerCurrencyFlagsDbFlagsMeta = {
-		MinValue = 1,
-		NumValues = 5,
-		MaxValue = 16,
-	},
-	PlayerCurrencyFlagsMeta = {
-		MinValue = 1,
-		MaxValue = 2,
-		NumValues = 2,
-	},
 	PlayerMentorshipApplicationResult = {
 		Success = 0,
 		AlreadyMentor = 1,
 		Ineligible = 2,
 	},
-	PlayerMentorshipApplicationResultMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
 	PlayerMentorshipStatus = {
 		None = 0,
 		Newcomer = 1,
 		Mentor = 2,
-	},
-	PlayerMentorshipStatusMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	PowerType = {
 		HealthCost = -2,
@@ -2668,25 +1723,10 @@ Enum = {
 		Pain = 18,
 		NumPowerTypes = 19,
 	},
-	PowerTypeMeta = {
-		MinValue = -2,
-		MaxValue = 19,
-		NumValues = 22,
-	},
-	PurchaseEligibilityMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	PvPMatchState = {
 		Inactive = 0,
 		Active = 1,
 		Complete = 2,
-	},
-	PvPMatchStateMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	PvPUnitClassification = {
 		FlagCarrierHorde = 0,
@@ -2701,30 +1741,15 @@ Enum = {
 		OrbCarrierOrange = 9,
 		OrbCarrierPurple = 10,
 	},
-	PvPUnitClassificationMeta = {
-		MinValue = 0,
-		MaxValue = 10,
-		NumValues = 11,
-	},
 	QuestFrequency = {
 		Default = 0,
 		Daily = 1,
 		Weekly = 2,
 	},
-	QuestFrequencyMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
 	QuestLineFloorLocation = {
 		Above = 0,
 		Below = 1,
 		Same = 2,
-	},
-	QuestLineFloorLocationMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	QuestPOIQuestTypes = {
 		Normal = 1,
@@ -2736,11 +1761,6 @@ Enum = {
 		Start = 1,
 		Stop = 2,
 		SessionActiveNoCommand = 3,
-	},
-	QuestSessionCommandMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	QuestSessionResult = {
 		Ok = 0,
@@ -2778,11 +1798,6 @@ Enum = {
 		InCombat = 32,
 		MemberInCombat = 33,
 	},
-	QuestSessionResultMeta = {
-		MinValue = 0,
-		MaxValue = 33,
-		NumValues = 34,
-	},
 	QuestTag = {
 		Group = 1,
 		PvP = 41,
@@ -2795,11 +1810,6 @@ Enum = {
 		Scenario = 98,
 		Account = 102,
 		CombatAlly = 266,
-	},
-	QuestTagMeta = {
-		MinValue = 1,
-		NumValues = 11,
-		MaxValue = 266,
 	},
 	QuestTagType = {
 		Tag = 0,
@@ -2819,19 +1829,9 @@ Enum = {
 		Threat = 14,
 		CovenantCalling = 15,
 	},
-	QuestTagTypeMeta = {
-		MinValue = 0,
-		MaxValue = 15,
-		NumValues = 16,
-	},
 	QuestWatchType = {
 		Automatic = 0,
 		Manual = 1,
-	},
-	QuestWatchTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	RafLinkType = {
 		None = 0,
@@ -2839,30 +1839,15 @@ Enum = {
 		Friend = 2,
 		Both = 3,
 	},
-	RafLinkTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	RafRecruitActivityState = {
 		Incomplete = 0,
 		Complete = 1,
 		RewardClaimed = 2,
 	},
-	RafRecruitActivityStateMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
 	RafRecruitSubStatus = {
 		Trial = 0,
 		Active = 1,
 		Inactive = 2,
-	},
-	RafRecruitSubStatusMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	RafRewardType = {
 		Pet = 0,
@@ -2874,22 +1859,12 @@ Enum = {
 		Illusion = 6,
 		Invalid = 7,
 	},
-	RafRewardTypeMeta = {
-		MinValue = 0,
-		MaxValue = 7,
-		NumValues = 8,
-	},
 	RelativeContentDifficulty = {
 		Trivial = 0,
 		Easy = 1,
 		Fair = 2,
 		Difficult = 3,
 		Impossible = 4,
-	},
-	RelativeContentDifficultyMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
 	},
 	RuneforgePowerFilter = {
 		All = 0,
@@ -2910,18 +1885,8 @@ Enum = {
 		SourceCollideWithTarget = 4,
 		UIParentShake = 5,
 	},
-	ScriptedAnimationBehaviorMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	ScriptedAnimationFlags = {
 		UseTargetAsSource = 1,
-	},
-	ScriptedAnimationFlagsMeta = {
-		MaxValue = 1,
-		MinValue = 1,
-		NumValues = 1,
 	},
 	ScriptedAnimationTrajectory = {
 		AtSource = 0,
@@ -2932,27 +1897,12 @@ Enum = {
 		CurveRandom = 5,
 		HalfwayBetween = 6,
 	},
-	ScriptedAnimationTrajectoryMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
-	},
 	SelfResurrectOptionType = {
 		Spell = 0,
 		Item = 1,
 	},
-	SelfResurrectOptionTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
-	},
 	SoulbindConduitFlags = {
 		VisibleToGetallsoulbindconduitScript = 1,
-	},
-	SoulbindConduitFlagsMeta = {
-		MaxValue = 1,
-		MinValue = 1,
-		NumValues = 1,
 	},
 	SoulbindConduitInstallResult = {
 		Success = 0,
@@ -2963,19 +1913,9 @@ Enum = {
 		ForgeNotInProximity = 5,
 		SocketNotEmpty = 6,
 	},
-	SoulbindConduitInstallResultMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
-	},
 	SoulbindConduitTransactionType = {
 		Install = 0,
 		Uninstall = 1,
-	},
-	SoulbindConduitTransactionTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	SoulbindConduitType = {
 		Finesse = 0,
@@ -2983,59 +1923,29 @@ Enum = {
 		Endurance = 2,
 		Flex = 3,
 	},
-	SoulbindConduitTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	SoulbindNodeState = {
 		Unavailable = 0,
 		Unselected = 1,
 		Selectable = 2,
 		Selected = 3,
 	},
-	SoulbindNodeStateMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	SpellDisplayIconDisplayType = {
 		Buff = 0,
 		Debuff = 1,
 		Circular = 2,
-	},
-	SpellDisplayIconDisplayTypeMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	SpellDisplayIconSizeType = {
 		Small = 0,
 		Medium = 1,
 		Large = 2,
 	},
-	SpellDisplayIconSizeTypeMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
 	SpellDisplayTextShownStateType = {
 		Shown = 0,
 		Hidden = 1,
 	},
-	SpellDisplayTextShownStateTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
-	},
 	SplashScreenType = {
 		WhatsNew = 0,
 		SeasonRollOver = 1,
-	},
-	SplashScreenTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	StatusBarColorTintValue = {
 		None = 0,
@@ -3048,21 +1958,11 @@ Enum = {
 		Green = 7,
 		Blue = 8,
 	},
-	StatusBarColorTintValueMeta = {
-		MinValue = 0,
-		MaxValue = 8,
-		NumValues = 9,
-	},
 	StatusBarOverrideBarTextShownType = {
 		Never = 0,
 		Always = 1,
 		OnlyOnMouseover = 2,
 		OnlyNotOnMouseover = 3,
-	},
-	StatusBarOverrideBarTextShownTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	StatusBarValueTextType = {
 		Hidden = 0,
@@ -3073,35 +1973,15 @@ Enum = {
 		ValueOverMax = 5,
 		ValueOverMaxNormalized = 6,
 	},
-	StatusBarValueTextTypeMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
-	},
-	StoreErrorMeta = {
-		MinValue = 0,
-		MaxValue = 12,
-		NumValues = 13,
-	},
 	SubscriptionInterstitialResponseType = {
 		Clicked = 0,
 		Closed = 1,
 		WebRedirect = 2,
 	},
-	SubscriptionInterstitialResponseTypeMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
 	SubscriptionInterstitialType = {
 		Standard = 0,
 		LeftNpeArea = 1,
 		MaxLevel = 2,
-	},
-	SubscriptionInterstitialTypeMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	SummonStatus = {
 		None = 0,
@@ -3109,32 +1989,17 @@ Enum = {
 		Accepted = 2,
 		Declined = 3,
 	},
-	SummonStatusMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	SuperTrackingType = {
 		Quest = 0,
 		UserWaypoint = 1,
 		Corpse = 2,
 		Scenario = 3,
 	},
-	SuperTrackingTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	TooltipSide = {
 		Left = 0,
 		Right = 1,
 		Top = 2,
 		Bottom = 3,
-	},
-	TooltipSideMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	TooltipTextureAnchor = {
 		LeftTop = 0,
@@ -3145,19 +2010,9 @@ Enum = {
 		RightBottom = 5,
 		All = 6,
 	},
-	TooltipTextureAnchorMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
-	},
 	TooltipTextureRelativeRegion = {
 		LeftLine = 0,
 		RightLine = 1,
-	},
-	TooltipTextureRelativeRegionMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	TrackedSpellCategory = {
 		Offensive = 0,
@@ -3165,20 +2020,10 @@ Enum = {
 		Debuff = 2,
 		Count = 3,
 	},
-	TrackedSpellCategoryMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	TransmogCameraVariation = {
 		None = 0,
 		CloakBackpack = 1,
 		RightShoulder = 1,
-	},
-	TransmogCameraVariationMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 3,
 	},
 	TransmogCollectionType = {
 		None = 0,
@@ -3212,28 +2057,13 @@ Enum = {
 		Warglaives = 28,
 		Paired = 29,
 	},
-	TransmogCollectionTypeMeta = {
-		MinValue = 0,
-		MaxValue = 29,
-		NumValues = 30,
-	},
 	TransmogIllisionFlags = {
 		HideUntilCollected = 1,
 		PlayerConditionGrantsOnLogin = 2,
 	},
-	TransmogIllisionFlagsMeta = {
-		MinValue = 1,
-		MaxValue = 2,
-		NumValues = 2,
-	},
 	TransmogModification = {
 		Main = 0,
 		Secondary = 1,
-	},
-	TransmogModificationMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	TransmogPendingType = {
 		Apply = 0,
@@ -3241,20 +2071,10 @@ Enum = {
 		ToggleOn = 2,
 		ToggleOff = 3,
 	},
-	TransmogPendingTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	TransmogSearchType = {
 		Items = 1,
 		BaseSets = 2,
 		UsableSets = 3,
-	},
-	TransmogSearchTypeMeta = {
-		MinValue = 1,
-		MaxValue = 3,
-		NumValues = 3,
 	},
 	TransmogSlot = {
 		Head = 0,
@@ -3271,11 +2091,6 @@ Enum = {
 		Mainhand = 11,
 		Offhand = 12,
 	},
-	TransmogSlotMeta = {
-		MinValue = 0,
-		MaxValue = 12,
-		NumValues = 13,
-	},
 	TransmogSource = {
 		None = 0,
 		JournalEncounter = 1,
@@ -3288,19 +2103,9 @@ Enum = {
 		Profession = 8,
 		NotValidForTransmog = 9,
 	},
-	TransmogSourceMeta = {
-		MinValue = 0,
-		MaxValue = 9,
-		NumValues = 10,
-	},
 	TransmogType = {
 		Appearance = 0,
 		Illusion = 1,
-	},
-	TransmogTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	TransmogUseErrorType = {
 		None = 0,
@@ -3310,11 +2115,6 @@ Enum = {
 		Faction = 4,
 		Holiday = 5,
 		ArtifactSpec = 6,
-	},
-	TransmogUseErrorTypeMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
 	},
 	UICursorType = {
 		Default = 0,
@@ -3339,18 +2139,8 @@ Enum = {
 		CommunitiesStream = 20,
 		ConduitCollectionItem = 21,
 	},
-	UICursorTypeMeta = {
-		MinValue = 0,
-		MaxValue = 21,
-		NumValues = 21,
-	},
 	UIFrameType = {
 		JailersTowerBuffs = 0,
-	},
-	UIFrameTypeMeta = {
-		MaxValue = 0,
-		MinValue = 0,
-		NumValues = 1,
 	},
 	UIMapFlag = {
 		NoHighlight = 0x1,
@@ -3371,21 +2161,11 @@ Enum = {
 		ForceOnNavbar = 0x8000,
 		AlwaysAllowUserWaypoints = 0x10000,
 	},
-	UIMapFlagMeta = {
-		MinValue = 1,
-		NumValues = 17,
-		MaxValue = 65536,
-	},
 	UIMapSystem = {
 		World = 0,
 		Taxi = 1,
 		Adventure = 2,
 		Minimap = 3,
-	},
-	UIMapSystemMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	UIMapType = {
 		Cosmic = 0,
@@ -3396,28 +2176,13 @@ Enum = {
 		Micro = 5,
 		Orphan = 6,
 	},
-	UIMapTypeMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
-	},
 	UIWidgetFlag = {
 		UniversalWidget = 1,
-	},
-	UIWidgetFlagMeta = {
-		MaxValue = 1,
-		MinValue = 1,
-		NumValues = 1,
 	},
 	UIWidgetFontType = {
 		Normal = 0,
 		Shadow = 1,
 		Outline = 2,
-	},
-	UIWidgetFontTypeMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	UIWidgetLayoutDirection = {
 		Default = 0,
@@ -3426,20 +2191,10 @@ Enum = {
 		Overlap = 3,
 		HorizontalForceNewRow = 4,
 	},
-	UIWidgetLayoutDirectionMeta = {
-		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
-	},
 	UIWidgetModelSceneLayer = {
 		None = 0,
 		Front = 1,
 		Back = 2,
-	},
-	UIWidgetModelSceneLayerMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	UIWidgetScale = {
 		OneHundred = 0,
@@ -3449,30 +2204,15 @@ Enum = {
 		Sixty = 4,
 		Fifty = 5,
 	},
-	UIWidgetScaleMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	UIWidgetSetLayoutDirection = {
 		Vertical = 0,
 		Horizontal = 1,
-	},
-	UIWidgetSetLayoutDirectionMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	UIWidgetTextSizeType = {
 		Small = 0,
 		Medium = 1,
 		Large = 2,
 		Huge = 3,
-	},
-	UIWidgetTextSizeTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
 	},
 	UIWidgetTooltipLocation = {
 		Default = 0,
@@ -3484,11 +2224,6 @@ Enum = {
 		Right = 6,
 		BottomRight = 7,
 		Bottom = 8,
-	},
-	UIWidgetTooltipLocationMeta = {
-		MinValue = 0,
-		MaxValue = 8,
-		NumValues = 9,
 	},
 	UIWidgetVisualizationType = {
 		IconAndText = 0,
@@ -3515,20 +2250,10 @@ Enum = {
 		TextColumnRow = 21,
 		Spacer = 22,
 	},
-	UIWidgetVisualizationTypeMeta = {
-		MinValue = 0,
-		MaxValue = 22,
-		NumValues = 23,
-	},
 	Unitsex = {
 		Male = 0,
 		Female = 1,
 		None = 2,
-	},
-	UnitsexMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	ValidateNameResult = {
 		NameSuccess = 0,
@@ -3550,16 +2275,6 @@ Enum = {
 		NameDeclensionDoesntMatchBaseName = 16,
 		NameSpacesDisallowed = 17,
 	},
-	ValidateNameResultMeta = {
-		MinValue = 0,
-		MaxValue = 17,
-		NumValues = 18,
-	},
-	VasErrorMeta = {
-		MinValue = 4,
-		NumValues = 46,
-		MaxValue = 20090,
-	},
 	VasPurchaseProgress = {
 		Invalid = 0,
 		PrePurchase = 1,
@@ -3570,35 +2285,15 @@ Enum = {
 		ProcessingFactionChange = 6,
 		Complete = 7,
 	},
-	VasPurchaseProgressMeta = {
-		MinValue = 0,
-		MaxValue = 7,
-		NumValues = 8,
-	},
-	VasServiceTypeMeta = {
-		MinValue = 0,
-		MaxValue = 9,
-		NumValues = 10,
-	},
 	VignetteType = {
 		Normal = 0,
 		PvPBounty = 1,
 		Torghast = 2,
 		Treasure = 3,
 	},
-	VignetteTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	VoiceChannelErrorReason = {
 		Unknown = 0,
 		IsBattleNetChannel = 1,
-	},
-	VoiceChannelErrorReasonMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	VoiceChatStatusCode = {
 		Success = 0,
@@ -3627,11 +2322,6 @@ Enum = {
 		InvalidInputDevice = 23,
 		InvalidOutputDevice = 24,
 	},
-	VoiceChatStatusCodeMeta = {
-		MinValue = 0,
-		MaxValue = 24,
-		NumValues = 25,
-	},
 	VoiceTtsDestination = {
 		RemoteTransmission = 0,
 		LocalPlayback = 1,
@@ -3640,11 +2330,6 @@ Enum = {
 		QueuedLocalPlayback = 4,
 		QueuedRemoteTransmissionWithLocalPlayback = 5,
 		ScreenReader = 6,
-	},
-	VoiceTtsDestinationMeta = {
-		MinValue = 0,
-		MaxValue = 6,
-		NumValues = 7,
 	},
 	VoiceTtsStatusCode = {
 		Success = 0,
@@ -3662,11 +2347,6 @@ Enum = {
 		InvalidArgument = 12,
 		InternalError = 13,
 	},
-	VoiceTtsStatusCodeMeta = {
-		MinValue = 0,
-		MaxValue = 13,
-		NumValues = 14,
-	},
 	WeeklyRewardChestThresholdType = {
 		None = 0,
 		MythicPlus = 1,
@@ -3675,28 +2355,13 @@ Enum = {
 		AlsoReceive = 4,
 		Concession = 5,
 	},
-	WeeklyRewardChestThresholdTypeMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	WidgetAnimationType = {
 		None = 0,
 		Fade = 1,
 	},
-	WidgetAnimationTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
-	},
 	WidgetCurrencyClass = {
 		Currency = 0,
 		Item = 1,
-	},
-	WidgetCurrencyClassMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	WidgetEnabledState = {
 		Disabled = 0,
@@ -3706,29 +2371,14 @@ Enum = {
 		Green = 4,
 		Gold = 5,
 	},
-	WidgetEnabledStateMeta = {
-		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
-	},
 	WidgetShownState = {
 		Hidden = 0,
 		Shown = 1,
-	},
-	WidgetShownStateMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	WidgetTextHorizontalAlignmentType = {
 		Left = 0,
 		Center = 1,
 		Right = 2,
-	},
-	WidgetTextHorizontalAlignmentTypeMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
 	},
 	WoWEntitlementType = {
 		Item = 0,
@@ -3742,29 +2392,14 @@ Enum = {
 		Illusion = 8,
 		Invalid = 9,
 	},
-	WoWEntitlementTypeMeta = {
-		MinValue = 0,
-		MaxValue = 9,
-		NumValues = 10,
-	},
 	WorldQuestQuality = {
 		Common = 0,
 		Rare = 1,
 		Epic = 2,
 	},
-	WorldQuestQualityMeta = {
-		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
-	},
 	ZoneControlActiveState = {
 		Inactive = 0,
 		Active = 1,
-	},
-	ZoneControlActiveStateMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	ZoneControlDangerFlashType = {
 		ShowOnGoodStates = 0,
@@ -3772,30 +2407,15 @@ Enum = {
 		ShowOnBoth = 2,
 		ShowOnNeither = 3,
 	},
-	ZoneControlDangerFlashTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	ZoneControlFillType = {
 		SingleFillClockwise = 0,
 		SingleFillCounterClockwise = 1,
 		DoubleFillClockwise = 2,
 		DoubleFillCounterClockwise = 3,
 	},
-	ZoneControlFillTypeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	ZoneControlLeadingEdgeType = {
 		NoLeadingEdge = 0,
 		UseLeadingEdge = 1,
-	},
-	ZoneControlLeadingEdgeTypeMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 	ZoneControlMode = {
 		BothStatesAreGood = 0,
@@ -3803,19 +2423,9 @@ Enum = {
 		State2IsGood = 2,
 		NeitherStateIsGood = 3,
 	},
-	ZoneControlModeMeta = {
-		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
-	},
 	ZoneControlState = {
 		State1 = 0,
 		State2 = 1,
-	},
-	ZoneControlStateMeta = {
-		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
 	},
 }
 

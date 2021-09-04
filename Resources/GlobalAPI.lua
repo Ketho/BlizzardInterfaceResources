@@ -12,6 +12,7 @@ local GlobalAPI = {
 	"AcceptSpellConfirmationPrompt",
 	"AcceptTrade",
 	"AcceptXPLoss",
+	"AcknowledgeAADCAlert",
 	"AcknowledgeAutoAcceptQuest",
 	"AcknowledgeSurvey",
 	"ActionBindsItem",

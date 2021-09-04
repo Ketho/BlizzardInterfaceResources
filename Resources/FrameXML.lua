@@ -3786,6 +3786,7 @@ local FrameXML = {
 	"SafeUnpack",
 	"Saturate",
 	"ScenarioAlertFrame_SetUp",
+	"ScenarioBlocksFrame_ExtraBlocksSetShown",
 	"ScenarioBlocksFrame_Hide",
 	"ScenarioBlocksFrame_OnEvent",
 	"ScenarioBlocksFrame_OnFinishSlideIn",
