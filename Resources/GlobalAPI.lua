@@ -2307,6 +2307,7 @@ local GlobalAPI = {
 	"C_Transmog.ClearAllPending",
 	"C_Transmog.ClearPending",
 	"C_Transmog.Close",
+	"C_Transmog.ExtractTransmogIDList",
 	"C_Transmog.GetApplyCost",
 	"C_Transmog.GetApplyWarnings",
 	"C_Transmog.GetBaseCategory",
@@ -4737,7 +4738,6 @@ local GlobalAPI = {
 	"securecallfunction",
 	"secureexecuterange",
 	"seterrorhandler",
-	"strsplittable",
 }
 
 local LuaAPI = {
@@ -4861,6 +4861,7 @@ local LuaAPI = {
 	"strrep",
 	"strrev",
 	"strsplit",
+	"strsplittable",
 	"strsub",
 	"strtrim",
 	"strupper",
