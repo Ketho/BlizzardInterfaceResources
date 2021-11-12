@@ -5503,6 +5503,7 @@ ERR_BATTLEGROUND_JOIN_MUST_COMPLETE_QUEST = "You have been removed from a PvP qu
 ERR_BATTLEGROUND_JOIN_NOT_ENOUGH_HEALERS = "You can not enter this bracket of arena without a healer.";
 ERR_BATTLEGROUND_JOIN_NO_VALID_SPEC_FOR_ROLE = "Role check failed because one of your party members selected an invalid role.";
 ERR_BATTLEGROUND_JOIN_RANGE_INDEX = "Cannot join the queue unless all members of your party are in the same level range.";
+ERR_BATTLEGROUND_JOIN_REQUIRES_LEVEL = "Tournament rules requires all participants to be max level.";
 ERR_BATTLEGROUND_JOIN_RESPEC = "You have been removed from a PvP queue because your specialization changed.";
 ERR_BATTLEGROUND_JOIN_TIMED_OUT = "%s was unavailable to join the queue.";
 ERR_BATTLEGROUND_JOIN_TOO_MANY_DAMAGE = "You can not enter this bracket of arena with more than two damage dealers.";

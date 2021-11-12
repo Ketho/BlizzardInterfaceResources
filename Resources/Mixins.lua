@@ -63,7 +63,6 @@ local Mixins = {
 	"CommentatorSpellMixin",
 	"CommentatorSpellTrayMixin",
 	"CommentatorUnitFrameMixin",
-	"CommentatorVictoryFanfareFrameMixin",
 	"CommunitiesAddDialogMixin",
 	"CommunitiesAddToChatMixin",
 	"CommunitiesAvatarPickerDialogMixin",

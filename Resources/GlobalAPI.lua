@@ -2690,6 +2690,7 @@ local LuaAPI = {
 	"strrep",
 	"strrev",
 	"strsplit",
+	"strsplittable",
 	"strsub",
 	"strtrim",
 	"strupper",
