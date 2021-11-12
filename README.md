@@ -5,6 +5,6 @@ Global resources extracted from World of Warcraft for development purposes.
 * [GlobalStrings](https://wow.tools/dbc/?dbc=globalstrings) and [AtlasInfo](https://wow.tools/dbc/?dbc=uitextureatlasmember) are downloaded with [WoWtoolsParser](https://github.com/Ketho/WoWtoolsParser)
 * Templates and mixins are [parsed](https://github.com/Ketho/WowpediaApiDoc/blob/master/Projects/DumbXmlParser/DumbXmlParser.lua) from FrameXML
 ```lua
-GetBuildInfo() => "1.14.0", "39958", "Aug 27 2021", 11400
+GetBuildInfo() => "1.14.1", "41030", "Nov 10 2021", 11401
 ```
 ![](https://raw.githubusercontent.com/Ketho/BlizzardInterfaceResources/classic/Resources/WidgetHierarchy.png)
