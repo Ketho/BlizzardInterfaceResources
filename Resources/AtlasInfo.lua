@@ -1,6 +1,9 @@
 -- see also https://wow.gamepedia.com/API_C_Texture.GetAtlasInfo
 -- atlas = width, height, leftTexCoord, rightTexCoord, topTexCoord, bottomTexCoord, tilesHorizontally, tilesVertically
 local AtlasInfo = {
+	["4255513"] = { -- 4255513
+		["shop-card-half-915celestialbundle"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
 	["interface/achievementframe/achievementtoast"] = { -- 4035524
 		["ui-achievement-alert-background-mini"] = {256, 84, 0.0009765625, 0.2509765625, 0.369140625, 0.451171875, false, false},
 		["ui-achievement-alert-background"] = {310, 101, 0.625, 0.927734375, 0.169921875, 0.2685546875, false, false},
@@ -7933,6 +7936,13 @@ local AtlasInfo = {
 		["shop-card-bundle-battleforazeroth"] = {292, 159, 0.5673828125, 0.8525390625, 0.001953125, 0.3125, false, false},
 		["shop-card-bundle-lastchance2018"] = {292, 135, 0.5673828125, 0.8525390625, 0.62890625, 0.892578125, false, false},
 	},
+	["interface/store/shopbundles915"] = { -- 4236523
+		["shop-card-full-915dragonbundle"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles_murlocbackpack_4238249"] = { -- 4238249
+		["shop-image-bundle-mbp1"] = {286, 434, 0.5576171875, 0.8369140625, 0.001953125, 0.849609375, false, false},
+		["shop-image-bundle-mbp2"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
 	["interface/store/shopcard15thanniversary"] = { -- 3032792
 		["shop-card-full-15thAnniversary"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
 	},
@@ -7963,6 +7973,10 @@ local AtlasInfo = {
 	},
 	["interface/store/shopgametimebundle4"] = { -- 2981946
 		["shop-card-full-gametimebundle4"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopgametimebundlelunarnewyear"] = { -- 4239633
+		["shop-card-full-lunar180gametime"] = {568, 463, 0.0009765625, 0.5556640625, 0.0009765625, 0.453125, false, false},
+		["shop-card-full-lunar6subscription"] = {568, 463, 0.0009765625, 0.5556640625, 0.455078125, 0.9072265625, false, false},
 	},
 	["interface/store/shopgameupgrades"] = { -- 1722520
 		["shop-card-half-hover"] = {278, 463, 0.001953125, 0.544921875, 0.001953125, 0.90625, false, false},
