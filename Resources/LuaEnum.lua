@@ -3,6 +3,31 @@ Enum = {
 		UnitPrice = 0,
 		Quantity = 1,
 	},
+	AuctionHouseError = {
+		NotEnoughMoney = 0,
+		HigherBid = 1,
+		BidIncrement = 2,
+		BidOwn = 3,
+		ItemNotFound = 4,
+		RestrictedAccountTrial = 5,
+		HasRestriction = 6,
+		IsBusy = 7,
+		Unavailable = 8,
+		ItemHasQuote = 9,
+		DatabaseError = 10,
+		MinBid = 11,
+		NotEnoughItems = 12,
+		RepairItem = 13,
+		UsedCharges = 14,
+		QuestItem = 15,
+		BoundItem = 16,
+		ConjuredItem = 17,
+		LimitedDurationItem = 18,
+		IsBag = 19,
+		EquippedBag = 20,
+		WrappedItem = 21,
+		LootItem = 22,
+	},
 	AuctionHouseFilter = {
 		UncollectedOnly = 0,
 		UsableOnly = 1,
@@ -20,6 +45,14 @@ Enum = {
 	AuctionHouseItemSortOrder = {
 		Bid = 0,
 		Buyout = 1,
+	},
+	AuctionHouseNotification = {
+		BidPlaced = 0,
+		AuctionRemoved = 1,
+		AuctionWon = 2,
+		AuctionOutbid = 3,
+		AuctionSold = 4,
+		AuctionExpired = 5,
 	},
 	AuctionHouseSortOrder = {
 		Price = 0,
@@ -429,6 +462,12 @@ Enum = {
 		None = 0,
 		Mentor = 1,
 		Disabled = 2,
+		ChromieTimeCataclysm = 3,
+		ChromieTimeBuringCrusade = 4,
+		ChromieTimeWrath = 5,
+		ChromieTimeMists = 6,
+		ChromieTimeWoD = 7,
+		ChromieTimeLegion = 8,
 	},
 	ChatChannelType = {
 		None = 0,
@@ -691,6 +730,7 @@ Enum = {
 	CurrencyFlagsB = {
 		CurrencyBUseTotalEarnedForEarned = 1,
 		CurrencyBShowQuestXpGainInTooltip = 2,
+		CurrencyBNoNotificationMailOnOfflineProgress = 4,
 	},
 	CurrencyGainFlags = {
 		BonusAward = 1,
@@ -793,6 +833,7 @@ Enum = {
 		MaskSpellstorm = 0x48,
 		MaskSpellfrost = 0x50,
 		MaskSpellshadow = 0x60,
+		MaskCosmic = 0x6A,
 		MaskChaos = 0x7C,
 		AllMagical = 0x7E,
 		MaskMagical = 0x7E,
@@ -1239,15 +1280,6 @@ Enum = {
 		Communities = 2,
 		Custom = 3,
 	},
-	PetBattleState = {
-		Created = 0,
-		WaitingPreBattle = 1,
-		RoundInProgress = 2,
-		WaitingForFrontPets = 3,
-		CreatedFailed = 4,
-		FinalRound = 5,
-		Finished = 6,
-	},
 	PetbattleAuraStateFlags = {
 		None = 0,
 		Infinite = 1,
@@ -1557,6 +1589,10 @@ Enum = {
 		CurveRandom = 5,
 		HalfwayBetween = 6,
 	},
+	SeasonID = {
+		NoSeason = 0,
+		SeasonOfMastery = 1,
+	},
 	SelfResurrectOptionType = {
 		Spell = 0,
 		Item = 1,
@@ -1629,6 +1665,18 @@ Enum = {
 		BaseSets = 2,
 		UsableSets = 3,
 	},
+	TransmogSource = {
+		None = 0,
+		JournalEncounter = 1,
+		Quest = 2,
+		Vendor = 3,
+		WorldDrop = 4,
+		HiddenUntilCollected = 5,
+		CantCollect = 6,
+		Achievement = 7,
+		Profession = 8,
+		NotValidForTransmog = 9,
+	},
 	TransmogUseErrorType = {
 		None = 0,
 		PlayerCondition = 1,
@@ -1636,7 +1684,7 @@ Enum = {
 		Ability = 3,
 		Faction = 4,
 		Holiday = 5,
-		ArtifactSpec = 6,
+		HotRecheckFailed = 6,
 	},
 	UICursorType = {
 		Default = 0,
@@ -1660,6 +1708,17 @@ Enum = {
 		Toy = 19,
 		CommunitiesStream = 20,
 		ConduitCollectionItem = 21,
+	},
+	UIItemInteractionFlags = {
+		DisplayWithInset = 1,
+		ConfirmationHasDelay = 2,
+	},
+	UIItemInteractionType = {
+		None = 0,
+		CastSpell = 1,
+		CleanseCorruption = 2,
+		RunecarverScrapping = 3,
+		ItemConversion = 4,
 	},
 	UIMapFlag = {
 		NoHighlight = 0x1,
@@ -1724,10 +1783,17 @@ Enum = {
 		ScenarioHeaderCurrenciesAndBackground = 11,
 		TextureWithState = 12,
 	},
+	UnitSex = {
+		Male = 0,
+		Female = 1,
+		None = 2,
+		Both = 3,
+	},
 	Unitsex = {
 		Male = 0,
 		Female = 1,
 		None = 2,
+		Both = 3,
 	},
 	ValidateNameResult = {
 		NameSuccess = 0,
@@ -1891,6 +1957,9 @@ Constants = {
 		PROFESSION_JEWELCRAFTING = 755,
 		PROFESSION_INSCRIPTION = 773,
 		PROFESSION_ARCHAEOLOGY = 794,
+	},
+	PvpInfoConsts = {
+		MaxPlayersPerInstance = 80,
 	},
 	QuestWatchConsts_Classic = {
 		MAX_WORLD_QUEST_WATCHES = 1,
