@@ -138,6 +138,7 @@ local Mixins = {
 	"FogOfWarDataProviderMixin",
 	"FogOfWarPinMixin",
 	"FontableFrameMixin",
+	"FontStringPoolCollectionMixin",
 	"FontStringPoolMixin",
 	"FramePoolCollectionMixin",
 	"FramePoolMixin",

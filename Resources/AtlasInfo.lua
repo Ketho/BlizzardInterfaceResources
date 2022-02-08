@@ -678,6 +678,13 @@ local AtlasInfo = {
 	["interface/common/bluemenuring"] = { -- 922034
 		["bluemenu-Ring"] = {102, 103, 0.0078125, 0.8046875, 0.0078125, 0.8125, false, false},
 	},
+	["interface/common/commonsearch"] = { -- 3281887
+		["common-search-border-left"] = {16, 40, 0.88671875, 0.94921875, 0.0078125, 0.3203125, false, false},
+		["common-search-border-middle"] = {224, 40, 0.00390625, 0.87890625, 0.0078125, 0.3203125, false, false},
+		["common-search-border-right"] = {16, 40, 0.00390625, 0.06640625, 0.3359375, 0.6484375, false, false},
+		["common-search-clearbutton"] = {20, 20, 0.07421875, 0.15234375, 0.5390625, 0.6953125, false, false},
+		["common-search-magnifyingglass"] = {24, 24, 0.07421875, 0.16796875, 0.3359375, 0.5234375, false, false},
+	},
 	["interface/common/favoritesicon"] = { -- 922035
 		["PetJournal-FavoritesIcon"] = {25, 25, 0.03125, 0.8125, 0.03125, 0.8125, false, false},
 	},
