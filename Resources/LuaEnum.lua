@@ -16,6 +16,31 @@ Enum = {
 		UnitPrice = 0,
 		Quantity = 1,
 	},
+	AuctionHouseError = {
+		NotEnoughMoney = 0,
+		HigherBid = 1,
+		BidIncrement = 2,
+		BidOwn = 3,
+		ItemNotFound = 4,
+		RestrictedAccountTrial = 5,
+		HasRestriction = 6,
+		IsBusy = 7,
+		Unavailable = 8,
+		ItemHasQuote = 9,
+		DatabaseError = 10,
+		MinBid = 11,
+		NotEnoughItems = 12,
+		RepairItem = 13,
+		UsedCharges = 14,
+		QuestItem = 15,
+		BoundItem = 16,
+		ConjuredItem = 17,
+		LimitedDurationItem = 18,
+		IsBag = 19,
+		EquippedBag = 20,
+		WrappedItem = 21,
+		LootItem = 22,
+	},
 	AuctionHouseFilter = {
 		UncollectedOnly = 0,
 		UsableOnly = 1,
@@ -38,6 +63,14 @@ Enum = {
 	AuctionHouseItemSortOrder = {
 		Bid = 0,
 		Buyout = 1,
+	},
+	AuctionHouseNotification = {
+		BidPlaced = 0,
+		AuctionRemoved = 1,
+		AuctionWon = 2,
+		AuctionOutbid = 3,
+		AuctionSold = 4,
+		AuctionExpired = 5,
 	},
 	AuctionHouseSortOrder = {
 		Price = 0,
@@ -475,6 +508,12 @@ Enum = {
 		None = 0,
 		Mentor = 1,
 		Disabled = 2,
+		ChromieTimeCataclysm = 3,
+		ChromieTimeBuringCrusade = 4,
+		ChromieTimeWrath = 5,
+		ChromieTimeMists = 6,
+		ChromieTimeWoD = 7,
+		ChromieTimeLegion = 8,
 	},
 	ChatChannelType = {
 		None = 0,
@@ -490,6 +529,16 @@ Enum = {
 		SelectionPopout = 0,
 		Checkbox = 1,
 		Slider = 2,
+	},
+	ClickBindingInteraction = {
+		Target = 1,
+		OpenContextMenu = 2,
+	},
+	ClickBindingType = {
+		None = 0,
+		Spell = 1,
+		Macro = 2,
+		Interaction = 3,
 	},
 	ClubActionType = {
 		ErrorClubActionSubscribe = 0,
@@ -869,7 +918,9 @@ Enum = {
 		Barbershop = 47,
 		ConvertItemsToCurrencyValue = 48,
 		PvPTeamContribution = 49,
-		Last = 50,
+		Transmogrify = 50,
+		AuctionDeposit = 51,
+		Last = 52,
 	},
 	CurrencyTokenCategoryFlags = {
 		FlagSortLast = 1,
@@ -923,6 +974,7 @@ Enum = {
 		MaskSpellstorm = 0x48,
 		MaskSpellfrost = 0x50,
 		MaskSpellshadow = 0x60,
+		MaskCosmic = 0x6A,
 		MaskChaos = 0x7C,
 		AllMagical = 0x7E,
 		MaskMagical = 0x7E,
@@ -1111,6 +1163,7 @@ Enum = {
 		SanctumUnique = 5,
 		SoulBinds = 6,
 		AnimaDiversionMap = 7,
+		Cyphers = 8,
 	},
 	GarrTalentResearchCostSource = {
 		Talent = 0,
@@ -1420,6 +1473,11 @@ Enum = {
 		AdamantVaults = 11,
 		ForgottenCatacombs = 12,
 		Ossuary = 13,
+		BossRush = 14,
+	},
+	LanguageFlag = {
+		IsExotic = 1,
+		HiddenFromPlayer = 2,
 	},
 	LfgEntryPlaystyle = {
 		None = 0,
@@ -1514,15 +1572,6 @@ Enum = {
 		Zone = 1,
 		Communities = 2,
 		Custom = 3,
-	},
-	PetBattleState = {
-		Created = 0,
-		WaitingPreBattle = 1,
-		RoundInProgress = 2,
-		WaitingForFrontPets = 3,
-		CreatedFailed = 4,
-		FinalRound = 5,
-		Finished = 6,
 	},
 	PetJournalError = {
 		None = 0,
@@ -1948,6 +1997,13 @@ Enum = {
 		Spell = 0,
 		Item = 1,
 	},
+	SkinningState = {
+		None = 0,
+		Reserved = 1,
+		Skinning = 2,
+		Looting = 3,
+		Skinned = 4,
+	},
 	SoulbindConduitFlags = {
 		VisibleToGetallsoulbindconduitScript = 1,
 	},
@@ -1980,6 +2036,7 @@ Enum = {
 		Buff = 0,
 		Debuff = 1,
 		Circular = 2,
+		NoBorder = 3,
 	},
 	SpellDisplayIconSizeType = {
 		Small = 0,
@@ -2203,12 +2260,15 @@ Enum = {
 	UIItemInteractionFlags = {
 		DisplayWithInset = 1,
 		ConfirmationHasDelay = 2,
+		ConversionMode = 4,
+		ClickShowsFlyout = 8,
 	},
 	UIItemInteractionType = {
 		None = 0,
 		CastSpell = 1,
 		CleanseCorruption = 2,
 		RunecarverScrapping = 3,
+		ItemConversion = 4,
 	},
 	UIMapFlag = {
 		NoHighlight = 0x1,
@@ -2244,6 +2304,10 @@ Enum = {
 		Micro = 5,
 		Orphan = 6,
 	},
+	UIWidgetBlendModeType = {
+		Opaque = 0,
+		Additive = 1,
+	},
 	UIWidgetFlag = {
 		UniversalWidget = 1,
 	},
@@ -2264,6 +2328,10 @@ Enum = {
 		Front = 1,
 		Back = 2,
 	},
+	UIWidgetMotionType = {
+		Instant = 0,
+		Smooth = 1,
+	},
 	UIWidgetScale = {
 		OneHundred = 0,
 		Ninty = 1,
@@ -2281,6 +2349,7 @@ Enum = {
 		Medium = 1,
 		Large = 2,
 		Huge = 3,
+		Standard = 4,
 	},
 	UIWidgetTooltipLocation = {
 		Default = 0,
@@ -2317,11 +2386,13 @@ Enum = {
 		ScenarioHeaderTimer = 20,
 		TextColumnRow = 21,
 		Spacer = 22,
+		UnitPowerBar = 23,
 	},
-	Unitsex = {
+	UnitSex = {
 		Male = 0,
 		Female = 1,
 		None = 2,
+		Both = 3,
 	},
 	ValidateNameResult = {
 		NameSuccess = 0,
@@ -2438,6 +2509,7 @@ Enum = {
 		White = 3,
 		Green = 4,
 		Gold = 5,
+		Black = 6,
 	},
 	WidgetShownState = {
 		Hidden = 0,
@@ -2447,6 +2519,11 @@ Enum = {
 		Left = 0,
 		Center = 1,
 		Right = 2,
+	},
+	WidgetUnitPowerBarFlashMomentType = {
+		FlashWhenMax = 0,
+		FlashWhenMin = 1,
+		NeverFlash = 2,
 	},
 	WoWEntitlementType = {
 		Item = 0,
@@ -2549,6 +2626,9 @@ Constants = {
 		PROFESSION_INSCRIPTION = 773,
 		PROFESSION_ARCHAEOLOGY = 794,
 	},
+	PvpInfoConsts = {
+		MaxPlayersPerInstance = 80,
+	},
 	QuestWatchConsts = {
 		MAX_WORLD_QUEST_WATCHES_AUTOMATIC = 1,
 		MAX_WORLD_QUEST_WATCHES_MANUAL = 5,
@@ -2632,7 +2712,7 @@ LE_EXPANSION_SHADOWLANDS = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 110
+NUM_LE_FRAME_TUTORIALS = 111
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -2743,6 +2823,7 @@ LE_FRAME_TUTORIAL_TORGHAST_DOMINANCE_BAR = 107
 LE_FRAME_TUTORIAL_TORGHAST_DOMINANCE_BAR_CUTOFF = 108
 LE_FRAME_TUTORIAL_UPGRADEABLE_ITEM_IN_SLOT = 109
 LE_FRAME_TUTORIAL_LINK_TRANSMOG_OUTFIT = 110
+LE_FRAME_TUTORIAL_GREAT_VAULT_CLASS_SETS = 111
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
