@@ -857,6 +857,9 @@ local Events = {
 		"TRIAL_CAP_REACHED_MONEY",
 		"UPDATE_MASTER_LOOT_LIST",
 	},
+	C_LootJournal = {
+		"LOOT_JOURNAL_ITEM_UPDATE",
+	},
 	C_LoreText = {
 		"LORE_TEXT_UPDATED_CAMPAIGN",
 	},

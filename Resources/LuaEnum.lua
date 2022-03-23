@@ -540,6 +540,10 @@ Enum = {
 		Macro = 2,
 		Interaction = 3,
 	},
+	ClientSceneType = {
+		DefaultSceneType = 0,
+		MinigameSceneType = 1,
+	},
 	ClubActionType = {
 		ErrorClubActionSubscribe = 0,
 		ErrorClubActionCreate = 1,

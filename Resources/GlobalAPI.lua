@@ -1504,6 +1504,8 @@ local GlobalAPI = {
 	"C_LootHistory.GetPlayerInfo",
 	"C_LootHistory.GiveMasterLoot",
 	"C_LootHistory.SetExpiration",
+	"C_LootJournal.GetItemSetItems",
+	"C_LootJournal.GetItemSets",
 	"C_LoreText.RequestLoreTextForCampaignID",
 	"C_LossOfControl.GetActiveLossOfControlData",
 	"C_LossOfControl.GetActiveLossOfControlDataByUnit",
