@@ -455,6 +455,7 @@ local WidgetAPI = {
 			"RegisterUnitEvent",
 			"RotateTextures",
 			"SetAttribute",
+			"SetAttributeNoHandler",
 			"SetClampRectInsets",
 			"SetClampedToScreen",
 			"SetClipsChildren",
