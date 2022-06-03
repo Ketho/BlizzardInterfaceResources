@@ -53,6 +53,7 @@ local WidgetAPI = {
 			"GetScale",
 			"GetScaledRect",
 			"GetSize",
+			"GetSourceLocation",
 			"GetTop",
 			"GetWidth",
 			"Hide",
