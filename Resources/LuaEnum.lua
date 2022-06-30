@@ -1450,6 +1450,10 @@ Enum = {
 		RaidFinderExtended_2 = 90,
 		RaidHeroicExtended_2 = 91,
 		RaidMythicExtended_2 = 92,
+		RaidNormalExtended_3 = 93,
+		RaidFinderExtended_3 = 94,
+		RaidHeroicExtended_3 = 95,
+		RaidMythicExtended_3 = 96,
 	},
 	ItemGemSubclass = {
 		Intellect = 0,
