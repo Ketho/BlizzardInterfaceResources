@@ -3456,6 +3456,7 @@ local FrameXML = {
 	"PriestBar_Update",
 	"PrintLootSpecialization",
 	"PropagateForbiddenToReferencedFrames",
+	"PvpCellNameDropDown_OnLoad",
 	"QueryCastSequence",
 	"QuestDetailAcceptButton_OnClick",
 	"QuestDetailDeclineButton_OnClick",

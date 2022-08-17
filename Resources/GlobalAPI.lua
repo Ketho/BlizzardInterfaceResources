@@ -222,6 +222,8 @@ local GlobalAPI = {
 	"C_AuctionHouse.CancelSell",
 	"C_AuctionHouse.CloseAuctionHouse",
 	"C_AuctionHouse.ConfirmCommoditiesPurchase",
+	"C_AuctionHouse.ConfirmPostCommodity",
+	"C_AuctionHouse.ConfirmPostItem",
 	"C_AuctionHouse.FavoritesAreAvailable",
 	"C_AuctionHouse.GetAuctionInfoByID",
 	"C_AuctionHouse.GetAuctionItemSubClasses",

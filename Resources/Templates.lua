@@ -187,6 +187,7 @@ local Templates = {
 	["AuctionHouseCommoditiesSellListTemplate"] = {type = "Frame", mixin = "AuctionHouseCommoditiesSellListMixin", inherits = "AuctionHouseCommoditiesListTemplate"},
 	["AuctionHouseDialogButtonTemplate"] = {type = "Button", mixin = "AuctionHouseBuyDialogButtonMixin", inherits = "UIPanelButtonTemplate"},
 	["AuctionHouseFavoritableLineTemplate"] = {type = "Button", mixin = "AuctionHouseFavoritableLineMixin", inherits = "AuctionHouseItemListLineTemplate"},
+	["AuctionHouseFavoriteButtonBaseTemplate"] = {type = "Button", mixin = "AuctionHouseFavoriteButtonBaseMixin"},
 	["AuctionHouseFavoritesSearchButtonTemplate"] = {type = "Button", mixin = "AuctionHouseFavoritesSearchButtonMixin", inherits = "SquareIconButtonTemplate"},
 	["AuctionHouseFilterButtonTemplate"] = {type = "DropDownToggleButton", mixin = "AuctionHouseFilterButtonMixin", inherits = "UIMenuButtonStretchTemplate"},
 	["AuctionHouseFilterDropDownMenuTemplate"] = {type = "Frame", mixin = "AuctionHouseFilterDropDownMenuMixin", inherits = "UIDropDownMenuTemplate"},
