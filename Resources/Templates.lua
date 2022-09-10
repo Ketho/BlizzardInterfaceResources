@@ -636,6 +636,7 @@ local Templates = {
 	["LargeQuestRewardItemButtonTemplate"] = {type = "Button", inherits = "LargeItemButtonTemplate, QuestInfoRewardItemCodeTemplate"},
 	["LegendaryItemAlertFrameTemplate"] = {type = "ContainedAlertFrame", inherits = "AlertFrameTemplate"},
 	["LFGActivityEntry"] = {type = "Font", inherits = "GameFontNormalLeft"},
+	["LFGActivityEntryTrivial"] = {type = "Font", inherits = "GameFontNormalLeft"},
 	["LFGActivityHeader"] = {type = "Font", inherits = "GameFontNormalLeft"},
 	["LFGBrowseSearchEntryTemplate"] = {type = "Button"},
 	["LFGBrowseSearchEntryTooltipActivityNameTemplate"] = {type = "FontString", inherits = "GameFontNormal"},
