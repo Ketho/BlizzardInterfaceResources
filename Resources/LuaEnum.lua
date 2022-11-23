@@ -138,6 +138,25 @@ Enum = {
 		Upgraded = 1,
 		Downgraded = 2,
 	},
+	BagIndex = {
+		Bankbag = -4,
+		Reagentbank = -3,
+		Keyring = -2,
+		Bank = -1,
+		Backpack = 0,
+		Bag_1 = 1,
+		Bag_2 = 2,
+		Bag_3 = 3,
+		Bag_4 = 4,
+		ReagentBag = 5,
+		BankBag_1 = 6,
+		BankBag_2 = 7,
+		BankBag_3 = 8,
+		BankBag_4 = 9,
+		BankBag_5 = 10,
+		BankBag_6 = 11,
+		BankBag_7 = 12,
+	},
 	BagSlotFlags = {
 		DisableAutoSort = 0x1,
 		PriorityEquipment = 0x2,
@@ -279,6 +298,7 @@ Enum = {
 		AddsAllowedWithBoss = 0x2000,
 		HideUntilLearned = 0x4000,
 		MatchPlayerHighPetLevel = 0x8000,
+		NoWildPetAddsAllowed = 0x10000,
 	},
 	BattlePetStateFlag = {
 		None = 0x0,
@@ -332,6 +352,7 @@ Enum = {
 		Ability2Selection = 0x40,
 		FanfareNeeded = 0x80,
 		DisplayOverridden = 0x100,
+		AcquiredViaLicense = 0x200,
 	},
 	BattlepetDeletedReason = {
 		Unknown = 0,
@@ -895,6 +916,111 @@ Enum = {
 		Secondary = 1,
 		Tertiary = 2,
 	},
+	CraftingOrderDuration = {
+		Short = 0,
+		Medium = 1,
+		Long = 2,
+	},
+	CraftingOrderFlags = {
+		IsRecraft = 0x1,
+		HasNoneReagents = 0x2,
+		HasSomeReagents = 0x4,
+		HasAllReagents = 0x8,
+		IsFulfillable = 0x10,
+	},
+	CraftingOrderItemType = {
+		Reagent = 0,
+		Recraft = 1,
+		CraftedResult = 2,
+	},
+	CraftingOrderReagentSource = {
+		Any = 0,
+		Customer = 1,
+		Crafter = 2,
+		None = 3,
+	},
+	CraftingOrderReagentsType = {
+		All = 0,
+		Some = 1,
+		None = 2,
+	},
+	CraftingOrderResult = {
+		Ok = 0,
+		AlreadyClaimed = 1,
+		AlreadyCrafted = 2,
+		CannotBeOrdered = 3,
+		CannotCancel = 4,
+		CannotClaim = 5,
+		CannotClaimOwnOrder = 6,
+		CannotCraft = 7,
+		CannotCreate = 8,
+		CannotFulfill = 9,
+		CannotRecraft = 10,
+		CannotReject = 11,
+		CannotRelease = 12,
+		CrafterIsIgnored = 13,
+		DatabaseError = 14,
+		Expired = 15,
+		Locked = 16,
+		InvalidDuration = 17,
+		InvalidMinQuality = 18,
+		InvalidNotes = 19,
+		InvalidReagent = 20,
+		InvalidRecipe = 21,
+		InvalidSort = 22,
+		InvalidTarget = 23,
+		InvalidType = 24,
+		MaxOrdersReached = 25,
+		MissingCraftingTable = 26,
+		MissingItem = 27,
+		MissingNpc = 28,
+		MissingOrder = 29,
+		MissingRecraftItem = 30,
+		NotClaimed = 31,
+		NotCrafted = 32,
+		NotInGuild = 33,
+		NotYetImplemented = 34,
+		OutOfPublicOrderCapacity = 35,
+		ServerIsNotAvailable = 36,
+		ThrottleViolation = 37,
+		TargetCannotCraft = 38,
+		Timeout = 39,
+		TooManyItems = 40,
+		WrongVersion = 41,
+	},
+	CraftingOrderSortType = {
+		ItemName = 0,
+		AveTip = 1,
+		MaxTip = 2,
+		Quantity = 3,
+		Reagents = 4,
+		Tip = 5,
+		TimeRemaining = 6,
+		Status = 7,
+	},
+	CraftingOrderState = {
+		None = 0,
+		Creating = 1,
+		Created = 2,
+		Claiming = 3,
+		Claimed = 4,
+		Rejecting = 5,
+		Rejected = 6,
+		Releasing = 7,
+		Crafting = 8,
+		Recrafting = 9,
+		Fulfilling = 10,
+		Fulfilled = 11,
+		Canceling = 12,
+		Canceled = 13,
+		Expiring = 14,
+		Expired = 15,
+	},
+	CraftingOrderType = {
+		Public = 0,
+		Guild = 1,
+		Personal = 2,
+	},
 	CraftingReagentItemFlag = {
 		TooltipShowsAsStatModifications = 0,
 	},
@@ -915,7 +1041,8 @@ Enum = {
 		DroppedToCorpse = 8,
 		BonusRoll = 9,
 		FactionConversion = 10,
-		Last = 11,
+		FulfillCraftingOrder = 11,
+		Last = 12,
 	},
 	CurrencyFlags = {
 		CurrencyTradable = 0x1,
@@ -1018,7 +1145,12 @@ Enum = {
 		PhBuffer_53 = 53,
 		PhBuffer_54 = 54,
 		RenownRepGain = 55,
-		Last = 56,
+		CraftingOrder = 56,
+		CatalystBalancing = 57,
+		CatalystCraft = 58,
+		ProfessionInitialAward = 59,
+		PlayerTraitRefund = 60,
+		Last = 61,
 	},
 	CurrencyTokenCategoryFlags = {
 		FlagSortLast = 0x1,
@@ -1096,6 +1228,10 @@ Enum = {
 	},
 	CustomBindingType = {
 		VoicePushToTalk = 0,
+	},
+	CustomizationScope = {
+		Player = 0,
+		DragonCompanion = 1,
 	},
 	Damageclass = {
 		MaskNone = 0x0,
@@ -1333,6 +1469,10 @@ Enum = {
 		PvPTierUpdate = 20,
 		SpellLearned = 21,
 		TreasureItem = 22,
+	},
+	ExpansionLandingPageType = {
+		None = 0,
+		Dragonflight = 1,
 	},
 	FlightPathFaction = {
 		Neutral = 0,
@@ -1628,16 +1768,19 @@ Enum = {
 		NeedsWindows_11 = 26,
 		MacOsUnsupported = 27,
 		WindowsUnsupported = 28,
-		Dx12Win7Unsupported = 29,
-		WineUnsupported = 30,
-		NvapiWineUnsupported = 31,
-		AppleGpuUnsupported = 32,
-		AmdGpuUnsupported = 33,
-		IntelGpuUnsupported = 34,
-		NvidiaGpuUnsupported = 35,
-		QualcommGpuUnsupported = 36,
-		GpuDriver = 37,
-		Unknown = 38,
+		LegacyUnsupported = 29,
+		Dx11Unsupported = 30,
+		Dx12Win7Unsupported = 31,
+		RemoteDesktopUnsupported = 32,
+		WineUnsupported = 33,
+		NvapiWineUnsupported = 34,
+		AppleGpuUnsupported = 35,
+		AmdGpuUnsupported = 36,
+		IntelGpuUnsupported = 37,
+		NvidiaGpuUnsupported = 38,
+		QualcommGpuUnsupported = 39,
+		GpuDriver = 40,
+		Unknown = 41,
 	},
 	HolidayCalendarFlags = {
 		Alliance = 1,
@@ -2288,6 +2431,7 @@ Enum = {
 		Invalid = 0,
 		Occluded = 1,
 		InRange = 2,
+		Disabled = 3,
 	},
 	NodeOpFailureReason = {
 		None = 0,
@@ -2738,6 +2882,7 @@ Enum = {
 	},
 	ProfTraitPerkNodeFlags = {
 		UnlocksSubpath = 1,
+		IsMajorBonus = 2,
 	},
 	Profession = {
 		FirstAid = 0,
@@ -2965,6 +3110,20 @@ Enum = {
 		CombineGroupsVertical = 2,
 		CombineGroupsHorizontal = 3,
 	},
+	RcoCloseReason = {
+		RcoCloseFulfill = 0,
+		RcoCloseExpire = 1,
+		RcoCloseCancel = 2,
+		RcoCloseReject = 3,
+		RcoCloseGmCancel = 4,
+		RcoCloseCrafterFulfill = 5,
+		RcoCloseInvalid = 6,
+	},
+	RecipeRequirementType = {
+		SpellFocus = 0,
+		Totem = 1,
+		Area = 2,
+	},
 	RelativeContentDifficulty = {
 		Trivial = 0,
 		Easy = 1,
@@ -3187,6 +3346,75 @@ Enum = {
 		Corpse = 2,
 		Scenario = 3,
 	},
+	TooltipComparisonMethod = {
+		Single = 0,
+		WithBothHands = 1,
+		WithBagMainHandItem = 2,
+		WithBagOffHandItem = 3,
+	},
+	TooltipDataItemBinding = {
+		Quest = 0,
+		Account = 1,
+		BnetAccount = 2,
+		Soulbound = 3,
+		BindToAccount = 4,
+		BindToBnetAccount = 5,
+		BindOnPickup = 6,
+		BindOnEquip = 7,
+		BindOnUse = 8,
+	},
+	TooltipDataLineType = {
+		None = 0,
+		Blank = 1,
+		UnitName = 2,
+		GemSocket = 3,
+		AzeriteEssenceSlot = 4,
+		AzeriteEssencePower = 5,
+		LearnableSpell = 6,
+		UnitThreat = 7,
+		QuestObjective = 8,
+		AzeriteItemPowerDescription = 9,
+		RuneforgeLegendaryPowerDescription = 10,
+		SellPrice = 11,
+		ProfessionCraftingQuality = 12,
+		SpellName = 13,
+		CurrencyTotal = 14,
+		ItemEnchantmentPermanent = 15,
+		UnitOwner = 16,
+		QuestTitle = 17,
+		QuestPlayer = 18,
+		NestedBlock = 19,
+		ItemBinding = 20,
+	},
+	TooltipDataType = {
+		Item = 0,
+		Spell = 1,
+		Unit = 2,
+		Corpse = 3,
+		Object = 4,
+		Currency = 5,
+		BattlePet = 6,
+		UnitAura = 7,
+		AzeriteEssence = 8,
+		CompanionPet = 9,
+		Mount = 10,
+		PetAction = 11,
+		Achievement = 12,
+		EnhancedConduit = 13,
+		EquipmentSet = 14,
+		InstanceLock = 15,
+		PvPBrawl = 16,
+		RecipeRankInfo = 17,
+		Totem = 18,
+		Toy = 19,
+		CorruptionCleanser = 20,
+		MinimapMouseover = 21,
+		Flyout = 22,
+		Quest = 23,
+		QuestPartyProgress = 24,
+		Macro = 25,
+		Debug = 26,
+	},
 	TooltipSide = {
 		Left = 0,
 		Right = 1,
@@ -3283,6 +3511,13 @@ Enum = {
 		Gold = 0,
 		CurrencyTypesBased = 1,
 		TraitSourced = 2,
+	},
+	TraitDefinitionSubType = {
+		DragonflightRed = 0,
+		DragonflightBlue = 1,
+		DragonflightGreen = 2,
+		DragonflightBronze = 3,
+		DragonflightBlack = 4,
 	},
 	TraitEdgeType = {
 		VisualOnly = 0,
@@ -3471,6 +3706,8 @@ Enum = {
 		ConfirmationHasDelay = 0x2,
 		ConversionMode = 0x4,
 		ClickShowsFlyout = 0x8,
+		AddCurrency = 0x10,
+		UsesCharges = 0x20,
 	},
 	UIItemInteractionType = {
 		None = 0,
@@ -3513,6 +3750,9 @@ Enum = {
 		Micro = 5,
 		Orphan = 6,
 	},
+	UISystemType = {
+		InGameNavigation = 0,
+	},
 	UIWidgetBlendModeType = {
 		Opaque = 0,
 		Additive = 1,
@@ -3554,6 +3794,17 @@ Enum = {
 		Horizontal = 1,
 	},
 	UIWidgetTextSizeType = {
+		Small12Pt = 0,
+		Medium16Pt = 1,
+		Large24Pt = 2,
+		Huge27Pt = 3,
+		Standard14Pt = 4,
+		Small10Pt = 5,
+		Small11Pt = 6,
+		Medium18Pt = 7,
+		Large20Pt = 8,
+	},
+	UIWidgetTextureAndTextSizeType = {
 		Small = 0,
 		Medium = 1,
 		Large = 2,
@@ -3597,6 +3848,7 @@ Enum = {
 		Spacer = 22,
 		UnitPowerBar = 23,
 		FillUpFrames = 24,
+		TextWithSubtext = 25,
 	},
 	UnitSex = {
 		Male = 0,
@@ -3753,6 +4005,12 @@ Enum = {
 		Illusion = 8,
 		Invalid = 9,
 	},
+	WorldCursorAnchorType = {
+		None = 0,
+		Default = 1,
+		Cursor = 2,
+		Nameplate = 3,
+	},
 	WorldQuestQuality = {
 		Common = 0,
 		Rare = 1,
@@ -3791,6 +4049,9 @@ Enum = {
 }
 
 Constants = {
+	AuctionConstants = {
+		DEFAULT_AUCTION_PRICE_MULTIPLIER = 1.5,
+	},
 	CalendarGetEventTypeConstants = {
 		DEFAULT_CALENDAR_GET_EVENT_TYPE = 0,
 	},
@@ -3803,6 +4064,7 @@ Constants = {
 		CHAR_CUSTOMIZE_CUSTOM_DISPLAY_OPTION_LAST = 8,
 	},
 	CurrencyConsts = {
+		CATALYST_CHARGE_CAP = 6,
 		HONOR_PER_CURRENCY = 10,
 		PLAYER_CURRENCY_CLIENT_FLAGS = 12,
 		CONQUEST_ARENA_AND_BG_META_CURRENCY_ID = 483,
@@ -3824,6 +4086,8 @@ Constants = {
 		CURRENCY_ID_RENOWN_NECROLORD = 1832,
 		CLASSIC_ARENA_POINTS_CURRENCY_ID = 1900,
 		CLASSIC_HONOR_CURRENCY_ID = 1901,
+		CURRENCY_ID_ACCOUNT_WIDE_CATALYST_CHARGES = 2166,
+		CURRENCY_ID_PERSONAL_CATALYST_CHARGES = 2167,
 		QUESTIONMARK_INV_ICON = 134400,
 		MAX_CURRENCY_QUANTITY = 100000000,
 	},
@@ -3835,6 +4099,15 @@ Constants = {
 	},
 	ITEM_WEAPON_SUBCLASSConstants = {
 		ITEM_WEAPON_SUBCLASS_NONE = -1,
+	},
+	InventoryConstants = {
+		NumReagentBagSlots = 1,
+		NumBagSlots = 4,
+		NumBankBagSlots = 7,
+		NumGenericBankSlots = 28,
+	},
+	ItemConsts = {
+		NUM_ITEM_ENCHANTMENT_SOCKETS = 3,
 	},
 	LevelConstsExposed = {
 		MIN_ACHIEVEMENT_LEVEL = 10,
@@ -3849,6 +4122,8 @@ Constants = {
 		MAX_CRAFTING_REAGENT_SLOTS = 12,
 		RUNEFORGING_ROOT_CATEGORY_ID = 210,
 		RUNEFORGING_SKILL_LINE_ID = 960,
+		CRAFTING_ORDER_CLAIM_DURATION = 1800,
+		PUBLIC_CRAFTING_ORDER_STALE_THRESHOLD = 14400,
 	},
 	PvpInfoConsts = {
 		MaxPlayersPerInstance = 80,
@@ -3936,7 +4211,7 @@ LE_EXPANSION_DRAGONFLIGHT = 9
 LE_EXPANSION_LEVEL_CURRENT = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 128
+NUM_LE_FRAME_TUTORIALS = 143
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -4064,7 +4339,22 @@ LE_FRAME_TUTORIAL_EQUIP_REAGENT_BAG = 124
 LE_FRAME_TUTORIAL_DRACTHYR_ESSENCE = 125
 LE_FRAME_TUTORIAL_DRACTHYR_EMPOWERED = 126
 LE_FRAME_TUTORIAL_DRACTHYR_LOW_HEALTH = 127
-LE_FRAME_TUTORIAL_EDIT_MODE_MANAGER = 128
+LE_FRAME_TUTORIAL_DRAGON_RIDING_GLYPHS = 128
+LE_FRAME_TUTORIAL_SETTINGS_SEARCH = 129
+LE_FRAME_TUTORIAL_PROFESSIONS_SPEC_CHOICE = 130
+LE_FRAME_TUTORIAL_WORLD_MAP_ACTIVITY_TRACKER_LIST = 131
+LE_FRAME_TUTORIAL_PROFESSIONS_CO_QUALITY_REAGENTS = 132
+LE_FRAME_TUTORIAL_PROFESSIONS_CO_OPTIONAL_REAGENTS = 133
+LE_FRAME_TUTORIAL_PROFESSIONS_CO_ORDER_PLACED = 134
+LE_FRAME_TUTORIAL_PROFESSIONS_RECRAFT = 135
+LE_FRAME_TUTORIAL_FIRST_PROFESSION = 136
+LE_FRAME_TUTORIAL_PROFESSION_QUALITY_REAGENTS = 137
+LE_FRAME_TUTORIAL_PROFESSION_OPTIONAL_REAGENTS_NEW = 138
+LE_FRAME_TUTORIAL_PROFESSION_QUALITY_BAR = 139
+LE_FRAME_TUTORIAL_PROFESSION_FINISHING_REAGENTS = 140
+LE_FRAME_TUTORIAL_EDIT_MODE_MANAGER = 141
+LE_FRAME_TUTORIAL_DRAGON_RIDING_SKILLS = 142
+LE_FRAME_TUTORIAL_DRAGON_RIDING_ACTIONBAR = 143
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
