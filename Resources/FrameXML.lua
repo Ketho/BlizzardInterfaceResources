@@ -1145,6 +1145,7 @@ local FrameXML = {
 	"EventUtil.RegisterOnceFrameEventAndCallback",
 	"ExecuteFrameScript",
 	"ExpansionLandingPage_LoadUI",
+	"ExpansionTrial_Initialize",
 	"ExportUtil.ConvertFromBase64",
 	"ExportUtil.ConvertToBase64",
 	"ExportUtil.MakeExportDataStream",
