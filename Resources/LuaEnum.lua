@@ -167,6 +167,16 @@ Enum = {
 		BagSlotPriorityFlagsAll = 0x3E,
 		BagSlotValidFlagsAll = 0x3F,
 	},
+	BagsDirection = {
+		Left = 0,
+		Up = 0,
+		Down = 1,
+		Right = 1,
+	},
+	BagsOrientation = {
+		Horizontal = 0,
+		Vertical = 1,
+	},
 	BattlePetAbilityFlag = {
 		DisplayAsHostileDebuff = 0x1,
 		HideStrongWeakHints = 0x2,
@@ -353,6 +363,7 @@ Enum = {
 		FanfareNeeded = 0x80,
 		DisplayOverridden = 0x100,
 		AcquiredViaLicense = 0x200,
+		TradingPost = 0x400,
 	},
 	BattlepetDeletedReason = {
 		Unknown = 0,
@@ -1082,9 +1093,10 @@ Enum = {
 		DeprecatedCurrencyFlag = 0x80000000,
 	},
 	CurrencyFlagsB = {
-		CurrencyBUseTotalEarnedForEarned = 1,
-		CurrencyBShowQuestXPGainInTooltip = 2,
-		CurrencyBNoNotificationMailOnOfflineProgress = 4,
+		CurrencyBUseTotalEarnedForEarned = 0x1,
+		CurrencyBShowQuestXPGainInTooltip = 0x2,
+		CurrencyBNoNotificationMailOnOfflineProgress = 0x4,
+		CurrencyBBattlenetVirtualCurrency = 0x8,
 	},
 	CurrencyGainFlags = {
 		BonusAward = 1,
@@ -1310,7 +1322,9 @@ Enum = {
 		ShowArenaFrames = 17,
 		ShowLootFrame = 18,
 		ShowHudTooltip = 19,
-		EnableSnap = 20,
+		ShowReputationBar = 20,
+		ShowDurabilityFrame = 21,
+		EnableSnap = 22,
 	},
 	EditModeActionBarSetting = {
 		Orientation = 0,
@@ -1345,11 +1359,16 @@ Enum = {
 		IconLimitDebuffFrame = 4,
 		IconSize = 5,
 		IconPadding = 6,
-		ShowFull = 7,
+		DeprecatedShowFull = 7,
 	},
 	EditModeAuraFrameSystemIndices = {
 		BuffFrame = 1,
 		DebuffFrame = 2,
+	},
+	EditModeBagsSetting = {
+		Orientation = 0,
+		Direction = 1,
+		Size = 2,
 	},
 	EditModeCastBarSetting = {
 		BarSize = 0,
@@ -1361,10 +1380,18 @@ Enum = {
 		HeightHundreds = 2,
 		HeightTensAndOnes = 3,
 	},
+	EditModeDurabilityFrameSetting = {
+		Size = 0,
+	},
 	EditModeLayoutType = {
 		Preset = 0,
 		Account = 1,
 		Character = 2,
+	},
+	EditModeMicroMenuSetting = {
+		Orientation = 0,
+		Order = 1,
+		Size = 2,
 	},
 	EditModeMinimapSetting = {
 		HeaderUnderneath = 0,
@@ -1382,6 +1409,15 @@ Enum = {
 		Checkbox = 1,
 		Slider = 2,
 	},
+	EditModeStatusTrackingBarSetting = {
+		Height = 0,
+		Width = 1,
+		TextSize = 2,
+	},
+	EditModeStatusTrackingBarSystemIndices = {
+		ExperienceBar = 1,
+		ReputationBar = 2,
+	},
 	EditModeSystem = {
 		ActionBar = 0,
 		CastBar = 1,
@@ -1396,6 +1432,10 @@ Enum = {
 		LootFrame = 10,
 		HudTooltip = 11,
 		ObjectiveTracker = 12,
+		MicroMenu = 13,
+		Bags = 14,
+		StatusTrackingBar = 15,
+		DurabilityFrame = 16,
 	},
 	EditModeUnitFrameSetting = {
 		HidePortrait = 0,
@@ -1796,6 +1836,7 @@ Enum = {
 		DontDisplayBanner = 0x8,
 		NotAvailableClientSide = 0x10,
 		DurationUseMinutes = 0x20,
+		BeginEventOnlyOnStageChange = 0x40,
 	},
 	IconAndTextWidgetState = {
 		Hidden = 0,
@@ -2370,6 +2411,14 @@ Enum = {
 		TopRight = 4,
 		Hidden = 5,
 	},
+	MicroMenuOrder = {
+		Default = 0,
+		Reverse = 1,
+	},
+	MicroMenuOrientation = {
+		Horizontal = 0,
+		Vertical = 1,
+	},
 	MinimapTrackingFilter = {
 		Unfiltered = 0x0,
 		Auctioneer = 0x1,
@@ -2469,6 +2518,14 @@ Enum = {
 		Guild = 2,
 		Club = 3,
 		NumPartyRequestJoinRelations = 4,
+	},
+	PerksVendorCategoryType = {
+		Transmog = 1,
+		Mount = 2,
+		Pet = 3,
+		Toy = 5,
+		Illusion = 7,
+		Transmogset = 8,
 	},
 	PermanentChatChannelType = {
 		None = 0,
@@ -3076,6 +3133,7 @@ Enum = {
 		Islands = 13,
 		Threat = 14,
 		CovenantCalling = 15,
+		DragonRiderRacing = 16,
 	},
 	QuestWatchType = {
 		Automatic = 0,
@@ -3173,6 +3231,7 @@ Enum = {
 		Mail = 12,
 		PvP = 13,
 		PvPScoreboard = 14,
+		PvPGroupMember = 15,
 	},
 	RuneforgePowerFilter = {
 		All = 0,
@@ -3388,6 +3447,15 @@ Enum = {
 		QuestPlayer = 18,
 		NestedBlock = 19,
 		ItemBinding = 20,
+		RestrictedRaceClass = 21,
+		RestrictedFaction = 22,
+		RestrictedSkill = 23,
+		RestrictedPvPMedal = 24,
+		RestrictedReputation = 25,
+		RestrictedSpellKnown = 26,
+		RestrictedLevel = 27,
+		EquipSlot = 28,
+		ItemName = 29,
 	},
 	TooltipDataType = {
 		Item = 0,
@@ -3441,7 +3509,8 @@ Enum = {
 		Offensive = 0,
 		Defensive = 1,
 		Debuff = 2,
-		Count = 3,
+		RacialAbility = 3,
+		Count = 4,
 	},
 	TradeskillOrderDuration = {
 		Short = 1,
@@ -3464,6 +3533,7 @@ Enum = {
 		Salvage = 2,
 		Enchant = 3,
 		Recraft = 4,
+		Gathering = 5,
 	},
 	TradeskillRelativeDifficulty = {
 		Optimal = 0,
@@ -3700,6 +3770,7 @@ Enum = {
 		Mount = 18,
 		Toy = 19,
 		ConduitCollectionItem = 20,
+		PerksProgramVendorItem = 21,
 	},
 	UIFrameType = {
 		JailersTowerBuffs = 0,
@@ -3752,6 +3823,15 @@ Enum = {
 		Dungeon = 4,
 		Micro = 5,
 		Orphan = 6,
+	},
+	UIModelSceneContext = {
+		None = -1,
+		PerksProgram = 0,
+	},
+	UIModelSceneFlags = {
+		SheatheWeapon = 1,
+		HideWeapon = 2,
+		Autodress = 4,
 	},
 	UISystemType = {
 		InGameNavigation = 0,
@@ -4066,6 +4146,9 @@ Constants = {
 		CHAR_CUSTOMIZE_CUSTOM_DISPLAY_OPTION_FIRST = 5,
 		CHAR_CUSTOMIZE_CUSTOM_DISPLAY_OPTION_LAST = 8,
 	},
+	CraftingOrderConsts = {
+		MAX_CRAFTING_ORDER_FAVORITE_RECIPES = 100,
+	},
 	CurrencyConsts = {
 		CATALYST_CHARGE_CAP = 6,
 		HONOR_PER_CURRENCY = 10,
@@ -4089,6 +4172,7 @@ Constants = {
 		CURRENCY_ID_RENOWN_NECROLORD = 1832,
 		CLASSIC_ARENA_POINTS_CURRENCY_ID = 1900,
 		CLASSIC_HONOR_CURRENCY_ID = 1901,
+		CURRENCY_ID_PERKS_PROGRAM_DISPLAY_INFO = 2032,
 		CURRENCY_ID_ACCOUNT_WIDE_CATALYST_CHARGES = 2166,
 		CURRENCY_ID_PERSONAL_CATALYST_CHARGES = 2167,
 		QUESTIONMARK_INV_ICON = 134400,
@@ -4123,6 +4207,7 @@ Constants = {
 		NUM_PRIMARY_PROFESSIONS = 2,
 		CLASSIC_PROFESSION_PARENT_TIER_INDEX = 4,
 		MAX_CRAFTING_REAGENT_SLOTS = 12,
+		CRAFTING_ORDER_ITEM_RETENTION = 30,
 		RUNEFORGING_ROOT_CATEGORY_ID = 210,
 		RUNEFORGING_SKILL_LINE_ID = 960,
 		CRAFTING_ORDER_CLAIM_DURATION = 1800,
@@ -4214,7 +4299,7 @@ LE_EXPANSION_DRAGONFLIGHT = 9
 LE_EXPANSION_LEVEL_CURRENT = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 143
+NUM_LE_FRAME_TUTORIALS = 150
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -4358,6 +4443,13 @@ LE_FRAME_TUTORIAL_PROFESSION_FINISHING_REAGENTS = 140
 LE_FRAME_TUTORIAL_EDIT_MODE_MANAGER = 141
 LE_FRAME_TUTORIAL_DRAGON_RIDING_SKILLS = 142
 LE_FRAME_TUTORIAL_DRAGON_RIDING_ACTIONBAR = 143
+LE_FRAME_TUTORIAL_PERKS_PROGRAM_FREEZE_ITEM = 144
+LE_FRAME_TUTORIAL_PERKS_PROGRAM_HIDE_ARMOR = 145
+LE_FRAME_TUTORIAL_PERKS_PROGRAM_NEW_COLLECTION_ITEM = 146
+LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_OPEN = 147
+LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_INTRO = 148
+LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_MAX_INFLUENCE = 149
+LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_TRACKING = 150
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
