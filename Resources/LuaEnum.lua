@@ -1,4 +1,20 @@
 Enum = {
+	AccountExportResult = {
+		Success = 0,
+		UnknownError = 1,
+		Cancelled = 2,
+		ShuttingDown = 3,
+		TimedOut = 4,
+		NoAccountFound = 5,
+		RequestedInvalidCharacter = 6,
+		RpcError = 7,
+		FileInvalid = 8,
+		FileWriteFailed = 9,
+		Unavailable = 10,
+		AlreadyInProgress = 11,
+		FailedToLockAccount = 12,
+		FailedToGenerateFile = 13,
+	},
 	ActionBarOrientation = {
 		Horizontal = 0,
 		Vertical = 1,
@@ -624,6 +640,17 @@ Enum = {
 		Private_Party = 2,
 		Public_Party = 3,
 		Communities = 4,
+	},
+	ChatToxityFilterOptOut = {
+		FilterAll = 0,
+		ExcludeFilterFriend = 1,
+		ExcludeFilterGuild = 2,
+		ExcludeFilterAll = 4294967295,
+	},
+	ChatWhisperTargetStatus = {
+		CanWhisper = 0,
+		Offline = 1,
+		WrongFaction = 2,
 	},
 	ChrCustomizationCategoryFlag = {
 		UndressModel = 1,
@@ -1513,6 +1540,18 @@ Enum = {
 		SpellLearned = 21,
 		TreasureItem = 22,
 	},
+	ExcludedCensorSources = {
+		None = 0x0,
+		Friends = 0x1,
+		Guild = 0x2,
+		Reserve1 = 0x4,
+		Reserve2 = 0x8,
+		Reserve3 = 0x10,
+		Reserve4 = 0x20,
+		Reserve5 = 0x40,
+		Reserve6 = 0x80,
+		All = 0xFF,
+	},
 	ExpansionLandingPageType = {
 		None = 0,
 		Dragonflight = 1,
@@ -1686,11 +1725,11 @@ Enum = {
 		AnimaDiversionMap = 3,
 	},
 	GarrisonFollowerType = {
-		FollowerType_6_0 = 1,
-		FollowerType_6_2 = 2,
-		FollowerType_7_0 = 4,
-		FollowerType_8_0 = 22,
-		FollowerType_9_0 = 123,
+		FollowerType_6_0_GarrisonFollower = 1,
+		FollowerType_6_0_Boat = 2,
+		FollowerType_7_0_GarrisonFollower = 4,
+		FollowerType_8_0_GarrisonFollower = 22,
+		FollowerType_9_0_GarrisonFollower = 123,
 	},
 	GarrisonTalentAvailability = {
 		Available = 0,
@@ -1704,10 +1743,10 @@ Enum = {
 		UnavailableRequiresPrerequisiteTalent = 8,
 	},
 	GarrisonType = {
-		Type_6_0 = 2,
-		Type_7_0 = 3,
-		Type_8_0 = 9,
-		Type_9_0 = 111,
+		Type_6_0_Garrison = 2,
+		Type_7_0_Garrison = 3,
+		Type_8_0_Garrison = 9,
+		Type_9_0_Garrison = 111,
 	},
 	GossipNpcOption = {
 		None = 0,
@@ -1770,6 +1809,7 @@ Enum = {
 	},
 	GossipOptionRecFlags = {
 		QuestLabelPrepend = 1,
+		HideOptionIDFromClient = 2,
 	},
 	GossipOptionRewardType = {
 		Item = 0,
@@ -2072,6 +2112,7 @@ Enum = {
 		DominationUnholy = 0x400000,
 		Cypher = 0x800000,
 		Tinker = 0x1000000,
+		Primordial = 0x2000000,
 	},
 	ItemGemSubclass = {
 		Intellect = 0,
@@ -2241,6 +2282,7 @@ Enum = {
 		Domination = 22,
 		Cypher = 23,
 		Tinker = 24,
+		Primordial = 25,
 	},
 	ItemSoundType = {
 		Pickup = 0,
@@ -2360,6 +2402,7 @@ Enum = {
 	LanguageFlag = {
 		IsExotic = 1,
 		HiddenFromPlayer = 2,
+		HideLanguageNameInChat = 4,
 	},
 	LinkedCurrencyFlags = {
 		IgnoreAdd = 1,
@@ -3185,6 +3228,12 @@ Enum = {
 		Totem = 1,
 		Area = 2,
 	},
+	RecruitAFriendRewardsVersion = {
+		InvalidVersion = 0,
+		UnusedVersionOne = 1,
+		VersionTwo = 2,
+		VersionThree = 3,
+	},
 	RelativeContentDifficulty = {
 		Trivial = 0,
 		Easy = 1,
@@ -3407,6 +3456,14 @@ Enum = {
 		UserWaypoint = 1,
 		Corpse = 2,
 		Scenario = 3,
+	},
+	TimeEventFlag = {
+		GlueScreenShortcut = 1,
+	},
+	TitleIconVersion = {
+		Small = 0,
+		Medium = 1,
+		Large = 2,
 	},
 	TooltipComparisonMethod = {
 		Single = 0,
@@ -3637,6 +3694,7 @@ Enum = {
 	},
 	TraitSystemFlag = {
 		AllowMultipleLoadoutsPerTree = 1,
+		ShowSpendConfirmation = 2,
 	},
 	TraitTreeFlag = {
 		CannotRefund = 1,
@@ -4596,11 +4654,6 @@ LE_TRANSMOG_SET_FILTER_COLLECTED = 1
 LE_TRANSMOG_SET_FILTER_UNCOLLECTED = 2
 LE_TRANSMOG_SET_FILTER_PVE = 3
 LE_TRANSMOG_SET_FILTER_PVP = 4
-
-NUM_LE_TWITTER_RESULTS = 3
-LE_TWITTER_RESULT_SUCCESS = 1
-LE_TWITTER_RESULT_NOT_LINKED = 2
-LE_TWITTER_RESULT_FAIL = 3
 
 NUM_LE_UNIT_STATS = 4
 LE_UNIT_STAT_STRENGTH = 1

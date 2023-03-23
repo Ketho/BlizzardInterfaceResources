@@ -280,8 +280,6 @@ local Frames = {
 	"SettingsTooltip",
 	"ShoppingTooltip1",
 	"ShoppingTooltip2",
-	"SideDressUpFrame",
-	"SocialBrowserFrame",
 	"SpellActivationOverlayFrame",
 	"SpellBookFrame",
 	"SpellFlyout",
