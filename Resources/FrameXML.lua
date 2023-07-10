@@ -1693,7 +1693,6 @@ local FrameXML = {
 	"GetTexCoordsForRoleSmall",
 	"GetTexCoordsForRoleSmallCircle",
 	"GetTextureInfo",
-	"GetTimeSinceLastQuestProgress",
 	"GetUIPanel",
 	"GetUIPanelHeight",
 	"GetUIPanelWidth",
