@@ -425,6 +425,7 @@ local WidgetAPI = {
 			"OnSizeChanged",
 		},
 		methods = {
+			"AbortDrag",
 			"CanChangeAttribute",
 			"CreateFontString",
 			"CreateLine",
@@ -458,6 +459,7 @@ local WidgetAPI = {
 			"GetResizeBounds",
 			"HasFixedFrameLevel",
 			"HasFixedFrameStrata",
+			"InterceptStartDrag",
 			"IsClampedToScreen",
 			"IsEventRegistered",
 			"IsGamePadButtonEnabled",
@@ -958,7 +960,6 @@ local WidgetAPI = {
 			"SetBarberShopAlternateForm",
 			"SetCamDistanceScale",
 			"SetCreature",
-			"SetCustomRace",
 			"SetDisplayInfo",
 			"SetDoBlend",
 			"SetItem",
@@ -1247,8 +1248,6 @@ local WidgetAPI = {
 		inherits = {"Frame"},
 		methods = {
 			"AddUnit",
-			"AddUnitAtlas",
-			"AddUnitFileID",
 			"ClearUnits",
 			"FinalizeUnits",
 			"GetMouseOverUnits",

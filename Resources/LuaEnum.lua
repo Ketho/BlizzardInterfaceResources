@@ -665,6 +665,12 @@ Enum = {
 		QuestActive = 1,
 		QuestCompleted = 2,
 	},
+	CameraModeAspectRatio = {
+		Default = 0,
+		LegacyLetterbox = 1,
+		HighDefinition_16_X_9 = 2,
+		Cinemascope_2_Dot_4_X_1 = 3,
+	},
 	CampaignState = {
 		Invalid = 0,
 		Complete = 1,
@@ -722,8 +728,9 @@ Enum = {
 	},
 	ChatWhisperTargetStatus = {
 		CanWhisper = 0,
-		Offline = 1,
-		WrongFaction = 2,
+		CanWhisperGuild = 1,
+		Offline = 2,
+		WrongFaction = 3,
 	},
 	ChrCustomizationCategoryFlag = {
 		UndressModel = 1,
@@ -732,6 +739,19 @@ Enum = {
 		SelectionPopout = 0,
 		Checkbox = 1,
 		Slider = 2,
+	},
+	ChrModelFeatureFlags = {
+		Summons = 0x1,
+		Forms = 0x2,
+		Identity = 0x4,
+		DragonCompanions = 0x8,
+		Mounts = 0x10,
+		HunterPets = 0x20,
+	},
+	ChrRacesAllianceType = {
+		Alliance = 0,
+		Horde = 1,
+		NeutralOrNpc = 2,
 	},
 	ClickBindingInteraction = {
 		Target = 1,
@@ -742,6 +762,7 @@ Enum = {
 		Spell = 1,
 		Macro = 2,
 		Interaction = 3,
+		PetAction = 4,
 	},
 	ClientPlatformType = {
 		Windows = 0,
@@ -984,6 +1005,28 @@ Enum = {
 		Macro = 2,
 		Script = 3,
 	},
+	ContentTrackingError = {
+		Untrackable = 0,
+		MaxTracked = 1,
+		AlreadyTracked = 2,
+	},
+	ContentTrackingResult = {
+		Success = 0,
+		DataPending = 1,
+		Failure = 2,
+	},
+	ContentTrackingTargetType = {
+		JournalEncounter = 0,
+		Vendor = 1,
+		Achievement = 2,
+		Profession = 3,
+		Quest = 4,
+	},
+	ContentTrackingType = {
+		Appearance = 0,
+		Mount = 1,
+		Achievement = 2,
+	},
 	ContributionAppearanceFlags = {
 		TooltipUseTimeRemaining = 0,
 	},
@@ -1043,6 +1086,7 @@ Enum = {
 		Reagent = 0,
 		Recraft = 1,
 		CraftedResult = 2,
+		RemoveReagent = 3,
 	},
 	CraftingOrderReagentSource = {
 		Any = 0,
@@ -1310,42 +1354,46 @@ Enum = {
 		QuestTurninCursor = 27,
 		QuestLegendaryCursor = 28,
 		QuestLegendaryTurninCursor = 29,
-		VehicleCursor = 30,
-		MapPinCursor = 31,
-		UIMoveCursor = 32,
-		UIResizeCursor = 33,
-		PointErrorCursor = 34,
-		CastErrorCursor = 35,
-		BuyErrorCursor = 36,
-		AttackErrorCursor = 37,
-		InteractErrorCursor = 38,
-		SpeakErrorCursor = 39,
-		InspectErrorCursor = 40,
-		PickupErrorCursor = 41,
-		TaxiErrorCursor = 42,
-		TrainerErrorCursor = 43,
-		MineErrorCursor = 44,
-		SkinErrorCursor = 45,
-		GatherErrorCursor = 46,
-		LockErrorCursor = 47,
-		MailErrorCursor = 48,
-		LootAllErrorCursor = 49,
-		RepairErrorCursor = 50,
-		RepairnpcErrorCursor = 51,
-		ItemErrorCursor = 52,
-		SkinHordeErrorCursor = 53,
-		SkinAllianceErrorCursor = 54,
-		InnkeeperErrorCursor = 55,
-		CampaignQuestErrorCursor = 56,
-		CampaignQuestTurninErrorCursor = 57,
-		QuestErrorCursor = 58,
-		QuestRepeatableErrorCursor = 59,
-		QuestTurninErrorCursor = 60,
-		QuestLegendaryErrorCursor = 61,
-		QuestLegendaryTurninErrorCursor = 62,
-		VehicleErrorCursor = 63,
-		MapPinErrorCursor = 64,
-		CustomCursor = 65,
+		QuestImportantCursor = 30,
+		QuestImportantTurninCursor = 31,
+		VehicleCursor = 32,
+		MapPinCursor = 33,
+		UIMoveCursor = 34,
+		UIResizeCursor = 35,
+		PointErrorCursor = 36,
+		CastErrorCursor = 37,
+		BuyErrorCursor = 38,
+		AttackErrorCursor = 39,
+		InteractErrorCursor = 40,
+		SpeakErrorCursor = 41,
+		InspectErrorCursor = 42,
+		PickupErrorCursor = 43,
+		TaxiErrorCursor = 44,
+		TrainerErrorCursor = 45,
+		MineErrorCursor = 46,
+		SkinErrorCursor = 47,
+		GatherErrorCursor = 48,
+		LockErrorCursor = 49,
+		MailErrorCursor = 50,
+		LootAllErrorCursor = 51,
+		RepairErrorCursor = 52,
+		RepairnpcErrorCursor = 53,
+		ItemErrorCursor = 54,
+		SkinHordeErrorCursor = 55,
+		SkinAllianceErrorCursor = 56,
+		InnkeeperErrorCursor = 57,
+		CampaignQuestErrorCursor = 58,
+		CampaignQuestTurninErrorCursor = 59,
+		QuestErrorCursor = 60,
+		QuestRepeatableErrorCursor = 61,
+		QuestTurninErrorCursor = 62,
+		QuestLegendaryErrorCursor = 63,
+		QuestLegendaryTurninErrorCursor = 64,
+		QuestImportantErrorCursor = 65,
+		QuestImportantTurninErrorCursor = 66,
+		VehicleErrorCursor = 67,
+		MapPinErrorCursor = 68,
+		CustomCursor = 69,
 	},
 	CustomBindingType = {
 		VoicePushToTalk = 0,
@@ -1433,6 +1481,9 @@ Enum = {
 		EnableSnap = 22,
 		EnableAdvancedOptions = 23,
 		ShowPetFrame = 24,
+		ShowTimerBars = 25,
+		ShowVehicleSeatIndicator = 26,
+		ShowArchaeologyBar = 27,
 	},
 	EditModeActionBarSetting = {
 		Orientation = 0,
@@ -1459,6 +1510,9 @@ Enum = {
 		PetActionBar = 12,
 		PossessActionBar = 13,
 	},
+	EditModeArchaeologyBarSetting = {
+		Size = 0,
+	},
 	EditModeAuraFrameSetting = {
 		Orientation = 0,
 		IconWrap = 1,
@@ -1482,6 +1536,10 @@ Enum = {
 		BarSize = 0,
 		LockToPlayerFrame = 1,
 		ShowCastTime = 2,
+	},
+	EditModeChatFrameDisplayOnlySetting = {
+		Width = 4,
+		Height = 5,
 	},
 	EditModeChatFrameSetting = {
 		WidthHundreds = 0,
@@ -1549,6 +1607,12 @@ Enum = {
 		Bags = 14,
 		StatusTrackingBar = 15,
 		DurabilityFrame = 16,
+		TimerBars = 17,
+		VehicleSeatIndicator = 18,
+		ArchaeologyBar = 19,
+	},
+	EditModeTimerBarsSetting = {
+		Size = 0,
 	},
 	EditModeUnitFrameSetting = {
 		HidePortrait = 0,
@@ -1568,6 +1632,7 @@ Enum = {
 		SortPlayersBy = 14,
 		RowSize = 15,
 		FrameSize = 16,
+		ViewArenaSize = 17,
 	},
 	EditModeUnitFrameSystemIndices = {
 		Player = 1,
@@ -1578,6 +1643,9 @@ Enum = {
 		Boss = 6,
 		Arena = 7,
 		Pet = 8,
+	},
+	EditModeVehicleSeatIndicatorSetting = {
+		Size = 0,
 	},
 	EncounterLootDropRollState = {
 		NeedMainSpec = 0,
@@ -2040,6 +2108,15 @@ Enum = {
 		Totem = 9,
 		Sigil = 10,
 		Relic = 11,
+	},
+	ItemBind = {
+		None = 0,
+		OnAcquire = 1,
+		OnEquip = 2,
+		OnUse = 3,
+		Quest = 4,
+		Unused1 = 5,
+		Unused2 = 6,
 	},
 	ItemClass = {
 		Consumable = 0,
@@ -2510,6 +2587,60 @@ Enum = {
 		Ossuary = 13,
 		BossRush = 14,
 	},
+	JournalEncounterFlags = {
+		Obsolete = 0x1,
+		LimitDifficulties = 0x2,
+		AllianceOnly = 0x4,
+		HordeOnly = 0x8,
+		NoMap = 0x10,
+		InternalOnly = 0x20,
+	},
+	JournalEncounterIconFlags = {
+		Tank = 0x1,
+		Dps = 0x2,
+		Healer = 0x4,
+		Heroic = 0x8,
+		Deadly = 0x10,
+		Important = 0x20,
+		Interruptible = 0x40,
+		Magic = 0x80,
+		Curse = 0x100,
+		Poison = 0x200,
+		Disease = 0x400,
+		Enrage = 0x800,
+		Mythic = 0x1000,
+		Bleed = 0x2000,
+	},
+	JournalEncounterItemFlags = {
+		Obsolete = 0x1,
+		LimitDifficulties = 0x2,
+		DisplayAsPerPlayerLoot = 0x4,
+		DisplayAsVeryRare = 0x8,
+		DisplayAsExtremelyRare = 0x10,
+	},
+	JournalEncounterLocFlags = {
+		Primary = 1,
+	},
+	JournalEncounterSecTypes = {
+		Generic = 0,
+		Creature = 1,
+		Ability = 2,
+		Overview = 3,
+	},
+	JournalEncounterSectionFlags = {
+		StartExpanded = 1,
+		LimitDifficulties = 2,
+	},
+	JournalInstanceFlags = {
+		Timewalker = 1,
+		HideUserSelectableDifficulty = 2,
+	},
+	JournalLinkTypes = {
+		Instance = 0,
+		Encounter = 1,
+		Section = 2,
+		Tier = 3,
+	},
 	LFGEntryPlaystyle = {
 		None = 0,
 		Standard = 1,
@@ -2616,6 +2747,14 @@ Enum = {
 		Barber = 0x40000,
 		ItemUpgrade = 0x80000,
 		VendorPoison = 0x100000,
+	},
+	ModelBlendOperation = {
+		None = 0,
+		Anim = 1,
+	},
+	ModelLightType = {
+		Directional = 0,
+		Point = 1,
 	},
 	ModelSceneSetting = {
 		AlignLightToOrbitDelta = 1,
@@ -2916,6 +3055,11 @@ Enum = {
 		WarMode = 2,
 		ChromieTime = 3,
 	},
+	PingTextureType = {
+		Center = 0,
+		Expand = 1,
+		Rotation = 2,
+	},
 	PlayerChoiceRarity = {
 		Common = 0,
 		Uncommon = 1,
@@ -3207,8 +3351,11 @@ Enum = {
 	},
 	PvPMatchState = {
 		Inactive = 0,
-		Active = 1,
-		Complete = 2,
+		Waiting = 1,
+		StartUp = 2,
+		Engaged = 3,
+		PostRound = 4,
+		Complete = 5,
 	},
 	PvPUnitClassification = {
 		FlagCarrierHorde = 0,
@@ -3242,11 +3389,6 @@ Enum = {
 		Above = 0,
 		Below = 1,
 		Same = 2,
-	},
-	QuestPOIQuestTypes = {
-		Normal = 1,
-		Campaign = 2,
-		Calling = 3,
 	},
 	QuestSessionCommand = {
 		None = 0,
@@ -3409,6 +3551,10 @@ Enum = {
 		Description = 0x2000,
 		Name = 0x4000,
 	},
+	ReportSubComplaintTypes = {
+		Inappropriate = 0,
+		Advertising = 1,
+	},
 	ReportType = {
 		Chat = 0,
 		InWorld = 1,
@@ -3426,6 +3572,7 @@ Enum = {
 		PvP = 13,
 		PvPScoreboard = 14,
 		PvPGroupMember = 15,
+		CraftingOrder = 16,
 	},
 	RuneforgePowerFilter = {
 		All = 0,
@@ -3596,6 +3743,7 @@ Enum = {
 		UserWaypoint = 1,
 		Corpse = 2,
 		Scenario = 3,
+		Content = 4,
 	},
 	TimeEventFlag = {
 		GlueScreenShortcut = 1,
@@ -3654,6 +3802,15 @@ Enum = {
 		EquipSlot = 28,
 		ItemName = 29,
 		Separator = 30,
+		ToyName = 31,
+		ToyText = 32,
+		ToyEffect = 33,
+		ToyDuration = 34,
+		RestrictedArena = 35,
+		RestrictedBg = 36,
+		ToyFlavorText = 37,
+		ToyDescription = 38,
+		ToySource = 39,
 	},
 	TooltipDataType = {
 		Item = 0,
@@ -3704,11 +3861,11 @@ Enum = {
 		RightLine = 1,
 	},
 	TrackedSpellCategory = {
-		Offensive = 0,
-		Defensive = 1,
-		Debuff = 2,
-		RacialAbility = 3,
-		Count = 4,
+		None = 0,
+		Offensive = 1,
+		Defensive = 2,
+		Debuff = 3,
+		RacialAbility = 4,
 	},
 	TradeskillOrderDuration = {
 		Short = 1,
@@ -4008,6 +4165,7 @@ Enum = {
 		ForceOnNavbar = 0x8000,
 		AlwaysAllowUserWaypoints = 0x10000,
 		AlwaysAllowTaxiPathing = 0x20000,
+		ForceAllowMapLinks = 0x40000,
 	},
 	UIMapSystem = {
 		World = 0,
@@ -4177,6 +4335,11 @@ Enum = {
 		Ready = 5,
 		ProcessingFactionChange = 6,
 		Complete = 7,
+	},
+	ViewArenaSize = {
+		Two = 0,
+		Three = 1,
+		Five = 2,
 	},
 	ViewRaidSize = {
 		Ten = 0,
@@ -4361,11 +4524,14 @@ Constants = {
 		CHAR_CUSTOMIZE_CUSTOM_DISPLAY_OPTION_FIRST = 5,
 		CHAR_CUSTOMIZE_CUSTOM_DISPLAY_OPTION_LAST = 8,
 	},
+	ContentTrackingConsts = {
+		MaxTrackedAchievements = 10,
+		MaxTrackedCollectableSources = 15,
+	},
 	CraftingOrderConsts = {
 		MAX_CRAFTING_ORDER_FAVORITE_RECIPES = 100,
 	},
 	CurrencyConsts = {
-		CATALYST_CHARGE_CAP = 6,
 		HONOR_PER_CURRENCY = 10,
 		PLAYER_CURRENCY_CLIENT_FLAGS = 12,
 		CONQUEST_ARENA_AND_BG_META_CURRENCY_ID = 483,
@@ -4388,8 +4554,6 @@ Constants = {
 		CLASSIC_ARENA_POINTS_CURRENCY_ID = 1900,
 		CLASSIC_HONOR_CURRENCY_ID = 1901,
 		CURRENCY_ID_PERKS_PROGRAM_DISPLAY_INFO = 2032,
-		CURRENCY_ID_ACCOUNT_WIDE_CATALYST_CHARGES = 2166,
-		CURRENCY_ID_PERSONAL_CATALYST_CHARGES = 2167,
 		QUESTIONMARK_INV_ICON = 134400,
 		MAX_CURRENCY_QUANTITY = 100000000,
 	},
@@ -4518,7 +4682,7 @@ LE_EXPANSION_DRAGONFLIGHT = 9
 LE_EXPANSION_LEVEL_CURRENT = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 151
+NUM_LE_FRAME_TUTORIALS = 152
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -4670,6 +4834,7 @@ LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_INTRO = 148
 LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_MAX_INFLUENCE = 149
 LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_TRACKING = 150
 LE_FRAME_TUTORIAL_LOOT_HISTORY_ROLL = 151
+LE_FRAME_TUTORIAL_WARDROBE_TRACKING_INTERFACE = 152
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
@@ -4711,14 +4876,6 @@ LE_LOOT_FILTER_SPEC2 = 4
 LE_LOOT_FILTER_SPEC3 = 5
 LE_LOOT_FILTER_SPEC4 = 6
 LE_LOOT_FILTER_BOE = 7
-
-NUM_LE_MODEL_BLEND_OPERATIONS = 2
-LE_MODEL_BLEND_OPERATION_NONE = 1
-LE_MODEL_BLEND_OPERATION_ANIM = 2
-
-NUM_LE_MODEL_LIGHT_TYPES = 2
-LE_MODEL_LIGHT_TYPE_DIRECTIONAL = 1
-LE_MODEL_LIGHT_TYPE_POINT = 2
 
 NUM_LE_MOUNT_JOURNAL_FILTERS = 3
 LE_MOUNT_JOURNAL_FILTER_COLLECTED = 1
