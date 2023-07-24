@@ -191,6 +191,8 @@ local Frames = {
 	"SecureHandlersUpdateFrame",
 	"SecureHoverDriverManager",
 	"SecureStateDriverManager",
+	"SettingsPanel",
+	"SettingsTooltip",
 	"ShoppingTooltip1",
 	"ShoppingTooltip2",
 	"SideDressUpFrame",
