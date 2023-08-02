@@ -1,4 +1,20 @@
 Enum = {
+	AccountExportResult = {
+		Success = 0,
+		UnknownError = 1,
+		Cancelled = 2,
+		ShuttingDown = 3,
+		TimedOut = 4,
+		NoAccountFound = 5,
+		RequestedInvalidCharacter = 6,
+		RpcError = 7,
+		FileInvalid = 8,
+		FileWriteFailed = 9,
+		Unavailable = 10,
+		AlreadyInProgress = 11,
+		FailedToLockAccount = 12,
+		FailedToGenerateFile = 13,
+	},
 	AuctionHouseCommoditySortOrder = {
 		UnitPrice = 0,
 		Quantity = 1,

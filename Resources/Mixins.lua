@@ -287,6 +287,7 @@ local Mixins = {
 	"TransformTreeFrameNodePoolMixin",
 	"TreeListDataProviderMixin",
 	"TreeListNodeMixin",
+	"UIButtonMixin",
 	"UIDropDownCustomMenuEntryMixin",
 	"UIErrorsMixin",
 	"UIExpandingButtonMixin",
