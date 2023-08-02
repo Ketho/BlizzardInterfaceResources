@@ -1526,6 +1526,7 @@ local GlobalAPI = {
 	"C_Item.GetItemGUID",
 	"C_Item.GetItemID",
 	"C_Item.GetItemIDByGUID",
+	"C_Item.GetItemIDForItemInfo",
 	"C_Item.GetItemIcon",
 	"C_Item.GetItemIconByID",
 	"C_Item.GetItemInventoryType",

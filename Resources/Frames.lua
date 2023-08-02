@@ -479,6 +479,7 @@ local LoadOnDemand = {
 	"TorghastPlayerChoiceToggleButton",
 	"TrackingInterfaceShortcutsFrame",
 	"TutorialKeyboardMouseFrame_Frame",
+	"TutorialPointerFrame_1",
 	"TutorialWalk_Frame",
 	"VoidStorageFrame",
 	"WardrobeFrame",
