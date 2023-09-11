@@ -237,6 +237,7 @@ local Frames = {
 	"PetCastingBarFrame",
 	"PetStableFrame",
 	"PetitionFrame",
+	"PingSystemTutorial",
 	"PlayerBuffTimerManager",
 	"PlayerCastingBarFrame",
 	"PlayerFrame",
