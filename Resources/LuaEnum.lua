@@ -71,8 +71,10 @@ Enum = {
 		RafFriendMonthsLoaded = "0x0000000010000000",
 		RevokedRafRewardsLoaded = "0x0000000020000000",
 		AccountNotificationsLoaded = "0x0000000040000000",
+		PerksPendingPurchaseLoaded = "0x0000000080000000",
 		AccountWowlabsLoaded = "0x0000000100000000",
 		AccountUpgradeComplete = "0x0000000200000000",
+		WoWTokenPurchaseLoaded = "0x0000001000000000",
 	},
 	ActionBarOrientation = {
 		Horizontal = 0,
@@ -83,6 +85,11 @@ Enum = {
 		InCombat = 1,
 		OutOfCombat = 2,
 		Hidden = 3,
+	},
+	AddOnEnableState = {
+		None = 0,
+		Some = 1,
+		All = 2,
 	},
 	AddSoulbindConduitReason = {
 		None = 0,
@@ -214,6 +221,14 @@ Enum = {
 	AuraFrameOrientation = {
 		Horizontal = 0,
 		Vertical = 1,
+	},
+	AvgItemLevelCategories = {
+		Base = 0,
+		EquippedBase = 1,
+		EquippedEffective = 2,
+		PvP = 3,
+		PvPWeighted = 4,
+		EquippedEffectiveWeighted = 5,
 	},
 	AzeriteEssenceSlot = {
 		MainSlot = 0,
@@ -482,6 +497,7 @@ Enum = {
 		Arena = 2,
 		LFG = 3,
 		SoloShuffle = 4,
+		SoloRbg = 5,
 	},
 	CachedRewardType = {
 		None = 0,
@@ -731,6 +747,7 @@ Enum = {
 	},
 	ChrCustomizationCategoryFlag = {
 		UndressModel = 1,
+		Subcategory = 2,
 	},
 	ChrCustomizationOptionType = {
 		SelectionPopout = 0,
@@ -1248,6 +1265,7 @@ Enum = {
 		CurrencyBDontDisplayIfZero = 0x20,
 	},
 	CurrencyGainFlags = {
+		None = 0,
 		BonusAward = 1,
 		DroppedFromDeath = 2,
 		FromAccountServer = 4,
@@ -1282,14 +1300,14 @@ Enum = {
 		GarrisonBuildingRefund = 26,
 		GarrisonMissionReward = 27,
 		GarrisonResourceOverTime = 28,
-		QuestRewardIgnoreCaps = 29,
+		QuestRewardIgnoreCapsDeprecated = 29,
 		GarrisonTalent = 30,
 		GarrisonWorldQuestBonus = 31,
 		PvPHonorReward = 32,
 		BonusRoll = 33,
 		AzeriteRespec = 34,
 		WorldQuestReward = 35,
-		WorldQuestRewardIgnoreCaps = 36,
+		WorldQuestRewardIgnoreCapsDeprecated = 36,
 		FactionConversion = 37,
 		DailyQuestReward = 38,
 		DailyQuestWarModeReward = 39,
@@ -1315,7 +1333,10 @@ Enum = {
 		ProfessionInitialAward = 59,
 		PlayerTraitRefund = 60,
 		AccountHwmUpdate = 61,
-		Last = 62,
+		ConvertItemsToCurrencyAndReputation = 62,
+		PhBuffer_63 = 63,
+		PhBuffer_64 = 64,
+		Last = 65,
 	},
 	CurrencyTokenCategoryFlags = {
 		FlagSortLast = 0x1,
@@ -1692,6 +1713,8 @@ Enum = {
 		Scenario = 6,
 		ChallengeMode = 7,
 		ScenarioClickExpand = 8,
+		WeeklyRewardUnlock = 9,
+		WeeklyRewardUpgrade = 10,
 	},
 	EventToastEventType = {
 		LevelUp = 0,
@@ -1717,6 +1740,8 @@ Enum = {
 		PvPTierUpdate = 20,
 		SpellLearned = 21,
 		TreasureItem = 22,
+		WeeklyRewardUnlock = 23,
+		WeeklyRewardUpgrade = 24,
 	},
 	ExcludedCensorSources = {
 		None = 0x0,
@@ -1935,7 +1960,7 @@ Enum = {
 		Binder = 5,
 		Banker = 6,
 		PetitionVendor = 7,
-		TabardVendor = 8,
+		GuildTabardVendor = 8,
 		Battlemaster = 9,
 		Auctioneer = 10,
 		TalentMaster = 11,
@@ -1981,6 +2006,7 @@ Enum = {
 		TraitSystem = 51,
 		BarbersChoice = 52,
 		MajorFactionRenown = 53,
+		PersonalTabardVendor = 54,
 	},
 	GossipNpcOptionDisplayFlags = {
 		ForceInteractionOnSingleChoice = 1,
@@ -2272,11 +2298,15 @@ Enum = {
 		TemplateCharacter_2 = 98,
 		TemplateCharacter_3 = 99,
 		TemplateCharacter_4 = 100,
+		DungeonNormalJackpot = 101,
+		DungeonHeroicJackpot = 102,
+		DungeonMythicJackpot = 103,
 	},
 	ItemDisplayTextDisplayStyle = {
 		WorldQuestReward = 0,
 		ItemNameAndInfoText = 1,
 		ItemNameOnlyCentered = 2,
+		PlayerChoiceReward = 3,
 	},
 	ItemDisplayTooltipEnabledType = {
 		Enabled = 0,
@@ -2682,9 +2712,10 @@ Enum = {
 		HideLanguageNameInChat = 4,
 	},
 	LinkedCurrencyFlags = {
-		IgnoreAdd = 1,
-		IgnoreSubtract = 2,
-		SuppressChatLog = 4,
+		IgnoreAdd = 0x1,
+		IgnoreSubtract = 0x2,
+		SuppressChatLog = 0x4,
+		AddIgnoresMax = 0x8,
 	},
 	LoadConfigResult = {
 		Error = 0,
@@ -3142,7 +3173,7 @@ Enum = {
 		Registrar = 11,
 		Vendor = 12,
 		PetitionVendor = 13,
-		TabardVendor = 14,
+		GuildTabardVendor = 14,
 		TalentMaster = 15,
 		SpecializationMaster = 16,
 		MailInfo = 17,
@@ -3193,6 +3224,7 @@ Enum = {
 		BarbersChoice = 62,
 		JailersTowerBuffs = 63,
 		MajorFactionRenown = 64,
+		PersonalTabardVendor = 65,
 	},
 	PlayerMentorshipApplicationResult = {
 		Success = 0,
@@ -3671,6 +3703,12 @@ Enum = {
 		PlayerInv = 2,
 		Bank = 3,
 		ReagentBank = 4,
+	},
+	SocialWhoOrigin = {
+		Unknown = 0,
+		Social = 1,
+		Chat = 2,
+		Item = 3,
 	},
 	SoftTargetEnableFlags = {
 		None = 0,
@@ -4206,6 +4244,7 @@ Enum = {
 		AlwaysAllowUserWaypoints = 0x10000,
 		AlwaysAllowTaxiPathing = 0x20000,
 		ForceAllowMapLinks = 0x40000,
+		DoNotShowOnNavbar = 0x80000,
 	},
 	UIMapSystem = {
 		World = 0,
@@ -4239,6 +4278,10 @@ Enum = {
 	},
 	UISystemType = {
 		InGameNavigation = 0,
+	},
+	UITextureSliceMode = {
+		Stretched = 0,
+		Tiled = 1,
 	},
 	UIWidgetBlendModeType = {
 		Opaque = 0,
@@ -4450,13 +4493,34 @@ Enum = {
 		InvalidArgument = 12,
 		InternalError = 13,
 	},
+	WeeklyRewardChestActivityType = {
+		Scenario = 0,
+		LFGDungeons = 1,
+	},
+	WeeklyRewardChestClaimRewardResult = {
+		Success = 0,
+		InvalidThreshold = 1,
+		PlayerNotFound = 2,
+		InvalidSlot = 3,
+		TooManyItems = 4,
+		DbError = 5,
+		LockFailure = 6,
+		CountExceeded = 7,
+	},
 	WeeklyRewardChestThresholdType = {
 		None = 0,
-		MythicPlus = 1,
+		Activities = 1,
 		RankedPvP = 2,
 		Raid = 3,
 		AlsoReceive = 4,
 		Concession = 5,
+	},
+	WeeklyRewardProgressResult = {
+		Success = 0,
+		NoSeason = 1,
+		TimedOut = 2,
+		DbError = 3,
+		NoPlayer = 4,
 	},
 	WidgetAnimationType = {
 		None = 0,
@@ -4488,6 +4552,23 @@ Enum = {
 	WidgetIconSourceType = {
 		Spell = 0,
 		Item = 1,
+	},
+	WidgetOpacityType = {
+		OneHundred = 0,
+		Ninety = 1,
+		Eighty = 2,
+		Seventy = 3,
+		Sixty = 4,
+		Fifty = 5,
+		Forty = 6,
+		Thirty = 7,
+		Twenty = 8,
+		Ten = 9,
+		Zero = 10,
+	},
+	WidgetShowGlowState = {
+		HideGlow = 0,
+		ShowGlow = 1,
 	},
 	WidgetShownState = {
 		Hidden = 0,
@@ -4602,6 +4683,7 @@ Constants = {
 		CURRENCY_ID_RENOWN_NECROLORD = 1832,
 		CLASSIC_ARENA_POINTS_CURRENCY_ID = 1900,
 		CLASSIC_HONOR_CURRENCY_ID = 1901,
+		DRAGON_ISLES_SUPPLIES_CURRENCY_ID = 2003,
 		CURRENCY_ID_PERKS_PROGRAM_DISPLAY_INFO = 2032,
 		QUESTIONMARK_INV_ICON = 134400,
 		MAX_CURRENCY_QUANTITY = 100000000,
@@ -4626,6 +4708,7 @@ Constants = {
 	},
 	ItemConsts = {
 		NUM_ITEM_ENCHANTMENT_SOCKETS = 3,
+		MAX_LOOT_OBJECT_ITEMS = 31,
 	},
 	LevelConstsExposed = {
 		MIN_ACHIEVEMENT_LEVEL = 10,
@@ -4663,6 +4746,10 @@ Constants = {
 		MainHandTransmogIsIndividualWeapon = -1,
 		MainHandTransmogIsPairedWeapon = 0,
 		NoTransmogID = 0,
+	},
+	WeeklyRewardsConsts = {
+		WEEKLY_REWARD_ITEM_RETENTION_DAYS = 15,
+		ABORT_ITEM_RETENTION_DAYS = 15,
 	},
 }
 
