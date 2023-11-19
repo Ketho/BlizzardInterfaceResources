@@ -15,6 +15,7 @@ local WidgetAPI = {
 	UIObject = {
 		inherits = {},
 		methods = {
+			"ClearParentKey",
 			"GetDebugName",
 			"GetName",
 			"GetObjectType",
@@ -42,7 +43,6 @@ local WidgetAPI = {
 			"AdjustPointsOffset",
 			"CanChangeProtectedState",
 			"ClearAllPoints",
-			"ClearParentKey",
 			"ClearPoint",
 			"ClearPointsOffset",
 			"CreateAnimationGroup",
@@ -243,7 +243,6 @@ local WidgetAPI = {
 			"OnStop",
 		},
 		methods = {
-			"ClearParentKey",
 			"CreateAnimation",
 			"Finish",
 			"GetAnimationSpeedMultiplier",
@@ -279,7 +278,6 @@ local WidgetAPI = {
 			"OnStop",
 		},
 		methods = {
-			"ClearParentKey",
 			"GetDuration",
 			"GetElapsed",
 			"GetEndDelay",
@@ -375,7 +373,6 @@ local WidgetAPI = {
 	ControlPoint = {
 		inherits = {"UIObject"},
 		methods = {
-			"ClearParentKey",
 			"GetOffset",
 			"GetOrder",
 			"SetOffset",
@@ -413,6 +410,15 @@ local WidgetAPI = {
 			"SetFlipBookFrameWidth",
 			"SetFlipBookFrames",
 			"SetFlipBookRows",
+		},
+	},
+	VertexColor = {
+		inherits = {"Animation"},
+		methods = {
+			"GetEndColor",
+			"GetStartColor",
+			"SetEndColor",
+			"SetStartColor",
 		},
 	},
 	Frame = {
@@ -467,6 +473,7 @@ local WidgetAPI = {
 			"GetNumChildren",
 			"GetNumRegions",
 			"GetPropagateKeyboardInput",
+			"GetRaisedFrameLevel",
 			"GetRegions",
 			"GetResizeBounds",
 			"GetWindow",
@@ -641,12 +648,18 @@ local WidgetAPI = {
 		},
 		methods = {
 			"ClearColorWheelTexture",
+			"GetColorAlpha",
+			"GetColorAlphaTexture",
+			"GetColorAlphaThumbTexture",
 			"GetColorHSV",
 			"GetColorRGB",
 			"GetColorValueTexture",
 			"GetColorValueThumbTexture",
 			"GetColorWheelTexture",
 			"GetColorWheelThumbTexture",
+			"SetColorAlpha",
+			"SetColorAlphaTexture",
+			"SetColorAlphaThumbTexture",
 			"SetColorHSV",
 			"SetColorRGB",
 			"SetColorValueTexture",
@@ -1296,7 +1309,6 @@ local WidgetAPI = {
 			"AttachToMount",
 			"CalculateMountScale",
 			"ClearModel",
-			"ClearParentKey",
 			"Dress",
 			"GetActiveBoundingBox",
 			"GetAlpha",
