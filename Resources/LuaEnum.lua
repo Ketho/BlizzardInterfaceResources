@@ -57,7 +57,7 @@ Enum = {
 		ItemCollectionsLoaded = "0x0000000000004000",
 		AuctionableTokensLoaded = "0x0000000000008000",
 		ConsumableTokensLoaded = "0x0000000000010000",
-		PerkTablesLoaded = "0x0000000000020000",
+		PerksPastRewardsLoaded = "0x0000000000020000",
 		VasTransactionsLoaded = "0x0000000000040000",
 		BpayProductitemObjectsLoaded = "0x0000000000080000",
 		TrialBoostHistoryLoaded = "0x0000000000100000",
@@ -74,7 +74,11 @@ Enum = {
 		PerksPendingPurchaseLoaded = "0x0000000080000000",
 		AccountWowlabsLoaded = "0x0000000100000000",
 		AccountUpgradeComplete = "0x0000000200000000",
+		PerksHeldItemLoaded = "0x0000000400000000",
+		PerksPendingRewardsLoaded = "0x0000000800000000",
 		WoWTokenPurchaseLoaded = "0x0000001000000000",
+		PerksRefundsLoaded = "0x0000002000000000",
+		BitVectorsLoaded = "0x0000004000000000",
 	},
 	ActionBarOrientation = {
 		Horizontal = 0,
@@ -1335,7 +1339,7 @@ Enum = {
 		AccountHwmUpdate = 61,
 		ConvertItemsToCurrencyAndReputation = 62,
 		PhBuffer_63 = 63,
-		PhBuffer_64 = 64,
+		SpellSkipLinkedCurrency = 64,
 		Last = 65,
 	},
 	CurrencyTokenCategoryFlags = {
@@ -1742,6 +1746,9 @@ Enum = {
 		TreasureItem = 22,
 		WeeklyRewardUnlock = 23,
 		WeeklyRewardUpgrade = 24,
+	},
+	EventToastFlags = {
+		DisableRightClickDismiss = 1,
 	},
 	ExcludedCensorSources = {
 		None = 0x0,
@@ -2706,6 +2713,11 @@ Enum = {
 		PvE = 0x4,
 		PvP = 0x8,
 	},
+	LFGRole = {
+		Tank = 0,
+		Healer = 1,
+		Damage = 2,
+	},
 	LanguageFlag = {
 		IsExotic = 1,
 		HiddenFromPlayer = 2,
@@ -2826,6 +2838,10 @@ Enum = {
 		WorldMapThreat = 17,
 		Soulbinds = 18,
 		JailersTowerAnimaGlow = 19,
+	},
+	ModelSoundTagType = {
+		Oneshot = 1,
+		Looping = 2,
 	},
 	MountType = {
 		Ground = 0,
@@ -4183,6 +4199,15 @@ Enum = {
 		Standard = 0,
 		Alternate = 1,
 	},
+	TugOfWarMarkerArrowShownState = {
+		Never = 0,
+		Always = 1,
+		FlashOnMove = 2,
+	},
+	TugOfWarStyleValue = {
+		DefaultYellow = 0,
+		ArchaeologyBrown = 1,
+	},
 	UICursorType = {
 		Default = 0,
 		Item = 1,
@@ -4234,7 +4259,7 @@ Enum = {
 		ShowTaskObjectives = 0x40,
 		NoWorldPositions = 0x80,
 		HideArchaeologyDigs = 0x100,
-		Deprecated = 0x200,
+		DoNotTranslateBranches = 0x200,
 		HideIcons = 0x400,
 		HideVignettes = 0x800,
 		ForceAllOverlayExplored = 0x1000,
@@ -4710,6 +4735,10 @@ Constants = {
 		NUM_ITEM_ENCHANTMENT_SOCKETS = 3,
 		MAX_LOOT_OBJECT_ITEMS = 31,
 	},
+	LFG_ROLEConstants = {
+		LFG_ROLE_NO_ROLE = -1,
+		LFG_ROLE_ANY = 3,
+	},
 	LevelConstsExposed = {
 		MIN_ACHIEVEMENT_LEVEL = 10,
 		MIN_RES_SICKNESS_LEVEL = 10,
@@ -4818,7 +4847,7 @@ LE_EXPANSION_DRAGONFLIGHT = 9
 LE_EXPANSION_LEVEL_CURRENT = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 152
+NUM_LE_FRAME_TUTORIALS = 154
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -4963,14 +4992,16 @@ LE_FRAME_TUTORIAL_EDIT_MODE_MANAGER = 141
 LE_FRAME_TUTORIAL_DRAGON_RIDING_SKILLS = 142
 LE_FRAME_TUTORIAL_DRAGON_RIDING_ACTIONBAR = 143
 LE_FRAME_TUTORIAL_PERKS_PROGRAM_FREEZE_ITEM = 144
-LE_FRAME_TUTORIAL_PERKS_PROGRAM_HIDE_ARMOR = 145
-LE_FRAME_TUTORIAL_PERKS_PROGRAM_NEW_COLLECTION_ITEM = 146
-LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_OPEN = 147
-LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_INTRO = 148
-LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_MAX_INFLUENCE = 149
-LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_TRACKING = 150
-LE_FRAME_TUTORIAL_LOOT_HISTORY_ROLL = 151
-LE_FRAME_TUTORIAL_WARDROBE_TRACKING_INTERFACE = 152
+LE_FRAME_TUTORIAL_PERKS_PROGRAM_OVERWRITE_FROZEN_ITEM = 145
+LE_FRAME_TUTORIAL_PERKS_PROGRAM_HIDE_ARMOR = 146
+LE_FRAME_TUTORIAL_PERKS_PROGRAM_NEW_COLLECTION_ITEM = 147
+LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_OPEN = 148
+LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_INTRO = 149
+LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_MAX_INFLUENCE = 150
+LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_TRACKING = 151
+LE_FRAME_TUTORIAL_LOOT_HISTORY_ROLL = 152
+LE_FRAME_TUTORIAL_WARDROBE_TRACKING_INTERFACE = 153
+LE_FRAME_TUTORIAL_FOLLOWER_DUNGEON_SEEN = 154
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1

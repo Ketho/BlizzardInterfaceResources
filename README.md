@@ -4,6 +4,6 @@ Global resources extracted from World of Warcraft for development purposes.
 * [GlobalStrings](https://github.com/Ketho/WowpediaDoc/blob/master/Projects/UpdateResources/GlobalStrings.lua) and [AtlasInfo](https://github.com/Ketho/WowpediaDoc/blob/master/Projects/UpdateResources/AtlasInfo.lua) are downloaded from [wago.tools](https://wago.tools/db2/GlobalStrings)
 * Templates and mixins are [parsed](https://github.com/Ketho/WowpediaDoc/blob/master/Projects/DumbXmlParser/DumbXmlParser.lua) from FrameXML
 ```lua
-GetBuildInfo() => "10.2.0", "52106", "Nov  8 2023", 100200
+GetBuildInfo() => "10.2.5", "52902", "Jan 11 2024", 100205
 ```
 ![](https://raw.githubusercontent.com/Ketho/BlizzardInterfaceResources/mainline/Resources/WidgetHierarchy.png)
