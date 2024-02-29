@@ -269,7 +269,6 @@ local Frames = {
 	"SettingsTooltip",
 	"ShoppingTooltip1",
 	"ShoppingTooltip2",
-	"SideDressUpFrame",
 	"SpellActivationOverlayFrame",
 	"SpellBookFrame",
 	"SpellFlyout",
