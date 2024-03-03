@@ -57,7 +57,7 @@ Enum = {
 		ItemCollectionsLoaded = "0x0000000000004000",
 		AuctionableTokensLoaded = "0x0000000000008000",
 		ConsumableTokensLoaded = "0x0000000000010000",
-		PerkTablesLoaded = "0x0000000000020000",
+		PerksPastRewardsLoaded = "0x0000000000020000",
 		VasTransactionsLoaded = "0x0000000000040000",
 		BpayProductitemObjectsLoaded = "0x0000000000080000",
 		TrialBoostHistoryLoaded = "0x0000000000100000",
@@ -74,7 +74,11 @@ Enum = {
 		PerksPendingPurchaseLoaded = "0x0000000080000000",
 		AccountWowlabsLoaded = "0x0000000100000000",
 		AccountUpgradeComplete = "0x0000000200000000",
+		PerksHeldItemLoaded = "0x0000000400000000",
+		PerksPendingRewardsLoaded = "0x0000000800000000",
 		WoWTokenPurchaseLoaded = "0x0000001000000000",
+		PerksRefundsLoaded = "0x0000002000000000",
+		BitVectorsLoaded = "0x0000004000000000",
 	},
 	AddOnEnableState = {
 		None = 0,
@@ -2169,6 +2173,11 @@ Enum = {
 		PvE = 0x4,
 		PvP = 0x8,
 	},
+	LFGRole = {
+		Tank = 0,
+		Healer = 1,
+		Damage = 2,
+	},
 	LanguageFlag = {
 		IsExotic = 1,
 		HiddenFromPlayer = 2,
@@ -2251,6 +2260,10 @@ Enum = {
 		AzeriteItemLevelUpToast = 13,
 		AzeritePowers = 14,
 		AzeriteRewardGlow = 15,
+	},
+	ModelSoundTagType = {
+		Oneshot = 1,
+		Looping = 2,
 	},
 	MountType = {
 		Ground = 0,
@@ -2895,7 +2908,7 @@ Enum = {
 	SeasonID = {
 		NoSeason = 0,
 		SeasonOfMastery = 1,
-		Placeholder = 2,
+		SeasonOfDiscovery = 2,
 		Hardcore = 3,
 	},
 	SelfResurrectOptionType = {
@@ -3271,7 +3284,7 @@ Enum = {
 		ShowTaskObjectives = 0x40,
 		NoWorldPositions = 0x80,
 		HideArchaeologyDigs = 0x100,
-		Deprecated = 0x200,
+		DoNotTranslateBranches = 0x200,
 		HideIcons = 0x400,
 		HideVignettes = 0x800,
 		ForceAllOverlayExplored = 0x1000,
@@ -3568,6 +3581,10 @@ Constants = {
 	ItemConsts = {
 		NUM_ITEM_ENCHANTMENT_SOCKETS = 3,
 		MAX_LOOT_OBJECT_ITEMS = 31,
+	},
+	LFG_ROLEConstants = {
+		LFG_ROLE_NO_ROLE = -1,
+		LFG_ROLE_ANY = 3,
 	},
 	LevelConstsExposed = {
 		MIN_ACHIEVEMENT_LEVEL = 10,
