@@ -11,10 +11,6 @@ local WidgetAPI = {
 	},
 	Object = {
 		inherits = {"FrameScriptObject"},
-		handlers = {
-			"OnLoad",
-			"OnUpdate",
-		},
 		methods = {
 			"ClearParentKey",
 			"GetDebugName",
@@ -39,6 +35,7 @@ local WidgetAPI = {
 			"OnEnter",
 			"OnHide",
 			"OnLeave",
+			"OnLoad",
 			"OnMouseDown",
 			"OnMouseUp",
 			"OnMouseWheel",
@@ -248,10 +245,12 @@ local WidgetAPI = {
 		inherits = {"Object", "ScriptObject"},
 		handlers = {
 			"OnFinished",
+			"OnLoad",
 			"OnLoop",
 			"OnPause",
 			"OnPlay",
 			"OnStop",
+			"OnUpdate",
 		},
 		methods = {
 			"CreateAnimation",
@@ -284,9 +283,11 @@ local WidgetAPI = {
 		inherits = {"Object", "ScriptObject"},
 		handlers = {
 			"OnFinished",
+			"OnLoad",
 			"OnPause",
 			"OnPlay",
 			"OnStop",
+			"OnUpdate",
 		},
 		methods = {
 			"GetDuration",
