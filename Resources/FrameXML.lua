@@ -3116,6 +3116,7 @@ local FrameXML = {
 	"PlayerFrame_UpdateGroupIndicator",
 	"PlayerFrame_UpdateLayout",
 	"PlayerFrame_UpdateLevelTextAnchor",
+	"PlayerFrame_UpdatePVPTimer",
 	"PlayerFrame_UpdatePartyLeader",
 	"PlayerFrame_UpdatePlaytime",
 	"PlayerFrame_UpdatePvPStatus",
