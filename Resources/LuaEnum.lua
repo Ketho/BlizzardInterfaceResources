@@ -165,16 +165,17 @@ Enum = {
 		None = 0,
 		UncollectedOnly = 1,
 		UsableOnly = 2,
-		UpgradesOnly = 3,
-		ExactMatch = 4,
-		PoorQuality = 5,
-		CommonQuality = 6,
-		UncommonQuality = 7,
-		RareQuality = 8,
-		EpicQuality = 9,
-		LegendaryQuality = 10,
-		ArtifactQuality = 11,
-		LegendaryCraftedItemOnly = 12,
+		CurrentExpansionOnly = 3,
+		UpgradesOnly = 4,
+		ExactMatch = 5,
+		PoorQuality = 6,
+		CommonQuality = 7,
+		UncommonQuality = 8,
+		RareQuality = 9,
+		EpicQuality = 10,
+		LegendaryQuality = 11,
+		ArtifactQuality = 12,
+		LegendaryCraftedItemOnly = 13,
 	},
 	AuctionHouseFilterCategory = {
 		Uncategorized = 0,
@@ -399,6 +400,7 @@ Enum = {
 		Tcg = 8,
 		PetStore = 9,
 		Discovery = 10,
+		TradingPost = 11,
 	},
 	BattlePetSpeciesFlags = {
 		NoRename = 0x1,
@@ -702,6 +704,24 @@ Enum = {
 	CaptureBarWidgetFillDirectionType = {
 		RightToLeft = 0,
 		LeftToRight = 1,
+	},
+	Causeofdeath = {
+		None = 0,
+		PlayerPvP = 1,
+		PlayerDuel = 2,
+		Creature = 3,
+		Falling = 4,
+		Drowning = 5,
+		Fatigue = 6,
+		Slime = 7,
+		Lava = 8,
+		Fire = 9,
+	},
+	CauseofdeathFlags = {
+		NoneNeeded = 0,
+		PlayerNameNeeded = 1,
+		CreatureNameNeeded = 2,
+		ZoneNameNeeded = 4,
 	},
 	CharCustomizationType = {
 		Skin = 0,
@@ -1225,7 +1245,8 @@ Enum = {
 		BonusRoll = 9,
 		FactionConversion = 10,
 		FulfillCraftingOrder = 11,
-		Last = 12,
+		Script = 12,
+		Last = 13,
 	},
 	CurrencyFlags = {
 		CurrencyTradable = 0x1,
@@ -1268,12 +1289,14 @@ Enum = {
 		CurrencyBBattlenetVirtualCurrency = 0x8,
 		FutureCurrencyFlag = 0x10,
 		CurrencyBDontDisplayIfZero = 0x20,
+		CurrencyBScaleMaxQuantityBySeasonWeeks = 0x40,
 	},
 	CurrencyGainFlags = {
-		None = 0,
-		BonusAward = 1,
-		DroppedFromDeath = 2,
-		FromAccountServer = 4,
+		None = 0x0,
+		BonusAward = 0x1,
+		DroppedFromDeath = 0x2,
+		FromAccountServer = 0x4,
+		Autotracking = 0x8,
 	},
 	CurrencySource = {
 		ConvertOldItem = 0,
@@ -2092,6 +2115,7 @@ Enum = {
 		BarbersChoice = 52,
 		MajorFactionRenown = 53,
 		PersonalTabardVendor = 54,
+		ForgeMaster = 55,
 	},
 	GossipNpcOptionDisplayFlags = {
 		ForceInteractionOnSingleChoice = 1,
@@ -2386,6 +2410,8 @@ Enum = {
 		DungeonNormalJackpot = 101,
 		DungeonHeroicJackpot = 102,
 		DungeonMythicJackpot = 103,
+		Delves = 104,
+		Timerunning = 105,
 	},
 	ItemDisplayTextDisplayStyle = {
 		WorldQuestReward = 0,
@@ -2424,6 +2450,7 @@ Enum = {
 		Cypher = 0x800000,
 		Tinker = 0x1000000,
 		Primordial = 0x2000000,
+		FutureUse = 0x4000000,
 	},
 	ItemGemSubclass = {
 		Intellect = 0,
@@ -2507,6 +2534,7 @@ Enum = {
 		CraftingReagentSlot_12 = 55,
 		CraftingReagentSlot_13 = 56,
 		CraftingReagentSlot_14 = 57,
+		Reforge = 58,
 	},
 	ItemProfessionSubclass = {
 		Blacksmithing = 0,
@@ -2621,6 +2649,7 @@ Enum = {
 		Cypher = 23,
 		Tinker = 24,
 		Primordial = 25,
+		FutureUse = 26,
 	},
 	ItemSoundType = {
 		Pickup = 0,
@@ -2764,6 +2793,7 @@ Enum = {
 	JournalInstanceFlags = {
 		Timewalker = 1,
 		HideUserSelectableDifficulty = 2,
+		DoNotDisplayInstance = 4,
 	},
 	JournalLinkTypes = {
 		Instance = 0,
@@ -2790,6 +2820,10 @@ Enum = {
 		NotRecommended = 0x2,
 		PvE = 0x4,
 		PvP = 0x8,
+		Timerunning = 0x10,
+		CurrentExpansion = 0x20,
+		CurrentSeason = 0x40,
+		NotCurrentSeason = 0x80,
 	},
 	LFGRole = {
 		Tank = 0,
@@ -3327,6 +3361,7 @@ Enum = {
 		JailersTowerBuffs = 63,
 		MajorFactionRenown = 64,
 		PersonalTabardVendor = 65,
+		ForgeMaster = 66,
 	},
 	PlayerMentorshipApplicationResult = {
 		Success = 0,
@@ -3435,7 +3470,8 @@ Enum = {
 		AlternateQuest = 23,
 		AlternateEncounter = 24,
 		AlternateMount = 25,
-		NumPowerTypes = 26,
+		Balance = 26,
+		NumPowerTypes = 27,
 	},
 	ProfTraitPerkNodeFlags = {
 		UnlocksSubpath = 1,
@@ -3696,6 +3732,12 @@ Enum = {
 		VersionTwo = 2,
 		VersionThree = 3,
 	},
+	RegisterAddonMessagePrefixResult = {
+		Success = 0,
+		DuplicatePrefix = 1,
+		InvalidPrefix = 2,
+		MaxPrefixes = 3,
+	},
 	RelativeContentDifficulty = {
 		Trivial = 0,
 		Easy = 1,
@@ -3789,6 +3831,18 @@ Enum = {
 	SelfResurrectOptionType = {
 		Spell = 0,
 		Item = 1,
+	},
+	SendAddonMessageResult = {
+		Success = 0,
+		InvalidPrefix = 1,
+		InvalidMessage = 2,
+		AddonMessageThrottle = 3,
+		InvalidChatType = 4,
+		NotInGroup = 5,
+		TargetRequired = 6,
+		InvalidChannel = 7,
+		ChannelThrottle = 8,
+		GeneralError = 9,
 	},
 	SharedStringFlag = {
 		InternalOnly = 1,
@@ -3993,6 +4047,7 @@ Enum = {
 		ToyFlavorText = 37,
 		ToyDescription = 38,
 		ToySource = 39,
+		GemSocketEnchantment = 40,
 	},
 	TooltipDataType = {
 		Item = 0,
@@ -4262,6 +4317,7 @@ Enum = {
 		Achievement = 7,
 		Profession = 8,
 		NotValidForTransmog = 9,
+		TradingPost = 10,
 	},
 	TransmogType = {
 		Appearance = 0,
@@ -4864,8 +4920,11 @@ Constants = {
 	CurrencyConsts = {
 		HONOR_PER_CURRENCY = 10,
 		PLAYER_CURRENCY_CLIENT_FLAGS = 12,
+		CONQUEST_POINTS_CURRENCY_ID = 390,
+		CONQUEST_ARENA_META_CURRENCY_ID = 483,
 		CONQUEST_ARENA_AND_BG_META_CURRENCY_ID = 483,
 		CONQUEST_RATED_BG_META_CURRENCY_ID = 484,
+		CONQUEST_BG_META_CURRENCY_ID = 484,
 		CONQUEST_ASHRAN_META_CURRENCY_ID = 692,
 		ARTIFACT_KNOWLEDGE_CURRENCY_ID = 1171,
 		WAR_RESOURCES_CURRENCY_ID = 1560,
@@ -4926,6 +4985,15 @@ Constants = {
 		WORLD_STATE_RENOWN_CAP_10_0 = 19735,
 		WORLD_STATE_RAPID_RENOWN_CAP_10_0 = 20851,
 	},
+	PetConsts = {
+		NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL = 5,
+		MAX_SUMMONABLE_HUNTER_PETS = 5,
+		EXTRA_PET_STABLE_SLOT = 5,
+		STABLED_PETS_FIRST_SLOT_INDEX = 6,
+		MAX_SUMMONABLE_PETS = 25,
+		MAX_STABLE_SLOTS = 200,
+		NUM_PET_SLOTS = 205,
+	},
 	ProfessionConsts = {
 		NUM_PRIMARY_PROFESSIONS = 2,
 		CLASSIC_PROFESSION_PARENT_TIER_INDEX = 4,
@@ -4943,6 +5011,10 @@ Constants = {
 		MAX_WORLD_QUEST_WATCHES_AUTOMATIC = 1,
 		MAX_WORLD_QUEST_WATCHES_MANUAL = 5,
 		MAX_QUEST_WATCHES = 25,
+	},
+	TimerunningConsts = {
+		TIMERUNNING_SEASON_NONE = 0,
+		TIMERUNNING_SEASON_PANDARIA = 1,
 	},
 	TraitConsts = {
 		VIEW_TRAIT_CONFIG_ID = -3,
@@ -5027,7 +5099,7 @@ LE_EXPANSION_DRAGONFLIGHT = 9
 LE_EXPANSION_LEVEL_CURRENT = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 154
+NUM_LE_FRAME_TUTORIALS = 155
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -5182,11 +5254,18 @@ LE_FRAME_TUTORIAL_PERKS_PROGRAM_ACTIVITIES_TRACKING = 151
 LE_FRAME_TUTORIAL_LOOT_HISTORY_ROLL = 152
 LE_FRAME_TUTORIAL_WARDROBE_TRACKING_INTERFACE = 153
 LE_FRAME_TUTORIAL_FOLLOWER_DUNGEON_SEEN = 154
+LE_FRAME_TUTORIAL_KEY_RANGE_GROUP_FINDER = 155
 
-NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
-LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
-LE_FRAME_TUTORIAL_ACCCOUNT_CLUB_FINDER_NEW_FEATURE = 2
-LE_FRAME_TUTORIAL_ACCOUNT_CLUB_FINDER_NEW_COMMUNITY_JOINED = 3
+NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 9
+LE_FRAME_TUTORIAL_ACCOUNT_PERKS_PROGRAM_ACTIVITIES_OPEN = 1
+LE_FRAME_TUTORIAL_ACCOUNT_HUD_REVAMP_BAG_CHANGES = 2
+LE_FRAME_TUTORIAL_ACCOUNT_PERKS_PROGRAM_ACTIVITIES_INTRO = 3
+LE_FRAME_TUTORIAL_ACCOUNT_EDIT_MODE_MANAGER = 4
+LE_FRAME_TUTORIAL_ACCOUNT_TRANSMOG_SETS_TAB = 5
+LE_FRAME_TUTORIAL_ACCOUNT_MOUNT_COLLECTION_DRAGONRIDING = 6
+LE_FRAME_TUTORIAL_ACCOUNT_LFG_LIST = 7
+LE_FRAME_TUTORIAL_ACCOUNT_HEIRLOOM_JOURNAL_LEVEL = 8
+LE_FRAME_TUTORIAL_ACCOUNT_TIMERUNNERS_ADVANTAGE = 9
 
 NUM_LE_INVITE_REQUEST_TYPES = 3
 LE_INVITE_CONFIRMATION_REQUEST = 1
