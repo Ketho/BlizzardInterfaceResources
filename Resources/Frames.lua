@@ -279,6 +279,8 @@ local LoadOnDemand = {
 	"CommunitiesSettingsDialog",
 	"CommunitiesTicketManagerDialog",
 	"CraftFrame",
+	"DispatcherDebugFrame",
+	"DispatcherFrame",
 	"EngravingFrame",
 	"EventTrace",
 	"FrameStackHighlight",
