@@ -1,5 +1,4 @@
 ---@diagnostic disable: duplicate-index
--- see also https://wow.gamepedia.com/API_C_Texture.GetAtlasInfo
 -- atlas = width, height, leftTexCoord, rightTexCoord, topTexCoord, bottomTexCoord, tilesHorizontally, tilesVertically
 local AtlasInfo = {
 	["4238249"] = { -- 4238249
@@ -88,11 +87,28 @@ local AtlasInfo = {
 	["5633788"] = { -- 5633788
 		["shop-card-full-mu1"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
 	},
+	["5868378"] = { -- 5868378
+		["shop-card-full-cm40"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["5873945"] = { -- 5873945
+		["shop-card-full-fp27"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["5873976"] = { -- 5873976
+		["shop-card-full-ap27"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
 	["5900924"] = { -- 5900924
 		["shop-card-full-murloc-romper-green"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
 	},
 	["5901455"] = { -- 5901455
 		["shop-card-full-mrlgrl-pack"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["6008880"] = { -- 6008880
+		["shop-card-full-july2024-180day"] = {568, 463, 0.0009765625, 0.5556640625, 0.0009765625, 0.453125, false, false},
+		["shop-card-full-july2024-6month"] = {568, 463, 0.0009765625, 0.5556640625, 0.455078125, 0.9072265625, false, false},
+	},
+	["6008883"] = { -- 6008883
+		["shop-card-full-july2024-12month"] = {568, 463, 0.0009765625, 0.5556640625, 0.0009765625, 0.453125, false, false},
+		["shop-card-full-july2024-365day"] = {568, 463, 0.0009765625, 0.5556640625, 0.455078125, 0.9072265625, false, false},
 	},
 	["interface/ garrison/dragonflightlandingpage"] = { -- 4723680
 		["dragonflight-landingpage-talentbutton-hover"] = {400, 476, 0.00048828125, 0.19580078125, 0.4677734375, 0.9326171875, false, false},
