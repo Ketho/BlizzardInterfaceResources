@@ -70,7 +70,6 @@ local Frames = {
 	"ChatFrame9Tab",
 	"ChatFrameToggleVoiceDeafenButton",
 	"ChatFrameToggleVoiceMuteButton",
-	"ChatMenu",
 	"CinematicFrame",
 	"ClassNameplateBrewmasterBarFrame",
 	"ClassNameplateEbonMightBarFrame",
