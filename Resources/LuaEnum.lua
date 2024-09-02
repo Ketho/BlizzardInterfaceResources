@@ -134,16 +134,17 @@ Enum = {
 		None = 0,
 		UncollectedOnly = 1,
 		UsableOnly = 2,
-		UpgradesOnly = 3,
-		ExactMatch = 4,
-		PoorQuality = 5,
-		CommonQuality = 6,
-		UncommonQuality = 7,
-		RareQuality = 8,
-		EpicQuality = 9,
-		LegendaryQuality = 10,
-		ArtifactQuality = 11,
-		LegendaryCraftedItemOnly = 12,
+		CurrentExpansionOnly = 3,
+		UpgradesOnly = 4,
+		ExactMatch = 5,
+		PoorQuality = 6,
+		CommonQuality = 7,
+		UncommonQuality = 8,
+		RareQuality = 9,
+		EpicQuality = 10,
+		LegendaryQuality = 11,
+		ArtifactQuality = 12,
+		LegendaryCraftedItemOnly = 13,
 	},
 	AuctionHouseItemSortOrder = {
 		Bid = 0,
@@ -333,6 +334,7 @@ Enum = {
 		Tcg = 8,
 		PetStore = 9,
 		Discovery = 10,
+		TradingPost = 11,
 	},
 	BattlePetSpeciesFlags = {
 		NoRename = 0x1,
@@ -718,6 +720,17 @@ Enum = {
 		DefaultSceneType = 0,
 		MinigameSceneType = 1,
 	},
+	ClientSettingsConfigFlag = {
+		ClientSettingsConfigDebug = 0x1,
+		ClientSettingsConfigInternal = 0x2,
+		ClientSettingsConfigPerf = 0x4,
+		ClientSettingsConfigGm = 0x8,
+		ClientSettingsConfigTest = 0x10,
+		ClientSettingsConfigTestRetail = 0x20,
+		ClientSettingsConfigBeta = 0x40,
+		ClientSettingsConfigBetaRetail = 0x80,
+		ClientSettingsConfigRetail = 0x100,
+	},
 	ClubActionType = {
 		ErrorClubActionSubscribe = 0,
 		ErrorClubActionCreate = 1,
@@ -799,6 +812,69 @@ Enum = {
 		ClubStreamName = 4,
 		ClubStreamSubject = 5,
 		NumTypes = 6,
+	},
+	ClubFinderApplicationUpdateType = {
+		None = 0,
+		AcceptInvite = 1,
+		DeclineInvite = 2,
+		Cancel = 3,
+	},
+	ClubFinderClubPostingStatusFlags = {
+		None = 0,
+		NeedsCacheUpdate = 1,
+		ForceDescriptionChange = 2,
+		ForceNameChange = 3,
+		UnderReview = 4,
+		Banned = 5,
+		FakePost = 6,
+		PendingDelete = 7,
+		PostDelisted = 8,
+	},
+	ClubFinderDisableReason = {
+		Muted = 0,
+		Silenced = 1,
+		VeteranTrial = 2,
+	},
+	ClubFinderPostingReportType = {
+		PostersName = 0,
+		ClubName = 1,
+		PostingDescription = 2,
+		ApplicantsName = 3,
+		JoinNote = 4,
+	},
+	ClubFinderRequestType = {
+		None = 0,
+		Guild = 1,
+		Community = 2,
+		All = 3,
+	},
+	ClubFinderSettingFlags = {
+		None = 0,
+		Dungeons = 1,
+		Raids = 2,
+		PvP = 3,
+		RP = 4,
+		Social = 5,
+		Small = 6,
+		Medium = 7,
+		Large = 8,
+		Tank = 9,
+		Healer = 10,
+		Damage = 11,
+		EnableListing = 12,
+		MaxLevelOnly = 13,
+		AutoAccept = 14,
+		FactionHorde = 15,
+		FactionAlliance = 16,
+		FactionNeutral = 17,
+		SortRelevance = 18,
+		SortMemberCount = 19,
+		SortNewest = 20,
+		LanguageReserved1 = 21,
+		LanguageReserved2 = 22,
+		LanguageReserved3 = 23,
+		LanguageReserved4 = 24,
+		LanguageReserved5 = 25,
 	},
 	ClubInvitationCandidateStatus = {
 		Available = 0,
@@ -1054,7 +1130,8 @@ Enum = {
 		Garrison = 7,
 		DroppedToCorpse = 8,
 		BonusRoll = 9,
-		Last = 10,
+		LegacyConversion = 10,
+		Last = 11,
 	},
 	CurrencyFlags = {
 		CurrencyTradable = 0x1,
@@ -1097,12 +1174,15 @@ Enum = {
 		CurrencyBBattlenetVirtualCurrency = 0x8,
 		FutureCurrencyFlag = 0x10,
 		CurrencyBDontDisplayIfZero = 0x20,
+		CurrencyBScaleMaxQuantityBySeasonWeeks = 0x40,
+		CurrencyBScaleMaxQuantityByWeeksSinceStart = 0x80,
 	},
 	CurrencyGainFlags = {
-		None = 0,
-		BonusAward = 1,
-		DroppedFromDeath = 2,
-		FromAccountServer = 4,
+		None = 0x0,
+		BonusAward = 0x1,
+		DroppedFromDeath = 0x2,
+		FromAccountServer = 0x4,
+		Autotracking = 0x8,
 	},
 	CurrencySource = {
 		ConvertOldItem = 0,
@@ -1315,6 +1395,55 @@ Enum = {
 		Slime = 4,
 		Fire = 5,
 	},
+	EventRealmQueues = {
+		None = 0,
+		PlunderstormSolo = 1,
+		PlunderstormDuo = 2,
+		PlunderstormTrio = 4,
+	},
+	EventToastDisplayType = {
+		NormalSingleLine = 0,
+		NormalBlockText = 1,
+		NormalTitleAndSubTitle = 2,
+		NormalTextWithIcon = 3,
+		LargeTextWithIcon = 4,
+		NormalTextWithIconAndRarity = 5,
+		Scenario = 6,
+		ChallengeMode = 7,
+		ScenarioClickExpand = 8,
+		WeeklyRewardUnlock = 9,
+		WeeklyRewardUpgrade = 10,
+	},
+	EventToastEventType = {
+		LevelUp = 0,
+		LevelUpSpell = 1,
+		LevelUpDungeon = 2,
+		LevelUpRaid = 3,
+		LevelUpPvP = 4,
+		PetBattleNewAbility = 5,
+		PetBattleFinalRound = 6,
+		PetBattleCapture = 7,
+		BattlePetLevelChanged = 8,
+		BattlePetLevelUpAbility = 9,
+		QuestBossEmote = 10,
+		MythicPlusWeeklyRecord = 11,
+		QuestTurnedIn = 12,
+		WorldStateChange = 13,
+		Scenario = 14,
+		LevelUpOther = 15,
+		PlayerAuraAdded = 16,
+		PlayerAuraRemoved = 17,
+		SpellScript = 18,
+		CriteriaUpdated = 19,
+		PvPTierUpdate = 20,
+		SpellLearned = 21,
+		TreasureItem = 22,
+		WeeklyRewardUnlock = 23,
+		WeeklyRewardUpgrade = 24,
+	},
+	EventToastFlags = {
+		DisableRightClickDismiss = 1,
+	},
 	ExcludedCensorSources = {
 		None = 0x0,
 		Friends = 0x1,
@@ -1357,6 +1486,77 @@ Enum = {
 		MustTargetLimitedUseFollower = 12,
 		AlreadyAtMaxDurability = 13,
 		CannotTargetNonAutoMissionFollower = 14,
+	},
+	GameEnvironment = {
+		WoW = 0,
+		WoWLabs = 1,
+	},
+	GameMode = {
+		Standard = 1,
+		Plunderstorm = 2,
+	},
+	GameModeFeatureSetting = {
+		MicroBarScale = 0,
+		MaxUnitNameDistance = 1,
+		MaxNameplateDistance = 2,
+		ScaleNonPlayerNamePlates = 3,
+		ForcedPartyFrameScale = 4,
+		CustomActionBarOverlayHeightOffset = 5,
+		CollectionsPanel = 6,
+		CharacterPanel = 7,
+		SpellbookPanel = 8,
+		TalentsPanel = 9,
+		AchievementsPanel = 10,
+		CommunitiesPanel = 11,
+		EncounterJournal = 12,
+		FinderPanel = 13,
+		Store = 14,
+		HelpPanel = 15,
+		Guilds = 16,
+		QuestLogMicroButton = 17,
+		ActionBarIconIntro = 18,
+		ReleaseSpiritGhost = 19,
+		DeleteItemConfirmation = 20,
+		ForcedChatLanguage = 21,
+		ChatLinkLevelToasts = 22,
+		Bags = 23,
+		PetBattles = 24,
+		PerksProgramActivityTracking = 25,
+		MaximizeWorldMap = 26,
+		WorldMapTrackingOptions = 27,
+		WorldMapTrackingPin = 28,
+		WorldMapHelpPlate = 29,
+		QuestLogPanel = 30,
+		QuestSuperTracking = 31,
+		MapPlunderstormCircle = 32,
+		SpectatingUI = 33,
+		TutorialFrame = 34,
+		UniversalNameplateOcclusion = 35,
+		InGameMailNotification = 36,
+		InGameCalendar = 37,
+		InGameTracking = 38,
+		InGameWhoList = 39,
+		FastAreaTriggerTick = 40,
+		IgnoreChrClassDisabledFlag = 41,
+		AllPlayersAreFastMovers = 42,
+		RaceAlteredFormsEnabled = 43,
+		FrontEndChat = 44,
+		InGameFriendsList = 45,
+		Macros = 46,
+		CompactRaidFrameManager = 47,
+		EditMode = 48,
+		InstanceDifficultyBanner = 49,
+		UserAddOns = 50,
+		UserScripts = 51,
+		CharacterCreateFullEnabled = 52,
+		CharacterCreateUseFixedBackgroundModel = 53,
+		ForceAlteredFormsOn = 54,
+		PlayerNamePlateDifficultyIcon = 55,
+		PlayerNamePlateAlternateHealthColor = 56,
+		TargetFrameBuffs = 57,
+		UnitFramePvPContextual = 58,
+		LandingPageFactionID = 59,
+		AlwaysAllowAlliedRaces = 60,
 	},
 	GamePadPowerLevel = {
 		Critical = 0,
@@ -1579,6 +1779,9 @@ Enum = {
 		BarbersChoice = 52,
 		MajorFactionRenown = 53,
 		PersonalTabardVendor = 54,
+		ForgeMaster = 55,
+		CharacterBanker = 56,
+		AccountBanker = 57,
 	},
 	GossipNpcOptionDisplayFlags = {
 		ForceInteractionOnSingleChoice = 1,
@@ -1859,6 +2062,8 @@ Enum = {
 		DungeonNormalJackpot = 101,
 		DungeonHeroicJackpot = 102,
 		DungeonMythicJackpot = 103,
+		Delves = 104,
+		Timerunning = 105,
 	},
 	ItemGemColor = {
 		Meta = 0x1,
@@ -1887,6 +2092,7 @@ Enum = {
 		Cypher = 0x800000,
 		Tinker = 0x1000000,
 		Primordial = 0x2000000,
+		FutureUse = 0x4000000,
 	},
 	ItemGemSubclass = {
 		Red = 0,
@@ -1967,6 +2173,7 @@ Enum = {
 		CraftingReagentSlot_12 = 55,
 		CraftingReagentSlot_13 = 56,
 		CraftingReagentSlot_14 = 57,
+		Reforge = 58,
 	},
 	ItemProfessionSubclass = {
 		Blacksmithing = 0,
@@ -2017,6 +2224,24 @@ Enum = {
 	ItemRecraftFlags = {
 		ItemRecraftFlagInvalid = 1,
 	},
+	ItemSlotFilterType = {
+		Head = 0,
+		Neck = 1,
+		Shoulder = 2,
+		Cloak = 3,
+		Chest = 4,
+		Wrist = 5,
+		Hand = 6,
+		Waist = 7,
+		Legs = 8,
+		Feet = 9,
+		MainHand = 10,
+		OffHand = 11,
+		Finger = 12,
+		Trinket = 13,
+		Other = 14,
+		NoFilter = 15,
+	},
 	ItemSocketType = {
 		None = 0,
 		Meta = 1,
@@ -2044,6 +2269,7 @@ Enum = {
 		Cypher = 23,
 		Tinker = 24,
 		Primordial = 25,
+		FutureUse = 26,
 	},
 	ItemSoundType = {
 		Pickup = 0,
@@ -2068,6 +2294,12 @@ Enum = {
 		WeaponsubclassDeprecatedReuseMe = 0x100,
 		ItemsubclassUsesInvtype = 0x200,
 		ArmorsubclassLfgscalingarmor = 0x400,
+	},
+	ItemTryOnReason = {
+		Success = 0,
+		WrongRace = 1,
+		NotEquippable = 2,
+		DataPending = 3,
 	},
 	ItemWeaponSubclass = {
 		Axe1H = 0,
@@ -2124,6 +2356,7 @@ Enum = {
 		HordeOnly = 0x8,
 		NoMap = 0x10,
 		InternalOnly = 0x20,
+		DoNotDisplayEncounter = 0x40,
 	},
 	JournalEncounterIconFlags = {
 		Tank = 0x1,
@@ -2164,6 +2397,7 @@ Enum = {
 	JournalInstanceFlags = {
 		Timewalker = 1,
 		HideUserSelectableDifficulty = 2,
+		DoNotDisplayInstance = 4,
 	},
 	JournalLinkTypes = {
 		Instance = 0,
@@ -2190,6 +2424,10 @@ Enum = {
 		NotRecommended = 0x2,
 		PvE = 0x4,
 		PvP = 0x8,
+		Timerunning = 0x10,
+		CurrentExpansion = 0x20,
+		CurrentSeason = 0x40,
+		NotCurrentSeason = 0x80,
 	},
 	LFGRole = {
 		Tank = 0,
@@ -2545,6 +2783,16 @@ Enum = {
 		Expand = 1,
 		Rotation = 2,
 	},
+	PlayerClubRequestStatus = {
+		None = 0,
+		Pending = 1,
+		AutoApproved = 2,
+		Declined = 3,
+		Approved = 4,
+		Joined = 5,
+		JoinedAnother = 6,
+		Canceled = 7,
+	},
 	PlayerCurrencyFlags = {
 		Incremented = 1,
 		Loading = 2,
@@ -2623,6 +2871,9 @@ Enum = {
 		JailersTowerBuffs = 63,
 		MajorFactionRenown = 64,
 		PersonalTabardVendor = 65,
+		ForgeMaster = 66,
+		CharacterBanker = 67,
+		AccountBanker = 68,
 	},
 	PlayerMentorshipApplicationResult = {
 		Success = 0,
@@ -2663,7 +2914,8 @@ Enum = {
 		AlternateQuest = 23,
 		AlternateEncounter = 24,
 		AlternateMount = 25,
-		NumPowerTypes = 26,
+		Balance = 26,
+		NumPowerTypes = 27,
 	},
 	Profession = {
 		FirstAid = 0,
@@ -2848,6 +3100,20 @@ Enum = {
 		VersionTwo = 2,
 		VersionThree = 3,
 	},
+	ReforgeFailedReason = {
+		None = 0,
+		ReforgeSrcStatNotFound = 1,
+		ReforgeInsufficientSrcStat = 2,
+		ReforgeAlreadyHasDstStat = 3,
+		ReforgeItemTooLowLevel = 4,
+		NumReforgeFailedReason = 5,
+	},
+	RegisterAddonMessagePrefixResult = {
+		Success = 0,
+		DuplicatePrefix = 1,
+		InvalidPrefix = 2,
+		MaxPrefixes = 3,
+	},
 	RelativeContentDifficulty = {
 		Trivial = 0,
 		Easy = 1,
@@ -2877,6 +3143,7 @@ Enum = {
 		GuildName = 0x1000,
 		Description = 0x2000,
 		Name = 0x4000,
+		HarmfulToMinors = 0x8000,
 	},
 	ReportSubComplaintTypes = {
 		Inappropriate = 0,
@@ -2900,6 +3167,12 @@ Enum = {
 		PvPScoreboard = 14,
 		PvPGroupMember = 15,
 		CraftingOrder = 16,
+	},
+	ScalingArmorType = {
+		Cloth = 0,
+		Leather = 1,
+		Mail = 2,
+		Plate = 3,
 	},
 	ScriptedAnimationBehavior = {
 		None = 0,
@@ -2930,13 +3203,24 @@ Enum = {
 	SeasonID = {
 		NoSeason = 0,
 		SeasonOfMastery = 1,
-		Placeholder = 2,
 		SeasonOfDiscovery = 2,
 		Hardcore = 3,
 	},
 	SelfResurrectOptionType = {
 		Spell = 0,
 		Item = 1,
+	},
+	SendAddonMessageResult = {
+		Success = 0,
+		InvalidPrefix = 1,
+		InvalidMessage = 2,
+		AddonMessageThrottle = 3,
+		InvalidChatType = 4,
+		NotInGroup = 5,
+		TargetRequired = 6,
+		InvalidChannel = 7,
+		ChannelThrottle = 8,
+		GeneralError = 9,
 	},
 	SharedStringFlag = {
 		InternalOnly = 1,
@@ -3032,6 +3316,7 @@ Enum = {
 		ToyFlavorText = 37,
 		ToyDescription = 38,
 		ToySource = 39,
+		GemSocketEnchantment = 40,
 	},
 	TooltipDataType = {
 		Item = 0,
@@ -3185,6 +3470,11 @@ Enum = {
 		CannotRefund = 1,
 		HideSingleRankNumbers = 2,
 	},
+	TransmogCameraVariation = {
+		None = 0,
+		CloakBackpack = 1,
+		RightShoulder = 1,
+	},
 	TransmogCollectionType = {
 		None = 0,
 		Head = 1,
@@ -3217,14 +3507,40 @@ Enum = {
 		Warglaives = 28,
 		Paired = 29,
 	},
+	TransmogIllisionFlags = {
+		HideUntilCollected = 1,
+		PlayerConditionGrantsOnLogin = 2,
+	},
 	TransmogModification = {
 		Main = 0,
 		Secondary = 1,
+	},
+	TransmogPendingType = {
+		Apply = 0,
+		Revert = 1,
+		ToggleOn = 2,
+		ToggleOff = 3,
 	},
 	TransmogSearchType = {
 		Items = 1,
 		BaseSets = 2,
 		UsableSets = 3,
+	},
+	TransmogSlot = {
+		Head = 0,
+		Shoulder = 1,
+		Back = 2,
+		Chest = 3,
+		Body = 4,
+		Tabard = 5,
+		Wrist = 6,
+		Hand = 7,
+		Waist = 8,
+		Legs = 9,
+		Feet = 10,
+		Mainhand = 11,
+		Offhand = 12,
+		Ranged = 13,
 	},
 	TransmogSource = {
 		None = 0,
@@ -3237,6 +3553,7 @@ Enum = {
 		Achievement = 7,
 		Profession = 8,
 		NotValidForTransmog = 9,
+		TradingPost = 10,
 	},
 	TransmogType = {
 		Appearance = 0,
@@ -3405,13 +3722,6 @@ Enum = {
 		TextureWithState = 12,
 	},
 	UnitSex = {
-		Male = 0,
-		Female = 1,
-		None = 2,
-		Both = 3,
-		Neutral = 4,
-	},
-	Unitsex = {
 		Male = 0,
 		Female = 1,
 		None = 2,
@@ -3652,8 +3962,12 @@ Constants = {
 	CurrencyConsts = {
 		HONOR_PER_CURRENCY = 10,
 		PLAYER_CURRENCY_CLIENT_FLAGS = 12,
+		CONQUEST_POINTS_CURRENCY_ID = 390,
+		CLASSIC_CONQUEST_CURRENCY_ID = 390,
 		CONQUEST_ARENA_AND_BG_META_CURRENCY_ID = 483,
+		CONQUEST_ARENA_META_CURRENCY_ID = 483,
 		CONQUEST_RATED_BG_META_CURRENCY_ID = 484,
+		CONQUEST_BG_META_CURRENCY_ID = 484,
 		CONQUEST_ASHRAN_META_CURRENCY_ID = 692,
 		ARTIFACT_KNOWLEDGE_CURRENCY_ID = 1171,
 		WAR_RESOURCES_CURRENCY_ID = 1560,
@@ -3674,6 +3988,10 @@ Constants = {
 		DRAGON_ISLES_SUPPLIES_CURRENCY_ID = 2003,
 		CURRENCY_ID_PERKS_PROGRAM_DISPLAY_INFO = 2032,
 		QUESTIONMARK_INV_ICON = 134400,
+		PVP_CURRENCY_CONQUEST_ALLIANCE_INV_ICON = 463448,
+		PVP_CURRENCY_CONQUEST_HORDE_INV_ICON = 463449,
+		PVP_CURRENCY_HONOR_ALLIANCE_INV_ICON = 463450,
+		PVP_CURRENCY_HONOR_HORDE_INV_ICON = 463451,
 		MAX_CURRENCY_QUANTITY = 100000000,
 	},
 	GroupFinderConstants = {
@@ -3707,6 +4025,45 @@ Constants = {
 	LootConsts = {
 		MasterLootQualityThreshold = 5,
 	},
+	PetConsts_PostCata = {
+		STABLED_PETS_FIRST_SLOT_INDEX = -1,
+		NUM_PET_SLOTS_MAGE = 1,
+		NUM_PET_SLOTS_DEATHKNIGHT = 1,
+		EXTRA_PET_STABLE_SLOT = 1,
+		MAX_SUMMONABLE_HUNTER_PETS = 1,
+		MAX_NUM_PET_SLOTS = 3,
+		NUM_PET_SLOTS_HUNTER = 3,
+		NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL = 5,
+		MAX_SUMMONABLE_PETS = 25,
+		NUM_PET_SLOTS_WARLOCK = 25,
+		MAX_STABLE_SLOTS = 200,
+	},
+	PetConsts_PreWrath = {
+		EXTRA_PET_STABLE_SLOT = -1,
+		NUM_PET_SLOTS_DEATHKNIGHT = 0,
+		NUM_PET_SLOTS_MAGE = 1,
+		STABLED_PETS_FIRST_SLOT_INDEX = 1,
+		MAX_SUMMONABLE_HUNTER_PETS = 1,
+		NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL = 1,
+		MAX_STABLE_SLOTS = 2,
+		NUM_PET_SLOTS_HUNTER = 3,
+		NUM_PET_SLOTS_WARLOCK = 25,
+		MAX_SUMMONABLE_PETS = 25,
+		MAX_NUM_PET_SLOTS = 25,
+	},
+	PetConsts_Wrath = {
+		EXTRA_PET_STABLE_SLOT = -1,
+		NUM_PET_SLOTS_MAGE = 1,
+		NUM_PET_SLOTS_DEATHKNIGHT = 1,
+		STABLED_PETS_FIRST_SLOT_INDEX = 1,
+		MAX_SUMMONABLE_HUNTER_PETS = 1,
+		NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL = 1,
+		NUM_PET_SLOTS_HUNTER = 3,
+		MAX_STABLE_SLOTS = 4,
+		MAX_SUMMONABLE_PETS = 25,
+		NUM_PET_SLOTS_WARLOCK = 25,
+		MAX_NUM_PET_SLOTS = 25,
+	},
 	ProfessionConsts = {
 		NUM_PRIMARY_PROFESSIONS = 2,
 		CLASSIC_PROFESSION_PARENT_TIER_INDEX = 4,
@@ -3725,12 +4082,24 @@ Constants = {
 		MAX_WORLD_QUEST_HARD_WATCHES = 5,
 		MAX_QUEST_WATCHES = 25,
 	},
+	TimerunningConsts = {
+		TIMERUNNING_SEASON_NONE = 0,
+		TIMERUNNING_SEASON_PANDARIA = 1,
+		TIMERUNNING_ITEM_CTR = 2905,
+		TIMERUNNING_STARTLOC_ID_ALLIANCE = 10211,
+		TIMERUNNING_STARTLOC_ID_HORDE = 10212,
+	},
 	TraitConsts = {
 		VIEW_TRAIT_CONFIG_ID = -3,
 		STARTER_BUILD_TRAIT_CONFIG_ID = -2,
 		INSPECT_TRAIT_CONFIG_ID = -1,
 		MAX_COMBAT_TRAIT_CONFIGS = 10,
 		COMMIT_COMBAT_TRAIT_CONFIG_CHANGES_SPELL_ID = 384255,
+	},
+	Transmog = {
+		MainHandTransmogIsIndividualWeapon = -1,
+		MainHandTransmogIsPairedWeapon = 0,
+		NoTransmogID = 0,
 	},
 	WeeklyRewardsConsts = {
 		WEEKLY_REWARD_ITEM_RETENTION_DAYS = 15,
@@ -3851,7 +4220,9 @@ LE_FOLLOWER_MISSION_COMPLETE_STATE_SAVED = 3
 LE_FOLLOWER_MISSION_COMPLETE_STATE_OUT_OF_DURABILITY = 4
 
 NUM_LE_FRAME_TUTORIALS = 58
+LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
 LE_FRAME_TUTORIAL_TALENT = 1
+LE_FRAME_TUTORIAL_ACCCOUNT_CLUB_FINDER_NEW_FEATURE = 2
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
 LE_FRAME_TUTORIAL_SPELLBOOK = 4
@@ -3910,6 +4281,9 @@ LE_FRAME_TUTORIAL_TEXT_TO_SPEECH = 56
 LE_FRAME_TUTORIAL_SPEECH_TO_TEXT = 57
 LE_FRAME_TUTORIAL_SETTINGS_SEARCH = 58
 
+NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
+LE_FRAME_TUTORIAL_ACCOUNT_CLUB_FINDER_NEW_COMMUNITY_JOINED = 3
+
 NUM_LE_INVITE_REQUEST_TYPES = 3
 LE_INVITE_CONFIRMATION_REQUEST = 1
 LE_INVITE_CONFIRMATION_SUGGEST = 2
@@ -3921,19 +4295,6 @@ LE_INVITE_CONFIRMATION_RELATION_FRIEND = 1
 LE_INVITE_CONFIRMATION_RELATION_GUILD = 2
 LE_INVITE_CONFIRMATION_RELATION_CLUB = 3
 
-LE_ITEM_ARMOR_GENERIC = 0
-LE_ITEM_ARMOR_CLOTH = 1
-LE_ITEM_ARMOR_LEATHER = 2
-LE_ITEM_ARMOR_MAIL = 3
-LE_ITEM_ARMOR_PLATE = 4
-LE_ITEM_ARMOR_COSMETIC = 5
-LE_ITEM_ARMOR_SHIELD = 6
-LE_ITEM_ARMOR_LIBRAM = 7
-LE_ITEM_ARMOR_IDOL = 8
-LE_ITEM_ARMOR_TOTEM = 9
-LE_ITEM_ARMOR_SIGIL = 10
-LE_ITEM_ARMOR_RELIC = 11
-
 NUM_LE_ITEM_BIND_TYPES = 7
 LE_ITEM_BIND_NONE = 0
 LE_ITEM_BIND_ON_ACQUIRE = 1
@@ -3942,24 +4303,6 @@ LE_ITEM_BIND_ON_USE = 3
 LE_ITEM_BIND_QUEST = 4
 LE_ITEM_BIND_QUEST_MULTI = 5
 LE_ITEM_BIND_MULTI = 6
-
-LE_ITEM_CLASS_CONSUMABLE = 0
-LE_ITEM_CLASS_CONTAINER = 1
-LE_ITEM_CLASS_WEAPON = 2
-LE_ITEM_CLASS_GEM = 3
-LE_ITEM_CLASS_ARMOR = 4
-LE_ITEM_CLASS_REAGENT = 5
-LE_ITEM_CLASS_PROJECTILE = 6
-LE_ITEM_CLASS_TRADEGOODS = 7
-LE_ITEM_CLASS_ITEM_ENHANCEMENT = 8
-LE_ITEM_CLASS_RECIPE = 9
-LE_ITEM_CLASS_QUIVER = 11
-LE_ITEM_CLASS_QUESTITEM = 12
-LE_ITEM_CLASS_KEY = 13
-LE_ITEM_CLASS_MISCELLANEOUS = 15
-LE_ITEM_CLASS_GLYPH = 16
-LE_ITEM_CLASS_BATTLEPET = 17
-LE_ITEM_CLASS_WOW_TOKEN = 18
 
 NUM_LE_ITEM_FILTER_TYPES = 37
 LE_ITEM_FILTER_TYPE_HEAD = 1
@@ -3978,14 +4321,6 @@ LE_ITEM_FILTER_TYPE_MAIN_HAND = 21
 LE_ITEM_FILTER_TYPE_OFF_HAND = 22
 LE_ITEM_FILTER_TYPE_ARTIFACT_RELIC = 36
 
-LE_ITEM_MISCELLANEOUS_JUNK = 0
-LE_ITEM_MISCELLANEOUS_REAGENT = 1
-LE_ITEM_MISCELLANEOUS_COMPANION_PET = 2
-LE_ITEM_MISCELLANEOUS_HOLIDAY = 3
-LE_ITEM_MISCELLANEOUS_OTHER = 4
-LE_ITEM_MISCELLANEOUS_MOUNT = 5
-LE_ITEM_MISCELLANEOUS_MOUNT_EQUIPMENT = 6
-
 NUM_LE_ITEM_QUALITYS = 9
 LE_ITEM_QUALITY_POOR = 0
 LE_ITEM_QUALITY_COMMON = 1
@@ -3996,41 +4331,6 @@ LE_ITEM_QUALITY_LEGENDARY = 5
 LE_ITEM_QUALITY_ARTIFACT = 6
 LE_ITEM_QUALITY_HEIRLOOM = 7
 LE_ITEM_QUALITY_WOW_TOKEN = 8
-
-LE_ITEM_RECIPE_BOOK = 0
-LE_ITEM_RECIPE_LEATHERWORKING = 1
-LE_ITEM_RECIPE_TAILORING = 2
-LE_ITEM_RECIPE_ENGINEERING = 3
-LE_ITEM_RECIPE_BLACKSMITHING = 4
-LE_ITEM_RECIPE_COOKING = 5
-LE_ITEM_RECIPE_ALCHEMY = 6
-LE_ITEM_RECIPE_FIRST_AID = 7
-LE_ITEM_RECIPE_ENCHANTING = 8
-LE_ITEM_RECIPE_FISHING = 9
-LE_ITEM_RECIPE_JEWELCRAFTING = 10
-LE_ITEM_RECIPE_INSCRIPTION = 11
-
-LE_ITEM_WEAPON_AXE1H = 0
-LE_ITEM_WEAPON_AXE2H = 1
-LE_ITEM_WEAPON_BOWS = 2
-LE_ITEM_WEAPON_GUNS = 3
-LE_ITEM_WEAPON_MACE1H = 4
-LE_ITEM_WEAPON_MACE2H = 5
-LE_ITEM_WEAPON_POLEARM = 6
-LE_ITEM_WEAPON_SWORD1H = 7
-LE_ITEM_WEAPON_SWORD2H = 8
-LE_ITEM_WEAPON_WARGLAIVE = 9
-LE_ITEM_WEAPON_STAFF = 10
-LE_ITEM_WEAPON_BEARCLAW = 11
-LE_ITEM_WEAPON_CATCLAW = 12
-LE_ITEM_WEAPON_UNARMED = 13
-LE_ITEM_WEAPON_GENERIC = 14
-LE_ITEM_WEAPON_DAGGER = 15
-LE_ITEM_WEAPON_THROWN = 16
-LE_ITEM_WEAPON_OBSOLETE3 = 17
-LE_ITEM_WEAPON_CROSSBOW = 18
-LE_ITEM_WEAPON_WAND = 19
-LE_ITEM_WEAPON_FISHINGPOLE = 20
 
 NUM_LE_LFG_CATEGORYS = 7
 LE_LFG_CATEGORY_LFD = 1
@@ -4195,11 +4495,18 @@ LE_TRACKER_SORTING_PROXIMITY = 2
 LE_TRACKER_SORTING_DIFFICULTY_LOW = 3
 LE_TRACKER_SORTING_DIFFICULTY_HIGH = 4
 
-NUM_LE_UNIT_STATS = 4
+NUM_LE_TRANSMOG_SET_FILTERS = 4
+LE_TRANSMOG_SET_FILTER_COLLECTED = 1
+LE_TRANSMOG_SET_FILTER_UNCOLLECTED = 2
+LE_TRANSMOG_SET_FILTER_PVE = 3
+LE_TRANSMOG_SET_FILTER_PVP = 4
+
+NUM_LE_UNIT_STATS = 5
 LE_UNIT_STAT_STRENGTH = 1
 LE_UNIT_STAT_AGILITY = 2
 LE_UNIT_STAT_STAMINA = 3
 LE_UNIT_STAT_INTELLECT = 4
+LE_UNIT_STAT_SPIRIT = 5
 
 NUM_LE_VAS_PURCHASE_STATES = 8
 LE_VAS_PURCHASE_STATE_INVALID = 0
