@@ -3838,6 +3838,8 @@ local FrameXML = {
 	"TableUtil.CreatePriorityTable",
 	"TableUtil.Execute",
 	"TableUtil.ExecuteUntil",
+	"TableUtil.FindMax",
+	"TableUtil.FindMin",
 	"TableUtil.GetHighestNumericalValueInTable",
 	"TableUtil.GetTableValueListFromEnumeration",
 	"TableUtil.Transform",
