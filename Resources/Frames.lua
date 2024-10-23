@@ -22,6 +22,7 @@ local Frames = {
 	"BNToastFrame",
 	"BackpackTokenFrame",
 	"BagsBar",
+	"BankCleanUpConfirmationPopup",
 	"BankFrame",
 	"BasicMessageDialog",
 	"BattlePetTooltip",

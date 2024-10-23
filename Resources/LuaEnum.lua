@@ -9,6 +9,7 @@ Enum = {
 		NoValidSourceCharacter = 6,
 		ServerError = 7,
 		CannotUseCurrency = 8,
+		TransactionInProgress = 9,
 	},
 	AccountData = {
 		Config = 0,
@@ -152,6 +153,7 @@ Enum = {
 		BitVectors = 51,
 		CombinedQuestLog = 52,
 		PlayerDataElements = 53,
+		CharacterDataMerge = 54,
 	},
 	ActionBarOrientation = {
 		Horizontal = 0,
@@ -349,6 +351,7 @@ Enum = {
 		LookInAccountBankOnly = 0x2000000,
 		HasRefund = 0x4000000,
 		SkipValidCountCheck = 0x8000000,
+		AllowSoulboundItemInAccountBank = 0x10000000,
 	},
 	BagIndex = {
 		Accountbanktab = -5,
@@ -1532,6 +1535,11 @@ Enum = {
 		ConcentrationCast = 13,
 		AccountTransfer = 14,
 	},
+	CurrencyFilterType = {
+		None = 0,
+		DiscoveredOnly = 1,
+		DiscoveredAndAllAccountTransferable = 2,
+	},
 	CurrencyFlags = {
 		CurrencyTradable = 0x1,
 		CurrencyAppearsInLootWindow = 0x2,
@@ -1564,7 +1572,7 @@ Enum = {
 		CurrencyIsAllianceOnly = 0x10000000,
 		CurrencyIsHordeOnly = 0x20000000,
 		CurrencyLimitWarmodeBonusOncePerTooltip = 0x40000000,
-		DeprecatedCurrencyFlag = 0x80000000,
+		CurrencyUsesLedgerBalance = 0x80000000,
 	},
 	CurrencyFlagsB = {
 		CurrencyBUseTotalEarnedForEarned = 0x1,
@@ -2231,6 +2239,8 @@ Enum = {
 		WoWLabsPlaceholder2 = 88,
 		WoWLabsPlaceholder3 = 89,
 		WoWLabsPlaceholder4 = 90,
+		VanillaAccountMailInstant = 91,
+		ClearMailOnRealmTransfer = 92,
 	},
 	GameRuleFlags = {
 		None = 0,
@@ -2531,6 +2541,10 @@ Enum = {
 		NotAvailableClientSide = 0x10,
 		DurationUseMinutes = 0x20,
 		BeginEventOnlyOnStageChange = 0x40,
+	},
+	IconAndTextShiftTextType = {
+		None = 0,
+		ShiftText = 1,
 	},
 	IconAndTextWidgetState = {
 		Hidden = 0,
@@ -3888,8 +3902,8 @@ Enum = {
 		Maelstrom = 11,
 		Chi = 12,
 		Insanity = 13,
-		Obsolete = 14,
-		Obsolete2 = 15,
+		BurningEmbers = 14,
+		DemonicFury = 15,
 		ArcaneCharges = 16,
 		Fury = 17,
 		Pain = 18,
@@ -3901,6 +3915,9 @@ Enum = {
 		AlternateEncounter = 24,
 		AlternateMount = 25,
 		Balance = 26,
+		Happiness = 27,
+		ShadowOrbs = 28,
+		RuneChromatic = 29,
 	},
 	PowerTypeSign = {
 		None = -1,
@@ -4302,6 +4319,20 @@ Enum = {
 		Unavailable = 1,
 		Invalid = 2,
 	},
+	ScreenLocationType = {
+		Center = 0,
+		Left = 1,
+		Right = 2,
+		Top = 3,
+		Bottom = 4,
+		TopLeft = 5,
+		TopRight = 6,
+		LeftOutside = 7,
+		RightOutside = 8,
+		LeftRight = 9,
+		TopBottom = 10,
+		LeftRightOutside = 11,
+	},
 	ScriptedAnimationBehavior = {
 		None = 0,
 		TargetShake = 1,
@@ -4525,7 +4556,7 @@ Enum = {
 		Bankbag = 3,
 		Mail = 4,
 		Auction = 5,
-		KeyringObsolete = 6,
+		Keyring = 6,
 		GuildBank0 = 7,
 		GuildBank1 = 8,
 		GuildBank2 = 9,
@@ -4843,6 +4874,7 @@ Enum = {
 	TraitSystemFlag = {
 		AllowMultipleLoadoutsPerTree = 1,
 		ShowSpendConfirmation = 2,
+		AllowEditInCombat = 4,
 	},
 	TraitTreeFlag = {
 		CannotRefund = 1,
@@ -4885,7 +4917,7 @@ Enum = {
 		Warglaives = 28,
 		Paired = 29,
 	},
-	TransmogIllisionFlags = {
+	TransmogIllusionFlags = {
 		HideUntilCollected = 1,
 		PlayerConditionGrantsOnLogin = 2,
 	},
@@ -5593,6 +5625,8 @@ Constants = {
 	DelvesConsts = {
 		BRANN_COMPANION_INFO_ID = 1,
 		DELVES_COMPANION_TRAIT_SYSTEM_ID = 6,
+		BRANN_MAX_LEVEL = 60,
+		BRANN_XP_FACTION_ID = 1203,
 		DELVES_COMPANION_TOOLTIP_WIDGET_SET_ID = 1331,
 		DELVES_MIN_PLAYER_LEVEL_CONTENT_TUNING_ID = 2677,
 		DELVES_NORMAL_KEY_CURRENCY_ID = 3028,
@@ -5645,6 +5679,10 @@ Constants = {
 		TRAIT_SYSTEM_ID = 1,
 		TREE_ID = 672,
 	},
+	PetConsts = {
+		PETNUMBER_INVALIDSLOT = -1,
+		MAX_SUMMONABLE_PETS = 25,
+	},
 	PetConsts_PostCata = {
 		NUM_PET_SLOTS_DEATHKNIGHT = 1,
 		NUM_PET_SLOTS_MAGE = 1,
@@ -5652,11 +5690,10 @@ Constants = {
 		EXTRA_PET_STABLE_SLOT = 5,
 		MAX_SUMMONABLE_HUNTER_PETS = 5,
 		NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL = 5,
-		MAX_SUMMONABLE_PETS = 25,
 		NUM_PET_SLOTS_WARLOCK = 25,
 		MAX_STABLE_SLOTS = 200,
-		NUM_PET_SLOTS_HUNTER = 205,
 		MAX_NUM_PET_SLOTS = 205,
+		NUM_PET_SLOTS_HUNTER = 205,
 	},
 	PetConsts_PreWrath = {
 		EXTRA_PET_STABLE_SLOT = -1,
@@ -5666,22 +5703,20 @@ Constants = {
 		MAX_STABLE_SLOTS = 2,
 		STABLED_PETS_FIRST_SLOT_INDEX = 5,
 		MAX_SUMMONABLE_HUNTER_PETS = 5,
-		NUM_PET_SLOTS_WARLOCK = 25,
-		MAX_SUMMONABLE_PETS = 25,
 		MAX_NUM_PET_SLOTS = 25,
+		NUM_PET_SLOTS_WARLOCK = 25,
 		NUM_PET_SLOTS_HUNTER = 205,
 	},
 	PetConsts_Wrath = {
 		EXTRA_PET_STABLE_SLOT = -1,
 		NUM_PET_SLOTS_MAGE = 1,
-		NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL = 1,
 		NUM_PET_SLOTS_DEATHKNIGHT = 1,
+		NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL = 1,
 		MAX_STABLE_SLOTS = 4,
 		STABLED_PETS_FIRST_SLOT_INDEX = 5,
 		MAX_SUMMONABLE_HUNTER_PETS = 5,
-		NUM_PET_SLOTS_WARLOCK = 25,
-		MAX_SUMMONABLE_PETS = 25,
 		MAX_NUM_PET_SLOTS = 25,
+		NUM_PET_SLOTS_WARLOCK = 25,
 		NUM_PET_SLOTS_HUNTER = 205,
 	},
 	ProfessionConsts = {
@@ -5952,7 +5987,7 @@ LE_FRAME_TUTORIAL_KEY_RANGE_GROUP_FINDER = 155
 LE_FRAME_TUTORIAL_HERO_TALENT_NONE_SPENT = 156
 LE_FRAME_TUTORIAL_PLAYER_SPELLS_MINIMIZE = 157
 
-NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 19
+NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 20
 LE_FRAME_TUTORIAL_ACCOUNT_PERKS_PROGRAM_ACTIVITIES_OPEN = 1
 LE_FRAME_TUTORIAL_ACCOUNT_HUD_REVAMP_BAG_CHANGES = 2
 LE_FRAME_TUTORIAL_ACCOUNT_PERKS_PROGRAM_ACTIVITIES_INTRO = 3
@@ -5971,6 +6006,7 @@ LE_FRAME_TUTORIAL_ACCOUNT_MAP_LEGEND_OPENED = 16
 LE_FRAME_TUTORIAL_ACCOUNT_NPC_CRAFTING_ORDERS = 17
 LE_FRAME_TUTORIAL_ACCOUNT_NPC_CRAFTING_ORDER_CREATE_BUTTON = 18
 LE_FRAME_TUTORIAL_ACCOUNT_NPC_CRAFTING_ORDER_TAB_NEW = 19
+LE_FRAME_TUTORIAL_ACCOUNT_LOCAL_STORIES_FILTER_SEEN = 20
 
 NUM_LE_INVITE_REQUEST_TYPES = 3
 LE_INVITE_CONFIRMATION_REQUEST = 1
