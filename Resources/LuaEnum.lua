@@ -9,6 +9,7 @@ Enum = {
 		NoValidSourceCharacter = 6,
 		ServerError = 7,
 		CannotUseCurrency = 8,
+		TransactionInProgress = 9,
 	},
 	AccountData = {
 		Config = 0,
@@ -295,6 +296,7 @@ Enum = {
 		LookInAccountBankOnly = 0x2000000,
 		HasRefund = 0x4000000,
 		SkipValidCountCheck = 0x8000000,
+		AllowSoulboundItemInAccountBank = 0x10000000,
 	},
 	BagIndex = {
 		Accountbanktab = -5,
@@ -1177,6 +1179,11 @@ Enum = {
 		PushToTalk = 0,
 		OpenMic = 1,
 	},
+	CompanionConfigSlotTypes = {
+		Role = 0,
+		Utility = 1,
+		Combat = 2,
+	},
 	ConsoleCategory = {
 		Debug = 0,
 		Graphics = 1,
@@ -1373,6 +1380,12 @@ Enum = {
 		Basic = 1,
 		Finishing = 2,
 		Automatic = 3,
+	},
+	CurioRarity = {
+		Common = 1,
+		Uncommon = 2,
+		Rare = 3,
+		Epic = 4,
 	},
 	CurrencyDestroyReason = {
 		Cheat = 0,
@@ -1778,7 +1791,7 @@ Enum = {
 		MaxCharReservationsPerRealm = 3,
 		MaxAccountCharReservationsPerContentset = 4,
 		EtaRealmLaunchTime = 5,
-		LFGUIEnabled = 6,
+		DeprecatedLFGUIEnabled = 6,
 		TrivialGroupXPPercent = 7,
 		CharReservationsPerRealmReopenThreshold = 8,
 		DisablePct = 9,
@@ -1796,7 +1809,7 @@ Enum = {
 		VanillaRageGenerationModifier = 21,
 		SelfFoundAllowed = 22,
 		DisableHonorDecay = 23,
-		CapHonorRankPerLevelBracket = 24,
+		Deprecated1 = 24,
 		MaxLootDropLevel = 25,
 		MicrobarScale = 26,
 		MaxUnitNameDistance = 27,
@@ -1864,10 +1877,23 @@ Enum = {
 		WoWLabsPlaceholder3 = 89,
 		WoWLabsPlaceholder4 = 90,
 		VanillaAccountMailInstant = 91,
+		ClearMailOnRealmTransfer = 92,
+		PremadeGroupFinderStyle = 93,
+		PlunderstormAreaSelection = 94,
+		GameLogo = 95,
+		GameLogoHeight = 96,
+		GameLogoVerticalOffset = 97,
+		GroupFinderCapabilities = 98,
 	},
 	GameRuleFlags = {
 		None = 0,
 		AllowClient = 1,
+		RequiresDefault = 2,
+	},
+	GameRuleType = {
+		Int = 0,
+		Float = 1,
+		Bool = 2,
 	},
 	GarrAutoBoardIndex = {
 		None = -1,
@@ -2156,6 +2182,10 @@ Enum = {
 		NotAvailableClientSide = 0x10,
 		DurationUseMinutes = 0x20,
 		BeginEventOnlyOnStageChange = 0x40,
+	},
+	IconAndTextShiftTextType = {
+		None = 0,
+		ShiftText = 1,
 	},
 	IconAndTextWidgetState = {
 		Hidden = 0,
@@ -2719,6 +2749,23 @@ Enum = {
 		UseItemHistorySetSlots = 2,
 		RequiresPvPTalentsActive = 4,
 	},
+	JailersTowerType = {
+		TwistingCorridors = 0,
+		SkoldusHalls = 1,
+		FractureChambers = 2,
+		Soulforges = 3,
+		Coldheart = 4,
+		Mortregar = 5,
+		UpperReaches = 6,
+		ArkobanHall = 7,
+		TormentChamberJaina = 8,
+		TormentChamberThrall = 9,
+		TormentChamberAnduin = 10,
+		AdamantVaults = 11,
+		ForgottenCatacombs = 12,
+		Ossuary = 13,
+		BossRush = 14,
+	},
 	JournalEncounterFlags = {
 		Obsolete = 0x1,
 		LimitDifficulties = 0x2,
@@ -3171,10 +3218,21 @@ Enum = {
 		Lfpb = 2,
 		Npc = 3,
 	},
+	PingSubjectType = {
+		Attack = 0,
+		Warning = 1,
+		Assist = 2,
+		OnMyWay = 3,
+		AlertThreat = 4,
+		AlertNotThreat = 5,
+	},
 	PingTextureType = {
 		Center = 0,
 		Expand = 1,
 		Rotation = 2,
+	},
+	PingTypeFlags = {
+		DefaultPing = 1,
 	},
 	PlayerClubRequestStatus = {
 		None = 0,
@@ -3326,6 +3384,11 @@ Enum = {
 		Slot_7 = 7,
 		Slot_8 = 8,
 		Slot_9 = 9,
+	},
+	PremadeGroupFinderStyle = {
+		Disabled = 0,
+		Mainline = 1,
+		Vanilla = 2,
 	},
 	Profession = {
 		FirstAid = 0,
@@ -3537,6 +3600,26 @@ Enum = {
 		Friend = 2,
 		Both = 3,
 	},
+	RafRecruitActivityState = {
+		Incomplete = 0,
+		Complete = 1,
+		RewardClaimed = 2,
+	},
+	RafRecruitSubStatus = {
+		Trial = 0,
+		Active = 1,
+		Inactive = 2,
+	},
+	RafRewardType = {
+		Pet = 0,
+		Mount = 1,
+		Appearance = 2,
+		Title = 3,
+		GameTime = 4,
+		AppearanceSet = 5,
+		Illusion = 6,
+		Invalid = 7,
+	},
 	RcoCloseReason = {
 		RcoCloseFulfill = 0,
 		RcoCloseExpire = 1,
@@ -3631,6 +3714,20 @@ Enum = {
 		Leather = 1,
 		Mail = 2,
 		Plate = 3,
+	},
+	ScreenLocationType = {
+		Center = 0,
+		Left = 1,
+		Right = 2,
+		Top = 3,
+		Bottom = 4,
+		TopLeft = 5,
+		TopRight = 6,
+		LeftOutside = 7,
+		RightOutside = 8,
+		LeftRight = 9,
+		TopBottom = 10,
+		LeftRightOutside = 11,
 	},
 	ScriptedAnimationBehavior = {
 		None = 0,
@@ -4012,6 +4109,7 @@ Enum = {
 	TraitSystemFlag = {
 		AllowMultipleLoadoutsPerTree = 1,
 		ShowSpendConfirmation = 2,
+		AllowEditInCombat = 4,
 	},
 	TraitTreeFlag = {
 		CannotRefund = 1,
@@ -4509,6 +4607,9 @@ Enum = {
 }
 
 Constants = {
+	AuctionConstants = {
+		DEFAULT_AUCTION_PRICE_MULTIPLIER = 1.5,
+	},
 	CalendarGetEventTypeConstants = {
 		DEFAULT_CALENDAR_GET_EVENT_TYPE = 0,
 	},
@@ -4556,8 +4657,14 @@ Constants = {
 		PVP_CURRENCY_HONOR_HORDE_INV_ICON = 463451,
 		MAX_CURRENCY_QUANTITY = 100000000,
 	},
-	GroupFinderConstants = {
-		MAX_GROUP_FINDER_ACTIVITIES = 41,
+	DelvesConsts = {
+		BRANN_COMPANION_INFO_ID = 1,
+		DELVES_COMPANION_TRAIT_SYSTEM_ID = 6,
+		BRANN_MAX_LEVEL = 60,
+		BRANN_XP_FACTION_ID = 1203,
+		DELVES_COMPANION_TOOLTIP_WIDGET_SET_ID = 1331,
+		DELVES_MIN_PLAYER_LEVEL_CONTENT_TUNING_ID = 2677,
+		DELVES_NORMAL_KEY_CURRENCY_ID = 3028,
 	},
 	ITEM_WEAPON_SUBCLASSConstants = {
 		ITEM_WEAPON_SUBCLASS_NONE = -1,
@@ -4576,6 +4683,9 @@ Constants = {
 		NUM_ITEM_ENCHANTMENT_SOCKETS = 3,
 		MAX_LOOT_OBJECT_ITEMS = 31,
 		INVALID_TRANSACTION_BANK_TAB_SLOT = 255,
+	},
+	LFGConstsExposed = {
+		GROUP_FINDER_MAX_ACTIVITY_CAPACITY = 16,
 	},
 	LFG_ROLEConstants = {
 		LFG_ROLE_NO_ROLE = -1,

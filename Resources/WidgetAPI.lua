@@ -751,6 +751,8 @@ local WidgetAPI = {
 			"Dress",
 			"GetAutoDress",
 			"GetItemModifiedAppearanceID",
+			"GetItemTransmogInfo",
+			"GetItemTransmogInfoList",
 			"GetObeyHideInTransmogFlag",
 			"GetSheathed",
 			"GetSpellItemEnchantmentID",
