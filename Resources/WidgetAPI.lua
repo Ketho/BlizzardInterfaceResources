@@ -148,6 +148,7 @@ local WidgetAPI = {
 			"CopyFontObject",
 			"GetAlpha",
 			"SetAlpha",
+			"SetFontHeight",
 		},
 	},
 	FontString = {
