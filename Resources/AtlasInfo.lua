@@ -436,6 +436,18 @@ local AtlasInfo = {
 		["auctionhouse-ui-row-select"] = {116, 18, 0.4208984375, 0.5341796875, 0.958984375, 0.994140625, false, false},
 		["auctionhouse-ui-sortarrow"] = {9, 9, 0.9873046875, 0.99609375, 0.05078125, 0.068359375, false, false},
 	},
+	["interface/auctionframe/auctionhousebackgrounds"] = { -- 3054898
+		["auctionhouse-background-auctions"] = {595, 314, 0.1806640625, 0.47119140625, 0.0009765625, 0.3076171875, false, false},
+		["auctionhouse-background-buy-commodities-market"] = {221, 396, 0.00048828125, 0.1083984375, 0.3896484375, 0.7763671875, false, false},
+		["auctionhouse-background-buy-commodities"] = {367, 396, 0.00048828125, 0.1796875, 0.0009765625, 0.3876953125, false, false},
+		["auctionhouse-background-buy-noncommodities-header"] = {617, 81, 0.47216796875, 0.7734375, 0.0009765625, 0.080078125, false, false},
+		["auctionhouse-background-buy-noncommodities-market"] = {595, 277, 0.1806640625, 0.47119140625, 0.71484375, 0.9853515625, false, false},
+		["auctionhouse-background-categories"] = {138, 433, 0.109375, 0.1767578125, 0.3896484375, 0.8125, false, false},
+		["auctionhouse-background-index"] = {595, 413, 0.1806640625, 0.47119140625, 0.3095703125, 0.712890625, false, false},
+		["auctionhouse-background-sell-left"] = {357, 437, 0.736328125, 0.91064453125, 0.3095703125, 0.736328125, false, false},
+		["auctionhouse-background-sell-right"] = {399, 418, 0.54052734375, 0.7353515625, 0.3095703125, 0.7177734375, false, false},
+		["auctionhouse-background-summarylist"] = {138, 433, 0.47216796875, 0.53955078125, 0.3095703125, 0.732421875, false, false},
+	},
 	["interface/auctionframe/token"] = { -- 1090721
 		["token-button-category"] = {156, 20, 0.6162109375, 0.7685546875, 0.458984375, 0.498046875, false, false},
 		["token-itemslot"] = {251, 56, 0.6162109375, 0.861328125, 0.345703125, 0.455078125, false, false},
@@ -4283,6 +4295,9 @@ local AtlasInfo = {
 	},
 	["interface/moneyframe/moneyframe"] = { -- 1667824
 		["UI-MoneyFrame-Large"] = {172, 120, 0.00390625, 0.67578125, 0.0078125, 0.9453125, false, false},
+		["Coin-Copper"] = {20, 20, 0.68359375, 0.76171875, 0.0078125, 0.1640625, false, false},
+		["Coin-Gold"] = {20, 20, 0.76953125, 0.84765625, 0.0078125, 0.1640625, false, false},
+		["Coin-Silver"] = {20, 20, 0.85546875, 0.93359375, 0.0078125, 0.1640625, false, false},
 	},
 	["interface/npt/newplayerexperienceparts"] = { -- 4274782
 		["!NewPlayerTutorial-NineSlice-EdgeLeft"] = {128, 128, 0.5244140625, 0.5869140625, 0.3330078125, 0.4580078125, false, false},
@@ -4455,6 +4470,13 @@ local AtlasInfo = {
 		["_BattleSlotFrame-Top"] = {64, 16, 0.0, 0.25, 0.134765625, 0.166015625, true, false},
 		["_BattleSlotFrame-Divider"] = {64, 9, 0.0, 0.25, 0.169921875, 0.1875, true, false},
 		["_BattleSlotTitle-Mid"] = {64, 40, 0.0, 0.25, 0.001953125, 0.080078125, true, false},
+	},
+	["interface/photosensitivitywarning/photosensitivitybackground"] = { -- 5903054
+		["PhotosensitivityWarning-questbang-icon"] = {64, 72, 0.001953125, 0.126953125, 0.57421875, 0.85546875, false, false},
+		["PhotosensitivityWarning-vignette"] = {256, 144, 0.001953125, 0.501953125, 0.00390625, 0.56640625, false, false},
+	},
+	["interface/photosensitivitywarning/photosensitivitywarningparchment"] = { -- 5907435
+		["PhotosensitivityWarning-parchment-background"] = {512, 512, 0.0, 1.0, 0.0, 1.0, true, true},
 	},
 	["interface/playerframe/classoverlaycombopoints"] = { -- 1273404
 		["ClassOverlay-ComboPoint"] = {20, 20, 0.78125, 0.9375, 0.328125, 0.640625, false, false},

@@ -287,6 +287,7 @@ local LoadOnDemand = {
 	"MacroFrame",
 	"MovePadFrame",
 	"PlayerTalentFrame",
+	"ReforgingFrame",
 	"StopwatchFrame",
 	"TableAttributeDisplay",
 	"TimeManagerFrame",
