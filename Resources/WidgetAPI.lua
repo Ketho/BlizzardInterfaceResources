@@ -148,6 +148,7 @@ local WidgetAPI = {
 			"CopyFontObject",
 			"GetAlpha",
 			"SetAlpha",
+			"SetFontHeight",
 		},
 	},
 	FontString = {
@@ -1095,6 +1096,7 @@ local WidgetAPI = {
 			"SetInventoryItem",
 			"SetInventoryItemByID",
 			"SetItemByID",
+			"SetItemKey",
 			"SetLFGDungeonReward",
 			"SetLFGDungeonShortageReward",
 			"SetLootCurrency",
