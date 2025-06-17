@@ -1,21 +1,18 @@
 ---@diagnostic disable: duplicate-index
 -- atlas = width, height, leftTexCoord, rightTexCoord, topTexCoord, bottomTexCoord, tilesHorizontally, tilesVertically
 local AtlasInfo = {
-	["4871319"] = { -- 4871319
-		["shop-card-full-h71"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["5048257"] = { -- 5048257
-		["shop-card-full-b06"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
 	["5426612"] = { -- 5426612
 		["kiosk-BG"] = {1920, 1080, 0.00048828125, 0.93798828125, 0.00048828125, 0.52783203125, false, false},
 		["kiosk-button"] = {468, 128, 0.00048828125, 0.22900390625, 0.52880859375, 0.59130859375, false, false},
 	},
-	["6877669"] = { -- 6877669
-		["shop-card-large-epic-edition-refresh"] = {566, 225, 0.0009765625, 0.5537109375, 0.455078125, 0.6748046875, false, false},
-		["shop-card-small-epic-edition-refresh-heroic"] = {277, 224, 0.5576171875, 0.828125, 0.0009765625, 0.2197265625, false, false},
-		["shop-card-small-epic-edition-refresh"] = {277, 224, 0.5576171875, 0.828125, 0.2216796875, 0.4404296875, false, false},
-		["shop-card-full-player-acq"] = {568, 463, 0.0009765625, 0.5556640625, 0.0009765625, 0.453125, false, false},
+	["6855743"] = { -- 6855743
+		["shop-card-full-spring-supreme"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["6855761"] = { -- 6855761
+		["shop-card-full-green-fire-set"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["6877782"] = { -- 6877782
+		["shop-card-full-medivh-crow-mount"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
 	},
 	["interface/ garrison/dragonflightlandingpage"] = { -- 4723680
 		["dragonflight-landingpage-talentbutton-hover"] = {400, 476, 0.00048828125, 0.19580078125, 0.4677734375, 0.9326171875, false, false},
@@ -15380,6 +15377,9 @@ local AtlasInfo = {
 		["shop-card-full-a32a"] = {568, 463, 0.0009765625, 0.5556640625, 0.0009765625, 0.453125, false, false},
 		["shop-card-full-a32n"] = {568, 463, 0.0009765625, 0.5556640625, 0.455078125, 0.9072265625, false, false},
 	},
+	["interface/store/shopbundles1002h71"] = { -- 4871319
+		["shop-card-full-h71"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
 	["interface/store/shopbundles1002p74"] = { -- 4925543
 		["shop-card-full-p27a"] = {568, 463, 0.2822265625, 0.8369140625, 0.455078125, 0.9072265625, false, false},
 		["shop-card-full-p74"] = {568, 463, 0.2822265625, 0.8369140625, 0.0009765625, 0.453125, false, false},
@@ -15388,6 +15388,9 @@ local AtlasInfo = {
 	},
 	["interface/store/shopbundles1002t27"] = { -- 4871241
 		["shop-card-full-t27"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1005b06"] = { -- 5048257
+		["shop-card-full-b06"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
 	},
 	["interface/store/shopbundles1007y46"] = { -- 5154329
 		["shop-card-full-y46"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
@@ -15571,6 +15574,12 @@ local AtlasInfo = {
 	},
 	["interface/store/shopbundles1110redpandamountmegabundle"] = { -- 6670792
 		["shop-card-full-111-redpandabundle"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1115playeracquisitionsku"] = { -- 6877669
+		["shop-card-large-epic-edition-refresh"] = {566, 225, 0.0009765625, 0.5537109375, 0.455078125, 0.6748046875, false, false},
+		["shop-card-small-epic-edition-refresh-heroic"] = {277, 224, 0.5576171875, 0.828125, 0.0009765625, 0.2197265625, false, false},
+		["shop-card-small-epic-edition-refresh"] = {277, 224, 0.5576171875, 0.828125, 0.2216796875, 0.4404296875, false, false},
+		["shop-card-full-player-acq"] = {568, 463, 0.0009765625, 0.5556640625, 0.0009765625, 0.453125, false, false},
 	},
 	["interface/store/shopbundles915"] = { -- 4236523
 		["shop-card-full-915dragonbundle"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},

@@ -910,6 +910,7 @@ local CVars = {
 		["nameplateShowFriendlyTotems"] = {"0", 4, false, true, true, ""},
 		["nameplateShowFriends"] = {"0", 4, false, true, true, ""},
 		["nameplateShowOnlyNames"] = {"0", 4, false, false, false, "Whether to hide the nameplate bars"},
+		["nameplateShowPersonalCooldowns"] = {"0", 4, false, true, true, "If set, personal buffs/debuffs will appear above the personal resource display"},
 		["nameplateShowSelf"] = {"1", 4, false, true, true, ""},
 		["nameplateTargetBehindMaxDistance"] = {"15", 1, false, true, true, "The max distance to show the target nameplate when the target is behind the camera."},
 		["nameplateTargetRadialPosition"] = {"0", 4, true, false, true, "When target is off screen, position its nameplate radially around sides and bottom. 1: Target Only. 2: All In Combat"},
