@@ -10,6 +10,7 @@ Enum = {
 		ServerError = 7,
 		CannotUseCurrency = 8,
 		TransactionInProgress = 9,
+		CurrencyTransferDisabled = 10,
 	},
 	AccountData = {
 		Config = 0,
@@ -1101,6 +1102,7 @@ Enum = {
 	},
 	CharacterServiceInfoFlag = {
 		RestrictToRecommendedSpecs = 1,
+		AllowMaxLevelBoost = 2,
 	},
 	ChatChannelRuleset = {
 		None = 0,
@@ -2491,6 +2493,7 @@ Enum = {
 		FullCharacterCreateDisabled = 84,
 		TargetFrameBuffsDisabled = 85,
 		UnitFramePvPContextualDisabled = 86,
+		BlockWhileSheathedAllowed = 88,
 		VanillaAccountMailInstant = 91,
 		ClearMailOnRealmTransfer = 92,
 		PremadeGroupFinderStyle = 93,
@@ -2500,6 +2503,7 @@ Enum = {
 		WorldMapFrameStrata = 100,
 		MerchantFilterDisabled = 101,
 		SummoningStones = 108,
+		MailGameRule = 132,
 	},
 	GameRuleFlags = {
 		None = 0,
@@ -4536,6 +4540,10 @@ Enum = {
 		PostRound = 4,
 		Complete = 5,
 	},
+	PvPMatchmakingType = {
+		Battleground = 0,
+		Arena = 1,
+	},
 	PvPRanks = {
 		RankNone = 0,
 		RankPariah = 1,
@@ -4795,6 +4803,8 @@ Enum = {
 		Name = 0x4000,
 		HarmfulToMinors = 0x8000,
 		Disruption = 0x10000,
+		TerroristAndViolentExtremistContent = 0x20000,
+		ChildSexualExploitationAndAbuse = 0x40000,
 	},
 	ReportSubComplaintTypes = {
 		Inappropriate = 0,
@@ -4905,6 +4915,13 @@ Enum = {
 		ChannelThrottle = 8,
 		GeneralError = 9,
 		NotInGuild = 10,
+	},
+	SendReportResult = {
+		Success = 0,
+		GeneralError = 1,
+		TooManyReports = 2,
+		RequiresChatLine = 3,
+		RequiresChatLineOrVoice = 4,
 	},
 	SharedStringFlag = {
 		InternalOnly = 1,
@@ -5668,6 +5685,17 @@ Enum = {
 		Opaque = 0,
 		Additive = 1,
 	},
+	UIWidgetButtonEnabledState = {
+		Disabled = 0,
+		Enabled = 1,
+	},
+	UIWidgetButtonIconType = {
+		Exit = 0,
+		Speak = 1,
+		Undo = 2,
+		Checkmark = 3,
+		RedX = 4,
+	},
 	UIWidgetFlag = {
 		UniversalWidget = 1,
 	},
@@ -5727,6 +5755,11 @@ Enum = {
 		Vertical = 0,
 		Horizontal = 1,
 		Overlap = 2,
+	},
+	UIWidgetSpellButtonCooldownType = {
+		HideCooldown = 0,
+		ShowCooldown = 1,
+		ShowCooldownAndDisableOnCooldown = 2,
 	},
 	UIWidgetTextFormatType = {
 		None = 0,
@@ -5800,6 +5833,7 @@ Enum = {
 		ItemDisplay = 27,
 		TugOfWar = 28,
 		ScenarioHeaderDelves = 29,
+		ButtonHeader = 30,
 	},
 	UnitMirrorPetFlags = {
 		Renameable = 0x1,
@@ -6221,6 +6255,7 @@ Constants = {
 	},
 	DelvesConsts = {
 		DELVES_COMPANION_INFO_SELECTION_CHARACTER_DATA_ELEMENT_ID = 13,
+		DELVES_COMPANION_TOOLTIP_WIDGET_SET_ID = 1331,
 		DELVES_MIN_PLAYER_LEVEL_CONTENT_TUNING_ID = 2677,
 		DELVES_NORMAL_KEY_CURRENCY_ID = 3028,
 	},
@@ -6439,7 +6474,7 @@ LE_EXPANSION_LEVEL_PREVIOUS = 9
 LE_EXPANSION_LEVEL_CURRENT = 10
 LE_EXPANSION_WAR_WITHIN = 10
 
-NUM_LE_FRAME_TUTORIALS = 160
+NUM_LE_FRAME_TUTORIALS = 161
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -6601,8 +6636,9 @@ LE_FRAME_TUTORIAL_PLAYER_SPELLS_MINIMIZE = 157
 LE_FRAME_TUTORIAL_HOW_TO_SUPERTRACK = 158
 LE_FRAME_TUTORIAL_DRIVE_TURBO_METER = 159
 LE_FRAME_TUTORIAL_DRIVE_START_JOB = 160
+LE_FRAME_TUTORIAL_ASSISTED_HIGHLIGHT_ENABLED_POPUP = 161
 
-NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 21
+NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 23
 LE_FRAME_TUTORIAL_ACCOUNT_PERKS_PROGRAM_ACTIVITIES_OPEN = 1
 LE_FRAME_TUTORIAL_ACCOUNT_HUD_REVAMP_BAG_CHANGES = 2
 LE_FRAME_TUTORIAL_ACCOUNT_PERKS_PROGRAM_ACTIVITIES_INTRO = 3
@@ -6623,6 +6659,8 @@ LE_FRAME_TUTORIAL_ACCOUNT_NPC_CRAFTING_ORDER_CREATE_BUTTON = 18
 LE_FRAME_TUTORIAL_ACCOUNT_NPC_CRAFTING_ORDER_TAB_NEW = 19
 LE_FRAME_TUTORIAL_ACCOUNT_LOCAL_STORIES_FILTER_SEEN = 20
 LE_FRAME_TUTORIAL_ACCOUNT_EVENT_SCHEDULER_TAB_SEEN = 21
+LE_FRAME_TUTORIAL_ACCOUNT_ASSISTED_COMBAT_ROTATION_DRAG_SPELL = 22
+LE_FRAME_TUTORIAL_ACCOUNT_ASSISTED_COMBAT_ROTATION_ACTION_BUTTON = 23
 
 NUM_LE_INVITE_REQUEST_TYPES = 3
 LE_INVITE_CONFIRMATION_REQUEST = 1
@@ -6729,7 +6767,7 @@ NUM_LE_TOKEN_CHOICES = 2
 LE_TOKEN_CHOICE_SUBSCRIPTION = 1
 LE_TOKEN_CHOICE_BALANCE = 2
 
-NUM_LE_TOKEN_RESULTS = 11
+NUM_LE_TOKEN_RESULTS = 12
 LE_TOKEN_RESULT_SUCCESS = 1
 LE_TOKEN_RESULT_ERROR_DISABLED = 2
 LE_TOKEN_RESULT_ERROR_OTHER = 3
@@ -6740,6 +6778,7 @@ LE_TOKEN_RESULT_ERROR_TRANSACTION_IN_PROGRESS = 7
 LE_TOKEN_RESULT_ERROR_AUCTIONABLE_TOKEN_OWNED = 8
 LE_TOKEN_RESULT_ERROR_TRIAL_RESTRICTED = 9
 LE_TOKEN_RESULT_ERROR_NOT_ENOUGH_PURCHASED_GAME_TIME = 11
+LE_TOKEN_RESULT_ERROR_THROTTLE_TOKENS = 12
 
 NUM_LE_TRACKER_SORTINGS = 4
 LE_TRACKER_SORTING_MANUAL = 1

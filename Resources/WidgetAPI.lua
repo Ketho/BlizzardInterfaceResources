@@ -495,6 +495,7 @@ local WidgetAPI = {
 			"GetFlattensRenderLayers",
 			"GetFrameLevel",
 			"GetFrameStrata",
+			"GetHighestFrameLevel",
 			"GetHitRectInsets",
 			"GetHyperlinksEnabled",
 			"GetID",
