@@ -188,6 +188,7 @@ local Mixins = {
 	"CharacterSelectLockedButtonMixin",
 	"CharacterSelectNavBarButtonMixin",
 	"CharacterSelectNavBarMixin",
+	"CharacterSelectUIMixin",
 	"CharacterServicesAutoCompleteButtonMixin",
 	"CharacterServicesCharacterSelectorMixin",
 	"CharacterServicesEditBoxBaseMixin",
