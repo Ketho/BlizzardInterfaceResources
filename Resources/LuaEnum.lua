@@ -106,6 +106,7 @@ Enum = {
 		AccountStateCurrencyTransferLogLoaded = "0x0000020000000000",
 		AccountStateLgVendorPurchaseLoaded = "0x0000040000000000",
 		AccountStateFutureFeature01DataLoaded = "0x0000080000000000",
+		AccountStateWarbandScenesLoaded = "0x0000100000000000",
 	},
 	AccountStoreCategoryType = {
 		Creature = 1,
@@ -228,6 +229,7 @@ Enum = {
 		LgVendorPurchase = 59,
 		SaveWarbandGroups = 60,
 		Profile = 61,
+		WarbandSceneCollection = 62,
 	},
 	ActionBarOrientation = {
 		Horizontal = 0,
@@ -297,6 +299,15 @@ Enum = {
 		Tools = 0x10,
 		Performance = 0x20,
 		LiveOperations = 0x40,
+	},
+	AssistActionType = {
+		None = 0,
+		LoungingPlayer = 1,
+		GraveMarker = 2,
+		PlacedVo = 3,
+		PlayerGuardian = 4,
+		PlayerSlayer = 5,
+		CapturedBuff = 6,
 	},
 	AuctionHouseCommoditySortOrder = {
 		UnitPrice = 0,
@@ -440,45 +451,41 @@ Enum = {
 		SwapBags = 0x1000,
 		IgnoreExisting = 0x2000,
 		AllowPartialStack = 0x4000,
-		LookInBankOnly = 0x8000,
+		LookInCharacterBankOnly = 0x8000,
 		AllowBuyback = 0x10000,
 		IgnorePetBankcheck = 0x20000,
 		PreferPriorityBags = 0x40000,
 		PreferNeutralPriorityBags = 0x80000,
-		LookInReagentsBankOnly = 0x100000,
-		AsymmetricSwap = 0x200000,
-		PreferReagentBags = 0x400000,
-		IgnoreSoulbound = 0x800000,
-		IgnoreReagentBags = 0x1000000,
-		LookInAccountBankOnly = 0x2000000,
-		HasRefund = 0x4000000,
-		SkipValidCountCheck = 0x8000000,
-		AllowSoulboundItemInAccountBank = 0x10000000,
+		AsymmetricSwap = 0x100000,
+		PreferReagentBags = 0x200000,
+		IgnoreSoulbound = 0x400000,
+		IgnoreReagentBags = 0x800000,
+		LookInAccountBankOnly = 0x1000000,
+		HasRefund = 0x2000000,
+		SkipValidCountCheck = 0x4000000,
+		AllowSoulboundItemInAccountBank = 0x8000000,
 	},
 	BagIndex = {
-		Accountbanktab = -5,
-		Bankbag = -4,
-		Reagentbank = -3,
-		Keyring = -2,
-		Bank = -1,
+		Accountbanktab = -3,
+		Characterbanktab = -2,
+		Keyring = -1,
 		Backpack = 0,
 		Bag_1 = 1,
 		Bag_2 = 2,
 		Bag_3 = 3,
 		Bag_4 = 4,
 		ReagentBag = 5,
-		BankBag_1 = 6,
-		BankBag_2 = 7,
-		BankBag_3 = 8,
-		BankBag_4 = 9,
-		BankBag_5 = 10,
-		BankBag_6 = 11,
-		BankBag_7 = 12,
-		AccountBankTab_1 = 13,
-		AccountBankTab_2 = 14,
-		AccountBankTab_3 = 15,
-		AccountBankTab_4 = 16,
-		AccountBankTab_5 = 17,
+		CharacterBankTab_1 = 6,
+		CharacterBankTab_2 = 7,
+		CharacterBankTab_3 = 8,
+		CharacterBankTab_4 = 9,
+		CharacterBankTab_5 = 10,
+		CharacterBankTab_6 = 11,
+		AccountBankTab_1 = 12,
+		AccountBankTab_2 = 13,
+		AccountBankTab_3 = 14,
+		AccountBankTab_4 = 15,
+		AccountBankTab_5 = 16,
 	},
 	BagSlotFlags = {
 		DisableAutoSort = 0x1,
@@ -505,6 +512,12 @@ Enum = {
 	BalanceType = {
 		None = -1,
 		Eclipse = 0,
+	},
+	BankLockedReason = {
+		None = 0,
+		NoAccountInventoryLock = 1,
+		BankDisabled = 2,
+		BankConversionFailed = 3,
 	},
 	BankType = {
 		Character = 0,
@@ -1079,6 +1092,18 @@ Enum = {
 		CreatureNameNeeded = 2,
 		ZoneNameNeeded = 4,
 	},
+	ChallengeModeHistoryFlags = {
+		None = 0,
+		ConfirmedLeaver = 1,
+	},
+	ChallengeModeHistoryResult = {
+		Successful = 0,
+		Leaver = 1,
+	},
+	ChallengeModeHistoryStatus = {
+		Normal = 0,
+		Leaver = 1,
+	},
 	ChannelPlayerFlags = {
 		ChannelPlayerNone = 0x0,
 		ChannelPlayerOwner = 0x1,
@@ -1118,8 +1143,8 @@ Enum = {
 	ChatChannelType = {
 		None = 0,
 		Custom = 1,
-		Private_Party = 2,
-		Public_Party = 3,
+		PrivateParty = 2,
+		PublicParty = 3,
 		Communities = 4,
 	},
 	ChatToxityFilterOptOut = {
@@ -1521,6 +1546,7 @@ Enum = {
 	},
 	CooldownSetSpellFlags = {
 		HideAura = 1,
+		PlaceHolder1 = 2,
 	},
 	CooldownViewerBarContent = {
 		IconAndName = 0,
@@ -1738,6 +1764,7 @@ Enum = {
 		CreateAllCurrencyTransferLogDone = "0x0000020000000000",
 		CreateAllLgVendorPurchaseDone = "0x0000040000000000",
 		CreateAllFutureFeature01DataDone = "0x0000080000000000",
+		CreateAllWarbandScenesLoadedDone = "0x0000100000000000",
 	},
 	CurioRarity = {
 		Common = 1,
@@ -1816,6 +1843,7 @@ Enum = {
 		CurrencyBScaleMaxQuantityBySeasonWeeks = 0x40,
 		CurrencyBScaleMaxQuantityByWeeksSinceStart = 0x80,
 		CurrencyBForceMaxQuantityOnConversion = 0x100,
+		CurrencyBUnearnableBeforeMaxQuantityStart = 0x200,
 	},
 	CurrencyGainFlags = {
 		None = 0x0,
@@ -2503,7 +2531,9 @@ Enum = {
 		WorldMapFrameStrata = 100,
 		MerchantFilterDisabled = 101,
 		SummoningStones = 108,
+		TransmogEnabled = 109,
 		MailGameRule = 132,
+		LootMethodStyle = 157,
 	},
 	GameRuleFlags = {
 		None = 0,
@@ -3174,6 +3204,26 @@ Enum = {
 		TournamentRealm_2 = 162,
 		TournamentRealm_3 = 163,
 		TournamentRealm_4 = 164,
+		Warbound_1 = 165,
+		Warbound_2 = 166,
+		Warbound_3 = 167,
+		Warbound_4 = 168,
+		Warbound_5 = 169,
+		Warbound_6 = 170,
+		Warbound_7 = 171,
+		Warbound_8 = 172,
+		Warbound_9 = 173,
+		Warbound_10 = 174,
+		Warbound_11 = 175,
+		Warbound_12 = 176,
+		Warbound_13 = 177,
+		Warbound_14 = 178,
+		Warbound_15 = 179,
+		Warbound_16 = 180,
+		Warbound_17 = 181,
+		Warbound_18 = 182,
+		Warbound_19 = 183,
+		Warbound_20 = 184,
 	},
 	ItemDisplayTextDisplayStyle = {
 		WorldQuestReward = 0,
@@ -3216,7 +3266,7 @@ Enum = {
 		SingingThunder = 0x8000000,
 		SingingSea = 0x10000000,
 		SingingWind = 0x20000000,
-		FutureUse = 0x40000000,
+		Fiber = 0x40000000,
 	},
 	ItemGemSubclass = {
 		Intellect = 0,
@@ -3421,7 +3471,7 @@ Enum = {
 		SingingThunder = 27,
 		SingingSea = 28,
 		SingingWind = 29,
-		FutureUse = 30,
+		Fiber = 30,
 	},
 	ItemSoundType = {
 		Pickup = 0,
@@ -3630,6 +3680,10 @@ Enum = {
 		HiddenFromPlayer = 2,
 		HideLanguageNameInChat = 4,
 	},
+	LeavePartyConfirmReason = {
+		QuestSync = 0,
+		RestrictedChallengeMode = 1,
+	},
 	LgVendorPurchaseSettlementState = {
 		Settled = 0,
 		NotSettled = 1,
@@ -3668,6 +3722,41 @@ Enum = {
 		Normal = 10,
 		Debug = 30,
 		Spam = 40,
+	},
+	LogicLogicop = {
+		None = 0,
+		And = 1,
+		Or = 2,
+		Xor = 3,
+	},
+	LogicMathop = {
+		None = 0,
+		Plus = 1,
+		Minus = 2,
+		Times = 3,
+		Div = 4,
+		Mod = 5,
+	},
+	LogicRelop = {
+		None = 0,
+		Equal = 1,
+		Notequal = 2,
+		Lt = 3,
+		Lteq = 4,
+		Gt = 5,
+		Gteq = 6,
+	},
+	LootMethod = {
+		Freeforall = 0,
+		Roundrobin = 1,
+		Masterlooter = 2,
+		Group = 3,
+		Needbeforegreed = 4,
+		Personal = 5,
+	},
+	LootMethodStyles = {
+		PersonalOnly = 0,
+		Vanilla = 1,
 	},
 	LootSlotType = {
 		None = 0,
@@ -4603,6 +4692,7 @@ Enum = {
 		QuestlineUnlock = 8,
 		QuestlineReward = 9,
 		QuestlineUnlockPart = 10,
+		PossibleReward = 11,
 	},
 	QuestFrequency = {
 		Default = 0,
@@ -4958,17 +5048,15 @@ Enum = {
 		PlayerEquip = 1,
 		PlayerBags = 2,
 		PlayerInv = 3,
-		Bank = 4,
-		ReagentBank = 5,
-		AccountBank = 6,
+		CharacterBank = 4,
+		AccountBank = 5,
 	},
 	SlotRegionMask = {
 		Invalid = 0x1,
 		PlayerEquip = 0x2,
 		PlayerBags = 0x4,
 		PlayerInv = 0x8,
-		Bank = 0x10,
-		ReagentBank = 0x20,
+		CharacterBank = 0x10,
 		AccountBank = 0x40,
 	},
 	SocialWhoOrigin = {
@@ -5018,6 +5106,10 @@ Enum = {
 	},
 	SoundBusFlag = {
 		Disablepositionallpf = 1,
+	},
+	SpecializationSystem = {
+		TalentTab = 0,
+		ChrSpecialization = 1,
 	},
 	SpellBookItemType = {
 		None = 0,
@@ -5155,6 +5247,8 @@ Enum = {
 		CraftingOrderReagents = 35,
 		AccountBankTabs = 36,
 		CurrencyTransfer = 37,
+		CharacterBankTabs = 38,
+		HousingDecorConversion = 39,
 	},
 	SubscriptionInterstitialResponseType = {
 		Clicked = 0,
@@ -6033,6 +6127,10 @@ Enum = {
 		AwardedAutomatically = 0x8,
 		IsDefault = 0x10,
 	},
+	WeaponSlot = {
+		MainHand = 0,
+		OffHand = 1,
+	},
 	WeeklyRewardChestActivityType = {
 		Scenario = 0,
 		LFGDungeons = 1,
@@ -6205,6 +6303,7 @@ Constants = {
 		NUM_CUSTOM_DISPLAY = 4,
 		CHAR_CUSTOMIZE_CUSTOM_DISPLAY_OPTION_FIRST = 5,
 		CHAR_CUSTOMIZE_CUSTOM_DISPLAY_OPTION_LAST = 8,
+		NAME_RESERVATION_DAYS = 30,
 	},
 	ContentTrackingConsts = {
 		MaxTrackedAchievements = 10,
@@ -6282,16 +6381,16 @@ Constants = {
 		NumReagentBagSlots = 1,
 		NumBagSlots = 4,
 		NumAccountBankSlots = 5,
-		MAX_TRANSACTION_BANK_TABS = 7,
-		NumBankBagSlots = 7,
-		NumGenericBankSlots = 28,
+		MAX_TRANSACTION_BANK_TABS = 6,
+		NumCharacterBankSlots = 6,
 	},
 	ItemConsts = {
 		DEFAULT_ARTIFACT_POWERS_VERSION = 1,
 		CURRENT_ARTIFACT_POWERS_VERSION = 1,
-		DEFAULT_ITEM_SAVE_VERSION = 2,
 		CURRENT_ITEM_SAVE_VERSION = 2,
+		DEFAULT_ITEM_SAVE_VERSION = 2,
 		NUM_ITEM_ENCHANTMENT_SOCKETS = 3,
+		DEFAULT_RETENTION = 7,
 		MAX_LOOT_OBJECT_ITEMS = 31,
 		INVALID_TRANSACTION_BANK_TAB_SLOT = 255,
 	},
@@ -6374,12 +6473,16 @@ Constants = {
 		PUBLIC_CRAFTING_ORDER_STALE_THRESHOLD = 14400,
 	},
 	PvpInfoConsts = {
+		MAX_PVP_LOCK_LIST_MAP = 2,
 		MaxPlayersPerInstance = 80,
 	},
 	QuestWatchConsts = {
 		MAX_WORLD_QUEST_WATCHES_AUTOMATIC = 1,
 		MAX_WORLD_QUEST_WATCHES_MANUAL = 5,
 		MAX_QUEST_WATCHES = 25,
+	},
+	SpellBookSpellIDs = {
+		SPELL_ID_DISMISS_PET = 2641,
 	},
 	SpellCooldownConsts = {
 		GLOBAL_RECOVERY_CATEGORY = 133,
@@ -6413,15 +6516,16 @@ NUM_LE_ACTIONBAR_VISUAL_STATES = 2
 LE_ACTIONBAR_STATE_MAIN = 1
 LE_ACTIONBAR_STATE_OVERRIDE = 2
 
-NUM_LE_AURORA_STATES = 8
+NUM_LE_AURORA_STATES = 9
 LE_AURORA_STATE_NONE = 1
-LE_AURORA_STATE_CONNECTING = 2
-LE_AURORA_STATE_CONNECTED = 3
-LE_AURORA_STATE_DISCONNECTING = 4
-LE_AURORA_STATE_LEGAL_AGREEMENT = 5
-LE_AURORA_STATE_SELECT_ACCOUNT = 6
-LE_AURORA_STATE_ENTER_CAPTCHA = 7
-LE_AURORA_STATE_ENTER_EXTRA_AUTH = 8
+LE_AURORA_STATE_WAITING_FOR_NETWORK = 2
+LE_AURORA_STATE_CONNECTING = 3
+LE_AURORA_STATE_CONNECTED = 4
+LE_AURORA_STATE_DISCONNECTING = 5
+LE_AURORA_STATE_LEGAL_AGREEMENT = 6
+LE_AURORA_STATE_SELECT_ACCOUNT = 7
+LE_AURORA_STATE_ENTER_CAPTCHA = 8
+LE_AURORA_STATE_ENTER_EXTRA_AUTH = 9
 
 NUM_LE_AUTHS = 2
 LE_AUTH_NONE = 1
