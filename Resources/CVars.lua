@@ -1,6 +1,10 @@
 local CVars = {
 	var = {
 		-- var = default, category, account, character, secure, help
+		["agentUID"] = {"", 4, false, false, false, "The UID provided by Battle.net to be passed to Agent"},
+		["serverAlert"] = {"https://breaking-news.support.blizzard.com/service/wow-client/live/eu/en-US", 6, false, false, false, "Get the glue-string tag for the URL"},
+		["telemetryWowlabsPackage"] = {"Blizzard.Telemetry.Wow_Mainline", 5, false, false, false, "The secondary package we want to send telemetry to e.g. Wow_Wowlabs"},
+		["telemetryWowPackage"] = {"Blizzard.Telemetry.Wow_Mainline", 5, false, false, false, "The primary package we want to send telemetry to e.g. Wow_Mainline or Wow_Classic"},
 		["acknowledgedArrowCallouts"] = {"0", 4, false, true, false, "Bit field of Looking for guild player settings"},
 		["ActionButtonUseKeyDown"] = {"1", 4, true, false, true, "Activate the action button on a keydown"},
 		["ActionButtonUseKeyHeldSpell"] = {"0", 4, true, false, true, "Activate the press and hold cast option on a keydown"},
@@ -22,7 +26,6 @@ local CVars = {
 		["advFlyPitchControlCameraChase"] = {"20.0", 4, true, false, false, "Modifies the speed at which camera pitch follows player pitch while dragonriding with forward/backward pitch control."},
 		["advFlyPitchControlGroundDebounce"] = {"0", 4, true, false, false, "If enabled, will debounce forwards/backwards inputs used to control pitch when transitioning between dragonriding and grounded."},
 		["advJournalLastOpened"] = {"0", 4, true, false, false, "Last time the Adventure Journal opened"},
-		["agentUID"] = {"", 4, false, false, false, "The UID provided by Battle.net to be passed to Agent"},
 		["AIBrain"] = {"0", 5, false, false, false, ""},
 		["AIController"] = {"0", 5, false, false, false, ""},
 		["AIControllerEventLog"] = {"0", 5, false, false, false, ""},
@@ -1143,7 +1146,6 @@ local CVars = {
 		["seenLevelSquishPopup"] = {"0", 4, false, false, false, "Seen the level squish popup"},
 		["seenRegionalChatDisabled"] = {"0", 4, true, false, false, "Seen the alert indicating chat has been disabled by default. (UK and CA AADC)"},
 		["seenTimerunningFirstLoginPopup"] = {"0", 4, false, false, false, "Seen the timerunning first login popup"},
-		["serverAlert"] = {"https://breaking-news.support.blizzard.com/service/wow-client/live/eu/en-US", 6, false, false, false, "Get the glue-string tag for the URL"},
 		["ServerMessageEventLog"] = {"0", 5, false, false, false, ""},
 		["serviceTypeFilter"] = {"6", 4, true, false, false, "Which trainer services to show"},
 		["shadowBlendCascades"] = {"0", 1, false, false, false, "Blend between shadow cascades (0/1)"},
@@ -1348,8 +1350,6 @@ local CVars = {
 		["TargetPriorityCombatLockContextualRelaxation"] = {"1", 4, false, false, false, "1=Enables relaxation of combat lock based on context (eg. no in-combat target infront)"},
 		["TargetPriorityCombatLockHighlight"] = {"0", 4, false, false, false, "1=Lock to in-combat targets when starting from an in-combat target. 2=Further restrict to in-combat with player. (while doing hold-to-target)"},
 		["TargetPriorityPvp"] = {"1", 4, false, false, false, "When in pvp, give higher priority to players and important pvp targets (1 = players & npc bosses, 2 = all pvp targets, 3 = players only)"},
-		["telemetryWowlabsPackage"] = {"Blizzard.Telemetry.Wow_Mainline", 5, false, false, false, "The secondary package we want to send telemetry to e.g. Wow_Wowlabs"},
-		["telemetryWowPackage"] = {"Blizzard.Telemetry.Wow_Mainline", 5, false, false, false, "The primary package we want to send telemetry to e.g. Wow_Mainline or Wow_Classic"},
 		["teleportMaxNoLoadDist"] = {"200", 1, false, false, false, "Max teleport distanace without preload"},
 		["terrainLodDist"] = {"400", 1, false, false, false, "Terrain level of detail distance"},
 		["TerrainLodDiv"] = {"768", 1, false, false, false, "Terrain lod divisor"},
