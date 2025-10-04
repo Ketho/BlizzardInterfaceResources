@@ -1389,7 +1389,6 @@ local WidgetAPI = {
 			"NavigateHome",
 			"NavigateReload",
 			"NavigateStop",
-			"NavigateTo",
 			"OpenExternalLink",
 			"OpenTicket",
 			"SetFocus",

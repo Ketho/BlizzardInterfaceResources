@@ -115,9 +115,9 @@ Enum = {
 		Icon = 4,
 	},
 	AccountStoreItemFlag = {
-		DisplayDefaultArmor = 1,
-		NotInGameReward = 2,
-		DisplayAsNew = 4,
+		DisplayDefaultArmor = 0x1,
+		NotInGameReward = 0x2,
+		DisplayAsNew = 0x4,
 	},
 	AccountStoreItemRewardType = {
 		Transmog = 1,
@@ -621,8 +621,8 @@ Enum = {
 		PetAbility = 7,
 	},
 	BattlePetNpcTeamFlag = {
-		MatchPlayerHighPetLevel = 1,
-		NoPlayerXP = 2,
+		MatchPlayerHighPetLevel = 0x1,
+		NoPlayerXP = 0x2,
 	},
 	BattlePetOwner = {
 		Weather = 0,
@@ -690,9 +690,9 @@ Enum = {
 		Mechanical = 9,
 	},
 	BattlePetVisualFlag = {
-		Test1 = 1,
-		Test2 = 2,
-		Test3 = 4,
+		Test1 = 0x1,
+		Test2 = 0x2,
+		Test3 = 0x4,
 	},
 	BattlePetVisualRange = {
 		Melee = 0,
@@ -1126,8 +1126,8 @@ Enum = {
 		FacepaintColor = 11,
 	},
 	CharacterServiceInfoFlag = {
-		RestrictToRecommendedSpecs = 1,
-		AllowMaxLevelBoost = 2,
+		RestrictToRecommendedSpecs = 0x1,
+		AllowMaxLevelBoost = 0x2,
 	},
 	ChatChannelRuleset = {
 		None = 0,
@@ -1160,8 +1160,8 @@ Enum = {
 		WrongFaction = 3,
 	},
 	ChrCustomizationCategoryFlag = {
-		UndressModel = 1,
-		Subcategory = 2,
+		UndressModel = 0x1,
+		Subcategory = 0x2,
 	},
 	ChrCustomizationOptionType = {
 		Dropdown = 0,
@@ -1710,7 +1710,7 @@ Enum = {
 		Npc = 3,
 	},
 	CraftingReagentItemFlag = {
-		TooltipShowsAsStatModifications = 0,
+		TooltipShowsAsStatModifications = 0x0,
 	},
 	CraftingReagentType = {
 		Modifying = 0,
@@ -3676,9 +3676,9 @@ Enum = {
 		PlayerConditionFailed = 19,
 	},
 	LanguageFlag = {
-		IsExotic = 1,
-		HiddenFromPlayer = 2,
-		HideLanguageNameInChat = 4,
+		IsExotic = 0x1,
+		HiddenFromPlayer = 0x2,
+		HideLanguageNameInChat = 0x4,
 	},
 	LeavePartyConfirmReason = {
 		QuestSync = 0,
@@ -4113,9 +4113,9 @@ Enum = {
 		Weather = 2,
 	},
 	PetbattleInputMoveMsgDebugFlag = {
-		None = 0,
-		DontValidate = 1,
-		EnemyCast = 2,
+		None = 0x0,
+		DontValidate = 0x1,
+		EnemyCast = 0x2,
 	},
 	PetbattleMoveType = {
 		Quit = 0,
@@ -5014,7 +5014,7 @@ Enum = {
 		RequiresChatLineOrVoice = 4,
 	},
 	SharedStringFlag = {
-		InternalOnly = 1,
+		InternalOnly = 0x1,
 	},
 	Siflag = {
 		None = 0x0,
@@ -5105,7 +5105,7 @@ Enum = {
 		Selected = 3,
 	},
 	SoundBusFlag = {
-		Disablepositionallpf = 1,
+		Disablepositionallpf = 0x1,
 	},
 	SpecializationSystem = {
 		TalentTab = 0,
@@ -5283,9 +5283,9 @@ Enum = {
 		Vignette = 7,
 	},
 	TimeEventFlag = {
-		GlueScreenShortcut = 1,
-		WeeklyReset = 2,
-		GlobalLaunch = 4,
+		GlueScreenShortcut = 0x1,
+		WeeklyReset = 0x2,
+		GlobalLaunch = 0x4,
 	},
 	TitleIconVersion = {
 		Small = 0,
@@ -5451,9 +5451,9 @@ Enum = {
 		SharedActionBars = 0x4,
 	},
 	TraitCondFlag = {
-		IsGate = 1,
-		IsAlwaysMet = 2,
-		IsSufficient = 4,
+		IsGate = 0x1,
+		IsAlwaysMet = 0x2,
+		IsSufficient = 0x4,
 	},
 	TraitConditionType = {
 		Available = 0,
@@ -5523,7 +5523,7 @@ Enum = {
 		TestGridPositioned = 0x8,
 	},
 	TraitNodeGroupFlag = {
-		AvailableByDefault = 1,
+		AvailableByDefault = 0x1,
 	},
 	TraitNodeType = {
 		Single = 0,
@@ -5537,13 +5537,13 @@ Enum = {
 		Multiply = 1,
 	},
 	TraitSystemFlag = {
-		AllowMultipleLoadoutsPerTree = 1,
-		ShowSpendConfirmation = 2,
-		AllowEditInCombat = 4,
+		AllowMultipleLoadoutsPerTree = 0x1,
+		ShowSpendConfirmation = 0x2,
+		AllowEditInCombat = 0x4,
 	},
 	TraitTreeFlag = {
-		CannotRefund = 1,
-		HideSingleRankNumbers = 2,
+		CannotRefund = 0x1,
+		HideSingleRankNumbers = 0x2,
 	},
 	TransmogCameraVariation = {
 		None = 0,
@@ -5736,7 +5736,7 @@ Enum = {
 		IgnoreInTranslationsToParent = 0x200000,
 	},
 	UIMapGroupFlag = {
-		ShowIconsAcrossFloors = 1,
+		ShowIconsAcrossFloors = 0x1,
 	},
 	UIMapSystem = {
 		World = 0,
@@ -5791,7 +5791,7 @@ Enum = {
 		RedX = 4,
 	},
 	UIWidgetFlag = {
-		UniversalWidget = 1,
+		UniversalWidget = 0x1,
 	},
 	UIWidgetFontType = {
 		Normal = 0,

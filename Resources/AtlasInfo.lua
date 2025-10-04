@@ -38,6 +38,105 @@ local AtlasInfo = {
 	["7232465"] = { -- 7232465
 		["shop-card-full-1117-365daysub-CN"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
 	},
+	["7341277"] = { -- 7341277
+		["shop-card-full-1120-midnight-nonexpansion-base"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["7341468"] = { -- 7341468
+		["shop-card-full-1120-midnight-nonexpansion-heroic"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["7341490"] = { -- 7341490
+		["shop-card-full-1120-midnight-nonexpansion-epic"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["7341493"] = { -- 7341493
+		["shop-card-full-1120-midnight-nonexpansion-heroic-apac"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["7341800"] = { -- 7341800
+		["shop-card-full-1120-midnight-nonexpansion-epic-apac"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["7341818"] = { -- 7341818
+		["shop-card-small-1120-midnight-nonexpansion-base"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["7342204"] = { -- 7342204
+		["shop-card-small-1120-midnight-nonexpansion-heroic"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["7342413"] = { -- 7342413
+		["shop-card-small-1120-midnight-nonexpansion-epic"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["7342415"] = { -- 7342415
+		["shop-card-small-1120-midnight-nonexpansion-heroic-apac"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["7342431"] = { -- 7342431
+		["shop-card-small-1120-midnight-nonexpansion-epic-apac"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["7342548"] = { -- 7342548
+		["shop-card-half-1120-midnight-nonexpansion-base"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["7342579"] = { -- 7342579
+		["shop-card-half-1120-midnight-nonexpansion-heroic"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["7342581"] = { -- 7342581
+		["shop-card-half-1120-midnight-nonexpansion-epic"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["7342586"] = { -- 7342586
+		["shop-card-half-1120-midnight-nonexpansion-heroic-apac"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["7342956"] = { -- 7342956
+		["shop-card-half-1120-midnight-nonexpansion-epic-apac"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["7343130"] = { -- 7343130
+		["shop-card-full-1120-midnight-nonexpansion-base-heroic"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["7343570"] = { -- 7343570
+		["shop-card-full-1120-midnight-nonexpansion-base-epic"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["7343572"] = { -- 7343572
+		["shop-card-half-1120-midnight-nonexpansion-base-heroic"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["7343589"] = { -- 7343589
+		["shop-card-half-1120-midnight-nonexpansion-base-epic"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["7343627"] = { -- 7343627
+		["shop-card-large-1120-midnight-nonexpansion-base-heroic"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["7343648"] = { -- 7343648
+		["shop-card-large-1120-midnight-nonexpansion-base-epic"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["7343859"] = { -- 7343859
+		["shop-card-large-1120-midnight-nonexpansion-epic"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["7343945"] = { -- 7343945
+		["shop-card-small-1120-midnight-nonexpansion-base-heroic"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["7344005"] = { -- 7344005
+		["shop-card-small-1120-midnight-nonexpansion-base-epic"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["7344034"] = { -- 7344034
+		["shop-card-large-1120-midnight-nonexpansion-base-heroic-epic"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["7344062"] = { -- 7344062
+		["shop-card-large-1120-midnight-nonexpansion-heroic-apac"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["7344141"] = { -- 7344141
+		["shop-card-large-1120-midnight-nonexpansion-epic-apac"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["7344147"] = { -- 7344147
+		["shop-card-large-1120-midnight-nonexpansion-base"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["7344149"] = { -- 7344149
+		["shop-card-large-1120-midnight-nonexpansion-heroic"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["7344155"] = { -- 7344155
+		["shop-card-small-1120-midnight-nonexpansion-heroic-epic"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["7344222"] = { -- 7344222
+		["shop-card-full-1120-midnight-nonexpansion-heroic-epic"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["7344226"] = { -- 7344226
+		["shop-card-half-1120-midnight-nonexpansion-heroic-epic"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["7353099"] = { -- 7353099
+		["shop-card-full-1120-spiritplume-bundle"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
 	["interface/ garrison/dragonflightlandingpage"] = { -- 4723680
 		["dragonflight-landingpage-talentbutton-hover"] = {400, 476, 0.00048828125, 0.19580078125, 0.4677734375, 0.9326171875, false, false},
 		["dragonflight-landingpage-talentbutton"] = {400, 476, 0.00048828125, 0.19580078125, 0.0009765625, 0.4658203125, false, false},
