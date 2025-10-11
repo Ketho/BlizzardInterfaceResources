@@ -1,6 +1,9 @@
 local CVars = {
 	var = {
 		-- var = default, category, account, character, secure, help
+		["agentUID"] = {"", 4, false, false, false, "The UID provided by Battle.net to be passed to Agent"},
+		["serverAlert"] = {"https://breaking-news.support.blizzard.com/service/wow-classic-client/live/eu/en-US", 6, false, false, false, "Get the glue-string tag for the URL"},
+		["telemetryWowPackage"] = {"Blizzard.Telemetry.Wow_Classic", 5, false, false, false, "The primary package we want to send telemetry to e.g. Wow_Mainline or Wow_Classic"},
 		["acknowledgedArrowCallouts"] = {"0", 4, false, true, false, "Bit field of Looking for guild player settings"},
 		["ActionButtonUseKeyDown"] = {"1", 4, true, false, false, "Activate the action button on a keydown"},
 		["actionedAdventureJournalEntries"] = {"", 4, true, false, false, "Which adventure journal entries flagged with ADVENTURE_JOURNAL_HIDE_AFTER_ACTION the user acted upon"},
@@ -12,7 +15,6 @@ local CVars = {
 		["addonPerformanceMsgWarning"] = {"0.000000", 4, false, false, false, "Threshold for when a performance warning is shown for a specific AddOn as a percentage of application performance."},
 		["advancedCombatLogging"] = {"0", 4, false, false, false, "Whether we want advanced combat log data sent from the server"},
 		["advancedWatchFrame"] = {"0", 4, true, false, false, "Enables advanced Objectives tracking features"},
-		["agentUID"] = {"", 4, false, false, false, "The UID provided by Battle.net to be passed to Agent"},
 		["AIBrain"] = {"0", 5, false, false, false, ""},
 		["AIController"] = {"0", 5, false, false, false, ""},
 		["AIControllerEventLog"] = {"0", 5, false, false, false, ""},
@@ -833,7 +835,7 @@ local CVars = {
 		["nameplateShowEnemyTotems"] = {"0", 4, false, true, true, ""},
 		["nameplateShowFriendlyGuardians"] = {"0", 4, false, true, true, ""},
 		["nameplateShowFriendlyMinions"] = {"0", 4, false, true, true, ""},
-		["nameplateShowFriendlyNPCs"] = {"1", 4, false, true, true, ""},
+		["nameplateShowFriendlyNPCs"] = {"0", 4, false, true, true, ""},
 		["nameplateShowFriendlyPets"] = {"1", 4, false, true, true, ""},
 		["nameplateShowFriendlyTotems"] = {"0", 4, false, true, true, ""},
 		["nameplateShowFriends"] = {"0", 4, false, true, true, ""},
@@ -994,7 +996,6 @@ local CVars = {
 		["seenRegionalChatDisabled"] = {"0", 4, true, false, false, "Seen the alert indicating chat has been disabled by default. (UK and CA AADC)"},
 		["seenSoMNotification"] = {"0", 4, false, false, false, "Whether or not the user has seen the Season of Mastery notification at least once."},
 		["seenTimerunningFirstLoginPopup"] = {"0", 4, false, false, false, "Seen the timerunning first login popup"},
-		["serverAlert"] = {"https://breaking-news.support.blizzard.com/service/wow-classic-client/live/eu/en-US", 6, false, false, false, "Get the glue-string tag for the URL"},
 		["ServerMessageEventLog"] = {"0", 5, false, false, false, ""},
 		["serviceTypeFilter"] = {"6", 4, true, false, false, "Which trainer services to show"},
 		["shadowBlendCascades"] = {"0", 1, false, false, false, "Blend between shadow cascades (0/1)"},
@@ -1191,7 +1192,6 @@ local CVars = {
 		["TargetPriorityCombatLockContextualRelaxation"] = {"1", 4, false, false, false, "1=Enables relaxation of combat lock based on context (eg. no in-combat target infront)"},
 		["TargetPriorityCombatLockHighlight"] = {"0", 4, false, false, false, "1=Lock to in-combat targets when starting from an in-combat target. 2=Further restrict to in-combat with player. (while doing hold-to-target)"},
 		["TargetPriorityPvp"] = {"1", 4, false, false, false, "When in pvp, give higher priority to players and important pvp targets (1 = players & npc bosses, 2 = all pvp targets, 3 = players only)"},
-		["telemetryWowPackage"] = {"Blizzard.Telemetry.Wow_Classic", 5, false, false, false, "The primary package we want to send telemetry to e.g. Wow_Mainline or Wow_Classic"},
 		["teleportMaxNoLoadDist"] = {"200", 1, false, false, false, "Max teleport distanace without preload"},
 		["terrainLodDist"] = {"500", 1, false, false, false, "Terrain level of detail distance"},
 		["TerrainLodDiv"] = {"768", 1, false, false, false, "Terrain lod divisor"},

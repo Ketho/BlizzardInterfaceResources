@@ -113,9 +113,9 @@ Enum = {
 		Icon = 4,
 	},
 	AccountStoreItemFlag = {
-		DisplayDefaultArmor = 1,
-		NotInGameReward = 2,
-		DisplayAsNew = 4,
+		DisplayDefaultArmor = 0x1,
+		NotInGameReward = 0x2,
+		DisplayAsNew = 0x4,
 	},
 	AccountStoreItemRewardType = {
 		Transmog = 1,
@@ -508,8 +508,8 @@ Enum = {
 		Legendary = 5,
 	},
 	BattlePetEffectFlags = {
-		EnableAbilityPicker = 1,
-		LuaNeedsAllPets = 2,
+		EnableAbilityPicker = 0x1,
+		LuaNeedsAllPets = 0x2,
 	},
 	BattlePetEffectParamType = {
 		Int = 0,
@@ -541,8 +541,8 @@ Enum = {
 		PetAbility = 7,
 	},
 	BattlePetNpcTeamFlag = {
-		MatchPlayerHighPetLevel = 1,
-		NoPlayerXP = 2,
+		MatchPlayerHighPetLevel = 0x1,
+		NoPlayerXP = 0x2,
 	},
 	BattlePetOwner = {
 		Weather = 0,
@@ -611,9 +611,9 @@ Enum = {
 		NonCombat = 10,
 	},
 	BattlePetVisualFlag = {
-		Test1 = 1,
-		Test2 = 2,
-		Test3 = 4,
+		Test1 = 0x1,
+		Test2 = 0x2,
+		Test3 = 0x4,
 	},
 	BattlePetVisualRange = {
 		Melee = 0,
@@ -638,7 +638,7 @@ Enum = {
 		UseIconBorderWithOverrideTexture = 0x800,
 	},
 	BattlepayLicenseSynthesisFlags = {
-		ForceToGameAccount = 1,
+		ForceToGameAccount = 0x1,
 	},
 	BattlepayProductChoiceType = {
 		ChoiceNone = 0,
@@ -661,7 +661,7 @@ Enum = {
 		New = 2,
 	},
 	BattlepayShopEntryFlags = {
-		None = 0,
+		None = 0x0,
 	},
 	BattlepetDbFlags = {
 		None = 0x0,
@@ -1015,10 +1015,10 @@ Enum = {
 		Fire = 9,
 	},
 	CauseofdeathFlags = {
-		NoneNeeded = 0,
-		PlayerNameNeeded = 1,
-		CreatureNameNeeded = 2,
-		ZoneNameNeeded = 4,
+		NoneNeeded = 0x0,
+		PlayerNameNeeded = 0x1,
+		CreatureNameNeeded = 0x2,
+		ZoneNameNeeded = 0x4,
 	},
 	ChannelPlayerFlags = {
 		ChannelPlayerNone = 0x0,
@@ -1042,7 +1042,7 @@ Enum = {
 		FacepaintColor = 11,
 	},
 	CharacterServiceInfoFlag = {
-		RestrictToRecommendedSpecs = 1,
+		RestrictToRecommendedSpecs = 0x1,
 	},
 	ChatChannelRuleset = {
 		None = 0,
@@ -1075,8 +1075,8 @@ Enum = {
 		WrongFaction = 3,
 	},
 	ChrCustomizationCategoryFlag = {
-		UndressModel = 1,
-		Subcategory = 2,
+		UndressModel = 0x1,
+		Subcategory = 0x2,
 	},
 	ChrCustomizationOptionType = {
 		Dropdown = 0,
@@ -1399,7 +1399,7 @@ Enum = {
 		Achievement = 2,
 	},
 	ContributionAppearanceFlags = {
-		TooltipUseTimeRemaining = 0,
+		TooltipUseTimeRemaining = 0x0,
 	},
 	ContributionResult = {
 		Success = 0,
@@ -1864,8 +1864,8 @@ Enum = {
 		Plunderstorm = 1,
 	},
 	EnvironmentalDamageFlags = {
-		OneTime = 1,
-		DmgIsPct = 2,
+		OneTime = 0x1,
+		DmgIsPct = 0x2,
 	},
 	Environmentaldamagetype = {
 		Fatigue = 0,
@@ -1927,7 +1927,7 @@ Enum = {
 		FlightpointDiscovered = 25,
 	},
 	EventToastFlags = {
-		DisableRightClickDismiss = 1,
+		DisableRightClickDismiss = 0x1,
 	},
 	ExcludedCensorSources = {
 		None = 0x0,
@@ -2098,9 +2098,9 @@ Enum = {
 		SummoningStones = 108,
 	},
 	GameRuleFlags = {
-		None = 0,
-		AllowClient = 1,
-		RequiresDefault = 2,
+		None = 0x0,
+		AllowClient = 0x1,
+		RequiresDefault = 0x2,
 	},
 	GameRuleType = {
 		Int = 0,
@@ -2152,10 +2152,10 @@ Enum = {
 		Tank = 5,
 	},
 	GarrAutoEventFlags = {
-		None = 0,
-		AutoAttack = 1,
-		Passive = 2,
-		Environment = 4,
+		None = 0x0,
+		AutoAttack = 0x1,
+		Passive = 0x2,
+		Environment = 0x4,
 	},
 	GarrAutoMissionEventType = {
 		MeleeDamage = 0,
@@ -2330,12 +2330,12 @@ Enum = {
 		Placeholder_4 = 62,
 	},
 	GossipNpcOptionDisplayFlags = {
-		ForceInteractionOnSingleChoice = 1,
+		ForceInteractionOnSingleChoice = 0x1,
 	},
 	GossipOptionRecFlags = {
-		QuestLabelPrepend = 1,
-		HideOptionIDFromClient = 2,
-		PlayMovieLabelPrepend = 4,
+		QuestLabelPrepend = 0x1,
+		HideOptionIDFromClient = 0x2,
+		PlayMovieLabelPrepend = 0x4,
 	},
 	GossipOptionStatus = {
 		Available = 0,
@@ -2389,8 +2389,8 @@ Enum = {
 		Unknown = 42,
 	},
 	HolidayCalendarFlags = {
-		Alliance = 1,
-		Horde = 2,
+		Alliance = 0x1,
+		Horde = 0x2,
 	},
 	HolidayFlags = {
 		IsRegionwide = 0x1,
@@ -2856,7 +2856,7 @@ Enum = {
 		Inscription = 11,
 	},
 	ItemRecraftFlags = {
-		ItemRecraftFlagInvalid = 1,
+		ItemRecraftFlagInvalid = 0x1,
 	},
 	ItemSlotFilterType = {
 		Head = 0,
@@ -3036,7 +3036,7 @@ Enum = {
 		DisplayAsExtremelyRare = 0x10,
 	},
 	JournalEncounterLocFlags = {
-		Primary = 1,
+		Primary = 0x1,
 	},
 	JournalEncounterSecTypes = {
 		Generic = 0,
@@ -3045,13 +3045,13 @@ Enum = {
 		Overview = 3,
 	},
 	JournalEncounterSectionFlags = {
-		StartExpanded = 1,
-		LimitDifficulties = 2,
+		StartExpanded = 0x1,
+		LimitDifficulties = 0x2,
 	},
 	JournalInstanceFlags = {
-		Timewalker = 1,
-		HideUserSelectableDifficulty = 2,
-		DoNotDisplayInstance = 4,
+		Timewalker = 0x1,
+		HideUserSelectableDifficulty = 0x2,
+		DoNotDisplayInstance = 0x4,
 	},
 	JournalLinkTypes = {
 		Instance = 0,
@@ -3089,9 +3089,9 @@ Enum = {
 		Damage = 2,
 	},
 	LanguageFlag = {
-		IsExotic = 1,
-		HiddenFromPlayer = 2,
-		HideLanguageNameInChat = 4,
+		IsExotic = 0x1,
+		HiddenFromPlayer = 0x2,
+		HideLanguageNameInChat = 0x4,
 	},
 	LgVendorPurchaseSettlementState = {
 		Settled = 0,
@@ -3260,8 +3260,8 @@ Enum = {
 		AccountDataNoMatch = 25,
 	},
 	NpcCraftingOrderSetFlags = {
-		CraftingOrderFlagAllowMultiple = 1,
-		CraftingOrderFlagAllowDuplicate = 2,
+		CraftingOrderFlagAllowMultiple = 0x1,
+		CraftingOrderFlagAllowDuplicate = 0x2,
 	},
 	PartyPlaylistEntry = {
 		SoloGameMode = 0,
@@ -3270,7 +3270,7 @@ Enum = {
 		TrainingGameMode = 3,
 	},
 	PartyPoseFlags = {
-		HideLeaveInstanceButton = 1,
+		HideLeaveInstanceButton = 0x1,
 	},
 	PerksVendorCategoryType = {
 		Transmog = 1,
@@ -3382,8 +3382,8 @@ Enum = {
 		RemoveEventHandled = 0x20,
 	},
 	PetbattleCheatFlags = {
-		None = 0,
-		AutoPlay = 1,
+		None = 0x0,
+		AutoPlay = 0x1,
 	},
 	PetbattleEffectFlags = {
 		None = 0x0,
@@ -3428,9 +3428,9 @@ Enum = {
 		Weather = 2,
 	},
 	PetbattleInputMoveMsgDebugFlag = {
-		None = 0,
-		DontValidate = 1,
-		EnemyCast = 2,
+		None = 0x0,
+		DontValidate = 0x1,
+		EnemyCast = 0x2,
 	},
 	PetbattleMoveType = {
 		Quit = 0,
@@ -3574,7 +3574,7 @@ Enum = {
 		Rotation = 2,
 	},
 	PingTypeFlags = {
-		DefaultPing = 1,
+		DefaultPing = 0x1,
 	},
 	PlayerClubRequestStatus = {
 		None = 0,
@@ -3587,8 +3587,8 @@ Enum = {
 		Canceled = 7,
 	},
 	PlayerCurrencyFlags = {
-		Incremented = 1,
-		Loading = 2,
+		Incremented = 0x1,
+		Loading = 0x2,
 	},
 	PlayerCurrencyFlagsDbFlags = {
 		IgnoreMaxQtyOnload = 0x1,
@@ -3885,9 +3885,9 @@ Enum = {
 		World = 4,
 	},
 	QuestRewardContextFlags = {
-		None = 0,
-		FirstCompletionBonus = 1,
-		RepeatCompletionBonus = 2,
+		None = 0x0,
+		FirstCompletionBonus = 0x1,
+		RepeatCompletionBonus = 0x2,
 	},
 	QuestSessionCommand = {
 		None = 0,
@@ -4116,7 +4116,7 @@ Enum = {
 		UIParentShake = 5,
 	},
 	ScriptedAnimationFlags = {
-		UseTargetAsSource = 1,
+		UseTargetAsSource = 0x1,
 	},
 	ScriptedAnimationTrajectory = {
 		AtSource = 0,
@@ -4128,10 +4128,10 @@ Enum = {
 		HalfwayBetween = 6,
 	},
 	ScrubStringFlags = {
-		None = 0,
-		TruncateNewLines = 1,
-		AllowBarCodes = 2,
-		StripControlCodes = 4,
+		None = 0x0,
+		TruncateNewLines = 0x1,
+		AllowBarCodes = 0x2,
+		StripControlCodes = 0x4,
 	},
 	SeasonID = {
 		NoSeason = 0,
@@ -4159,7 +4159,7 @@ Enum = {
 		NotInGuild = 10,
 	},
 	SharedStringFlag = {
-		InternalOnly = 1,
+		InternalOnly = 0x1,
 	},
 	Siflag = {
 		None = 0x0,
@@ -4212,7 +4212,7 @@ Enum = {
 		Any = 3,
 	},
 	SoundBusFlag = {
-		Disablepositionallpf = 1,
+		Disablepositionallpf = 0x1,
 	},
 	SpellBookItemType = {
 		None = 0,
@@ -4293,7 +4293,7 @@ Enum = {
 		CurrencyTransfer = 37,
 	},
 	TimeEventFlag = {
-		GlueScreenShortcut = 1,
+		GlueScreenShortcut = 0x1,
 	},
 	TitleIconVersion = {
 		Small = 0,
@@ -4418,14 +4418,14 @@ Enum = {
 		RacialAbility = 4,
 	},
 	TraitCombatConfigFlags = {
-		ActiveForSpec = 1,
-		StarterBuild = 2,
-		SharedActionBars = 4,
+		ActiveForSpec = 0x1,
+		StarterBuild = 0x2,
+		SharedActionBars = 0x4,
 	},
 	TraitCondFlag = {
-		IsGate = 1,
-		IsAlwaysMet = 2,
-		IsSufficient = 4,
+		IsGate = 0x1,
+		IsAlwaysMet = 0x2,
+		IsSufficient = 0x4,
 	},
 	TraitConditionType = {
 		Available = 0,
@@ -4495,7 +4495,7 @@ Enum = {
 		TestGridPositioned = 0x8,
 	},
 	TraitNodeGroupFlag = {
-		AvailableByDefault = 1,
+		AvailableByDefault = 0x1,
 	},
 	TraitNodeType = {
 		Single = 0,
@@ -4509,13 +4509,13 @@ Enum = {
 		Multiply = 1,
 	},
 	TraitSystemFlag = {
-		AllowMultipleLoadoutsPerTree = 1,
-		ShowSpendConfirmation = 2,
-		AllowEditInCombat = 4,
+		AllowMultipleLoadoutsPerTree = 0x1,
+		ShowSpendConfirmation = 0x2,
+		AllowEditInCombat = 0x4,
 	},
 	TraitTreeFlag = {
-		CannotRefund = 1,
-		HideSingleRankNumbers = 2,
+		CannotRefund = 0x1,
+		HideSingleRankNumbers = 0x2,
 	},
 	TransmogCameraVariation = {
 		None = 0,
@@ -4555,8 +4555,8 @@ Enum = {
 		Paired = 29,
 	},
 	TransmogIllusionFlags = {
-		HideUntilCollected = 1,
-		PlayerConditionGrantsOnLogin = 2,
+		HideUntilCollected = 0x1,
+		PlayerConditionGrantsOnLogin = 0x2,
 	},
 	TransmogModification = {
 		Main = 0,
@@ -4697,7 +4697,7 @@ Enum = {
 		IgnoreInTranslationsToParent = 0x200000,
 	},
 	UIMapGroupFlag = {
-		ShowIconsAcrossFloors = 1,
+		ShowIconsAcrossFloors = 0x1,
 	},
 	UIMapSystem = {
 		World = 0,
@@ -4725,9 +4725,9 @@ Enum = {
 		PerksProgram = 0,
 	},
 	UIModelSceneFlags = {
-		SheatheWeapon = 1,
-		HideWeapon = 2,
-		Autodress = 4,
+		SheatheWeapon = 0x1,
+		HideWeapon = 0x2,
+		Autodress = 0x4,
 	},
 	UISystemType = {
 		InGameNavigation = 0,

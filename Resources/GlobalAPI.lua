@@ -1607,8 +1607,8 @@ local GlobalAPI = {
 	"C_ToyBox.SetUnusableShown",
 	"C_ToyBoxInfo.ClearFanfare",
 	"C_ToyBoxInfo.NeedsFanfare",
-
 	"C_TradeInfo.AddTradeMoney",
+	"C_TradeInfo.PickupTradeMoney",
 	"C_TradeInfo.SetTradeMoney",
 	"C_TradeSkillUI.GetTradeSkillDisplayName",
 	"C_TradeSkillUI.GetTradeSkillTexture",
@@ -3399,7 +3399,6 @@ local GlobalAPI = {
 	"PickupSpell",
 	"PickupSpellBookItem",
 	"PickupStablePet",
-	"PickupTradeMoney",
 	"PitchDownStart",
 	"PitchDownStop",
 	"PitchUpStart",
