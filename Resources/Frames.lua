@@ -20,6 +20,9 @@ local Frames = {
 	"BattleTagInviteFrame",
 	"BattlefieldFrame",
 	"BattlegroundChatFilters",
+	"BonusRollFrame",
+	"BonusRollLootWonFrame",
+	"BonusRollMoneyWonFrame",
 	"Boss1TargetFrame",
 	"Boss2TargetFrame",
 	"Boss3TargetFrame",
@@ -28,6 +31,8 @@ local Frames = {
 	"BrowserSettingsTooltip",
 	"BuffFrame",
 	"CastingBarFrame",
+	"CatalogShopFrame",
+	"CatalogShopTooltip",
 	"ChannelFrame",
 	"CharacterFrame",
 	"ChatAlertFrame",
@@ -114,7 +119,7 @@ local Frames = {
 	"GuildControlUI",
 	"GuildRegistrarFrame",
 	"HelpFrame",
-	"HelpPlate",
+	"HelpPlateCanvas",
 	"HelpPlateTooltip",
 	"IMECandidatesFrame",
 	"IconIntroTracker",
@@ -255,6 +260,7 @@ local LoadOnDemand = {
 	"BattlefieldMapTab",
 	"BehavioralMessagingDetails",
 	"BehavioralMessagingTray",
+	"BlackMarketFrame",
 	"CalendarFrame",
 	"ClassTrainerFrame",
 	"CombatLogQuickButtonFrame",
@@ -294,6 +300,7 @@ local LoadOnDemand = {
 	"TableAttributeDisplay",
 	"TimeManagerFrame",
 	"TradeSkillFrame",
+	"WowSurveyStatusFrame",
 }
 
 return {Frames, LoadOnDemand}

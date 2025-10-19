@@ -10,6 +10,7 @@ Enum = {
 		ServerError = 7,
 		CannotUseCurrency = 8,
 		TransactionInProgress = 9,
+		CurrencyTransferDisabled = 10,
 	},
 	AccountData = {
 		Config = 0,
@@ -29,6 +30,9 @@ Enum = {
 		UIEditModeChar = 14,
 		FrontendChatSettings = 15,
 		CharacterListOrder = 16,
+		CooldownManager = 17,
+		CooldownManager2 = 18,
+		Shop2PendingOrders = 19,
 	},
 	AccountDataUpdateStatus = {
 		AccountDataUpdateSuccess = 0,
@@ -105,6 +109,8 @@ Enum = {
 		AccountStateCurrencyTransferLogLoaded = "0x0000020000000000",
 		AccountStateLgVendorPurchaseLoaded = "0x0000040000000000",
 		AccountStateFutureFeature01DataLoaded = "0x0000080000000000",
+		AccountStateWarbandScenesLoaded = "0x0000100000000000",
+		AccountStateEventRecordsLoaded = "0x0000200000000000",
 	},
 	AccountStoreCategoryType = {
 		Creature = 1,
@@ -226,6 +232,9 @@ Enum = {
 		CurrencyTransferLog = 58,
 		LgVendorPurchase = 59,
 		SaveWarbandGroups = 60,
+		Profile = 61,
+		WarbandSceneCollection = 62,
+		EventRecords = 63,
 	},
 	AddOnEnableState = {
 		None = 0,
@@ -251,6 +260,12 @@ Enum = {
 		CountTimeOver500Ms = 10,
 		CountTimeOver1000Ms = 11,
 	},
+	AddOnSecurityStatus = {
+		Secure = 0,
+		Insecure = 1,
+		Banned = 2,
+		NotAvailable = 3,
+	},
 	ArrowCalloutDirection = {
 		Up = 0,
 		Down = 1,
@@ -272,6 +287,15 @@ Enum = {
 		Tools = 0x10,
 		Performance = 0x20,
 		LiveOperations = 0x40,
+	},
+	AssistActionType = {
+		None = 0,
+		LoungingPlayer = 1,
+		GraveMarker = 2,
+		PlacedVo = 3,
+		PlayerGuardian = 4,
+		PlayerSlayer = 5,
+		CapturedBuff = 6,
 	},
 	AuctionHouseCommoditySortOrder = {
 		UnitPrice = 0,
@@ -392,15 +416,14 @@ Enum = {
 		IgnorePetBankcheck = 0x20000,
 		PreferPriorityBags = 0x40000,
 		PreferNeutralPriorityBags = 0x80000,
-		LookInReagentsBankOnly = 0x100000,
-		AsymmetricSwap = 0x200000,
-		PreferReagentBags = 0x400000,
-		IgnoreSoulbound = 0x800000,
-		IgnoreReagentBags = 0x1000000,
-		LookInAccountBankOnly = 0x2000000,
-		HasRefund = 0x4000000,
-		SkipValidCountCheck = 0x8000000,
-		AllowSoulboundItemInAccountBank = 0x10000000,
+		AsymmetricSwap = 0x100000,
+		PreferReagentBags = 0x200000,
+		IgnoreSoulbound = 0x400000,
+		IgnoreReagentBags = 0x800000,
+		LookInAccountBankOnly = 0x1000000,
+		HasRefund = 0x2000000,
+		SkipValidCountCheck = 0x4000000,
+		AllowSoulboundItemInAccountBank = 0x8000000,
 	},
 	BagIndex = {
 		Accountbanktab = -5,
@@ -443,10 +466,20 @@ Enum = {
 		None = -1,
 		Eclipse = 0,
 	},
+	BankLockedReason = {
+		None = 0,
+		NoAccountInventoryLock = 1,
+		BankDisabled = 2,
+		BankConversionFailed = 3,
+	},
 	BankType = {
 		Character = 0,
 		Guild = 1,
 		Account = 2,
+	},
+	Base64Variant = {
+		Standard = 0,
+		StandardUrlSafe = 1,
 	},
 	BattlePetAbilityFlag = {
 		DisplayAsHostileDebuff = 0x1,
@@ -608,7 +641,6 @@ Enum = {
 		Beast = 7,
 		Aquatic = 8,
 		Mechanical = 9,
-		NonCombat = 10,
 	},
 	BattlePetVisualFlag = {
 		Test1 = 0x1,
@@ -1002,6 +1034,10 @@ Enum = {
 		HighDefinition_16_X_9 = 2,
 		Cinemascope_2_Dot_4_X_1 = 3,
 	},
+	CanRedeemTokenForBalanceResult = {
+		Ok = 0,
+		FailureCap = 1,
+	},
 	Causeofdeath = {
 		None = 0,
 		PlayerPvP = 1,
@@ -1019,6 +1055,18 @@ Enum = {
 		PlayerNameNeeded = 0x1,
 		CreatureNameNeeded = 0x2,
 		ZoneNameNeeded = 0x4,
+	},
+	ChallengeModeHistoryFlags = {
+		None = 0x0,
+		ConfirmedLeaver = 0x1,
+	},
+	ChallengeModeHistoryResult = {
+		Successful = 0,
+		Leaver = 1,
+	},
+	ChallengeModeHistoryStatus = {
+		Normal = 0,
+		Leaver = 1,
 	},
 	ChannelPlayerFlags = {
 		ChannelPlayerNone = 0x0,
@@ -1043,6 +1091,7 @@ Enum = {
 	},
 	CharacterServiceInfoFlag = {
 		RestrictToRecommendedSpecs = 0x1,
+		AllowMaxLevelBoost = 0x2,
 	},
 	ChatChannelRuleset = {
 		None = 0,
@@ -1314,6 +1363,16 @@ Enum = {
 		Guild = 2,
 		Other = 3,
 	},
+	ColorOverride = {
+		ItemQualityPoor = 0,
+		ItemQualityCommon = 1,
+		ItemQualityUncommon = 2,
+		ItemQualityRare = 3,
+		ItemQualityEpic = 4,
+		ItemQualityLegendary = 5,
+		ItemQualityArtifact = 6,
+		ItemQualityAccount = 7,
+	},
 	CombinedQuestLogStatus = {
 		Available = 0,
 		Complete = 1,
@@ -1337,6 +1396,23 @@ Enum = {
 		Role = 0,
 		Utility = 1,
 		Combat = 2,
+	},
+	CompressionLevel = {
+		Default = 0,
+		OptimizeForSpeed = 1,
+		OptimizeForSize = 2,
+	},
+	CompressionMethod = {
+		Deflate = 0,
+		Zlib = 1,
+		Gzip = 2,
+	},
+	ConfirmationPromptUIType = {
+		StaticText = 0,
+		BonusRoll = 1,
+		SimpleWarning = 2,
+		StaticTextAlert = 3,
+		SimpleWarningAlert = 4,
 	},
 	ConsoleCategory = {
 		Debug = 0,
@@ -1418,6 +1494,19 @@ Enum = {
 		UnderAttack = 3,
 		Destroyed = 4,
 	},
+	CooldownSetLinkedSpellFlags = {
+		UseAsTooltip = 0x1,
+	},
+	CooldownSetSpellFlags = {
+		HideAura = 0x1,
+		HideByDefault = 0x2,
+	},
+	CooldownViewerCategory = {
+		Essential = 0,
+		Utility = 1,
+		TrackedBuff = 2,
+		TrackedBar = 3,
+	},
 	CovenantSkill = {
 		Kyrian = 2730,
 		Venthyr = 2731,
@@ -1437,6 +1526,7 @@ Enum = {
 		Long = 2,
 	},
 	CraftingOrderFlags = {
+		None = 0x0,
 		IsRecraft = 0x1,
 		HasNoneReagents = 0x2,
 		HasSomeReagents = 0x4,
@@ -1504,6 +1594,16 @@ Enum = {
 		Timeout = 44,
 		TooManyItems = 45,
 		WrongVersion = 46,
+	},
+	CraftingOrderSortType = {
+		ItemName = 0,
+		AveTip = 1,
+		MaxTip = 2,
+		Quantity = 3,
+		Reagents = 4,
+		Tip = 5,
+		TimeRemaining = 6,
+		Status = 7,
 	},
 	CraftingOrderState = {
 		None = 0,
@@ -1581,6 +1681,8 @@ Enum = {
 		CreateAllCurrencyTransferLogDone = "0x0000020000000000",
 		CreateAllLgVendorPurchaseDone = "0x0000040000000000",
 		CreateAllFutureFeature01DataDone = "0x0000080000000000",
+		CreateAllWarbandScenesLoadedDone = "0x0000100000000000",
+		CreateAllEventRecordsDone = "0x0000200000000000",
 	},
 	CurioRarity = {
 		Common = 1,
@@ -1645,6 +1747,7 @@ Enum = {
 		CurrencyBScaleMaxQuantityBySeasonWeeks = 0x40,
 		CurrencyBScaleMaxQuantityByWeeksSinceStart = 0x80,
 		CurrencyBForceMaxQuantityOnConversion = 0x100,
+		CurrencyBUnearnableBeforeMaxQuantityStart = 0x200,
 	},
 	CurrencyGainFlags = {
 		None = 0x0,
@@ -1698,6 +1801,7 @@ Enum = {
 		AuctionDeposit = 41,
 		Barbershop = 42,
 		SimulateLoot = 43,
+		ChallengeModeDungeon = 44,
 	},
 	CurrencyTokenCategoryFlags = {
 		FlagSortLast = 0x1,
@@ -1875,6 +1979,11 @@ Enum = {
 		Slime = 4,
 		Fire = 5,
 	},
+	ErrorDomain = {
+		Assert = 0,
+		AssertData = 1,
+		Frame = 2,
+	},
 	EventRealmQueues = {
 		None = 0x0,
 		PlunderstormSolo = 0x1,
@@ -1897,6 +2006,7 @@ Enum = {
 		FlightpointDiscovered = 11,
 		CapstoneUnlocked = 12,
 		SingleLineWithIcon = 13,
+		Scoreboard = 14,
 	},
 	EventToastEventType = {
 		LevelUp = 0,
@@ -1987,13 +2097,11 @@ Enum = {
 		Unknown = 5,
 	},
 	GameRule = {
-		DeprecatedSummoningStones = 0,
 		NoDebuffLimit = 1,
 		CharNameReservationEnabled = 2,
 		MaxCharReservationsPerRealm = 3,
 		MaxAccountCharReservationsPerContentset = 4,
 		EtaRealmLaunchTime = 5,
-		DeprecatedLFGUIEnabled = 6,
 		TrivialGroupXPPercent = 7,
 		CharReservationsPerRealmReopenThreshold = 8,
 		DisablePct = 9,
@@ -2011,7 +2119,6 @@ Enum = {
 		VanillaRageGenerationModifier = 21,
 		SelfFoundAllowed = 22,
 		DisableHonorDecay = 23,
-		Deprecated1 = 24,
 		MaxLootDropLevel = 25,
 		MicrobarScale = 26,
 		MaxUnitNameDistance = 27,
@@ -2074,28 +2181,20 @@ Enum = {
 		FullCharacterCreateDisabled = 84,
 		TargetFrameBuffsDisabled = 85,
 		UnitFramePvPContextualDisabled = 86,
-		WoWLabsPlaceholder1 = 87,
-		AvailablePlaceholder1 = 88,
-		AvailablePlaceholder2 = 89,
-		AvailablePlaceholder3 = 90,
+		BlockWhileSheathedAllowed = 88,
 		VanillaAccountMailInstant = 91,
 		ClearMailOnRealmTransfer = 92,
 		PremadeGroupFinderStyle = 93,
 		PlunderstormAreaSelection = 94,
-		Deprecated2 = 95,
-		Deprecated3 = 96,
-		Deprecated4 = 97,
 		GroupFinderCapabilities = 98,
 		WorldMapLegendDisabled = 99,
 		WorldMapFrameStrata = 100,
 		MerchantFilterDisabled = 101,
-		MainlinePlaceholder1 = 102,
-		LgPlaceholder1Acarpentieri = 103,
-		Placeholder1 = 104,
-		Placeholder2 = 105,
-		Placeholder3 = 106,
-		Placeholder4 = 107,
 		SummoningStones = 108,
+		TransmogEnabled = 109,
+		MailGameRule = 132,
+		LootMethodStyle = 157,
+		UnflaggedPlayersCanAttackPvPFlaggedPlayers = 173,
 	},
 	GameRuleFlags = {
 		None = 0x0,
@@ -2327,7 +2426,9 @@ Enum = {
 		Placeholder_1 = 59,
 		Placeholder_2 = 60,
 		Placeholder_3 = 61,
-		Placeholder_4 = 62,
+		GuildRename = 62,
+		Placeholder_4 = 63,
+		ItemUpgrade = 64,
 	},
 	GossipNpcOptionDisplayFlags = {
 		ForceInteractionOnSingleChoice = 0x1,
@@ -2387,6 +2488,59 @@ Enum = {
 		GpuDriver = 40,
 		CompatMode = 41,
 		Unknown = 42,
+	},
+	GuildErrorType = {
+		Success = 0,
+		UnknownError = 1,
+		AlreadyInGuild = 2,
+		TargetAlreadyInGuild = 3,
+		InvitedToGuild = 4,
+		TargetInvitedToGuild = 5,
+		NameInvalid = 6,
+		NameAlreadyExists = 7,
+		NoPermisson = 8,
+		NotInGuild = 9,
+		TargetNotInGuild = 10,
+		PlayerNotFound = 11,
+		WrongFaction = 12,
+		TargetTooHigh = 13,
+		TargetTooLow = 14,
+		TooManyRanks = 15,
+		TooFewRanks = 16,
+		RanksLocked = 17,
+		RankInUse = 18,
+		Ignored = 19,
+		Busy = 20,
+		TargetLevelTooLow = 21,
+		TargetLevelTooHigh = 22,
+		TooManyMembers = 23,
+		InvalidBankTab = 24,
+		WithdrawLimit = 25,
+		NotEnoughMoney = 26,
+		TeamNotFound = 27,
+		BankTabFull = 28,
+		BadItem = 29,
+		TeamsLocked = 30,
+		TooMuchMoney = 31,
+		WrongBankTab = 32,
+		TooManyCreate = 33,
+		RankRequiresAuthenticator = 34,
+		BankTabLocked = 35,
+		TrialAccount = 36,
+		VeteranAccount = 37,
+		UndeletableDueToLevel = 38,
+		LockedForMove = 39,
+		GuildRepTooLow = 40,
+		CantInviteSelf = 41,
+		HasRestriction = 42,
+		BankNotFound = 43,
+		NewLeaderWrongFaction = 44,
+		GuildBankNotAvailable = 45,
+		NewLeaderWrongRealm = 46,
+		DeleteNoAppropriateLeader = 47,
+		RealmMismatch = 48,
+		InCooldown = 49,
+		ReservationExpired = 50,
 	},
 	HolidayCalendarFlags = {
 		Alliance = 0x1,
@@ -2511,7 +2665,11 @@ Enum = {
 		ItemCollectionRuneforgeLegendaryAbility = 5,
 		ItemCollectionTransmogIllusion = 6,
 		ItemCollectionWarbandScene = 7,
-		NumItemCollectionTypes = 7,
+		ItemCollectionRoom = 8,
+		ItemCollectionExteriorFixture = 9,
+		ItemCollectionRoomThemes = 10,
+		ItemCollectionRoomMaterials = 11,
+		NumItemCollectionTypes = 11,
 	},
 	ItemConsumableSubclass = {
 		Generic = 0,
@@ -2526,6 +2684,7 @@ Enum = {
 		VantusRune = 9,
 		UtilityCurio = 10,
 		CombatCurio = 11,
+		Relic = 12,
 	},
 	ItemCreationContext = {
 		None = 0,
@@ -2693,6 +2852,27 @@ Enum = {
 		TournamentRealm_2 = 162,
 		TournamentRealm_3 = 163,
 		TournamentRealm_4 = 164,
+		Warbound_1 = 165,
+		Warbound_2 = 166,
+		Warbound_3 = 167,
+		Warbound_4 = 168,
+		Warbound_5 = 169,
+		Warbound_6 = 170,
+		Warbound_7 = 171,
+		Warbound_8 = 172,
+		Warbound_9 = 173,
+		Warbound_10 = 174,
+		Warbound_11 = 175,
+		Warbound_12 = 176,
+		Warbound_13 = 177,
+		Warbound_14 = 178,
+		Warbound_15 = 179,
+		Warbound_16 = 180,
+		Warbound_17 = 181,
+		Warbound_18 = 182,
+		Warbound_19 = 183,
+		Warbound_20 = 184,
+		Endeavors = 185,
 	},
 	ItemGemColor = {
 		Meta = 0x1,
@@ -2725,6 +2905,7 @@ Enum = {
 		SingingThunder = 0x8000000,
 		SingingSea = 0x10000000,
 		SingingWind = 0x20000000,
+		Fiber = 0x40000000,
 	},
 	ItemGemSubclass = {
 		Red = 0,
@@ -2876,6 +3057,9 @@ Enum = {
 		Other = 14,
 		NoFilter = 15,
 	},
+	ItemSocketInfoUIType = {
+		Default = 0,
+	},
 	ItemSocketType = {
 		None = 0,
 		Meta = 1,
@@ -2907,6 +3091,7 @@ Enum = {
 		SingingThunder = 27,
 		SingingSea = 28,
 		SingingWind = 29,
+		Fiber = 30,
 	},
 	ItemSoundType = {
 		Pickup = 0,
@@ -3088,10 +3273,36 @@ Enum = {
 		Healer = 1,
 		Damage = 2,
 	},
+	LFGSlotInvalidReason = {
+		None = 0,
+		ExpansionTooLow = 1,
+		LevelTooLow = 2,
+		LevelTooHigh = 3,
+		GearTooLow = 4,
+		GearTooHigh = 5,
+		RaidLocked = 6,
+		LevelTargetTooLow = 7,
+		LevelTargetTooHigh = 8,
+		AreaNotExplored = 9,
+		WrongFaction = 10,
+		NoValidRoles = 11,
+		EngagedInPvP = 12,
+		NoSpec = 13,
+		CannotRunAnyChildDungeon = 14,
+		Restricted = 15,
+		ChromieTime = 16,
+		Npe = 17,
+		Timerunning = 18,
+		PlayerConditionFailed = 19,
+	},
 	LanguageFlag = {
 		IsExotic = 0x1,
 		HiddenFromPlayer = 0x2,
 		HideLanguageNameInChat = 0x4,
+	},
+	LeavePartyConfirmReason = {
+		QuestSync = 0,
+		RestrictedChallengeMode = 1,
 	},
 	LgVendorPurchaseSettlementState = {
 		Settled = 0,
@@ -3126,6 +3337,41 @@ Enum = {
 		Debug = 30,
 		Spam = 40,
 	},
+	LogicLogicop = {
+		None = 0,
+		And = 1,
+		Or = 2,
+		Xor = 3,
+	},
+	LogicMathop = {
+		None = 0,
+		Plus = 1,
+		Minus = 2,
+		Times = 3,
+		Div = 4,
+		Mod = 5,
+	},
+	LogicRelop = {
+		None = 0,
+		Equal = 1,
+		Notequal = 2,
+		Lt = 3,
+		Lteq = 4,
+		Gt = 5,
+		Gteq = 6,
+	},
+	LootMethod = {
+		Freeforall = 0,
+		Roundrobin = 1,
+		Masterlooter = 2,
+		Group = 3,
+		Needbeforegreed = 4,
+		Personal = 5,
+	},
+	LootMethodStyles = {
+		PersonalOnly = 0,
+		Vanilla = 1,
+	},
 	LootSlotType = {
 		None = 0,
 		Item = 1,
@@ -3148,6 +3394,10 @@ Enum = {
 	MapIconUIWidgetSetType = {
 		Tooltip = 0,
 		BehindIcon = 1,
+	},
+	MapobjEventTypes = {
+		PlayAnim = 0,
+		SetAnimSpeed = 1,
 	},
 	MatchDetailType = {
 		Placement = 0,
@@ -3172,7 +3422,7 @@ Enum = {
 		POI = 0x2000,
 		Target = 0x4000,
 		Focus = 0x8000,
-		QuestPoIs = 0x10000,
+		QuestPOIs = 0x10000,
 		Digsites = 0x20000,
 		TrainerClass = 0x40000,
 		VendorAmmo = 0x80000,
@@ -3231,6 +3481,10 @@ Enum = {
 		IsDragonRidingMount = 0x4,
 		IsRideAlongMount = 0x8,
 	},
+	NewCharGear = {
+		Start = 0,
+		Preview = 1,
+	},
 	NodeOpFailureReason = {
 		None = 0,
 		MissingEdgeConnection = 1,
@@ -3284,7 +3538,7 @@ Enum = {
 		Activity = 21,
 		GmAdjustment = 22,
 		Achievement = 23,
-		Refund = 24,
+		UnusedPerksVendorCategoryRefundUnused = 24,
 	},
 	PermanentChatChannelType = {
 		None = 0,
@@ -3674,7 +3928,8 @@ Enum = {
 		PlaceholderType74 = 73,
 		PlaceholderType75 = 74,
 		PlaceholderType76 = 75,
-		PlaceholderType77 = 76,
+		GuildRename = 76,
+		PlaceholderType77 = 77,
 	},
 	PlayerMentorshipApplicationResult = {
 		Success = 0,
@@ -3819,6 +4074,10 @@ Enum = {
 		Horde = 0,
 		Alliance = 1,
 	},
+	PvPMatchmakingType = {
+		Battleground = 0,
+		Arena = 1,
+	},
 	PvPRanks = {
 		RankNone = 0,
 		RankPariah = 1,
@@ -3865,6 +4124,7 @@ Enum = {
 		QuestlineUnlock = 8,
 		QuestlineReward = 9,
 		QuestlineUnlockPart = 10,
+		PossibleReward = 11,
 	},
 	QuestFrequency = {
 		Default = 0,
@@ -3965,6 +4225,7 @@ Enum = {
 		DragonRiderRacing = 16,
 		Capstone = 17,
 		WorldBoss = 18,
+		Placeholder_1 = 19,
 	},
 	QuestTreasurePickerType = {
 		Visible = 0,
@@ -4005,6 +4266,10 @@ Enum = {
 		RcoCloseGmCancel = 4,
 		RcoCloseCrafterFulfill = 5,
 		RcoCloseInvalid = 6,
+	},
+	RecentAllyPinResult = {
+		Success = 0,
+		ServerError = 1,
 	},
 	RecruitAFriendRewardsVersion = {
 		InvalidVersion = 0,
@@ -4057,6 +4322,8 @@ Enum = {
 		Name = 0x4000,
 		HarmfulToMinors = 0x8000,
 		Disruption = 0x10000,
+		TerroristAndViolentExtremistContent = 0x20000,
+		ChildSexualExploitationAndAbuse = 0x40000,
 	},
 	ReportSubComplaintTypes = {
 		Inappropriate = 0,
@@ -4080,12 +4347,52 @@ Enum = {
 		PvPScoreboard = 14,
 		PvPGroupMember = 15,
 		CraftingOrder = 16,
+		RecentAlly = 17,
 	},
 	RestrictPingsTo = {
 		None = 0,
 		Lead = 1,
 		Assist = 2,
 		TankHealer = 3,
+	},
+	RolodexContextIDType = {
+		None = 0,
+		ItemID = 1,
+		AreaID = 2,
+		MapID = 3,
+	},
+	RolodexContextLevelType = {
+		None = 0,
+		Difficulty = 1,
+		KeystoneLevel = 2,
+		DelveTier = 3,
+	},
+	RolodexType = {
+		None = 0,
+		PartyMember = 1,
+		RaidMember = 2,
+		Trade = 3,
+		Whisper = 4,
+		PublicOrderFilledByOther = 5,
+		PublicOrderFilledByYou = 6,
+		PersonalOrderFilledByOther = 7,
+		PersonalOrderFilledByYou = 8,
+		GuildOrderFilledByOther = 9,
+		GuildOrderFilledByYou = 10,
+		CreatureKill = 11,
+		CompleteDungeon = 12,
+		KillRaidBoss = 13,
+		KillLfrBoss = 14,
+		CompleteDelve = 15,
+		CompleteArena = 16,
+		CompleteBg = 17,
+		Duel = 18,
+		PetBattle = 19,
+		PvPKill = 20,
+	},
+	RolodexTypeFlags = {
+		None = 0x0,
+		HiddenFromHistory = 0x1,
 	},
 	ScalingArmorType = {
 		Cloth = 0,
@@ -4158,6 +4465,13 @@ Enum = {
 		GeneralError = 9,
 		NotInGuild = 10,
 	},
+	SendReportResult = {
+		Success = 0,
+		GeneralError = 1,
+		TooManyReports = 2,
+		RequiresChatLine = 3,
+		RequiresChatLineOrVoice = 4,
+	},
 	SharedStringFlag = {
 		InternalOnly = 0x1,
 	},
@@ -4186,17 +4500,15 @@ Enum = {
 		PlayerEquip = 1,
 		PlayerBags = 2,
 		PlayerInv = 3,
-		Bank = 4,
-		ReagentBank = 5,
-		AccountBank = 6,
+		CharacterBank = 4,
+		AccountBank = 5,
 	},
 	SlotRegionMask = {
 		Invalid = 0x1,
 		PlayerEquip = 0x2,
 		PlayerBags = 0x4,
 		PlayerInv = 0x8,
-		Bank = 0x10,
-		ReagentBank = 0x20,
+		CharacterBank = 0x10,
 		AccountBank = 0x40,
 	},
 	SocialWhoOrigin = {
@@ -4214,12 +4526,31 @@ Enum = {
 	SoundBusFlag = {
 		Disablepositionallpf = 0x1,
 	},
+	SpecializationSystem = {
+		TalentTab = 0,
+		ChrSpecialization = 1,
+	},
 	SpellBookItemType = {
 		None = 0,
 		Spell = 1,
 		FutureSpell = 2,
 		PetAction = 3,
 		Flyout = 4,
+	},
+	SpellBookSpellBank = {
+		Player = 0,
+		Pet = 1,
+	},
+	SpellDisplayBorderColor = {
+		None = 0,
+		Black = 1,
+		White = 2,
+		Red = 3,
+		Yellow = 4,
+		Orange = 5,
+		Purple = 6,
+		Green = 7,
+		Blue = 8,
 	},
 	StableResult = {
 		MaxSlots = 0,
@@ -4291,6 +4622,18 @@ Enum = {
 		CraftingOrderReagents = 35,
 		AccountBankTabs = 36,
 		CurrencyTransfer = 37,
+		CharacterBankTabs = 38,
+		HousingDecorConversion = 39,
+	},
+	SummonReason = {
+		Spell = 0,
+		Scenario = 1,
+	},
+	SurveyDeliveryMoment = {
+		Login = 0,
+		ProfessionTable = 1,
+		QuestTurnIn = 2,
+		ChestLooted = 3,
 	},
 	TimeEventFlag = {
 		GlueScreenShortcut = 0x1,
@@ -4361,6 +4704,8 @@ Enum = {
 		ToyDescription = 38,
 		ToySource = 39,
 		GemSocketEnchantment = 40,
+		ItemLevel = 41,
+		ItemUpgradeLevel = 42,
 	},
 	TooltipDataType = {
 		Item = 0,
@@ -4417,6 +4762,12 @@ Enum = {
 		Debuff = 3,
 		RacialAbility = 4,
 	},
+	TradeskillRelativeDifficulty = {
+		Optimal = 0,
+		Medium = 1,
+		Easy = 2,
+		Trivial = 3,
+	},
 	TraitCombatConfigFlags = {
 		ActiveForSpec = 0x1,
 		StarterBuild = 0x2,
@@ -4456,6 +4807,7 @@ Enum = {
 		Gold = 0,
 		CurrencyTypesBased = 1,
 		TraitSourced = 2,
+		TraitSourcedPlayerDataElement = 3,
 	},
 	TraitDefinitionSubType = {
 		DragonflightRed = 0,
@@ -4487,12 +4839,16 @@ Enum = {
 		ProfPath = 7,
 		ProfPerk = 8,
 		ProfPathUnlock = 9,
+		SpendInfinite = 10,
 	},
 	TraitNodeFlag = {
 		ShowMultipleIcons = 0x1,
 		NeverPurchasable = 0x2,
 		TestPositionLocked = 0x4,
 		TestGridPositioned = 0x8,
+		ActiveAtFirstRank = 0x10,
+		ShowExpandedSelection = 0x20,
+		HideMaxRank = 0x40,
 	},
 	TraitNodeGroupFlag = {
 		AvailableByDefault = 0x1,
@@ -4512,6 +4868,11 @@ Enum = {
 		AllowMultipleLoadoutsPerTree = 0x1,
 		ShowSpendConfirmation = 0x2,
 		AllowEditInCombat = 0x4,
+		AllowEditInChallengeMode = 0x8,
+	},
+	TraitSystemVariationType = {
+		None = 0,
+		Spec = 1,
 	},
 	TraitTreeFlag = {
 		CannotRefund = 0x1,
@@ -4728,6 +5089,7 @@ Enum = {
 		SheatheWeapon = 0x1,
 		HideWeapon = 0x2,
 		Autodress = 0x4,
+		NoCameraSpin = 0x8,
 	},
 	UISystemType = {
 		InGameNavigation = 0,
@@ -4735,6 +5097,9 @@ Enum = {
 	UITextureSliceMode = {
 		Stretched = 0,
 		Tiled = 1,
+	},
+	UIWidgetFlag = {
+		UniversalWidget = 0x1,
 	},
 	UIWidgetHorizontalDirection = {
 		LeftToRight = 0,
@@ -4970,6 +5335,10 @@ Enum = {
 		AwardedAutomatically = 0x8,
 		IsDefault = 0x10,
 	},
+	WeaponSlot = {
+		MainHand = 0,
+		OffHand = 1,
+	},
 	WeeklyRewardChestActivityType = {
 		Scenario = 0,
 		LFGDungeons = 1,
@@ -5034,6 +5403,11 @@ Enum = {
 		Cursor = 2,
 		Nameplate = 3,
 	},
+	WorldElapsedTimerTypes = {
+		None = 0,
+		ChallengeMode = 1,
+		ProvingGround = 2,
+	},
 }
 
 Constants = {
@@ -5051,10 +5425,15 @@ Constants = {
 		NUM_CUSTOM_DISPLAY = 4,
 		CHAR_CUSTOMIZE_CUSTOM_DISPLAY_OPTION_FIRST = 5,
 		CHAR_CUSTOMIZE_CUSTOM_DISPLAY_OPTION_LAST = 8,
+		NAME_RESERVATION_DAYS = 30,
 	},
 	ContentTrackingConsts = {
 		MaxTrackedAchievements = 10,
 		MaxTrackedCollectableSources = 15,
+	},
+	CooldownViewerUIConstants = {
+		COOLDOWN_VIEWER_LINKED_SPELLS_SIZE = 4,
+		COOLDOWN_VIEWER_CATEGORY_SET_SIZE = 16,
 	},
 	CurrencyConsts = {
 		HONOR_PER_CURRENCY = 10,
@@ -5092,13 +5471,14 @@ Constants = {
 		MAX_CURRENCY_QUANTITY = 100000000,
 	},
 	DelvesConsts = {
-		COMPANION_SEASONAL_LEVEL_START = 10,
 		DELVES_COMPANION_INFO_SELECTION_CHARACTER_DATA_ELEMENT_ID = 13,
-		BRANN_MAX_LEVEL = 60,
-		BRANN_XP_FACTION_ID = 1203,
 		DELVES_COMPANION_TOOLTIP_WIDGET_SET_ID = 1331,
 		DELVES_MIN_PLAYER_LEVEL_CONTENT_TUNING_ID = 2677,
 		DELVES_NORMAL_KEY_CURRENCY_ID = 3028,
+	},
+	EncodingLimits = {
+		EncodingStackSizeLimit = 100,
+		EncodingDecompressSizeLimit = 104857600,
 	},
 	EventScheduler = {
 		SCHEDULED_EVENT_REMINDER_DEAD_SECONDS = 10,
@@ -5120,9 +5500,14 @@ Constants = {
 		NumGenericBankSlots = 24,
 	},
 	ItemConsts = {
+		DEFAULT_ARTIFACT_POWERS_VERSION = 1,
+		CURRENT_ARTIFACT_POWERS_VERSION = 1,
+		CURRENT_ITEM_SAVE_VERSION = 2,
+		DEFAULT_ITEM_SAVE_VERSION = 2,
 		NUM_ITEM_ENCHANTMENT_SOCKETS = 3,
+		DEFAULT_RETENTION = 7,
 		MAX_LOOT_OBJECT_ITEMS = 31,
-		INVALID_TRANSACTION_BANK_TAB_SLOT = 255,
+		INVALID_BANK_TAB_SLOT = 255,
 	},
 	LFGConstsExposed = {
 		GROUP_FINDER_MAX_ACTIVITY_CAPACITY = 16,
@@ -5154,38 +5539,41 @@ Constants = {
 	PetConsts_PostCata = {
 		STABLED_PETS_FIRST_SLOT_INDEX = -1,
 		NUM_PET_SLOTS_MAGE = 1,
-		NUM_PET_SLOTS_DEATHKNIGHT = 1,
-		EXTRA_PET_STABLE_SLOT = 1,
 		MAX_SUMMONABLE_HUNTER_PETS = 1,
+		EXTRA_PET_STABLE_SLOT = 1,
 		NUM_PET_SLOTS_HUNTER = 3,
 		MAX_NUM_PET_SLOTS = 3,
 		NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL = 5,
+		NUM_PET_SLOTS_DEATHKNIGHT = 25,
 		NUM_PET_SLOTS_WARLOCK = 25,
 		MAX_STABLE_SLOTS = 200,
+		DEATHKNIGHT_PET_CREATURE_ID = 26125,
 	},
 	PetConsts_PreWrath = {
 		EXTRA_PET_STABLE_SLOT = -1,
+		DEATHKNIGHT_PET_CREATURE_ID = 0,
 		NUM_PET_SLOTS_DEATHKNIGHT = 0,
 		NUM_PET_SLOTS_MAGE = 1,
-		STABLED_PETS_FIRST_SLOT_INDEX = 1,
-		MAX_SUMMONABLE_HUNTER_PETS = 1,
 		NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL = 1,
+		MAX_SUMMONABLE_HUNTER_PETS = 1,
+		STABLED_PETS_FIRST_SLOT_INDEX = 1,
 		MAX_STABLE_SLOTS = 2,
 		NUM_PET_SLOTS_HUNTER = 3,
-		MAX_NUM_PET_SLOTS = 25,
 		NUM_PET_SLOTS_WARLOCK = 25,
+		MAX_NUM_PET_SLOTS = 25,
 	},
 	PetConsts_Wrath = {
 		EXTRA_PET_STABLE_SLOT = -1,
-		NUM_PET_SLOTS_MAGE = 1,
-		NUM_PET_SLOTS_DEATHKNIGHT = 1,
 		STABLED_PETS_FIRST_SLOT_INDEX = 1,
-		MAX_SUMMONABLE_HUNTER_PETS = 1,
 		NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL = 1,
+		MAX_SUMMONABLE_HUNTER_PETS = 1,
+		NUM_PET_SLOTS_MAGE = 1,
 		NUM_PET_SLOTS_HUNTER = 3,
 		MAX_STABLE_SLOTS = 4,
+		NUM_PET_SLOTS_DEATHKNIGHT = 25,
 		MAX_NUM_PET_SLOTS = 25,
 		NUM_PET_SLOTS_WARLOCK = 25,
+		DEATHKNIGHT_PET_CREATURE_ID = 26125,
 	},
 	ProfessionConsts = {
 		NUM_PRIMARY_PROFESSIONS = 2,
@@ -5198,6 +5586,7 @@ Constants = {
 		PUBLIC_CRAFTING_ORDER_STALE_THRESHOLD = 14400,
 	},
 	PvpInfoConsts = {
+		MAX_PVP_LOCK_LIST_MAP = 2,
 		MaxPlayersPerInstance = 80,
 	},
 	QuestWatchConsts_Classic = {
@@ -5205,12 +5594,21 @@ Constants = {
 		MAX_WORLD_QUEST_HARD_WATCHES = 5,
 		MAX_QUEST_WATCHES = 25,
 	},
+	RecentAlliesConsts = {
+		PIN_EXPIRATION_WARNING_DAYS = 5,
+	},
+	SpellBookSpellIDs = {
+		SPELL_ID_DISMISS_PET = 2641,
+	},
+	SpellCooldownConsts = {
+		GLOBAL_RECOVERY_CATEGORY = 133,
+	},
 	TimerunningConsts = {
 		TIMERUNNING_SEASON_NONE = 0,
 		TIMERUNNING_SEASON_PANDARIA = 1,
+		TIMERUNNING_SEASON_LEGION = 2,
 		TIMERUNNING_ITEM_CTR = 2905,
-		TIMERUNNING_STARTLOC_ID_ALLIANCE = 10211,
-		TIMERUNNING_STARTLOC_ID_HORDE = 10212,
+		TIMERUNNING_LEGION_ARTIFACT_CTR = 4579,
 	},
 	TraitConsts = {
 		VIEW_TRAIT_CONFIG_ID = -3,
@@ -5234,15 +5632,16 @@ NUM_LE_ACTIONBAR_VISUAL_STATES = 2
 LE_ACTIONBAR_STATE_MAIN = 1
 LE_ACTIONBAR_STATE_OVERRIDE = 2
 
-NUM_LE_AURORA_STATES = 8
+NUM_LE_AURORA_STATES = 9
 LE_AURORA_STATE_NONE = 1
-LE_AURORA_STATE_CONNECTING = 2
-LE_AURORA_STATE_CONNECTED = 3
-LE_AURORA_STATE_DISCONNECTING = 4
-LE_AURORA_STATE_LEGAL_AGREEMENT = 5
-LE_AURORA_STATE_SELECT_ACCOUNT = 6
-LE_AURORA_STATE_ENTER_CAPTCHA = 7
-LE_AURORA_STATE_ENTER_EXTRA_AUTH = 8
+LE_AURORA_STATE_WAITING_FOR_NETWORK = 2
+LE_AURORA_STATE_CONNECTING = 3
+LE_AURORA_STATE_CONNECTED = 4
+LE_AURORA_STATE_DISCONNECTING = 5
+LE_AURORA_STATE_LEGAL_AGREEMENT = 6
+LE_AURORA_STATE_SELECT_ACCOUNT = 7
+LE_AURORA_STATE_ENTER_CAPTCHA = 8
+LE_AURORA_STATE_ENTER_EXTRA_AUTH = 9
 
 NUM_LE_AUTHS = 2
 LE_AUTH_NONE = 1
@@ -5573,15 +5972,6 @@ LE_SORT_BY_LEVEL = 2
 LE_SORT_BY_RARITY = 3
 LE_SORT_BY_PETTYPE = 4
 
-NUM_LE_SPELL_CONFIRMATION_PROMPT_TYPES = 3
-LE_SPELL_CONFIRMATION_PROMPT_TYPE_STATIC_TEXT = 0
-LE_SPELL_CONFIRMATION_PROMPT_TYPE_BONUS_ROLL = 1
-LE_SPELL_CONFIRMATION_PROMPT_TYPE_SIMPLE_WARNING = 2
-
-NUM_LE_SUMMON_REASONS = 2
-LE_SUMMON_REASON_SPELL = 0
-LE_SUMMON_REASON_SCENARIO = 1
-
 NUM_LE_GM_WEB_TICKET_STATUSS = 4
 LE_TICKET_STATUS_OPEN = 1
 LE_TICKET_STATUS_SURVEY = 2
@@ -5592,7 +5982,7 @@ NUM_LE_TOKEN_CHOICES = 2
 LE_TOKEN_CHOICE_SUBSCRIPTION = 1
 LE_TOKEN_CHOICE_BALANCE = 2
 
-NUM_LE_TOKEN_RESULTS = 11
+NUM_LE_TOKEN_RESULTS = 12
 LE_TOKEN_RESULT_SUCCESS = 1
 LE_TOKEN_RESULT_ERROR_DISABLED = 2
 LE_TOKEN_RESULT_ERROR_OTHER = 3
@@ -5603,6 +5993,7 @@ LE_TOKEN_RESULT_ERROR_TRANSACTION_IN_PROGRESS = 7
 LE_TOKEN_RESULT_ERROR_AUCTIONABLE_TOKEN_OWNED = 8
 LE_TOKEN_RESULT_ERROR_TRIAL_RESTRICTED = 9
 LE_TOKEN_RESULT_ERROR_NOT_ENOUGH_PURCHASED_GAME_TIME = 11
+LE_TOKEN_RESULT_ERROR_THROTTLE_TOKENS = 12
 
 NUM_LE_TRACKER_SORTINGS = 4
 LE_TRACKER_SORTING_MANUAL = 1
@@ -5631,11 +6022,6 @@ LE_VAS_PURCHASE_STATE_APPLYING_LICENSE = 3
 LE_VAS_PURCHASE_STATE_READY = 5
 LE_VAS_PURCHASE_STATE_PROCESSING_FACTION_CHANGE = 6
 LE_VAS_PURCHASE_STATE_PROCESSING_COMPLETE = 7
-
-NUM_LE_WORLD_ELAPSED_TIMER_TYPES = 3
-LE_WORLD_ELAPSED_TIMER_TYPE_NONE = 1
-LE_WORLD_ELAPSED_TIMER_TYPE_CHALLENGE_MODE = 2
-LE_WORLD_ELAPSED_TIMER_TYPE_PROVING_GROUND = 3
 
 NUM_LE_WORLD_QUEST_QUALITYS = 3
 LE_WORLD_QUEST_QUALITY_COMMON = 1
