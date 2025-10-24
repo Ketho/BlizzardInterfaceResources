@@ -4259,6 +4259,10 @@ Enum = {
 		Difficult = 3,
 		Impossible = 4,
 	},
+	ReleaseType = {
+		Original = 1,
+		Classic = 2,
+	},
 	ReportMajorCategory = {
 		InappropriateCommunication = 0,
 		GameplaySabotage = 1,
@@ -5839,10 +5843,6 @@ NUM_LE_REALM_RELATIONS = 3
 LE_REALM_RELATION_SAME = 1
 LE_REALM_RELATION_COALESCED = 2
 LE_REALM_RELATION_VIRTUAL = 3
-
-NUM_LE_RELEASE_TYPES = 3
-LE_RELEASE_TYPE_ORIGINAL = 1
-LE_RELEASE_TYPE_CLASSIC = 2
 
 NUM_LE_SCENARIO_TYPES = 7
 LE_SCENARIO_TYPE_DEFAULT = 0
