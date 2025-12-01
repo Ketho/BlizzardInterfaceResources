@@ -30,6 +30,7 @@ local AtlasInfo = {
 		["shop-card-full-1117-365daysub-CN"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
 	},
 	["7259256"] = { -- 7259256
+		["dragonriding-barbershop-icon-Panthera"] = {128, 128, 0.00390625, 0.50390625, 0.00390625, 0.50390625, false, false},
 	},
 	["7259716"] = { -- 7259716
 		["dragonriding-barbershop-icon-PantheraIronHorde"] = {128, 128, 0.00390625, 0.50390625, 0.00390625, 0.50390625, false, false},
@@ -136,14 +137,15 @@ local AtlasInfo = {
 	["7455660"] = { -- 7455660
 		["shop-card-full-1125-bloodqueenbundle"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
 	},
-	["7499602"] = { -- 7499602
-		["shop-fg-12mo-eha"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	["7455830"] = { -- 7455830
+		["shop-card-full-1125-amethyst-felfire-pack"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
 	},
-	["7499604"] = { -- 7499604
-		["shop-fg-6mo-eha"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	["7461352"] = { -- 7461352
+		["shop-card-full-1125-yearofazeroth2025-apac"] = {568, 463, 0.0009765625, 0.5556640625, 0.0009765625, 0.453125, false, false},
+		["shop-card-full-1125-yearofazeroth2025"] = {568, 463, 0.0009765625, 0.5556640625, 0.455078125, 0.9072265625, false, false},
 	},
-	["7499606"] = { -- 7499606
-		["shop-fg-sub-bundle-365"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	["7542722"] = { -- 7542722
+		["catalogshop-widecard-brutosaur-comeback-cn"] = {532, 299, 0.0009765625, 0.5205078125, 0.001953125, 0.5859375, false, false},
 	},
 	["interface/ garrison/dragonflightlandingpage"] = { -- 4723680
 		["dragonflight-landingpage-talentbutton-hover"] = {400, 476, 0.00048828125, 0.19580078125, 0.4677734375, 0.9326171875, false, false},
@@ -15249,6 +15251,24 @@ local AtlasInfo = {
 		["shop-frame-carousel-small-scrim"] = {138, 78, 0.0009765625, 0.1357421875, 0.876953125, 0.953125, false, false},
 		["shop-frame-carousel-small-selected"] = {150, 90, 0.7763671875, 0.9228515625, 0.0009765625, 0.0888671875, false, false},
 	},
+	["interface/shop/catalogshopfg12monthearlyhousingaccess"] = { -- 7499602
+		["shop-fg-12mo-eha"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	},
+	["interface/shop/catalogshopfg2000tender"] = { -- 7543089
+		["shop-fg-bundle-2000tender"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	},
+	["interface/shop/catalogshopfg30daygametime"] = { -- 7552248
+		["shop-fg-30d-gametime"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	},
+	["interface/shop/catalogshopfg30daygametimepreview"] = { -- 7552408
+		["shop-fg-30d-gametime-preview"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	},
+	["interface/shop/catalogshopfg365daysub"] = { -- 7499606
+		["shop-fg-sub-bundle-365"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	},
+	["interface/shop/catalogshopfg6monthearlyhousingaccess"] = { -- 7499604
+		["shop-fg-6mo-eha"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	},
 	["interface/shop/catalogshopfgmidnightexpansionbase"] = { -- 7384778
 		["shop-fg-midnight-expansion-base"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
 	},
@@ -15594,6 +15614,17 @@ local AtlasInfo = {
 		["shop-card-wide-bg-red"] = {532, 299, 0.52197265625, 0.78173828125, 0.0009765625, 0.29296875, false, false},
 		["shop-card-wide-bg-teal"] = {532, 299, 0.26123046875, 0.52099609375, 0.294921875, 0.5869140625, false, false},
 	},
+	["interface/shop/catalogshopwidecardbrutosaurcomebackrow"] = { -- 7532584
+		["catalogshop-widecard-brutosaur-comeback-row"] = {532, 299, 0.0009765625, 0.5205078125, 0.001953125, 0.5859375, false, false},
+	},
+	["interface/shop/catalogshopwidecardburningcrusadeclassicanniversaryedition"] = { -- 7546973
+		["catalogshop-widecard-1125-burningcrusadeclassicanniversaryprepurchase-epic"] = {532, 299, 0.0009765625, 0.5205078125, 0.0009765625, 0.29296875, false, false},
+		["catalogshop-widecard-1125-burningcrusadeclassicanniversaryprepurchase-heroic"] = {532, 299, 0.0009765625, 0.5205078125, 0.294921875, 0.5869140625, false, false},
+		["catalogshop-widecard-1125-burningcrusadeclassicanniversaryprepurchase-upgrade"] = {532, 299, 0.0009765625, 0.5205078125, 0.5888671875, 0.880859375, false, false},
+	},
+	["interface/shop/catalogshopwidecardkrtwrecurringsubs"] = { -- 7538133
+		["catalogshop-widecard-yoa2025-6mo-hea"] = {532, 299, 0.0009765625, 0.5205078125, 0.001953125, 0.5859375, false, false},
+	},
 	["interface/shop/catalogshopwidecardmask"] = { -- 7353785
 		["shop-card-wide-mask"] = {532, 299, 0.0, 1.0, 0.0, 1.0, false, false},
 	},
@@ -15634,6 +15665,11 @@ local AtlasInfo = {
 		["catalogshop-widecard-180-bundle"] = {532, 299, 0.00048828125, 0.26025390625, 0.294921875, 0.5869140625, false, false},
 		["catalogshop-widecard-365-bundle"] = {532, 299, 0.00048828125, 0.26025390625, 0.5888671875, 0.880859375, false, false},
 		["catalogshop-widecard-6mo-bundle"] = {532, 299, 0.26123046875, 0.52099609375, 0.0009765625, 0.29296875, false, false},
+	},
+	["interface/shop/catalogshopwidecardyoa2025bundles"] = { -- 7499492
+		["catalogshop-widecard-bundle-yoa2025-apac"] = {532, 299, 0.0009765625, 0.5205078125, 0.0009765625, 0.29296875, false, false},
+		["catalogshop-widecard-bundle-yoa2025-krtw-eha"] = {532, 299, 0.0009765625, 0.5205078125, 0.294921875, 0.5869140625, false, false},
+		["catalogshop-widecard-bundle-yoa2025-row"] = {532, 299, 0.0009765625, 0.5205078125, 0.5888671875, 0.880859375, false, false},
 	},
 	["interface/shop/catalogshopwowgametimeicons"] = { -- 7431493
 		["game-time-30day"] = {320, 320, 0.3154296875, 0.6279296875, 0.0009765625, 0.3134765625, false, false},

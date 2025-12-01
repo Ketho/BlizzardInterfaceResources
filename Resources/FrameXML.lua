@@ -1572,6 +1572,7 @@ local FrameXML = {
 	"GameLimitedMode_IsActive",
 	"GameLimitedMode_IsBankedXPActive",
 	"GameRulesUtil.GarrisonLandingPageAllowed",
+	"GameRulesUtil.GetEffectiveMaxLevelForPlayer",
 	"GameRulesUtil.IsTimerunningSeasonActive",
 	"GameRulesUtil.ScenariosEnabled",
 	"GameRulesUtil.ShouldOrderHallBeActive",
