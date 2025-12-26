@@ -3189,8 +3189,6 @@ local GlobalAPI = {
 	"C_Reputation.SetWatchedFactionByIndex",
 	"C_Reputation.ToggleFactionAtWar",
 	"C_ResearchInfo.GetDigSitesForMap",
-	"C_ReturningPlayerUI.AcceptPrompt",
-	"C_ReturningPlayerUI.DeclinePrompt",
 	"C_Scenario.GetBonusStepRewardQuestID",
 	"C_Scenario.GetBonusSteps",
 	"C_Scenario.GetInfo",
