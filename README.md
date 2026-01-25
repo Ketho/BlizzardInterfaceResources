@@ -1,9 +1,12 @@
 # BlizzardInterfaceResources
 Global resources extracted from World of Warcraft for development purposes.
-* Dumped from the [KethoDoc](https://github.com/Ketho/KethoDoc) addon
-* [GlobalStrings](https://github.com/Ketho/WowDoc/blob/master/Projects/UpdateResources/GlobalStrings.lua) and [AtlasInfo](https://github.com/Ketho/WowDoc/blob/master/Projects/UpdateResources/AtlasInfo.lua) are downloaded from [wago.tools](https://wago.tools/db2/GlobalStrings)
-* Templates and mixins are [parsed](https://github.com/Ketho/WowDoc/blob/master/Projects/DumbXmlParser/init.lua) from FrameXML
 ```lua
-GetBuildInfo() => "5.5.2", "63832", "Oct 13 2025", 50502
+GetBuildInfo() => "5.5.3", "65302", "Jan  7 2026", 50503
+WOW_PROJECT_ID => WOW_PROJECT_MISTS_CLASSIC (19)
+LE_EXPANSION_LEVEL_CURRENT => LE_EXPANSION_MISTS_OF_PANDARIA (4)
+IsPublicBuild() => true
+IsTestBuild() => false
+IsBetaBuild() => false
+IsDebugBuild() => false
 ```
-![](https://raw.githubusercontent.com/Ketho/BlizzardInterfaceResources/cata/Resources/WidgetHierarchy.png)
+![](https://raw.githubusercontent.com/Ketho/BlizzardInterfaceResources/classic/Resources/WidgetHierarchy.png)

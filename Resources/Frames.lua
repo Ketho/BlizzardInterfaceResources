@@ -32,6 +32,8 @@ local Frames = {
 	"BrowserSettingsTooltip",
 	"BuffFrame",
 	"CastingBarFrame",
+	"CatalogShopFrame",
+	"CatalogShopTooltip",
 	"ChannelFrame",
 	"CharacterFrame",
 	"ChatAlertFrame",
@@ -359,6 +361,7 @@ local LoadOnDemand = {
 	"TimeManagerFrame",
 	"TradeSkillFrame",
 	"WardrobeFrame",
+	"WowSurveyStatusFrame",
 }
 
 return {Frames, LoadOnDemand}
