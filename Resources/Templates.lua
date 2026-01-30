@@ -1105,7 +1105,7 @@ local Templates = {
 	["EncounterTimelineViewTemplate"] = {type = "Frame", mixin = "EncounterTimelineViewMixin"},
 	["EncounterWarningsIconElementTemplate"] = {type = "Frame", mixin = "EncounterWarningsIconElementMixin"},
 	["EncounterWarningsSwingAnimationGroupTemplate"] = {type = "AnimationGroup", mixin = "EncounterWarningsSwingAnimationGroupMixin"},
-	["EncounterWarningsSystemFrameTemplate"] = {type = "Frame", mixin = "EncounterWarningsSystemFrameMixin", inherits = "EditModeEncounterEventsSystemTemplate, ResizeLayoutFrame"},
+	["EncounterWarningsSystemFrameTemplate"] = {type = "Frame", mixin = "EncounterWarningsSystemFrameMixin", inherits = "EditModeEncounterEventsSystemTemplate"},
 	["EncounterWarningsTextElementTemplate"] = {type = "FontString", mixin = "EncounterWarningsTextElementMixin"},
 	["EncounterWarningsViewTemplate"] = {type = "Frame", mixin = "EncounterWarningsViewMixin", inherits = "ResizeLayoutFrame"},
 	["EndOfMatchButtonBaseTemplate"] = {type = "Button", mixin = "EndOfMatchButtonBaseMixin", inherits = "BigRedThreeSliceButtonTemplate"},

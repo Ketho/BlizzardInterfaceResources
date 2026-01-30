@@ -1735,6 +1735,9 @@ local Events = {
 	TimerunningUI = {
 		"REMIX_END_OF_EVENT",
 	},
+	TooltipComparison = {
+		"TOOLTIP_SHOW_ITEM_COMPARISON",
+	},
 	TooltipInfo = {
 		"HIDE_HYPERLINK_TOOLTIP",
 		"SHOW_HYPERLINK_TOOLTIP",
