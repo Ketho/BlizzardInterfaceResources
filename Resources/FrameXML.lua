@@ -263,6 +263,7 @@ local FrameXML = {
 	"BlizzardConsoleMessageFrame_OnHyperlinkClick",
 	"Blizzard_HousingCatalogUtil.FormatPrice",
 	"Blizzard_HousingCatalogUtil.FormatRefundTime",
+	"Blizzard_HousingCatalogUtil.GetInsideAndIsInvalidIndoorsOutdoors",
 	"Blizzard_HousingCatalogUtil.OpenCatalogShopForProduct",
 	"BonusRollFrame_AdvanceLootSpinnerAnim",
 	"BonusRollFrame_CloseBonusRoll",

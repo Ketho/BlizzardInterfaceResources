@@ -442,6 +442,7 @@ local Mixins = {
 	"CatalogShopProductDetailsFrameMixin",
 	"CatalogShopPurchaseButtonMixin",
 	"CatalogShopRefundButtonMixin",
+	"CatalogShopRefundFlowProcessingContainerMixin",
 	"CatalogShopRefundFrameMixin",
 	"CatalogShopSectionHeaderMixin",
 	"CatalogShopSectionHeaderOptOutLinkMixin",

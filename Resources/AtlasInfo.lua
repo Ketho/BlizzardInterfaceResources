@@ -29,12 +29,6 @@ local AtlasInfo = {
 	["7232465"] = { -- 7232465
 		["shop-card-full-1117-365daysub-CN"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
 	},
-	["7259256"] = { -- 7259256
-		["dragonriding-barbershop-icon-Panthera"] = {128, 128, 0.00390625, 0.50390625, 0.00390625, 0.50390625, false, false},
-	},
-	["7259716"] = { -- 7259716
-		["dragonriding-barbershop-icon-PantheraIronHorde"] = {128, 128, 0.00390625, 0.50390625, 0.00390625, 0.50390625, false, false},
-	},
 	["7341277"] = { -- 7341277
 		["shop-card-full-1120-midnight-nonexpansion-base"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
 	},
@@ -146,6 +140,26 @@ local AtlasInfo = {
 	},
 	["7542722"] = { -- 7542722
 		["catalogshop-widecard-brutosaur-comeback-cn"] = {532, 299, 0.0009765625, 0.5205078125, 0.001953125, 0.5859375, false, false},
+	},
+	["7746247"] = { -- 7746247
+		["hearthsteel-100"] = {320, 320, 0.0009765625, 0.3134765625, 0.0009765625, 0.3134765625, false, false},
+		["hearthsteel-1000"] = {320, 320, 0.3154296875, 0.6279296875, 0.0009765625, 0.3134765625, false, false},
+		["hearthsteel-10000"] = {320, 320, 0.6298828125, 0.9423828125, 0.0009765625, 0.3134765625, false, false},
+		["hearthsteel-1500"] = {320, 320, 0.0009765625, 0.3134765625, 0.3154296875, 0.6279296875, false, false},
+		["hearthsteel-2000"] = {320, 320, 0.0009765625, 0.3134765625, 0.6298828125, 0.9423828125, false, false},
+		["hearthsteel-2500"] = {320, 320, 0.3154296875, 0.6279296875, 0.3154296875, 0.6279296875, false, false},
+		["hearthsteel-500"] = {320, 320, 0.6298828125, 0.9423828125, 0.3154296875, 0.6279296875, false, false},
+		["hearthsteel-5000"] = {320, 320, 0.3154296875, 0.6279296875, 0.6298828125, 0.9423828125, false, false},
+	},
+	["7746249"] = { -- 7746249
+		["hearthsteel-100"] = {640, 640, 0.00048828125, 0.31298828125, 0.00048828125, 0.31298828125, false, false},
+		["hearthsteel-1000"] = {640, 640, 0.31396484375, 0.62646484375, 0.00048828125, 0.31298828125, false, false},
+		["hearthsteel-10000"] = {640, 640, 0.62744140625, 0.93994140625, 0.00048828125, 0.31298828125, false, false},
+		["hearthsteel-1500"] = {640, 640, 0.00048828125, 0.31298828125, 0.31396484375, 0.62646484375, false, false},
+		["hearthsteel-2000"] = {640, 640, 0.00048828125, 0.31298828125, 0.62744140625, 0.93994140625, false, false},
+		["hearthsteel-2500"] = {640, 640, 0.31396484375, 0.62646484375, 0.31396484375, 0.62646484375, false, false},
+		["hearthsteel-500"] = {640, 640, 0.62744140625, 0.93994140625, 0.31396484375, 0.62646484375, false, false},
+		["hearthsteel-5000"] = {640, 640, 0.31396484375, 0.62646484375, 0.62744140625, 0.93994140625, false, false},
 	},
 	["interface/ garrison/dragonflightlandingpage"] = { -- 4723680
 		["dragonflight-landingpage-talentbutton-hover"] = {400, 476, 0.00048828125, 0.19580078125, 0.4677734375, 0.9326171875, false, false},
@@ -1059,6 +1073,12 @@ local AtlasInfo = {
 		["dragonriding-barbershop-icon-EtherealAirship"] = {128, 128, 0.4365234375, 0.5615234375, 0.001953125, 0.251953125, false, false},
 	},
 	["interface/barbershop/dragonridingcustomizationcompanionroc"] = { -- 7525967
+	},
+	["interface/barbershop/dragonridingcustomizationpanthera"] = { -- 7259256
+		["dragonriding-barbershop-icon-Panthera"] = {128, 128, 0.00390625, 0.50390625, 0.00390625, 0.50390625, false, false},
+	},
+	["interface/barbershop/dragonridingcustomizationpantheraironhorde"] = { -- 7259716
+		["dragonriding-barbershop-icon-PantheraIronHorde"] = {128, 128, 0.00390625, 0.50390625, 0.00390625, 0.50390625, false, false},
 	},
 	["interface/barbershop/dragonridingsgicon"] = { -- 5340912
 		["dragonriding-barbershop-icon-sg"] = {128, 128, 0.00390625, 0.50390625, 0.00390625, 0.50390625, false, false},
@@ -17246,6 +17266,30 @@ local AtlasInfo = {
 	},
 	["interface/shop/catalogshopfg700tender"] = { -- 7711817
 		["shop-fg-bundle-700tender"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	},
+	["interface/shop/catalogshopfghearthsteel100"] = { -- 7745995
+		["shop-fg-bundle-hearthsteel-100"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	},
+	["interface/shop/catalogshopfghearthsteel1000"] = { -- 7745999
+		["shop-fg-bundle-hearthsteel-1000"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	},
+	["interface/shop/catalogshopfghearthsteel10000"] = { -- 7746009
+		["shop-fg-bundle-hearthsteel-10000"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	},
+	["interface/shop/catalogshopfghearthsteel1500"] = { -- 7746001
+		["shop-fg-bundle-hearthsteel-1500"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	},
+	["interface/shop/catalogshopfghearthsteel2000"] = { -- 7746003
+		["shop-fg-bundle-hearthsteel-2000"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	},
+	["interface/shop/catalogshopfghearthsteel2500"] = { -- 7746005
+		["shop-fg-bundle-hearthsteel-2500"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	},
+	["interface/shop/catalogshopfghearthsteel500"] = { -- 7745997
+		["shop-fg-bundle-hearthsteel-500"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
+	},
+	["interface/shop/catalogshopfghearthsteel5000"] = { -- 7746007
+		["shop-fg-bundle-hearthsteel-5000"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
 	},
 	["interface/shop/catalogshopfgmidnightexpansionbase"] = { -- 7384778
 		["shop-fg-midnight-expansion-base"] = {1612, 914, 0.00048828125, 0.78759765625, 0.0009765625, 0.8935546875, false, false},
