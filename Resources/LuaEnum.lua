@@ -1250,6 +1250,10 @@ Enum = {
 		ActiveMythicKeystoneOrChallengeMode = 1,
 		ActivePvPMatch = 2,
 	},
+	ChatMessagingLockdownRestriction = {
+		DropIncomingAddonMessages = 1,
+		DropOutgoingAddonMessages = 2,
+	},
 	ChatToxityFilterOptOut = {
 		FilterAll = 0,
 		ExcludeFilterFriend = 1,
@@ -1674,6 +1678,10 @@ Enum = {
 		TargetCast = 4,
 		PlayerResource1 = 5,
 		PlayerResource2 = 6,
+		PlayerHealthSamePercent = 7,
+		TargetHealthSamePercent = 8,
+		PlayerResource1SamePercent = 9,
+		PlayerResource2SamePercent = 10,
 	},
 	CombatAudioAlertType = {
 		Health = 0,
@@ -8317,6 +8325,7 @@ Constants = {
 		CAAPlayerHealthPercentDefault = 0,
 		CAAPlayerResourceFormatDefault = 1,
 		CAAPlayerResourcePercentDefault = 0,
+		CAASamePercentThrottleTime = 10,
 		CAASampleTextThrottleTime = 1,
 		CAASayCombatEndDefault = true,
 		CAASayCombatStartDefault = true,

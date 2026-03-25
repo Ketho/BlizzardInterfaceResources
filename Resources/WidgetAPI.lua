@@ -11,7 +11,6 @@ local WidgetAPI = {
 			"IsObjectType",
 			"IsPreventingSecretValues",
 			"SetForbidden",
-			"SetPreventSecretValues",
 			"SetToDefaults",
 		},
 	},

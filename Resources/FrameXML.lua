@@ -2672,6 +2672,7 @@ local FrameXML = {
 	"MapUtil.IsChildMap",
 	"MapUtil.IsChildMapCached",
 	"MapUtil.IsMapTypeZone",
+	"MapUtil.IsMidnightZoneMap",
 	"MapUtil.IsOribosMap",
 	"MapUtil.IsShadowlandsZoneMap",
 	"MapUtil.MapHasEmissaries",
