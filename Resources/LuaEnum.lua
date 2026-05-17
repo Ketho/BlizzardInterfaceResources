@@ -2431,6 +2431,7 @@ Enum = {
 		None = 0,
 		ChallengeMode = 1,
 		Arena = 2,
+		ArenaMultiRound = 3,
 	},
 	DamageMeterNumbers = {
 		Minimal = 0,
@@ -7288,6 +7289,12 @@ Enum = {
 		Defensive = 2,
 		Debuff = 3,
 		RacialAbility = 4,
+	},
+	TrackedSpellsResult = {
+		Success = 0,
+		PlayerNotFound = 1,
+		NoCooldownInfo = 2,
+		MismatchedCooldownInfo = 3,
 	},
 	TradeskillOrderDuration = {
 		Short = 1,

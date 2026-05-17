@@ -1113,6 +1113,7 @@ local CVars = {
 		["raidFramesDispelIndicatorOverlay"] = {"1", 4, false, true, false, "When showing dispel indicators, also show a color gradient overlay"},
 		["raidFramesDispelIndicatorType"] = {"2", 4, false, true, false, "Choose which dispel icon indicators to show in raid frames"},
 		["raidFramesDisplayAggroHighlight"] = {"1", 4, false, true, false, "Whether to display aggro highlights on Raid Frames"},
+		["raidFramesDisplayBuffs"] = {"1", 4, false, true, false, "Whether to display buffs on Raid Frames"},
 		["raidFramesDisplayClassColor"] = {"0", 4, false, true, false, "Colors raid frames with the class color"},
 		["raidFramesDisplayDebuffs"] = {"1", 4, false, true, false, "Whether to display debuffs on Raid Frames"},
 		["raidFramesDisplayIncomingHeals"] = {"1", 4, false, true, false, "Whether to display incoming heals on Raid Frames"},

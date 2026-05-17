@@ -5,139 +5,6 @@ local AtlasInfo = {
 		["kiosk-BG"] = {1920, 1080, 0.00048828125, 0.93798828125, 0.00048828125, 0.52783203125, false, false},
 		["kiosk-button"] = {468, 128, 0.00048828125, 0.22900390625, 0.52880859375, 0.59130859375, false, false},
 	},
-	["7129611"] = { -- 7129611
-		["shop-card-full-1117-6monthbundle-2025"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7129663"] = { -- 7129663
-		["shop-card-full-1117-180daybundle-2025"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7129729"] = { -- 7129729
-		["shop-card-full-1117-12month-yearofazeroth-2025"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7129738"] = { -- 7129738
-		["shop-card-full-1117-365day-yearofazeroth-2025"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7129791"] = { -- 7129791
-		["shop-card-full-1117-purpleswimsuit"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7232414"] = { -- 7232414
-		["shop-card-full-1117-888bundle-CN"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7232418"] = { -- 7232418
-		["shop-card-full-1117-180daysub-CN"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7232465"] = { -- 7232465
-		["shop-card-full-1117-365daysub-CN"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7341277"] = { -- 7341277
-		["shop-card-full-1120-midnight-nonexpansion-base"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7341468"] = { -- 7341468
-		["shop-card-full-1120-midnight-nonexpansion-heroic"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7341490"] = { -- 7341490
-		["shop-card-full-1120-midnight-nonexpansion-epic"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7341493"] = { -- 7341493
-		["shop-card-full-1120-midnight-nonexpansion-heroic-apac"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7341800"] = { -- 7341800
-		["shop-card-full-1120-midnight-nonexpansion-epic-apac"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7341818"] = { -- 7341818
-		["shop-card-small-1120-midnight-nonexpansion-base"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
-	},
-	["7342204"] = { -- 7342204
-		["shop-card-small-1120-midnight-nonexpansion-heroic"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
-	},
-	["7342413"] = { -- 7342413
-		["shop-card-small-1120-midnight-nonexpansion-epic"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
-	},
-	["7342415"] = { -- 7342415
-		["shop-card-small-1120-midnight-nonexpansion-heroic-apac"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
-	},
-	["7342431"] = { -- 7342431
-		["shop-card-small-1120-midnight-nonexpansion-epic-apac"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
-	},
-	["7342548"] = { -- 7342548
-		["shop-card-half-1120-midnight-nonexpansion-base"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
-	},
-	["7342579"] = { -- 7342579
-		["shop-card-half-1120-midnight-nonexpansion-heroic"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
-	},
-	["7342581"] = { -- 7342581
-		["shop-card-half-1120-midnight-nonexpansion-epic"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
-	},
-	["7342586"] = { -- 7342586
-		["shop-card-half-1120-midnight-nonexpansion-heroic-apac"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
-	},
-	["7342956"] = { -- 7342956
-		["shop-card-half-1120-midnight-nonexpansion-epic-apac"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
-	},
-	["7343130"] = { -- 7343130
-		["shop-card-full-1120-midnight-nonexpansion-base-heroic"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7343570"] = { -- 7343570
-		["shop-card-full-1120-midnight-nonexpansion-base-epic"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7343572"] = { -- 7343572
-		["shop-card-half-1120-midnight-nonexpansion-base-heroic"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
-	},
-	["7343589"] = { -- 7343589
-		["shop-card-half-1120-midnight-nonexpansion-base-epic"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
-	},
-	["7343627"] = { -- 7343627
-		["shop-card-large-1120-midnight-nonexpansion-base-heroic"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
-	},
-	["7343648"] = { -- 7343648
-		["shop-card-large-1120-midnight-nonexpansion-base-epic"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
-	},
-	["7343859"] = { -- 7343859
-		["shop-card-large-1120-midnight-nonexpansion-epic"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
-	},
-	["7343945"] = { -- 7343945
-		["shop-card-small-1120-midnight-nonexpansion-base-heroic"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
-	},
-	["7344005"] = { -- 7344005
-		["shop-card-small-1120-midnight-nonexpansion-base-epic"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
-	},
-	["7344034"] = { -- 7344034
-		["shop-card-large-1120-midnight-nonexpansion-base-heroic-epic"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
-	},
-	["7344062"] = { -- 7344062
-		["shop-card-large-1120-midnight-nonexpansion-heroic-apac"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
-	},
-	["7344141"] = { -- 7344141
-		["shop-card-large-1120-midnight-nonexpansion-epic-apac"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
-	},
-	["7344147"] = { -- 7344147
-		["shop-card-large-1120-midnight-nonexpansion-base"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
-	},
-	["7344149"] = { -- 7344149
-		["shop-card-large-1120-midnight-nonexpansion-heroic"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
-	},
-	["7344155"] = { -- 7344155
-		["shop-card-small-1120-midnight-nonexpansion-heroic-epic"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
-	},
-	["7344222"] = { -- 7344222
-		["shop-card-full-1120-midnight-nonexpansion-heroic-epic"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7344226"] = { -- 7344226
-		["shop-card-half-1120-midnight-nonexpansion-heroic-epic"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
-	},
-	["7353099"] = { -- 7353099
-		["shop-card-full-1120-spiritplume-bundle"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7455660"] = { -- 7455660
-		["shop-card-full-1125-bloodqueenbundle"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7455830"] = { -- 7455830
-		["shop-card-full-1125-amethyst-felfire-pack"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
-	},
-	["7461352"] = { -- 7461352
-		["shop-card-full-1125-yearofazeroth2025-apac"] = {568, 463, 0.0009765625, 0.5556640625, 0.0009765625, 0.453125, false, false},
-		["shop-card-full-1125-yearofazeroth2025"] = {568, 463, 0.0009765625, 0.5556640625, 0.455078125, 0.9072265625, false, false},
-	},
 	["7542722"] = { -- 7542722
 		["catalogshop-widecard-brutosaur-comeback-cn"] = {532, 299, 0.0009765625, 0.5205078125, 0.001953125, 0.5859375, false, false},
 	},
@@ -19107,6 +18974,139 @@ local AtlasInfo = {
 	},
 	["interface/store/shopbundles1115springsupreme"] = { -- 6855743
 		["shop-card-full-spring-supreme"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles111712monthsubrefresh"] = { -- 7129729
+		["shop-card-full-1117-12month-yearofazeroth-2025"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1117180daysubrefresh"] = { -- 7129663
+		["shop-card-full-1117-180daybundle-2025"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1117180subcn"] = { -- 7232418
+		["shop-card-full-1117-180daysub-CN"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1117365daysubcn"] = { -- 7232465
+		["shop-card-full-1117-365daysub-CN"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles111736daysubrefreshapac"] = { -- 7129738
+		["shop-card-full-1117-365day-yearofazeroth-2025"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles11176monthsubrefresh"] = { -- 7129611
+		["shop-card-full-1117-6monthbundle-2025"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1117888bundlecn"] = { -- 7232414
+		["shop-card-full-1117-888bundle-CN"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1117swimsuittransmog"] = { -- 7129791
+		["shop-card-full-1117-purpleswimsuit"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionbase"] = { -- 7341277
+		["shop-card-full-1120-midnight-nonexpansion-base"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionbaseepic"] = { -- 7343570
+		["shop-card-full-1120-midnight-nonexpansion-base-epic"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionbaseheroic"] = { -- 7343130
+		["shop-card-full-1120-midnight-nonexpansion-base-heroic"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionepic"] = { -- 7341490
+		["shop-card-full-1120-midnight-nonexpansion-epic"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionepicapac"] = { -- 7341800
+		["shop-card-full-1120-midnight-nonexpansion-epic-apac"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionhalfbase"] = { -- 7342548
+		["shop-card-half-1120-midnight-nonexpansion-base"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionhalfbaseepic"] = { -- 7343589
+		["shop-card-half-1120-midnight-nonexpansion-base-epic"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionhalfbaseheroic"] = { -- 7343572
+		["shop-card-half-1120-midnight-nonexpansion-base-heroic"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionhalfepic"] = { -- 7342581
+		["shop-card-half-1120-midnight-nonexpansion-epic"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionhalfepicapac"] = { -- 7342956
+		["shop-card-half-1120-midnight-nonexpansion-epic-apac"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionhalfheroic"] = { -- 7342579
+		["shop-card-half-1120-midnight-nonexpansion-heroic"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionhalfheroicapac"] = { -- 7342586
+		["shop-card-half-1120-midnight-nonexpansion-heroic-apac"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionhalfheroicepic"] = { -- 7344226
+		["shop-card-half-1120-midnight-nonexpansion-heroic-epic"] = {286, 471, 0.001953125, 0.560546875, 0.001953125, 0.921875, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionheroic"] = { -- 7341468
+		["shop-card-full-1120-midnight-nonexpansion-heroic"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionheroicapac"] = { -- 7341493
+		["shop-card-full-1120-midnight-nonexpansion-heroic-apac"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionheroicepic"] = { -- 7344222
+		["shop-card-full-1120-midnight-nonexpansion-heroic-epic"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionlargebase"] = { -- 7344147
+		["shop-card-large-1120-midnight-nonexpansion-base"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionlargebaseepic"] = { -- 7343648
+		["shop-card-large-1120-midnight-nonexpansion-base-epic"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionlargebaseheroic"] = { -- 7343627
+		["shop-card-large-1120-midnight-nonexpansion-base-heroic"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionlargeepic"] = { -- 7343859
+		["shop-card-large-1120-midnight-nonexpansion-epic"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionlargeepicapac"] = { -- 7344141
+		["shop-card-large-1120-midnight-nonexpansion-epic-apac"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionlargeheroic"] = { -- 7344149
+		["shop-card-large-1120-midnight-nonexpansion-heroic"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionlargeheroicapac"] = { -- 7344062
+		["shop-card-large-1120-midnight-nonexpansion-heroic-apac"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionlargeheroicepic"] = { -- 7344034
+		["shop-card-large-1120-midnight-nonexpansion-base-heroic-epic"] = {566, 225, 0.0009765625, 0.5537109375, 0.00390625, 0.8828125, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionsmallbase"] = { -- 7341818
+		["shop-card-small-1120-midnight-nonexpansion-base"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionsmallbaseepic"] = { -- 7344005
+		["shop-card-small-1120-midnight-nonexpansion-base-epic"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionsmallbaseheroic"] = { -- 7343945
+		["shop-card-small-1120-midnight-nonexpansion-base-heroic"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionsmallepic"] = { -- 7342413
+		["shop-card-small-1120-midnight-nonexpansion-epic"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionsmallepicapac"] = { -- 7342431
+		["shop-card-small-1120-midnight-nonexpansion-epic-apac"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionsmallheroic"] = { -- 7342204
+		["shop-card-small-1120-midnight-nonexpansion-heroic"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionsmallheroicapac"] = { -- 7342415
+		["shop-card-small-1120-midnight-nonexpansion-heroic-apac"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["interface/store/shopbundles1120midnightnonexpansionsmallheroicepic"] = { -- 7344155
+		["shop-card-small-1120-midnight-nonexpansion-heroic-epic"] = {277, 224, 0.001953125, 0.54296875, 0.00390625, 0.87890625, false, false},
+	},
+	["interface/store/shopbundles1120spiritplumemegabundle"] = { -- 7353099
+		["shop-card-full-1120-spiritplume-bundle"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1125amethystfelfirepack"] = { -- 7455830
+		["shop-card-full-1125-amethyst-felfire-pack"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1125bloodqueenbundle"] = { -- 7455660
+		["shop-card-full-1125-bloodqueenbundle"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
+	},
+	["interface/store/shopbundles1125yearofazeroth2025"] = { -- 7461352
+		["shop-card-full-1125-yearofazeroth2025-apac"] = {568, 463, 0.0009765625, 0.5556640625, 0.0009765625, 0.453125, false, false},
+		["shop-card-full-1125-yearofazeroth2025"] = {568, 463, 0.0009765625, 0.5556640625, 0.455078125, 0.9072265625, false, false},
 	},
 	["interface/store/shopbundles915"] = { -- 4236523
 		["shop-card-full-915dragonbundle"] = {568, 463, 0.0009765625, 0.5556640625, 0.001953125, 0.90625, false, false},
