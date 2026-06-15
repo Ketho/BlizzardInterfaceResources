@@ -260,7 +260,6 @@ local LoadOnDemand = {
 	"BattlefieldMapTab",
 	"BehavioralMessagingDetails",
 	"BehavioralMessagingTray",
-	"BlackMarketFrame",
 	"CalendarFrame",
 	"ClassTrainerFrame",
 	"CombatLogQuickButtonFrame",
@@ -300,7 +299,6 @@ local LoadOnDemand = {
 	"TableAttributeDisplay",
 	"TimeManagerFrame",
 	"TradeSkillFrame",
-	"WowSurveyStatusFrame",
 }
 
 return {Frames, LoadOnDemand}
