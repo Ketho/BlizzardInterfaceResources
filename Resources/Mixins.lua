@@ -1290,6 +1290,8 @@ local Mixins = {
 	"TotemButtonMixin",
 	"TotemFrameMixin",
 	"ToyContainerFrameMixin",
+	"TradeFrameTradeButtonMixin",
+	"TradeItemAlertTemplateMixin",
 	"TrainingLobbyQueueMixin",
 	"TrainingLobbyQueueSelectButtonMixin",
 	"TraitsCommitControlsContainerMixin",

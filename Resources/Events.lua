@@ -1391,6 +1391,7 @@ local Events = {
 		"TRADE_SHOW",
 		"TRADE_TARGET_ITEM_CHANGED",
 		"TRADE_UPDATE",
+		"TRADE_UPDATE_WARNINGS",
 	},
 	TradeSkillUI = {
 		"NEW_RECIPE_LEARNED",

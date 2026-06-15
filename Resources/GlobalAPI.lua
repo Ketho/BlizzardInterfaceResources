@@ -2215,6 +2215,7 @@ local GlobalAPI = {
 	"C_TradeInfo.AddTradeMoney",
 	"C_TradeInfo.PickupTradeMoney",
 	"C_TradeInfo.SetTradeMoney",
+	"C_TradeInfo.ShouldShowTradeOfferWarning",
 	"C_TradeSkillUI.GetTradeSkillDisplayName",
 	"C_TradeSkillUI.GetTradeSkillTexture",
 	"C_TradeSkillUI.IsGuildTradeSkillsEnabled",
