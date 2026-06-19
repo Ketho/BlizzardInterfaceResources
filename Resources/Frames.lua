@@ -139,6 +139,7 @@ local Frames = {
 	"EssentialCooldownViewer",
 	"EventToastManagerFrame",
 	"EventToastManagerSideDisplay",
+	"ExpansionLandingPage",
 	"ExpansionTrialThanksForPlayingDialog",
 	"ExternalDefensivesFrame",
 	"ExtraAbilityContainer",
