@@ -3,10 +3,11 @@ local WidgetAPI = {
 		inherits = {},
 		methods = {
 			"AddForbiddenAspects",
+			"GetForbiddenAspects",
+			"GetInheritableForbiddenAspects",
 			"GetName",
 			"GetObjectTable",
 			"GetObjectType",
-			"HasAnyForbiddenAspect",
 			"HasAnyForbiddenAspects",
 			"HasAnySecretAspect",
 			"HasSecretAspect",

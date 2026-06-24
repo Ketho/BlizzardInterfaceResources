@@ -1043,6 +1043,7 @@ local Mixins = {
 	"EditModeImportLayoutLinkDialogMixin",
 	"EditModeLayoutDialogMixin",
 	"EditModeLootFrameSystemMixin",
+	"EditModeLossOfControlSystemMixin",
 	"EditModeManagerFrameMixin",
 	"EditModeManagerSettingCheckButtonMixin",
 	"EditModeManagerTutorialMixin",
