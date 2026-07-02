@@ -1133,6 +1133,7 @@ local CVars = {
 		["RAIDfarclip"] = {"1000", 1, false, false, false, "Raid Far clip plane distance"},
 		["raidFramesCenterBigDefensive"] = {"1", 4, false, true, false, "Show big defensive raid buffs in the center of the unit frame"},
 		["raidFramesDispelIndicatorOverlay"] = {"1", 4, false, true, false, "When showing dispel indicators, also show a color gradient overlay"},
+		["raidFramesDispelIndicatorOverlayAnimation"] = {"0", 4, false, true, false, "When showing dispel indicators, use a pulsing alpha anim"},
 		["raidFramesDispelIndicatorType"] = {"2", 4, false, true, false, "Choose which dispel icon indicators to show in raid frames"},
 		["raidFramesDisplayAggroHighlight"] = {"1", 4, false, true, false, "Whether to display aggro highlights on Raid Frames"},
 		["raidFramesDisplayBuffs"] = {"1", 4, false, true, false, "Whether to display buffs on Raid Frames"},

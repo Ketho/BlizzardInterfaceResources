@@ -64,16 +64,6 @@ local AtlasInfo = {
 		["evergreen-scenario-widget-short-frame-2x"] = {505, 106, 0.001953125, 0.98828125, 0.00390625, 0.41796875, false, false},
 		["speech-bubbles-2x"] = {77, 65, 0.001953125, 0.15234375, 0.42578125, 0.6796875, false, false},
 	},
-	["8171905"] = { -- 8171905
-		["delve-entrance-background-nemesis"] = {584, 384, 0.00048828125, 0.28564453125, 0.001953125, 0.751953125, false, false},
-		["delve-entrance-background-ulatek02"] = {584, 384, 0.28662109375, 0.57177734375, 0.001953125, 0.751953125, false, false},
-		["delve-entrance-background-ulatek01"] = {584, 384, 0.57275390625, 0.85791015625, 0.001953125, 0.751953125, false, false},
-	},
-	["8171907"] = { -- 8171907
-		["splash-1210-topleft"] = {371, 434, 0.001953125, 0.7265625, 0.5732421875, 0.9970703125, false, false},
-		["splash-1210-right"] = {510, 584, 0.001953125, 0.998046875, 0.0009765625, 0.5712890625, false, false},
-		["splash-1210-botleft"] = {137, 371, 0.73046875, 0.998046875, 0.5732421875, 0.935546875, false, false},
-	},
 	["interface/ garrison/dragonflightlandingpage"] = { -- 4723680
 		["dragonflight-landingpage-talentbutton-hover"] = {400, 476, 0.00048828125, 0.19580078125, 0.4677734375, 0.9326171875, false, false},
 		["dragonflight-landingpage-talentbutton"] = {400, 476, 0.00048828125, 0.19580078125, 0.0009765625, 0.4658203125, false, false},
@@ -986,6 +976,7 @@ local AtlasInfo = {
 		["dragonriding-barbershop-icon-EtherealAirship"] = {128, 128, 0.4365234375, 0.5615234375, 0.001953125, 0.251953125, false, false},
 	},
 	["interface/barbershop/dragonridingcustomizationcompanionroc"] = { -- 7525967
+		["dragonriding-barbershop-icon-companionroc"] = {128, 128, 0.00390625, 0.50390625, 0.00390625, 0.50390625, false, false},
 	},
 	["interface/barbershop/dragonridingcustomizationpanthera"] = { -- 7259256
 		["dragonriding-barbershop-icon-Panthera"] = {128, 128, 0.00390625, 0.50390625, 0.00390625, 0.50390625, false, false},
@@ -3563,7 +3554,6 @@ local AtlasInfo = {
 		["Crosshair_unableOpenHandGlow_96"] = {96, 96, 0.255859375, 0.443359375, 0.51171875, 0.88671875, false, false},
 	},
 	["interface/cursor/crosshair/uipalettecrosshair2x"] = { -- 7380706
-		["crosshair_unablepalette_48"] = {48, 48, 0.865234375, 0.958984375, 0.00390625, 0.19140625, false, false},
 		["crosshair_palette_128"] = {128, 128, 0.001953125, 0.251953125, 0.00390625, 0.50390625, false, false},
 		["crosshair_palette_32"] = {32, 32, 0.509765625, 0.572265625, 0.26171875, 0.38671875, false, false},
 		["crosshair_palette_48"] = {48, 48, 0.767578125, 0.861328125, 0.00390625, 0.19140625, false, false},
@@ -3571,6 +3561,7 @@ local AtlasInfo = {
 		["crosshair_palette_96"] = {96, 96, 0.001953125, 0.189453125, 0.51171875, 0.88671875, false, false},
 		["crosshair_unablepalette_128"] = {128, 128, 0.255859375, 0.505859375, 0.00390625, 0.50390625, false, false},
 		["crosshair_unablepalette_32"] = {32, 32, 0.509765625, 0.572265625, 0.39453125, 0.51953125, false, false},
+		["crosshair_unablepalette_48"] = {48, 48, 0.865234375, 0.958984375, 0.00390625, 0.19140625, false, false},
 		["crosshair_unablepalette_64"] = {64, 64, 0.638671875, 0.763671875, 0.00390625, 0.25390625, false, false},
 		["crosshair_unablepalette_96"] = {96, 96, 0.255859375, 0.443359375, 0.51171875, 0.88671875, false, false},
 	},
@@ -4717,6 +4708,12 @@ local AtlasInfo = {
 		["delve-entrance-background-the-darkway"] = {584, 384, 0.00048828125, 0.28564453125, 0.37744140625, 0.56494140625, false, false},
 		["delve-entrance-background-sunkiller-sanctum"] = {584, 384, 0.57275390625, 0.85791015625, 0.18896484375, 0.37646484375, false, false},
 	},
+	["interface/delves/121delvesentrancebackgrounds"] = { -- 8171905
+		["delve-entrance-background-nemesis"] = {584, 384, 0.00048828125, 0.28564453125, 0.0009765625, 0.3759765625, false, false},
+		["delve-entrance-background-ulatek02"] = {584, 384, 0.28662109375, 0.57177734375, 0.0009765625, 0.3759765625, false, false},
+		["delve-entrance-background-ulatek01"] = {584, 384, 0.00048828125, 0.28564453125, 0.3779296875, 0.7529296875, false, false},
+		["Delve-entrance-background-Lairs"] = {584, 384, 0.57275390625, 0.85791015625, 0.0009765625, 0.3759765625, false, false},
+	},
 	["interface/delves/delvesbountifulanimation"] = { -- 5912346
 		["bountiful-dark-circle"] = {48, 48, 0.9267578125, 0.9736328125, 0.0625, 0.109375, false, false},
 		["bountiful-glow-rays-mask"] = {76, 105, 0.0009765625, 0.0751953125, 0.6513671875, 0.75390625, false, false},
@@ -4750,16 +4747,14 @@ local AtlasInfo = {
 		["delves-dashboard-checkmark_flipbook"] = {235, 118, 0.212890625, 0.4423828125, 0.39453125, 0.509765625, false, false},
 	},
 	["interface/delves/delvesentranceui"] = { -- 5911407
-		["delves-affix-mask"] = {49, 49, 0.5, 0.8828125, 0.015625, 0.78125, false, false},
-		["delves-affix-ring"] = {61, 61, 0.0078125, 0.484375, 0.015625, 0.96875, false, false},
+		["delves-affix-mask"] = {49, 49, 0.5, 0.8828125, 0.0078125, 0.390625, false, false},
+		["delves-affix-ring"] = {61, 61, 0.0078125, 0.484375, 0.0078125, 0.484375, false, false},
+		["delves-socialqueuing-icon-eye"] = {24, 26, 0.0078125, 0.1953125, 0.5, 0.703125, false, false},
 	},
 	["interface/delves/lairbuttonassets"] = { -- 7975803
 		["Lair-button-reward-disable"] = {49, 48, 0.0078125, 0.390625, 0.0078125, 0.3828125, false, false},
 		["Lair-button-reward-pressed"] = {49, 48, 0.40625, 0.7890625, 0.0078125, 0.3828125, false, false},
 		["Lair-button-reward"] = {49, 48, 0.0078125, 0.390625, 0.3984375, 0.7734375, false, false},
-	},
-	["interface/delves/lairentrancebackground"] = { -- 7889057
-		["Lair-entrance-background"] = {584, 384, 0.0009765625, 0.5712890625, 0.001953125, 0.751953125, false, false},
 	},
 	["interface/delves/scenariodelves"] = { -- 5882646
 		["delves-scenario-frame"] = {264, 84, 0.001953125, 0.517578125, 0.00390625, 0.33203125, false, false},
@@ -15404,7 +15399,7 @@ local AtlasInfo = {
 		["Professions-Icon-Quality-Mixed"] = {50, 50, 0.19677734375, 0.22119140625, 0.29443359375, 0.31884765625, false, false},
 		["Professions-Icon-Quality-Tier4"] = {50, 50, 0.18017578125, 0.20458984375, 0.77685546875, 0.80126953125, false, false},
 		["Professions-Icon-Quality-Tier5"] = {50, 50, 0.20556640625, 0.22998046875, 0.77685546875, 0.80126953125, false, false},
-		["Professions-Icon-Quality-Tier5-Small"] = {26, 26, 0.19775390625, 0.21044921875, 0.86376953125, 0.87646484375, false, false},
+		["Professions-Icon-Quality-Tier5-Small"] = {26, 26, 0.21826171875, 0.23095703125, 0.84326171875, 0.85595703125, false, false},
 		["Professions-Icon-Quality-Tier4-Small"] = {26, 26, 0.21826171875, 0.23095703125, 0.82275390625, 0.83544921875, false, false},
 		["Professions-Icon-Quality-Mixed-Small"] = {26, 26, 0.16650390625, 0.17919921875, 0.86181640625, 0.87451171875, false, false},
 		["Professions-QualityBar-bg"] = {185, 25, 0.703125, 0.79345703125, 0.14892578125, 0.1611328125, false, false},
@@ -15487,12 +15482,17 @@ local AtlasInfo = {
 		["Professions-Specialization-Node-ChoiceGlow"] = {78, 78, 0.19091796875, 0.22900390625, 0.42626953125, 0.46435546875, false, false},
 		["Professions-background-summarylist"] = {268, 572, 0.00048828125, 0.13134765625, 0.2578125, 0.537109375, false, false},
 		["Professions-ChoiceReagent-Frame"] = {100, 100, 0.13232421875, 0.18115234375, 0.48486328125, 0.53369140625, false, false},
-		["Professions-Icon-Crafter"] = {21, 19, 0.21826171875, 0.228515625, 0.86669921875, 0.8759765625, false, false},
-		["Professions-Icon-Customer"] = {21, 19, 0.107421875, 0.11767578125, 0.98876953125, 0.998046875, false, false},
-		["Professions_Icon_Warning"] = {24, 21, 0.21826171875, 0.22998046875, 0.85546875, 0.86572265625, false, false},
-		["UI_Icon_Chest_NPCreward"] = {23, 23, 0.21826171875, 0.2294921875, 0.84326171875, 0.8544921875, false, false},
+		["Professions-Icon-Crafter"] = {21, 19, 0.1279296875, 0.13818359375, 0.98876953125, 0.998046875, false, false},
+		["Professions-Icon-Customer"] = {21, 19, 0.13916015625, 0.1494140625, 0.98876953125, 0.998046875, false, false},
+		["Professions_Icon_Warning"] = {24, 21, 0.107421875, 0.119140625, 0.98876953125, 0.9990234375, false, false},
+		["UI_Icon_Chest_NPCreward"] = {23, 23, 0.22021484375, 0.2314453125, 0.890625, 0.90185546875, false, false},
 		["UI_bg_npcreward"] = {62, 62, 0.173828125, 0.2041015625, 0.6767578125, 0.70703125, false, false},
 		["professions-slot-frame-white"] = {40, 40, 0.15869140625, 0.17822265625, 0.890625, 0.91015625, false, false},
+		["professions-icon-quality-tier1-questobjective"] = {26, 23, 0.21826171875, 0.23095703125, 0.85693359375, 0.8681640625, false, false},
+		["professions-icon-quality-tier2-questobjective"] = {26, 23, 0.17919921875, 0.19189453125, 0.890625, 0.90185546875, false, false},
+		["professions-icon-quality-tier3-questobjective"] = {26, 23, 0.19287109375, 0.20556640625, 0.890625, 0.90185546875, false, false},
+		["professions-icon-quality-tier5-questobjective"] = {26, 26, 0.19775390625, 0.21044921875, 0.86376953125, 0.87646484375, false, false},
+		["professions-icon-quality-tier4-questobjective"] = {26, 23, 0.20654296875, 0.21923828125, 0.890625, 0.90185546875, false, false},
 	},
 	["interface/professions/professions12"] = { -- 7487371
 		["Professions-ChatIcon-Quality-12-Tier1"] = {34, 34, 0.732421875, 0.798828125, 0.42578125, 0.55859375, false, false},
@@ -15505,9 +15505,11 @@ local AtlasInfo = {
 		["Professions-Icon-Quality-12-Tier2-Inv"] = {33, 28, 0.001953125, 0.06640625, 0.75390625, 0.86328125, false, false},
 		["Professions-Icon-Quality-12-Tier2-Small"] = {40, 38, 0.896484375, 0.974609375, 0.21484375, 0.36328125, false, false},
 		["Professions-Icon-Quality-12-Tier2"] = {50, 50, 0.833984375, 0.931640625, 0.00390625, 0.19921875, false, false},
-		["Professions-QualityBar-12-BarBGx2-Tier2CAP"] = {372, 52, 0.001953125, 0.728515625, 0.00390625, 0.20703125, false, false},
-		["Professions-QualityBar-BarBGx2-12-Tier1"] = {372, 52, 0.001953125, 0.728515625, 0.21484375, 0.41796875, false, false},
-		["Professions-QualityBar-12-BarBGx2-Tier2"] = {372, 52, 0.001953125, 0.728515625, 0.42578125, 0.62890625, false, false},
+		["Professions-QualityBar-12-BarBGx2-Tier2CAP"] = {372, 52, 0.001953125, 0.728515625, 0.21484375, 0.41796875, false, false},
+		["Professions-QualityBar-BarBGx2-12-Tier1"] = {372, 52, 0.001953125, 0.728515625, 0.42578125, 0.62890625, false, false},
+		["Professions-QualityBar-12-BarBGx2-Tier2"] = {372, 52, 0.001953125, 0.728515625, 0.00390625, 0.20703125, false, false},
+		["professions-icon-quality-12-tier1-questobjective"] = {26, 23, 0.935546875, 0.986328125, 0.00390625, 0.09375, false, false},
+		["professions-icon-quality-12-tier2-questobjective"] = {26, 23, 0.935546875, 0.986328125, 0.1015625, 0.19140625, false, false},
 	},
 	["interface/professions/professionsfxalchemy"] = { -- 4696956
 		["Skillbar_Fill_Flipbook_Alchemy"] = {1712, 1020, 0.00048828125, 0.83642578125, 0.00048828125, 0.49853515625, false, false},
@@ -19147,6 +19149,16 @@ local AtlasInfo = {
 		["splash-1207-botleft"] = {137, 371, 0.73046875, 0.998046875, 0.5732421875, 0.935546875, false, false},
 		["splash-1207-right"] = {510, 584, 0.001953125, 0.998046875, 0.0009765625, 0.5712890625, false, false},
 		["splash-1207-topleft"] = {371, 434, 0.001953125, 0.7265625, 0.5732421875, 0.9970703125, false, false},
+	},
+	["interface/splash/splash1210"] = { -- 8171907
+		["splash-1210-topleft"] = {371, 434, 0.001953125, 0.7265625, 0.5732421875, 0.9970703125, false, false},
+		["splash-1210-right"] = {510, 584, 0.001953125, 0.998046875, 0.0009765625, 0.5712890625, false, false},
+		["splash-1210-botleft"] = {137, 371, 0.73046875, 0.998046875, 0.5732421875, 0.935546875, false, false},
+	},
+	["interface/splash/splash12102"] = { -- 8176582
+		["splash-12102-botleft"] = {137, 371, 0.73046875, 0.998046875, 0.5732421875, 0.935546875, false, false},
+		["splash-12102-right"] = {510, 584, 0.001953125, 0.998046875, 0.0009765625, 0.5712890625, false, false},
+		["splash-12102-topleft"] = {371, 434, 0.001953125, 0.7265625, 0.5732421875, 0.9970703125, false, false},
 	},
 	["interface/splash/splash600"] = { -- 1019183
 		["splash-600-botleft"] = {137, 371, 0.73046875, 0.998046875, 0.5732421875, 0.935546875, false, false},
