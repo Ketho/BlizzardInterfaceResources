@@ -1,7 +1,7 @@
 # BlizzardInterfaceResources
 Global resources extracted from World of Warcraft for development purposes.
 ```lua
-GetBuildInfo() => "2.5.5", "68101", "Jun  9 2026", 20505
+GetBuildInfo() => "2.5.6", "68575", "Jul  7 2026", 20506
 ```
 ```lua
 IsPublicBuild() => true
