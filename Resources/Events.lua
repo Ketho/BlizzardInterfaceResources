@@ -698,6 +698,9 @@ local Events = {
 		"MIN_EXPANSION_LEVEL_UPDATED",
 		"SHOW_SUBSCRIPTION_INTERSTITIAL",
 	},
+	ExternalEventURL = {
+		"EXTERNAL_EVENT_LAUNCH_URL_FAILED",
+	},
 	FogOfWar = {
 		"FOG_OF_WAR_UPDATED",
 	},
