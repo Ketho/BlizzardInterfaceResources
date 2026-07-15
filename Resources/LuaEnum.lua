@@ -3043,10 +3043,7 @@ Enum = {
 		AlwaysPropagateInput = 0x20,
 		ScriptedInput = 0x40,
 		QueryFocus = 0x80,
-	},
-	ForbiddenAspectInheritance = {
-		Parent = 0,
-		Layout = 1,
+		ChangeAnimationTarget = 0x100,
 	},
 	FragmentID = {
 		MirrorState = 0,
@@ -5141,6 +5138,9 @@ Enum = {
 		Gt = 5,
 		Gteq = 6,
 	},
+	LoginTicketLicenses = {
+		GmLicense = 11486,
+	},
 	LootMethod = {
 		Freeforall = 0,
 		Roundrobin = 1,
@@ -6410,6 +6410,14 @@ Enum = {
 		CrafterFulfill = 5,
 		Invalid = 6,
 	},
+	RecentAlliesFriendTag = {
+		Professions = 0,
+		PvP = 1,
+		Raiding = 2,
+		Dungeons = 3,
+		Delves = 4,
+		Questing = 5,
+	},
 	RecentAllyPinResult = {
 		Success = 0,
 		ServerError = 1,
@@ -6649,6 +6657,9 @@ Enum = {
 		Extrinsic = 1,
 		Postcall = 2,
 	},
+	ScriptObjectAccessRestriction = {
+		DenyTaintedAccessWhenAurasAreSecret = 1,
+	},
 	ScriptObjectMetatable = {
 		Public = 0,
 		Forbidden = 1,
@@ -6656,6 +6667,10 @@ Enum = {
 	ScriptObjectPartition = {
 		Public = 0,
 		Forbidden = 1,
+	},
+	ScriptObjectPropagationPath = {
+		Hierarchy = 0,
+		Layout = 1,
 	},
 	ScriptedAnimationBehavior = {
 		None = 0,
@@ -9161,6 +9176,9 @@ Constants = {
 	},
 	LootConsts = {
 		MasterLootQualityThreshold = 5,
+	},
+	LossOfControlConsts = {
+		LOSS_OF_CONTROL_ACTIVE_INDEX = 1,
 	},
 	MacroConsts = {
 		MAX_ACCOUNT_MACROS = 120,

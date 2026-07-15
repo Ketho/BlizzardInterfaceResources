@@ -2,12 +2,15 @@ local WidgetAPI = {
 	FrameScriptObject = {
 		inherits = {},
 		methods = {
+			"AddAccessRestrictions",
 			"AddForbiddenAspects",
+			"GetAccessRestrictions",
 			"GetForbiddenAspects",
 			"GetInheritableForbiddenAspects",
 			"GetName",
 			"GetObjectTable",
 			"GetObjectType",
+			"HasAnyAccessRestrictions",
 			"HasAnyForbiddenAspects",
 			"HasAnySecretAspect",
 			"HasSecretAspect",
