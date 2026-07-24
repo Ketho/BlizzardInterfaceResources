@@ -220,6 +220,15 @@ local WidgetAPI = {
 			"SetWordWrap",
 		},
 	},
+	VectorGraphics = {
+		inherits = {"Region"},
+		methods = {
+			"ClearSVG",
+			"GetSVGFileID",
+			"HasSVG",
+			"SetSVG",
+		},
+	},
 	TextureBase = {
 		inherits = {"Region"},
 		methods = {
@@ -589,6 +598,7 @@ local WidgetAPI = {
 			"RegisterUnitEvent",
 			"RegisterUnitEventCallback",
 			"RemoveRoleset",
+			"ResizeToBoundsRect",
 			"RotateTextures",
 			"SetAlphaGradient",
 			"SetAttribute",

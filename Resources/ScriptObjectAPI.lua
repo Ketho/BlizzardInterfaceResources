@@ -12,9 +12,11 @@ local ScriptObjectAPI = {
 		"SetBreakpoints",
 	},
 	DurationTextBindingObjectAPI = {
+		"Assign",
 		"CanFormatText",
 		"CanUpdateFontString",
 		"ClearTextColorCurve",
+		"Copy",
 		"Disable",
 		"Enable",
 		"GetDuration",
