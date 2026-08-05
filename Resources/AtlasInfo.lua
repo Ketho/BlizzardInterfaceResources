@@ -5,47 +5,6 @@ local AtlasInfo = {
 		["kiosk-BG"] = {1920, 1080, 0.00048828125, 0.93798828125, 0.00048828125, 0.52783203125, false, false},
 		["kiosk-button"] = {468, 128, 0.00048828125, 0.22900390625, 0.52880859375, 0.59130859375, false, false},
 	},
-	["8033663"] = { -- 8033663
-		["common-insideframe"] = {214, 214, 0.00390625, 0.83984375, 0.00390625, 0.83984375, false, false},
-	},
-	["8033665"] = { -- 8033665
-		["common-insideframe"] = {107, 107, 0.0078125, 0.84375, 0.0078125, 0.84375, false, false},
-	},
-	["8033667"] = { -- 8033667
-		["common-sidetab"] = {90, 120, 0.00390625, 0.35546875, 0.00390625, 0.47265625, false, false},
-		["common-sidetab-hover"] = {90, 120, 0.00390625, 0.35546875, 0.48046875, 0.94921875, false, false},
-		["common-sidetab-selected"] = {90, 120, 0.36328125, 0.71484375, 0.00390625, 0.47265625, false, false},
-	},
-	["8033669"] = { -- 8033669
-		["common-sidetab-hover"] = {45, 60, 0.0078125, 0.359375, 0.0078125, 0.4765625, false, false},
-		["common-sidetab-selected"] = {45, 60, 0.0078125, 0.359375, 0.4921875, 0.9609375, false, false},
-		["common-sidetab"] = {45, 60, 0.375, 0.7265625, 0.0078125, 0.4765625, false, false},
-	},
-	["8033671"] = { -- 8033671
-		["common-button-list-collapseExpand"] = {128, 44, 0.00390625, 0.50390625, 0.015625, 0.703125, false, false},
-		["common-button-list-minus"] = {26, 8, 0.00390625, 0.10546875, 0.734375, 0.859375, false, false},
-		["common-button-list-plus"] = {26, 26, 0.51171875, 0.61328125, 0.015625, 0.421875, false, false},
-	},
-	["8033673"] = { -- 8033673
-		["common-button-list-collapseExpand"] = {64, 22, 0.0078125, 0.5078125, 0.03125, 0.71875, false, false},
-		["common-button-list-minus"] = {13, 4, 0.0078125, 0.109375, 0.78125, 0.90625, false, false},
-		["common-button-list-plus"] = {13, 13, 0.5234375, 0.625, 0.03125, 0.4375, false, false},
-	},
-	["8040086"] = { -- 8040086
-		["housing-icon-catalog"] = {66, 66, 0.00390625, 0.26171875, 0.00390625, 0.26171875, false, false},
-		["housing-icon-catalog-dis"] = {66, 66, 0.26953125, 0.52734375, 0.00390625, 0.26171875, false, false},
-		["housing-icon-dashboard"] = {66, 66, 0.53515625, 0.79296875, 0.00390625, 0.26171875, false, false},
-		["housing-icon-dashboard-dis"] = {66, 66, 0.00390625, 0.26171875, 0.26953125, 0.52734375, false, false},
-	},
-	["8040088"] = { -- 8040088
-		["housing-icon-catalog-dis"] = {33, 33, 0.80078125, 0.9296875, 0.140625, 0.26953125, false, false},
-		["housing-icon-catalog"] = {33, 33, 0.80078125, 0.9296875, 0.00390625, 0.1328125, false, false},
-		["housing-icon-dashboard-dis"] = {33, 33, 0.140625, 0.26953125, 0.80078125, 0.9296875, false, false},
-		["housing-icon-dashboard"] = {33, 33, 0.00390625, 0.1328125, 0.80078125, 0.9296875, false, false},
-		["common-icons-blueprints-disabled"] = {100, 100, 0.40234375, 0.79296875, 0.00390625, 0.39453125, false, false},
-		["common-icons-blueprints"] = {100, 100, 0.00390625, 0.39453125, 0.00390625, 0.39453125, false, false},
-		["common-icons-blueprints-inactive"] = {100, 100, 0.00390625, 0.39453125, 0.40234375, 0.79296875, false, false},
-	},
 	["8116297"] = { -- 8116297
 		["housing-multiselect-fx-highlightcircle"] = {1200, 1200, 0.00048828125, 0.58642578125, 0.00048828125, 0.58642578125, false, false},
 		["housing-multiselect-fx-line"] = {512, 512, 0.58740234375, 0.83740234375, 0.00048828125, 0.25048828125, false, false},
@@ -53,25 +12,8 @@ local AtlasInfo = {
 	["8116299"] = { -- 8116299
 		["housing-multiselect-fx-mask"] = {512, 512, 0.0, 1.0, 0.0, 1.0, false, false},
 	},
-	["8127985"] = { -- 8127985
-		["evergreen-scenario-widget-short-frame"] = {253, 53, 0.00390625, 0.9921875, 0.0078125, 0.421875, false, false},
-		["speech-bubbles"] = {39, 33, 0.00390625, 0.15625, 0.4375, 0.6953125, false, false},
-	},
-	["8127994"] = { -- 8127994
-		["evergreen-scenario-widget-short-frame-2x"] = {505, 106, 0.001953125, 0.98828125, 0.00390625, 0.41796875, false, false},
-		["speech-bubbles-2x"] = {77, 65, 0.001953125, 0.15234375, 0.42578125, 0.6796875, false, false},
-	},
 	["8198947"] = { -- 8198947
 		["UI-Background-Rock-Brown"] = {256, 256, 0.0, 1.0, 0.0, 1.0, true, true},
-	},
-	["8207101"] = { -- 8207101
-		["UI-RaidFrames-SingleAnt-Vertical"] = {8, 8, 0.0625, 0.5625, 0.0, 1.0, false, true},
-	},
-	["8207103"] = { -- 8207103
-		["UI-RaidFrames-SingleAnt-Horiz"] = {8, 8, 0.0, 1.0, 0.0625, 0.5625, true, false},
-	},
-	["8207108"] = { -- 8207108
-		["UI-RaidFrames-AntCorners"] = {32, 32, 0.015625, 0.515625, 0.015625, 0.515625, false, false},
 	},
 	["interface/ garrison/dragonflightlandingpage"] = { -- 4723680
 		["dragonflight-landingpage-talentbutton-hover"] = {400, 476, 0.00048828125, 0.19580078125, 0.4677734375, 0.9326171875, false, false},
@@ -1827,6 +1769,16 @@ local AtlasInfo = {
 		["_ButtonGreenGlow-NineSlice-EdgeTop"] = {1, 42, 0.0, 0.0625, 0.3515625, 0.6796875, true, false},
 		["ButtonGreenGlow-NineSlice-Center"] = {10, 10, 0.0625, 0.6875, 0.6953125, 0.7734375, false, false},
 	},
+	["interface/common/commonbuttonlist"] = { -- 8033673
+		["common-button-list-collapseExpand"] = {64, 22, 0.0078125, 0.5078125, 0.03125, 0.71875, false, false},
+		["common-button-list-minus"] = {13, 4, 0.0078125, 0.109375, 0.78125, 0.90625, false, false},
+		["common-button-list-plus"] = {13, 13, 0.5234375, 0.625, 0.03125, 0.4375, false, false},
+	},
+	["interface/common/commonbuttonlist2x"] = { -- 8033671
+		["common-button-list-collapseExpand"] = {128, 44, 0.00390625, 0.50390625, 0.015625, 0.703125, false, false},
+		["common-button-list-minus"] = {26, 8, 0.00390625, 0.10546875, 0.734375, 0.859375, false, false},
+		["common-button-list-plus"] = {26, 26, 0.51171875, 0.61328125, 0.015625, 0.421875, false, false},
+	},
 	["interface/common/commonbuttons"] = { -- 3534438
 		["common-button-square-gray-down"] = {256, 256, 0.0009765625, 0.2509765625, 0.2841796875, 0.5341796875, false, false},
 		["common-button-square-gray-up"] = {256, 256, 0.0009765625, 0.2509765625, 0.5361328125, 0.7861328125, false, false},
@@ -2098,6 +2050,12 @@ local AtlasInfo = {
 		["common-icon-rotateleft-disable"] = {100, 100, 0.37841796875, 0.42724609375, 0.7568359375, 0.8544921875, false, false},
 		["common-icon-rotateright-disable"] = {100, 100, 0.37841796875, 0.42724609375, 0.8564453125, 0.9541015625, false, false},
 	},
+	["interface/common/commoninsideframe"] = { -- 8033665
+		["common-insideframe"] = {107, 107, 0.0078125, 0.84375, 0.0078125, 0.84375, false, false},
+	},
+	["interface/common/commoninsideframe2x"] = { -- 8033663
+		["common-insideframe"] = {214, 214, 0.00390625, 0.83984375, 0.00390625, 0.83984375, false, false},
+	},
 	["interface/common/commonloadingspinnercircle"] = { -- 4861554
 		["common-loadingspinnercircle"] = {290, 290, 0.001953125, 0.568359375, 0.001953125, 0.568359375, false, false},
 	},
@@ -2128,6 +2086,16 @@ local AtlasInfo = {
 	["interface/common/commonsearchbar2x"] = { -- 7524021
 		["common-searchbar-a"] = {40, 40, 0.0078125, 0.3203125, 0.015625, 0.640625, false, false},
 		["common-searchbar-icon-a"] = {24, 24, 0.3359375, 0.5234375, 0.015625, 0.390625, false, false},
+	},
+	["interface/common/commonsidetab"] = { -- 8033669
+		["common-sidetab-hover"] = {45, 60, 0.0078125, 0.359375, 0.0078125, 0.4765625, false, false},
+		["common-sidetab-selected"] = {45, 60, 0.0078125, 0.359375, 0.4921875, 0.9609375, false, false},
+		["common-sidetab"] = {45, 60, 0.375, 0.7265625, 0.0078125, 0.4765625, false, false},
+	},
+	["interface/common/commonsidetab2x"] = { -- 8033667
+		["common-sidetab"] = {90, 120, 0.00390625, 0.35546875, 0.00390625, 0.47265625, false, false},
+		["common-sidetab-hover"] = {90, 120, 0.00390625, 0.35546875, 0.48046875, 0.94921875, false, false},
+		["common-sidetab-selected"] = {90, 120, 0.36328125, 0.71484375, 0.00390625, 0.47265625, false, false},
 	},
 	["interface/common/currencywindow"] = { -- 5882640
 		["arrow-long"] = {38, 18, 0.0009765625, 0.0380859375, 0.826171875, 0.861328125, false, false},
@@ -9949,6 +9917,21 @@ local AtlasInfo = {
 	["interface/housing/housingcelebratorytoastsheenmask"] = { -- 7320242
 		["housing-celebrationtoast-sheen-mask"] = {1024, 1024, 0.0, 1.0, 0.0, 1.0, false, false},
 	},
+	["interface/housing/housingcommonicons"] = { -- 8040088
+		["housing-icon-catalog-dis"] = {33, 33, 0.80078125, 0.9296875, 0.140625, 0.26953125, false, false},
+		["housing-icon-catalog"] = {33, 33, 0.80078125, 0.9296875, 0.00390625, 0.1328125, false, false},
+		["housing-icon-dashboard-dis"] = {33, 33, 0.140625, 0.26953125, 0.80078125, 0.9296875, false, false},
+		["housing-icon-dashboard"] = {33, 33, 0.00390625, 0.1328125, 0.80078125, 0.9296875, false, false},
+		["common-icons-blueprints-disabled"] = {100, 100, 0.40234375, 0.79296875, 0.00390625, 0.39453125, false, false},
+		["common-icons-blueprints"] = {100, 100, 0.00390625, 0.39453125, 0.00390625, 0.39453125, false, false},
+		["common-icons-blueprints-inactive"] = {100, 100, 0.00390625, 0.39453125, 0.40234375, 0.79296875, false, false},
+	},
+	["interface/housing/housingcommonicons2x"] = { -- 8040086
+		["housing-icon-catalog"] = {66, 66, 0.00390625, 0.26171875, 0.00390625, 0.26171875, false, false},
+		["housing-icon-catalog-dis"] = {66, 66, 0.26953125, 0.52734375, 0.00390625, 0.26171875, false, false},
+		["housing-icon-dashboard"] = {66, 66, 0.53515625, 0.79296875, 0.00390625, 0.26171875, false, false},
+		["housing-icon-dashboard-dis"] = {66, 66, 0.00390625, 0.26171875, 0.26953125, 0.52734375, false, false},
+	},
 	["interface/housing/housingcornerstonebackground"] = { -- 7154224
 		["housing-cornerstone-background"] = {438, 316, 0.001953125, 0.857421875, 0.001953125, 0.619140625, false, false},
 	},
@@ -17433,6 +17416,15 @@ local AtlasInfo = {
 	["interface/raidframe/raidframeabsorboverlay"] = { -- 7539063
 		["RaidFrame-Absorb-Overlay"] = {32, 32, 0.0, 1.0, 0.0, 1.0, true, true},
 	},
+	["interface/raidframe/raidframeantscorners"] = { -- 8207108
+		["UI-RaidFrames-AntCorners"] = {32, 32, 0.015625, 0.515625, 0.015625, 0.515625, false, false},
+	},
+	["interface/raidframe/raidframeantshorizontal"] = { -- 8207103
+		["UI-RaidFrames-SingleAnt-Horiz"] = {8, 8, 0.0, 1.0, 0.0625, 0.5625, true, false},
+	},
+	["interface/raidframe/raidframeantsvertical"] = { -- 8207101
+		["UI-RaidFrames-SingleAnt-Vertical"] = {8, 8, 0.0625, 0.5625, 0.0, 1.0, false, true},
+	},
 	["interface/raidframe/raidframedispelfill"] = { -- 7539065
 		["RaidFrame-Dispel-Fill"] = {32, 32, 0.0, 1.0, 0.0, 1.0, true, true},
 	},
@@ -17829,6 +17821,14 @@ local AtlasInfo = {
 	},
 	["interface/scenarios/scenarioevergreenwidget2x"] = { -- 7320098
 		["evergreen-scenario-widget-frame-2x"] = {505, 160, 0.001953125, 0.98828125, 0.00390625, 0.62890625, false, false},
+	},
+	["interface/scenarios/scenarioevergreenwidgetshort"] = { -- 8127985
+		["evergreen-scenario-widget-short-frame"] = {253, 53, 0.00390625, 0.9921875, 0.0078125, 0.421875, false, false},
+		["speech-bubbles"] = {39, 33, 0.00390625, 0.15625, 0.4375, 0.6953125, false, false},
+	},
+	["interface/scenarios/scenarioevergreenwidgetshort2x"] = { -- 8127994
+		["evergreen-scenario-widget-short-frame-2x"] = {505, 106, 0.001953125, 0.98828125, 0.00390625, 0.41796875, false, false},
+		["speech-bubbles-2x"] = {77, 65, 0.001953125, 0.15234375, 0.42578125, 0.6796875, false, false},
 	},
 	["interface/scenarios/scenariohordealliance"] = { -- 2128641
 		["AllianceScenario-TitleBG"] = {467, 141, 0.001953125, 0.9140625, 0.001953125, 0.27734375, false, false},

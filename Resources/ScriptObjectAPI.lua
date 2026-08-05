@@ -218,6 +218,7 @@ local ScriptObjectAPI = {
 		"GetMillisecondsThreshold",
 		"GetMinInterval",
 		"GetMinIntervalCurve",
+		"GetRounding",
 		"GetStripIntervalWhitespace",
 		"Reset",
 		"SetApproximationSeconds",
@@ -232,6 +233,7 @@ local ScriptObjectAPI = {
 		"SetMillisecondsThreshold",
 		"SetMinInterval",
 		"SetMinIntervalCurve",
+		"SetRounding",
 		"SetStripIntervalWhitespace",
 	},
 	UnitHealPredictionCalculatorAPI = {

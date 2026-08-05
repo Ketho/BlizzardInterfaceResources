@@ -276,6 +276,7 @@ local Mixins = {
 	"AuraButtonMixin",
 	"AuraButtonPrivateMixin",
 	"AuraButtonSharedMixin",
+	"AuraButtonTooltipMixin",
 	"AuraContainerAuraGroupManagerMixin",
 	"AuraContainerAuraGroupMixin",
 	"AuraContainerAuraGroupOwnerMixin",

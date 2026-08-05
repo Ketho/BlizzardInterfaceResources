@@ -220,19 +220,11 @@ local WidgetAPI = {
 			"SetWordWrap",
 		},
 	},
-	VectorGraphics = {
-		inherits = {"Region"},
-		methods = {
-			"ClearSVG",
-			"GetSVGFileID",
-			"HasSVG",
-			"SetSVG",
-		},
-	},
 	TextureBase = {
 		inherits = {"Region"},
 		methods = {
 			"ClearRadialProgressBar",
+			"ClearSVG",
 			"ClearTextureSlice",
 			"ClearVertexOffsets",
 			"GetAtlas",
@@ -271,6 +263,7 @@ local WidgetAPI = {
 			"SetRadialProgressBarPercent",
 			"SetRadialProgressBarReverse",
 			"SetRadialProgressBarStartOffset",
+			"SetSVG",
 			"SetSnapToPixelGrid",
 			"SetSpriteSheetCell",
 			"SetTexCoord",
@@ -307,6 +300,15 @@ local WidgetAPI = {
 			"SetHitRectThickness",
 			"SetStartPoint",
 			"SetThickness",
+		},
+	},
+	VectorGraphics = {
+		inherits = {"Region"},
+		methods = {
+			"ClearSVG",
+			"GetSVGFileID",
+			"HasSVG",
+			"SetSVG",
 		},
 	},
 	AnimationGroup = {
@@ -501,6 +503,15 @@ local WidgetAPI = {
 			"GetStartColor",
 			"SetEndColor",
 			"SetStartColor",
+		},
+	},
+	RadialProgress = {
+		inherits = {"Animation"},
+		methods = {
+			"GetFromPercent",
+			"GetToPercent",
+			"SetFromPercent",
+			"SetToPercent",
 		},
 	},
 	Frame = {

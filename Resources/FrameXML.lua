@@ -2245,7 +2245,7 @@ local FrameXML = {
 	"HousingItemEarnedAlertFrameSystem_SetUp",
 	"HousingTutorialUtil.BoughtHouseQuestComplete",
 	"HousingTutorialUtil.GetFrameFromData",
-	"HousingTutorialUtil.HousingQuestTutorialComplete",
+	"HousingTutorialUtil.HousingDecorQuestTutorialComplete",
 	"HousingTutorialUtil.IsModeValidForTutorial",
 	"HousingTutorialUtil.ResetAllDecorTutorials",
 	"HybridMinimap_LoadUI",

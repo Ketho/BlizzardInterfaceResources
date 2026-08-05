@@ -2314,6 +2314,10 @@ Enum = {
 		GrabbingHandErrorCursor = 90,
 		CustomCursor = 91,
 	},
+	CustomAuraButtonDispelTypeStealableFilter = {
+		Stealable = 0,
+		NotStealable = 1,
+	},
 	CustomAuraButtonDispelTypeTextureStyle = {
 		Border = 0,
 		BorderWithIcon = 1,
@@ -6742,6 +6746,10 @@ Enum = {
 		Preserve = 0,
 		Strip = 1,
 		StripIgnoreLocale = 2,
+	},
+	SecondsFormatterRounding = {
+		RoundUp = 0,
+		Truncate = 1,
 	},
 	SecrecyLevel = {
 		NeverSecret = 0,
