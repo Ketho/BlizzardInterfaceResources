@@ -12,9 +12,6 @@ local AtlasInfo = {
 	["8116299"] = { -- 8116299
 		["housing-multiselect-fx-mask"] = {512, 512, 0.0, 1.0, 0.0, 1.0, false, false},
 	},
-	["8198947"] = { -- 8198947
-		["UI-Background-Rock-Brown"] = {256, 256, 0.0, 1.0, 0.0, 1.0, true, true},
-	},
 	["interface/ garrison/dragonflightlandingpage"] = { -- 4723680
 		["dragonflight-landingpage-talentbutton-hover"] = {400, 476, 0.00048828125, 0.19580078125, 0.4677734375, 0.9326171875, false, false},
 		["dragonflight-landingpage-talentbutton"] = {400, 476, 0.00048828125, 0.19580078125, 0.0009765625, 0.4658203125, false, false},
@@ -5086,6 +5083,9 @@ local AtlasInfo = {
 	["interface/framegeneral/graphicsectiontabframevertical"] = { -- 5012720
 		["!OptionsFrame-NineSlice-EdgeLeft"] = {32, 32, 0.0078125, 0.2578125, 0.0, 1.0, false, true},
 		["!OptionsFrame-NineSlice-EdgeRight"] = {32, 32, 0.2734375, 0.5234375, 0.0, 1.0, false, true},
+	},
+	["interface/framegeneral/uicommonbackgrounds"] = { -- 8198947
+		["UI-Background-Rock-Brown"] = {256, 256, 0.0, 1.0, 0.0, 1.0, true, true},
 	},
 	["interface/framegeneral/uiframealliance"] = { -- 2141209
 		["UI-Frame-Alliance-Portrait"] = {205, 109, 0.0009765625, 0.201171875, 0.8828125, 0.9892578125, false, false},

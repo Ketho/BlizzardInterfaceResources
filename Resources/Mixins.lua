@@ -1270,6 +1270,8 @@ local Mixins = {
 	"FrozenProductContainerMixin",
 	"FullResourcePulse",
 	"FullscreenAccountStoreContainerMixin",
+	"FullscreenBrowserSpinnerFadeOutAnimMixin",
+	"FullscreenBrowserSpinnerMixin",
 	"FullscreenLeaveAccountStoreButtonMixin",
 	"FullStoreCardMixin",
 	"FunctionThrottleMixin",

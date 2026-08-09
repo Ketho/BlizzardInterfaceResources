@@ -1529,11 +1529,6 @@ local WidgetAPI = {
 			"UsesNPOT",
 		},
 	},
-	WorldFrame = {
-		inherits = {"Frame"},
-		methods = {
-		},
-	},
 }
 
 return WidgetAPI
