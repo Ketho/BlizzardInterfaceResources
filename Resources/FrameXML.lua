@@ -4616,6 +4616,7 @@ local FrameXML = {
 	"WorldStateProvingGrounds_DisplayTimers",
 	"WorldStateProvingGrounds_HideTimer",
 	"WorldStateProvingGrounds_OnEvent",
+	"WorldStateProvingGrounds_OnLoad",
 	"WorldStateProvingGrounds_ShowTimer",
 	"WorldStateScoreFrameTab_OnClick",
 	"WorldStateScoreFrame_OnClose",
