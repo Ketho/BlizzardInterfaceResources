@@ -2162,6 +2162,9 @@ local Events = {
 		"NEW_WARBAND_SCENE_ADDED",
 		"WARBAND_SCENE_FAVORITES_UPDATED",
 	},
+	WeatherScript = {
+		"WEATHER_CHANGED",
+	},
 	WeeklyRewards = {
 		"WEEKLY_REWARDS_ITEM_CHANGED",
 		"WEEKLY_REWARDS_UPDATE",
