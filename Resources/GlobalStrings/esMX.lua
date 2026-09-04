@@ -12861,6 +12861,7 @@ KOREA = "Corea";
 KYRIAN_ZONE_ABILITY_TUTORIAL = "¡Habilidad de la zona kyriana desbloqueada!\n\nPuedes arrastrar esto a tu barra de acción.";
 LABEL_NOTE = "Nota";
 LAG_TOLERANCE = "Tolerancia de retraso";
+LAIR = "Guarida";
 LAIRS_CANT_ENTER_BEFORE_LEADER = "No puedes entrar antes que el líder";
 LAIRS_CAN_ENTER = "El líder del grupo ha seleccionado la dificultad %s. Ya puedes entrar.";
 LAIRS_DEFAULT_TIER_TOOLTIP = "Una dificultad desafiante que requiere un grupo de banda";

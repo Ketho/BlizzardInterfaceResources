@@ -12861,6 +12861,7 @@ KOREA = "Corée";
 KYRIAN_ZONE_ABILITY_TUTORIAL = "Compétence de zone kyriane débloquée !\n\nVous pouvez la faire glisser dans votre barre d’actions.";
 LABEL_NOTE = "Remarque";
 LAG_TOLERANCE = "Tolérance de latence";
+LAIR = "Repaire";
 LAIRS_CANT_ENTER_BEFORE_LEADER = "Vous ne pouvez pas entrer avant le chef.";
 LAIRS_CAN_ENTER = "Le chef de groupe a sélectionné la difficulté %s. Vous pouvez désormais entrer.";
 LAIRS_DEFAULT_TIER_TOOLTIP = "Un mode de difficulté exigeant qui nécessite un groupe de raid.";

@@ -12861,6 +12861,7 @@ KOREA = "Korea";
 KYRIAN_ZONE_ABILITY_TUTORIAL = "Kyrian zone ability unlocked!\n\nYou can drag this to your action bar.";
 LABEL_NOTE = "Note";
 LAG_TOLERANCE = "Lag Tolerance";
+LAIR = "Lair";
 LAIRS_CANT_ENTER_BEFORE_LEADER = "You can't enter before the leader";
 LAIRS_CAN_ENTER = "The group leader has selected %s difficulty. You may now enter.";
 LAIRS_DEFAULT_TIER_TOOLTIP = "A challenging difficulty that requires a raid group";

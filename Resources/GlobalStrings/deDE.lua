@@ -12861,6 +12861,7 @@ KOREA = "Korea";
 KYRIAN_ZONE_ABILITY_TUTORIAL = "Kyrianerfähigkeit für diese Zone freigeschaltet!\n\nIhr könnt diese Fähigkeit auf Eure Aktionsleiste ziehen.";
 LABEL_NOTE = "Notiz";
 LAG_TOLERANCE = "Latenztoleranz";
+LAIR = "Hort";
 LAIRS_CANT_ENTER_BEFORE_LEADER = "Ihr könnt nicht vor dem Anführer beitreten";
 LAIRS_CAN_ENTER = "Der Gruppenanführer hat den Schwierigkeitsgrad '%s' ausgewählt. Ihr könnt jetzt eintreten.";
 LAIRS_DEFAULT_TIER_TOOLTIP = "Ein herausfordernder Schwierigkeitsgrad, der eine Schlachtzugsgruppe benötigt";

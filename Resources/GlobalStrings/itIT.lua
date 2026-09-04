@@ -12861,6 +12861,7 @@ KOREA = "Corea";
 KYRIAN_ZONE_ABILITY_TUTORIAL = "Abilità di zona dei Kyrian sbloccata!\n\nPuoi mettere questa abilità nella tua barra delle azioni.";
 LABEL_NOTE = "Nota";
 LAG_TOLERANCE = "Tolleranza alla latenza";
+LAIR = "Antro";
 LAIRS_CANT_ENTER_BEFORE_LEADER = "Non puoi entrare prima del capogruppo";
 LAIRS_CAN_ENTER = "Il capogruppo ha selezionato la modalità %s. Ora puoi entrare.";
 LAIRS_DEFAULT_TIER_TOOLTIP = "Una modalità impegnativa che richiede un gruppo d'incursione";

@@ -12861,6 +12861,7 @@ KOREA = "韩国";
 KYRIAN_ZONE_ABILITY_TUTORIAL = "格里恩区域技能解锁！\n\n你可以将该技能拖曳到动作条上。";
 LABEL_NOTE = "备注";
 LAG_TOLERANCE = "延迟容限";
+LAIR = "巢穴";
 LAIRS_CANT_ENTER_BEFORE_LEADER = "你不能在队长之前进入";
 LAIRS_CAN_ENTER = "队长已选择%s难度。你现在可以进入了。";
 LAIRS_DEFAULT_TIER_TOOLTIP = "极具挑战性的难度，需要团队协作。";

@@ -12861,6 +12861,7 @@ KOREA = "韓國";
 KYRIAN_ZONE_ABILITY_TUTORIAL = "解鎖琪瑞安區域技能！\n\n你可以把它拖曳到快捷列。";
 LABEL_NOTE = "註記";
 LAG_TOLERANCE = "延遲容許值";
+LAIR = "巢穴";
 LAIRS_CANT_ENTER_BEFORE_LEADER = "你無法在隊長之前進入";
 LAIRS_CAN_ENTER = "隊長選擇了%s難度。你現在可以進入了。";
 LAIRS_DEFAULT_TIER_TOOLTIP = "需要組成團隊的挑戰難度";

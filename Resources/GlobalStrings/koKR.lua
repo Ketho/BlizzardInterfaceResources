@@ -12861,6 +12861,7 @@ KOREA = "한국";
 KYRIAN_ZONE_ABILITY_TUTORIAL = "키리안 지역 능력 잠금 해제!\n\n행동 단축바로 끌어 옮겨 사용할 수 있습니다.";
 LABEL_NOTE = "쪽지";
 LAG_TOLERANCE = "주문 예약 시간";
+LAIR = "소굴";
 LAIRS_CANT_ENTER_BEFORE_LEADER = "파티장보다 먼저 입장할 수 없습니다.";
 LAIRS_CAN_ENTER = "파티장이 %s 난이도를 선택했습니다. 이제 입장할 수 있습니다.";
 LAIRS_DEFAULT_TIER_TOOLTIP = "공격대 파티가 필요한 고난이도";

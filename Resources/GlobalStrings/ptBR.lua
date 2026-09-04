@@ -12861,6 +12861,7 @@ KOREA = "Coreia";
 KYRIAN_ZONE_ABILITY_TUTORIAL = "Habilidade da área kyriana desbloqueada!\n\nVocê pode arrastá-la para a sua barra de ações.";
 LABEL_NOTE = "Nota";
 LAG_TOLERANCE = "Tolerância de atraso";
+LAIR = "Covil";
 LAIRS_CANT_ENTER_BEFORE_LEADER = "Você não pode entrar antes do líder";
 LAIRS_CAN_ENTER = "O líder do grupo selecionou o modo %s. Agora você pode entrar.";
 LAIRS_DEFAULT_TIER_TOOLTIP = "Um modo desafiador que exige um grupo de raide";
