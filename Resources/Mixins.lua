@@ -837,6 +837,7 @@ local Mixins = {
 	"CooldownViewerSettingsMixin",
 	"CooldownViewerSettingsReorderMarkerMixin",
 	"CooldownViewerSettingsSearchBoxMixin",
+	"CooldownViewerSettingsTabMixin",
 	"CooldownViewerSettingsTabWithNewOptionMixin",
 	"CooldownViewerUtilityItemMixin",
 	"CooldownViewerVisualAlertTargetMixin",

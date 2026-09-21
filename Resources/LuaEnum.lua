@@ -1500,6 +1500,7 @@ Enum = {
 		PlayerResource2 = 6,
 		PartyHealth = 7,
 		PlayerDebuffs = 8,
+		PlayerHealthPulse = 9,
 	},
 	CombatAudioAlertDebuffSelfAlertValues = {
 		Off = 0,
@@ -1552,6 +1553,18 @@ Enum = {
 		NoResourceFull = 3,
 		NoResourceNoPercent = 4,
 		NoResourceNoPercentDiv10 = 5,
+	},
+	CombatAudioAlertPulsePercentValues = {
+		Off = 0,
+		Under90Percent = 1,
+		Under80Percent = 2,
+		Under70Percent = 3,
+		Under60Percent = 4,
+		Under50Percent = 5,
+		Under40Percent = 6,
+		Under30Percent = 7,
+		Under20Percent = 8,
+		Under10Percent = 9,
 	},
 	CombatAudioAlertSayIfTargetedType = {
 		None = 0,
@@ -7310,6 +7323,10 @@ Enum = {
 	SurveyDeliveryFlags = {
 		None = 0x0,
 		EncounterSucccessOnly = 0x1,
+		PvPRatedOnly = 0x2,
+		PvPUnratedOnly = 0x4,
+		PvPWinOnly = 0x8,
+		PvPLossOnly = 0x10,
 	},
 	SurveyDeliveryMoment = {
 		Login = 0,
@@ -7318,6 +7335,8 @@ Enum = {
 		ChestLooted = 3,
 		MythicPlusCompleted = 4,
 		EncounterEnd = 5,
+		AchievementCompleted = 6,
+		BattlegroundEnd = 7,
 	},
 	TableSecurityOption = {
 		DisallowTaintedAccess = 0,
@@ -9126,6 +9145,7 @@ Constants = {
 		CAAPlayerHealthPercentDefault = 0,
 		CAAPlayerResourceFormatDefault = 1,
 		CAAPlayerResourcePercentDefault = 0,
+		CAAPulsePlayerHealthPercentDefault = 0,
 		CAASamePercentThrottleTime = 10,
 		CAASampleTextThrottleTime = 1,
 		CAASayCombatEndDefault = true,
@@ -9246,8 +9266,10 @@ Constants = {
 		WAR_RESOURCES_CURRENCY_ID = 1560,
 	},
 	DelvesConsts = {
+		DELVES_COMPANION_BRANN_CREATURE_ID = 210759,
 		DELVES_COMPANION_INFO_SELECTION_CHARACTER_DATA_ELEMENT_ID = 13,
 		DELVES_COMPANION_TOOLTIP_WIDGET_SET_ID = 1331,
+		DELVES_COMPANION_VALEERA_CREATURE_ID = 248567,
 		DELVES_MIN_PLAYER_LEVEL_CONTENT_TUNING_ID = 2677,
 		DELVES_NORMAL_KEY_CURRENCY_ID = 3028,
 	},

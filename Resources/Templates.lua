@@ -827,7 +827,7 @@ local Templates = {
 	["CooldownViewerSettingsBarItemTemplate"] = {type = "Frame", mixin = "CooldownViewerSettingsBarItemMixin"},
 	["CooldownViewerSettingsCategoryTemplate"] = {type = "Frame", mixin = "CooldownViewerSettingsCategoryMixin", inherits = "ResizeLayoutFrame"},
 	["CooldownViewerSettingsItemTemplate"] = {type = "Frame", mixin = "CooldownViewerSettingsItemMixin"},
-	["CooldownViewerSettingsTabTemplate"] = {type = "Frame", inherits = "LargeSideTabButtonTemplate"},
+	["CooldownViewerSettingsTabTemplate"] = {type = "Frame", mixin = "CooldownViewerSettingsTabMixin", inherits = "LargeSideTabButtonTemplate"},
 	["CooldownViewerSettingsTabWithNewOptionTemplate"] = {type = "Frame", mixin = "CooldownViewerSettingsTabWithNewOptionMixin", inherits = "CooldownViewerSettingsTabTemplate, NewDefinitionsCheckerTemplate"},
 	["CooldownViewerTemplate"] = {type = "Frame", mixin = "CooldownViewerMixin", inherits = "EditModeCooldownViewerSystemTemplate, GridLayoutFrame"},
 	["CooldownViewerUtilityItemTemplate"] = {type = "Frame", mixin = "CooldownViewerUtilityItemMixin", inherits = "CooldownViewerBaseItemTemplate, PingableCooldownViewerItemTemplate"},
