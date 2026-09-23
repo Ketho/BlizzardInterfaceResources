@@ -4657,6 +4657,7 @@ local GlobalAPI = {
 	"C_UnitAuras.GetGroupBuffVisualAlerts",
 	"C_UnitAuras.GetHiddenGroupBuffs",
 	"C_UnitAuras.GetPlayerAuraBySpellID",
+	"C_UnitAuras.GetRefreshCarryOverDuration",
 	"C_UnitAuras.GetRefreshExtendedDuration",
 	"C_UnitAuras.GetUnitAuraBySpellID",
 	"C_UnitAuras.GetUnitAuraInstanceIDs",

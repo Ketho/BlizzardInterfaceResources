@@ -1823,6 +1823,7 @@ Enum = {
 	CooldownSetSpellFlags = {
 		HideAura = 0x1,
 		HideByDefault = 0x2,
+		SelectHighestLevelLinkedSpell = 0x4,
 	},
 	CooldownViewerAddAlertStatus = {
 		Success = 0,
@@ -3160,8 +3161,10 @@ Enum = {
 		ChangeAnimationTarget = 0x100,
 		RemoveSecretAspects = 0x200,
 		ChangeParent = 0x400,
-		QueryAnimationProgress = 0x800,
-		AddAnimations = 0x1000,
+		SetTexture = 0x800,
+		QueryRotation = 0x1000,
+		QueryAnimationProgress = 0x2000,
+		AddAnimations = 0x4000,
 	},
 	FragmentID = {
 		MirrorState = 0,
@@ -3294,6 +3297,7 @@ Enum = {
 		HousingEndeavorsTabSeen = 48,
 		RunesOfPower = 49,
 		HousingPetBeds = 50,
+		Reserved1 = 51,
 	},
 	GameMode = {
 		Standard = 1,
