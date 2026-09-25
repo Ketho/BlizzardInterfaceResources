@@ -1856,6 +1856,7 @@ Enum = {
 	CooldownSetSpellFlags = {
 		HideAura = 0x1,
 		HideByDefault = 0x2,
+		SelectHighestLevelLinkedSpell = 0x4,
 	},
 	CooldownViewerAddAlertStatus = {
 		Success = 0,
@@ -3234,8 +3235,14 @@ Enum = {
 		ChangeAnimationTarget = 0x100,
 		RemoveSecretAspects = 0x200,
 		ChangeParent = 0x400,
-		QueryAnimationProgress = 0x800,
-		AddAnimations = 0x1000,
+		SetTexture = 0x800,
+		QueryRotation = 0x1000,
+		QueryAnimationProgress = 0x2000,
+		AddAnimations = 0x4000,
+	},
+	ForeverExperiencePreset = {
+		Classic = 0,
+		Modern = 1,
 	},
 	FragmentID = {
 		MirrorState = 0,
@@ -3368,6 +3375,7 @@ Enum = {
 		HousingEndeavorsTabSeen = 48,
 		RunesOfPower = 49,
 		HousingPetBeds = 50,
+		Reserved1 = 51,
 	},
 	GameMode = {
 		Standard = 1,
@@ -3542,6 +3550,9 @@ Enum = {
 		DynamicDistrictAffinityAssignmentAlgorithm = 216,
 		TrackAchievementsDisabled = 228,
 		EnableDifficultyMessages = 237,
+		DontAllowPartialTicks = 241,
+		PreventXPAndLootForExcessiveOutsideHelp = 243,
+		ManaRegenBonusStatMeansMp5 = 244,
 	},
 	GameRuleFlags = {
 		None = 0x0,
@@ -3814,6 +3825,7 @@ Enum = {
 		PetUntrainer = 67,
 		TransmogOptIn = 68,
 		TransmogOptOut = 69,
+		RewardsShop = 70,
 	},
 	GossipNpcOptionDisplayFlags = {
 		ForceInteractionOnSingleChoice = 0x1,
@@ -6285,6 +6297,7 @@ Enum = {
 		OpenHouseFinder = 78,
 		TieredEntrance = 79,
 		PetUntrainer = 80,
+		RewardsShop = 81,
 	},
 	PlayerMentorshipApplicationResult = {
 		Success = 0,
@@ -9189,6 +9202,7 @@ Enum = {
 		PlayerVoiceChatParentalDisabled = 22,
 		InvalidInputDevice = 23,
 		InvalidOutputDevice = 24,
+		PlayerVoiceChatAgeVerificationRestricted = 25,
 	},
 	VoiceTtsStatusCode = {
 		Success = 0,
@@ -9861,7 +9875,7 @@ NUM_LE_AUTHS = 2
 LE_AUTH_NONE = 1
 LE_AUTH_AUTHENTICATOR = 2
 
-NUM_LE_CHARACTER_UNDELETE_RESULTS = 7
+NUM_LE_CHARACTER_UNDELETE_RESULTS = 8
 LE_CHARACTER_UNDELETE_RESULT_OK = 1
 LE_CHARACTER_UNDELETE_RESULT_ERROR_COOLDOWN = 2
 LE_CHARACTER_UNDELETE_RESULT_ERROR_CHAR_CREATE = 3
@@ -9869,6 +9883,7 @@ LE_CHARACTER_UNDELETE_RESULT_ERROR_DISABLED = 4
 LE_CHARACTER_UNDELETE_RESULT_ERROR_NAME_TAKEN_BY_THIS_ACCOUNT = 5
 LE_CHARACTER_UNDELETE_RESULT_ERROR_DRACTHYR_LEVEL_REQUIREMENT = 6
 LE_CHARACTER_UNDELETE_RESULT_ERROR_UNKNOWN = 7
+LE_CHARACTER_UNDELETE_RESULT_ERROR_NAME_TAKEN_BY_THIS_ACCOUNT_REGIONAL = 8
 
 NUM_LE_CHARACTER_UPGRADE_RESULTS = 13
 LE_CHARACTER_UPGRADE_RESULT_OK = 1
