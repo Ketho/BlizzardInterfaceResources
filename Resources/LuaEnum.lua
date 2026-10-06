@@ -3157,6 +3157,7 @@ Enum = {
 		WeeklyRewardUpgrade = 24,
 		FlightpointDiscovered = 25,
 		HouseUpgradeAvailable = 26,
+		RenownFactionLeveledUp = 27,
 	},
 	EventToastFlags = {
 		DisableRightClickDismiss = 0x1,
@@ -3551,8 +3552,10 @@ Enum = {
 		TrackAchievementsDisabled = 228,
 		EnableDifficultyMessages = 237,
 		DontAllowPartialTicks = 241,
+		EnableMaxBuffLevelDifference = 242,
 		PreventXPAndLootForExcessiveOutsideHelp = 243,
 		ManaRegenBonusStatMeansMp5 = 244,
+		CannotSkinCreaturesTooHighLevelForYourSkinningSkill = 247,
 	},
 	GameRuleFlags = {
 		None = 0x0,
