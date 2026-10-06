@@ -3083,6 +3083,7 @@ Enum = {
 		WeeklyRewardUpgrade = 24,
 		FlightpointDiscovered = 25,
 		HouseUpgradeAvailable = 26,
+		RenownFactionLeveledUp = 27,
 	},
 	EventToastFlags = {
 		DisableRightClickDismiss = 0x1,
@@ -3688,6 +3689,7 @@ Enum = {
 		ItemUpgrade = 64,
 		HouseFinder = 65,
 		TieredEntrance = 66,
+		RewardsShop = 67,
 	},
 	GossipNpcOptionDisplayFlags = {
 		ForceInteractionOnSingleChoice = 0x1,
@@ -6066,6 +6068,7 @@ Enum = {
 		OpenNeighborhoodCharterConfirmation = 77,
 		OpenHouseFinder = 78,
 		TieredEntrance = 79,
+		RewardsShop = 80,
 	},
 	PlayerMentorshipApplicationResult = {
 		Success = 0,
@@ -8914,6 +8917,7 @@ Enum = {
 		PlayerVoiceChatParentalDisabled = 22,
 		InvalidInputDevice = 23,
 		InvalidOutputDevice = 24,
+		PlayerVoiceChatAgeVerificationRestricted = 25,
 	},
 	VoiceTtsStatusCode = {
 		Success = 0,

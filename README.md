@@ -4,14 +4,15 @@ Global resources extracted from World of Warcraft for development purposes.
 * [GlobalStrings](https://github.com/Ketho/WowDoc/blob/master/Projects/UpdateResources/GlobalStrings.lua) and [AtlasInfo](https://github.com/Ketho/WowDoc/blob/master/Projects/UpdateResources/AtlasInfo.lua) are downloaded from [wago.tools](https://wago.tools/db2/GlobalStrings)
 * Templates and mixins are [parsed](https://github.com/Ketho/WowDoc/blob/master/Projects/DumbXmlParser/init.lua) from FrameXML
 ```lua
-GetBuildInfo() => "12.1.5", "69952", "Sep 21 2026", 120105
+GetBuildInfo() => "12.1.5", "70077", "Sep 28 2026", 120105
 ```
 ```lua
 IsPublicBuild() => true
 IsTestBuild() => true
 IsBetaBuild() => false
-IsDebugBuild() => false
 WOW_PROJECT_ID => WOW_PROJECT_MAINLINE (1)
 LE_EXPANSION_LEVEL_CURRENT => LE_EXPANSION_MIDNIGHT (11)
+TOC [Family] => "Mainline"
+TOC [Game] => "Standard"
 ```
 ![](https://raw.githubusercontent.com/Ketho/BlizzardInterfaceResources/live/Resources/WidgetHierarchy.png)
