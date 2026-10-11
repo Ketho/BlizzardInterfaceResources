@@ -1191,6 +1191,9 @@ Enum = {
 		PrivateParty = 2,
 		PublicParty = 3,
 		Communities = 4,
+		DiscordParty = 5,
+		DiscordGuild = 6,
+		DiscordSolo = 7,
 	},
 	ChatToxityFilterOptOut = {
 		FilterAll = 0,
@@ -2628,13 +2631,31 @@ Enum = {
 		Normal = 0,
 		Provisional = 1,
 	},
+	DiscordChannelID = {
+		InvalidDiscordID = "0x0000000000000000",
+	},
 	DiscordDisplayNameType = {
 		Default = 0,
 		LastOnline = 1,
 		GlobalName = 2,
 	},
+	DiscordGuildID = {
+		InvalidDiscordID = "0x0000000000000000",
+	},
 	DiscordGuildSettings = {
 		SeparateStream = 1,
+	},
+	DiscordID = {
+		InvalidDiscordID = "0x0000000000000000",
+	},
+	DiscordLobbyID = {
+		InvalidDiscordID = "0x0000000000000000",
+	},
+	DiscordMemberID = {
+		InvalidDiscordID = "0x0000000000000000",
+	},
+	DiscordMessageID = {
+		InvalidDiscordID = "0x0000000000000000",
 	},
 	DurationTextBindingProperty = {
 		RemainingDuration = 0,
@@ -2816,6 +2837,13 @@ Enum = {
 		MediumWarnings = 3,
 		NormalWarnings = 4,
 	},
+	EditModeGamepadMainActionBarSetting = {
+		Compact = 0,
+		ShowEmptyBars = 1,
+		ShowButtonPrompts = 2,
+		ShowHighlight = 3,
+		ShouldExpand = 4,
+	},
 	EditModeGroupFinderSetting = {
 		Size = 0,
 	},
@@ -2942,6 +2970,7 @@ Enum = {
 		GroupFinder = 27,
 		LossOfControl = 28,
 		SwingTimer = 29,
+		GamepadMainActionBar = 30,
 	},
 	EditModeTimerBarsSetting = {
 		Size = 0,
@@ -3556,6 +3585,9 @@ Enum = {
 		PreventXPAndLootForExcessiveOutsideHelp = 243,
 		ManaRegenBonusStatMeansMp5 = 244,
 		CannotSkinCreaturesTooHighLevelForYourSkinningSkill = 247,
+		AllowEmptyLoot = 251,
+		WeaponSwapIgnoresCombatSwapCd = 252,
+		PreventUnlootableItemsFromDropping = 253,
 	},
 	GameRuleFlags = {
 		None = 0x0,
@@ -5337,6 +5369,12 @@ Enum = {
 		Standard = 1,
 		Casual = 2,
 		Hardcore = 3,
+	},
+	LFGEntryVoiceMode = {
+		None = 0,
+		Legacy = 1,
+		Discord = 2,
+		Custom = 3,
 	},
 	LFGListDisplayType = {
 		RoleCount = 0,
@@ -7184,6 +7222,7 @@ Enum = {
 		ButtonState = 0x200000,
 		ScrollOffset = 0x400000,
 		RadialProgress = 0x800000,
+		FrameStrata = 0x1000000,
 	},
 	SelfResurrectOptionType = {
 		Spell = 0,
@@ -7617,7 +7656,9 @@ Enum = {
 		Currency = 1,
 	},
 	TieredEntranceTierFlag = {
+		None = 0x0,
 		IsLFG = 0x1,
+		DisableTraitSystem = 0x2,
 	},
 	TieredEntranceType = {
 		Invalid = 0,
@@ -9207,6 +9248,10 @@ Enum = {
 		InvalidOutputDevice = 24,
 		PlayerVoiceChatAgeVerificationRestricted = 25,
 	},
+	VoiceProviderID = {
+		Legacy = 0,
+		Discord = 1,
+	},
 	VoiceTtsStatusCode = {
 		Success = 0,
 		InvalidEngineType = 1,
@@ -9712,6 +9757,7 @@ Constants = {
 	},
 	MajorFactionsConsts = {
 		PLUNDERSTORM_MAJOR_FACTION_ID = 2593,
+		PVP_RANK_POINTS_FACTION_ID = 2800,
 		WORLD_STATE_RAPID_RENOWN_CAP_10_0 = 20851,
 		WORLD_STATE_RENOWN_CAP_10_0 = 19735,
 	},
@@ -9753,6 +9799,12 @@ Constants = {
 	PvpInfoConsts = {
 		MAX_PVP_LOCK_LIST_MAP = 2,
 		MaxPlayersPerInstance = 80,
+	},
+	QuestConsts = {
+		QUEST_INFO_DUNGEON_ID = 81,
+		QUEST_INFO_ELITE_ID = 1,
+		QUEST_INFO_PVP_ID = 41,
+		QUEST_INFO_RAID_ID = 62,
 	},
 	QuestLogConsts = {
 		MAXIMUM_NUM_QUESTS_LOG_CAN_ACCEPT = 40,
