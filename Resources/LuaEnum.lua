@@ -3191,6 +3191,15 @@ Enum = {
 	EventToastFlags = {
 		DisableRightClickDismiss = 0x1,
 	},
+	EvictionType = {
+		Outsider = 0,
+		OutsiderParty = 1,
+		JoinParty = 2,
+		LeaveParty = 3,
+		ServerExpiryNormal = 4,
+		ServerExpiryAggressive = 5,
+		ServerExpiryParty = 6,
+	},
 	ExcludedCensorSources = {
 		None = 0x0,
 		Friends = 0x1,
@@ -3585,9 +3594,11 @@ Enum = {
 		PreventXPAndLootForExcessiveOutsideHelp = 243,
 		ManaRegenBonusStatMeansMp5 = 244,
 		CannotSkinCreaturesTooHighLevelForYourSkinningSkill = 247,
+		RangedAttackDelay = 249,
 		AllowEmptyLoot = 251,
 		WeaponSwapIgnoresCombatSwapCd = 252,
 		PreventUnlootableItemsFromDropping = 253,
+		RequirePvPFlagForPvPKillCredit = 255,
 	},
 	GameRuleFlags = {
 		None = 0x0,
@@ -7158,6 +7169,18 @@ Enum = {
 		AllowBarCodes = 0x2,
 		StripControlCodes = 0x4,
 	},
+	SdToggleUsageLocation = {
+		BeforeLogin = 0,
+		CharacterCreation = 1,
+		BarberShop = 2,
+		OptionsMenu = 3,
+	},
+	SdToggleUsageLocationUI = {
+		BeforeLogin = 0,
+		CharacterCreation = 1,
+		BarberShop = 2,
+		OptionsMenu = 3,
+	},
 	SeasonID = {
 		NoSeason = 0,
 		SeasonOfMastery = 1,
@@ -9614,6 +9637,9 @@ Constants = {
 		QUESTIONMARK_INV_ICON = 134400,
 		WAR_RESOURCES_CURRENCY_ID = 1560,
 	},
+	DeathRecapConsts = {
+		SWING_DAMAGE_SPELL_ID = 88163,
+	},
 	DelvesConsts = {
 		DELVES_COMPANION_BRANN_CREATURE_ID = 210759,
 		DELVES_COMPANION_INFO_SELECTION_CHARACTER_DATA_ELEMENT_ID = 13,
@@ -9733,6 +9759,15 @@ Constants = {
 		LFG_ROLE_NO_ROLE = -1,
 	},
 	LegacyConsts = {
+		LEGACY_DEFAULT_CATEGORY_DRUID = 15577,
+		LEGACY_DEFAULT_CATEGORY_HUNTER = 15578,
+		LEGACY_DEFAULT_CATEGORY_MAGE = 15579,
+		LEGACY_DEFAULT_CATEGORY_PALADIN = 15580,
+		LEGACY_DEFAULT_CATEGORY_PRIEST = 15581,
+		LEGACY_DEFAULT_CATEGORY_ROGUE = 15582,
+		LEGACY_DEFAULT_CATEGORY_SHAMAN = 15583,
+		LEGACY_DEFAULT_CATEGORY_WARLOCK = 15584,
+		LEGACY_DEFAULT_CATEGORY_WARRIOR = 15585,
 		LEGACY_POINTS_TRAIT_CURRENCY_ID = 4225,
 		LEGACY_REWARD_TRACK_FACTION_ID = 2802,
 		LEGACY_TREE_ADVENTURE_ID = 1188,
@@ -9892,8 +9927,8 @@ Constants = {
 		Evoker = 13,
 	},
 	UnitAuraUIConstants = {
-		GROUP_BUFF_VISUAL_ALERT_LIST_SIZE = 32,
-		HIDDEN_GROUP_BUFF_LIST_SIZE = 32,
+		GROUP_BUFF_VISUAL_ALERT_LIST_SIZE = 128,
+		HIDDEN_GROUP_BUFF_LIST_SIZE = 128,
 	},
 	UnitEventConstants = {
 		MAX_UNIT_TOKENS_IN_EVENT = 4,

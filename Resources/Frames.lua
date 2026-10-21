@@ -162,7 +162,6 @@ local Frames = {
 	"GamepadPersistentInputLegend",
 	"GamepadPetActionFlyout",
 	"GamepadPetSpellFlyout",
-	"GamepadPlayerCastingBarFrame",
 	"GamepadRadial",
 	"GamepadReticle",
 	"GamepadScrollBarHint",
