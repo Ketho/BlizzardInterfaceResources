@@ -3551,6 +3551,8 @@ local Mixins = {
 	"WoWHackCharacterUIMixin",
 	"WoWHackItemBarMixin",
 	"WoWHackItemButtonMixin",
+	"WoWHackTutorialControllerMixin",
+	"WoWHackTutorialHighlightMixin",
 	"WoWLabsAreaDataProviderMixin",
 	"WoWLabsAreaPinMixin",
 	"WoWLabsAreaSelectionControlsPinMixin",
